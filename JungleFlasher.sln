@@ -1,7 +1,8 @@
-
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JungleFlasher", "JungleFlasher/JungleFlasher.csproj", "{DBE11D74-E71E-49D2-930F-BC5BC3F057E7}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JungleFlasher", "JungleFlasher\JungleFlasher.csproj", "{DBE11D74-E71E-49D2-930F-BC5BC3F057E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

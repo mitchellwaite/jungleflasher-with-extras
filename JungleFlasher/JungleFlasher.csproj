@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Documents and Settings\User\Desktop\JungleFlasher-cleaned.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBE11D74-E71E-49D2-930F-BC5BC3F057E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>JungleFlasher</AssemblyName>
+    <ApplicationVersion>1.0.5004.40451</ApplicationVersion>
+    <RootNamespace>ns0</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%003CModule%003E.cs" />
+    <Compile Include="System\Runtime\CompilerServices\SuppressIldasmAttribute.cs" />
+    <Compile Include="GStruct0.cs" />
+    <Compile Include="GStruct1.cs" />
+    <Compile Include="GStruct2.cs" />
+    <Compile Include="Struct0.cs" />
+    <Compile Include="Struct1.cs" />
+    <Compile Include="Struct2.cs" />
+    <Compile Include="Struct3.cs" />
+    <Compile Include="GStruct3.cs" />
+    <Compile Include="GStruct4.cs" />
+    <Compile Include="Struct4.cs" />
+    <Compile Include="Struct5.cs" />
+    <Compile Include="GStruct5.cs" />
+    <Compile Include="Struct6.cs" />
+    <Compile Include="Struct7.cs" />
+    <Compile Include="Struct8.cs" />
+    <Compile Include="Struct9.cs" />
+    <Compile Include="Struct10.cs" />
+    <Compile Include="GStruct6.cs" />
+    <Compile Include="GStruct7.cs" />
+    <Compile Include="GStruct8.cs" />
+    <Compile Include="GStruct9.cs" />
+    <Compile Include="GStruct10.cs" />
+    <Compile Include="Struct11.cs" />
+    <Compile Include="Struct12.cs" />
+    <Compile Include="GStruct11.cs" />
+    <Compile Include="GStruct12.cs" />
+    <Compile Include="GStruct13.cs" />
+    <Compile Include="GStruct14.cs" />
+    <Compile Include="Struct13.cs" />
+    <Compile Include="Struct14.cs" />
+    <Compile Include="Struct15.cs" />
+    <Compile Include="Struct16.cs" />
+    <Compile Include="GStruct15.cs" />
+    <Compile Include="GStruct16.cs" />
+    <Compile Include="GStruct17.cs" />
+    <Compile Include="GStruct18.cs" />
+    <Compile Include="GStruct19.cs" />
+    <Compile Include="GStruct20.cs" />
+    <Compile Include="GStruct21.cs" />
+    <Compile Include="GStruct22.cs" />
+    <Compile Include="GStruct23.cs" />
+    <Compile Include="GStruct24.cs" />
+    <Compile Include="GStruct25.cs" />
+    <Compile Include="GStruct26.cs" />
+    <Compile Include="GStruct27.cs" />
+    <Compile Include="GStruct28.cs" />
+    <Compile Include="GStruct29.cs" />
+    <Compile Include="GStruct30.cs" />
+    <Compile Include="GStruct31.cs" />
+    <Compile Include="GStruct32.cs" />
+    <Compile Include="GStruct33.cs" />
+    <Compile Include="GStruct34.cs" />
+    <Compile Include="GStruct35.cs" />
+    <Compile Include="GStruct39.cs" />
+    <Compile Include="GStruct40.cs" />
+    <Compile Include="GStruct41.cs" />
+    <Compile Include="GStruct42.cs" />
+    <Compile Include="GStruct43.cs" />
+    <Compile Include="GStruct44.cs" />
+    <Compile Include="GStruct45.cs" />
+    <Compile Include="GStruct49.cs" />
+    <Compile Include="GStruct52.cs" />
+    <Compile Include="GStruct55.cs" />
+    <Compile Include="GStruct58.cs" />
+    <Compile Include="Common_Barcode.cs" />
+    <Compile Include="Struct17.cs" />
+    <Compile Include="Struct18.cs" />
+    <Compile Include="Struct19.cs" />
+    <Compile Include="Struct20.cs" />
+    <Compile Include="GStruct61.cs" />
+    <Compile Include="GStruct62.cs" />
+    <Compile Include="GStruct63.cs" />
+    <Compile Include="GStruct64.cs" />
+    <Compile Include="GStruct65.cs" />
+    <Compile Include="GStruct66.cs" />
+    <Compile Include="GStruct67.cs" />
+    <Compile Include="GStruct68.cs" />
+    <Compile Include="GStruct69.cs" />
+    <Compile Include="GStruct70.cs" />
+    <Compile Include="Struct21.cs" />
+    <Compile Include="GStruct71.cs" />
+    <Compile Include="GStruct72.cs" />
+    <Compile Include="GStruct73.cs" />
+    <Compile Include="GStruct74.cs" />
+    <Compile Include="GStruct75.cs" />
+    <Compile Include="GStruct76.cs" />
+    <Compile Include="GStruct77.cs" />
+    <Compile Include="GStruct78.cs" />
+    <Compile Include="GStruct79.cs" />
+    <Compile Include="GStruct80.cs" />
+    <Compile Include="GStruct81.cs" />
+    <Compile Include="GStruct82.cs" />
+    <Compile Include="GStruct83.cs" />
+    <Compile Include="GStruct84.cs" />
+    <Compile Include="Job_history.cs" />
+    <Compile Include="Struct22.cs" />
+    <Compile Include="Struct23.cs" />
+    <Compile Include="DataBaseView.cs" />
+    <Compile Include="Struct24.cs" />
+    <Compile Include="Struct25.cs" />
+    <Compile Include="Struct26.cs" />
+    <Compile Include="GStruct85.cs" />
+    <Compile Include="Struct27.cs" />
+    <Compile Include="Donate.cs" />
+    <Compile Include="DumpFile.cs" />
+    <Compile Include="Struct28.cs" />
+    <Compile Include="Struct29.cs" />
+    <Compile Include="Struct30.cs" />
+    <Compile Include="Struct31.cs" />
+    <Compile Include="Struct32.cs" />
+    <Compile Include="Struct33.cs" />
+    <Compile Include="Struct34.cs" />
+    <Compile Include="Struct35.cs" />
+    <Compile Include="GStruct86.cs" />
+    <Compile Include="GStruct87.cs" />
+    <Compile Include="GStruct88.cs" />
+    <Compile Include="GStruct89.cs" />
+    <Compile Include="Struct36.cs" />
+    <Compile Include="Struct37.cs" />
+    <Compile Include="Struct38.cs" />
+    <Compile Include="Struct39.cs" />
+    <Compile Include="GStruct90.cs" />
+    <Compile Include="Struct40.cs" />
+    <Compile Include="FixSerial.cs" />
+    <Compile Include="Struct41.cs" />
+    <Compile Include="Struct42.cs" />
+    <Compile Include="Welcome.cs" />
+    <Compile Include="FreeKey.cs" />
+    <Compile Include="Struct43.cs" />
+    <Compile Include="Struct44.cs" />
+    <Compile Include="Struct45.cs" />
+    <Compile Include="Struct46.cs" />
+    <Compile Include="Struct47.cs" />
+    <Compile Include="Struct48.cs" />
+    <Compile Include="Struct49.cs" />
+    <Compile Include="Struct50.cs" />
+    <Compile Include="Struct51.cs" />
+    <Compile Include="Struct52.cs" />
+    <Compile Include="Struct53.cs" />
+    <Compile Include="Struct54.cs" />
+    <Compile Include="Struct55.cs" />
+    <Compile Include="Struct56.cs" />
+    <Compile Include="Struct57.cs" />
+    <Compile Include="Struct58.cs" />
+    <Compile Include="Struct59.cs" />
+    <Compile Include="Struct60.cs" />
+    <Compile Include="Struct61.cs" />
+    <Compile Include="Struct62.cs" />
+    <Compile Include="Struct63.cs" />
+    <Compile Include="ProjectName.cs" />
+    <Compile Include="WorkingFolder.cs" />
+    <Compile Include="KeyCR.cs" />
+    <Compile Include="Struct64.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Struct65.cs" />
+    <Compile Include="Struct66.cs" />
+    <Compile Include="GStruct91.cs" />
+    <Compile Include="GStruct92.cs" />
+    <Compile Include="Struct67.cs" />
+    <Compile Include="Struct68.cs" />
+    <Compile Include="Struct69.cs" />
+    <Compile Include="Struct70.cs" />
+    <Compile Include="Struct71.cs" />
+    <Compile Include="Struct72.cs" />
+    <Compile Include="Struct73.cs" />
+    <Compile Include="Struct74.cs" />
+    <Compile Include="Struct75.cs" />
+    <Compile Include="Struct76.cs" />
+    <Compile Include="Struct77.cs" />
+    <Compile Include="Struct78.cs" />
+    <Compile Include="GStruct93.cs" />
+    <Compile Include="Struct79.cs" />
+    <Compile Include="Struct80.cs" />
+    <Compile Include="Struct81.cs" />
+    <Compile Include="Struct82.cs" />
+    <Compile Include="GStruct94.cs" />
+    <Compile Include="GStruct95.cs" />
+    <Compile Include="GStruct96.cs" />
+    <Compile Include="Struct83.cs" />
+    <Compile Include="Struct84.cs" />
+    <Compile Include="Struct85.cs" />
+    <Compile Include="Struct86.cs" />
+    <Compile Include="Struct87.cs" />
+    <Compile Include="Struct88.cs" />
+    <Compile Include="Struct89.cs" />
+    <Compile Include="Struct90.cs" />
+    <Compile Include="Struct91.cs" />
+    <Compile Include="Struct92.cs" />
+    <Compile Include="Struct93.cs" />
+    <Compile Include="Struct94.cs" />
+    <Compile Include="Struct95.cs" />
+    <Compile Include="Struct96.cs" />
+    <Compile Include="Struct97.cs" />
+    <Compile Include="Struct98.cs" />
+    <Compile Include="Struct99.cs" />
+    <Compile Include="Struct100.cs" />
+    <Compile Include="Struct101.cs" />
+    <Compile Include="Struct102.cs" />
+    <Compile Include="Struct103.cs" />
+    <Compile Include="Struct104.cs" />
+    <Compile Include="Struct105.cs" />
+    <Compile Include="Struct106.cs" />
+    <Compile Include="Struct107.cs" />
+    <Compile Include="GStruct97.cs" />
+    <Compile Include="Struct108.cs" />
+    <Compile Include="Struct109.cs" />
+    <Compile Include="Struct110.cs" />
+    <Compile Include="Struct111.cs" />
+    <Compile Include="Struct112.cs" />
+    <Compile Include="Struct113.cs" />
+    <Compile Include="Struct114.cs" />
+    <Compile Include="Struct115.cs" />
+    <Compile Include="Struct116.cs" />
+    <Compile Include="Struct117.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Struct118.cs" />
+    <Compile Include="Struct119.cs" />
+    <Compile Include="Struct120.cs" />
+    <Compile Include="Struct121.cs" />
+    <Compile Include="GStruct98.cs" />
+    <Compile Include="GStruct99.cs" />
+    <Compile Include="Struct122.cs" />
+    <Compile Include="GStruct100.cs" />
+    <Compile Include="Struct123.cs" />
+    <Compile Include="GStruct101.cs" />
+    <Compile Include="GStruct102.cs" />
+    <Compile Include="GStruct103.cs" />
+    <Compile Include="Struct124.cs" />
+    <Compile Include="Struct125.cs" />
+    <Compile Include="Struct126.cs" />
+    <Compile Include="GStruct104.cs" />
+    <Compile Include="GStruct105.cs" />
+    <Compile Include="GStruct106.cs" />
+    <Compile Include="GStruct107.cs" />
+    <Compile Include="Struct127.cs" />
+    <Compile Include="GStruct108.cs" />
+    <Compile Include="GStruct109.cs" />
+    <Compile Include="GStruct110.cs" />
+    <Compile Include="GStruct111.cs" />
+    <Compile Include="Struct128.cs" />
+    <Compile Include="GStruct112.cs" />
+    <Compile Include="GStruct113.cs" />
+    <Compile Include="GStruct114.cs" />
+    <Compile Include="GStruct115.cs" />
+    <Compile Include="GStruct116.cs" />
+    <Compile Include="Struct129.cs" />
+    <Compile Include="Struct130.cs" />
+    <Compile Include="GStruct117.cs" />
+    <Compile Include="Struct131.cs" />
+    <Compile Include="Struct132.cs" />
+    <Compile Include="GStruct118.cs" />
+    <Compile Include="GStruct119.cs" />
+    <Compile Include="GStruct120.cs" />
+    <Compile Include="GStruct121.cs" />
+    <Compile Include="dummy\{921779e3-e60c-4760-918d-baa16d93f1ed}.cs" />
+    <Compile Include="dummy_ptr\{0d5a8b95-cea5-4ddc-a79e-87125f3f79cd}.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AxInterop\SHDocVw.dll" />
+    <EmbeddedResource Include="Common_Barcode.resx" />
+    <EmbeddedResource Include="DataBaseView.resx" />
+    <EmbeddedResource Include="Donate.resx" />
+    <EmbeddedResource Include="DumpFile.resx" />
+    <EmbeddedResource Include="FixSerial.resx" />
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="FreeKey.resx" />
+    <EmbeddedResource Include="Interop\SHDocVw.dll" />
+    <EmbeddedResource Include="Job_history.resx" />
+    <EmbeddedResource Include="KeyCR.resx" />
+    <EmbeddedResource Include="ProjectName.resx" />
+    <EmbeddedResource Include="Welcome.resx" />
+    <EmbeddedResource Include="WorkingFolder.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -49,8 +49,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="System\Runtime\CompilerServices\Unsafe.cs" />
     <Compile Include="_Module.cs" />
-    <Compile Include="System\Runtime\CompilerServices\SuppressIldasmAttribute.cs" />
     <Compile Include="Gstruct\GStruct0.cs" />
     <Compile Include="Gstruct\GStruct1.cs" />
     <Compile Include="Gstruct\GStruct2.cs" />

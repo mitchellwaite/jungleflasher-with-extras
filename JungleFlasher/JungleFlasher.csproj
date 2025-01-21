@@ -38,12 +38,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualC" />
+    <Reference Include="SHDocVw">
+      <HintPath>AxInterop\SHDocVw.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1.resx</DependentUpon>
+    </Compile>
     <Compile Include="_Module.cs" />
     <Compile Include="System\Runtime\CompilerServices\SuppressIldasmAttribute.cs" />
     <Compile Include="GStruct0.cs" />
@@ -110,7 +118,9 @@
     <Compile Include="GStruct52.cs" />
     <Compile Include="GStruct55.cs" />
     <Compile Include="GStruct58.cs" />
-    <Compile Include="Common_Barcode.cs" />
+    <Compile Include="Forms\Common_Barcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct17.cs" />
     <Compile Include="Struct18.cs" />
     <Compile Include="Struct19.cs" />
@@ -140,17 +150,25 @@
     <Compile Include="GStruct82.cs" />
     <Compile Include="GStruct83.cs" />
     <Compile Include="GStruct84.cs" />
-    <Compile Include="Job_history.cs" />
+    <Compile Include="Forms\Job_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct22.cs" />
     <Compile Include="Struct23.cs" />
-    <Compile Include="DataBaseView.cs" />
+    <Compile Include="Forms\DataBaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct24.cs" />
     <Compile Include="Struct25.cs" />
     <Compile Include="Struct26.cs" />
     <Compile Include="GStruct85.cs" />
     <Compile Include="Struct27.cs" />
-    <Compile Include="Donate.cs" />
-    <Compile Include="DumpFile.cs" />
+    <Compile Include="Forms\Donate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DumpFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct28.cs" />
     <Compile Include="Struct29.cs" />
     <Compile Include="Struct30.cs" />
@@ -169,11 +187,17 @@
     <Compile Include="Struct39.cs" />
     <Compile Include="GStruct90.cs" />
     <Compile Include="Struct40.cs" />
-    <Compile Include="FixSerial.cs" />
+    <Compile Include="Forms\FixSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct41.cs" />
     <Compile Include="Struct42.cs" />
-    <Compile Include="Welcome.cs" />
-    <Compile Include="FreeKey.cs" />
+    <Compile Include="Forms\Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FreeKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct43.cs" />
     <Compile Include="Struct44.cs" />
     <Compile Include="Struct45.cs" />
@@ -195,11 +219,19 @@
     <Compile Include="Struct61.cs" />
     <Compile Include="Struct62.cs" />
     <Compile Include="Struct63.cs" />
-    <Compile Include="ProjectName.cs" />
-    <Compile Include="WorkingFolder.cs" />
-    <Compile Include="KeyCR.cs" />
+    <Compile Include="Forms\ProjectName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WorkingFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct64.cs" />
-    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Struct65.cs" />
     <Compile Include="Struct66.cs" />
     <Compile Include="GStruct91.cs" />
@@ -306,19 +338,48 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AxInterop\SHDocVw.dll" />
-    <EmbeddedResource Include="Common_Barcode.resx" />
-    <EmbeddedResource Include="DataBaseView.resx" />
-    <EmbeddedResource Include="Donate.resx" />
-    <EmbeddedResource Include="DumpFile.resx" />
-    <EmbeddedResource Include="FixSerial.resx" />
-    <EmbeddedResource Include="Form1.resx" />
-    <EmbeddedResource Include="FreeKey.resx" />
+    <EmbeddedResource Include="Forms\Common_Barcode.resx">
+      <DependentUpon>Common_Barcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataBaseView.resx">
+      <DependentUpon>DataBaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donate.resx">
+      <DependentUpon>Donate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DumpFile.resx">
+      <DependentUpon>DumpFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FixSerial.resx">
+      <DependentUpon>FixSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FreeKey.resx">
+      <DependentUpon>FreeKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WorkingFolder.resx">
+      <DependentUpon>WorkingFolder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interop\SHDocVw.dll" />
-    <EmbeddedResource Include="Job_history.resx" />
-    <EmbeddedResource Include="KeyCR.resx" />
-    <EmbeddedResource Include="ProjectName.resx" />
-    <EmbeddedResource Include="Welcome.resx" />
-    <EmbeddedResource Include="WorkingFolder.resx" />
+    <EmbeddedResource Include="Forms\Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProjectName.resx">
+      <DependentUpon>ProjectName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyCR.resx">
+      <DependentUpon>KeyCR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Job_history.resx">
+      <DependentUpon>Job_history.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Gstruct\" />
+    <Folder Include="Struct\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

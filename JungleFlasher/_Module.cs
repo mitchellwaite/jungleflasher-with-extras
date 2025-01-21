@@ -11,7 +11,7 @@ using System.Security;
 using System.Threading;
 using System.Windows.Forms;
 
-internal class \u003CModule\u003E
+internal class _Module
 {
   public static Struct0 struct0_0;
   public static Struct1 struct1_0;
@@ -677,28 +677,28 @@ internal class \u003CModule\u003E
 
   public static byte smethod_0(ushort ushort_0)
   {
-    return (int) ushort_0 >= 10 ? \u003CModule\u003E.smethod_151(ushort_0) : \u003CModule\u003E.smethod_22(ushort_0);
+    return (int) ushort_0 >= 10 ? _Module.smethod_151(ushort_0) : _Module.smethod_22(ushort_0);
   }
 
   public static ushort smethod_1(ushort ushort_0)
   {
-    return (int) ushort_0 >= 10 ? \u003CModule\u003E.smethod_152(ushort_0) : \u003CModule\u003E.smethod_23(ushort_0);
+    return (int) ushort_0 >= 10 ? _Module.smethod_152(ushort_0) : _Module.smethod_23(ushort_0);
   }
 
   public static void smethod_2(ushort ushort_0, byte byte_0)
   {
     if ((int) ushort_0 < 10)
-      \u003CModule\u003E.smethod_26(ushort_0, byte_0);
+      _Module.smethod_26(ushort_0, byte_0);
     else
-      \u003CModule\u003E.smethod_154(ushort_0, byte_0);
+      _Module.smethod_154(ushort_0, byte_0);
   }
 
   public static void smethod_3(ushort ushort_0, ushort ushort_1)
   {
     if ((int) ushort_0 < 10)
-      \u003CModule\u003E.smethod_27(ushort_0, ushort_1);
+      _Module.smethod_27(ushort_0, ushort_1);
     else
-      \u003CModule\u003E.smethod_155(ushort_0, ushort_1);
+      _Module.smethod_155(ushort_0, ushort_1);
   }
 
   public static unsafe void smethod_4(byte* pByte_0, byte byte_0)
@@ -727,9 +727,9 @@ internal class \u003CModule\u003E
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 1) = (sbyte) byte_0;
-    if (\u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 2, (sbyte*) &struct3_2, int_44) != 1)
+    if (_Module.smethod_30((sbyte*) &struct3_1, 2, (sbyte*) &struct3_2, int_44) != 1)
       return;
-    \u003CModule\u003E.memcpy((void*) pByte_0, (void*) &struct3_2, (uint) byte_0);
+    _Module.memcpy((void*) pByte_0, (void*) &struct3_2, (uint) byte_0);
   }
 
   public static unsafe void smethod_5(byte* pByte_0, byte byte_0)
@@ -759,27 +759,27 @@ internal class \u003CModule\u003E
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 1) = (sbyte) byte_0;
-    \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct3_1 + 2), (void*) pByte_0, (uint) byte_0);
-    if (\u003CModule\u003E.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, 2) != 1 || num != 2)
+    _Module.memcpy((void*) ((IntPtr) &struct3_1 + 2), (void*) pByte_0, (uint) byte_0);
+    if (_Module.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, 2) != 1 || num != 2)
       ;
   }
 
   public static int smethod_6()
   {
-    return (int) \u003CModule\u003E.timeGetTime();
+    return (int) _Module.timeGetTime();
   }
 
   public static unsafe int smethod_7(byte* pByte_0, ushort ushort_0, byte byte_0, byte byte_1, GStruct3* pGstruct3_0)
   {
-    uint time = \u003CModule\u003E.timeGetTime();
+    uint time = _Module.timeGetTime();
     byte num;
     do
     {
-      num = \u003CModule\u003E.smethod_0(ushort_0);
+      num = _Module.smethod_0(ushort_0);
       if (((int) num & (int) byte_0) == (int) byte_1)
         goto label_6;
     }
-    while (\u003CModule\u003E.timeGetTime() - time < (uint) *(int*) ((IntPtr) pGstruct3_0 + 40));
+    while (_Module.timeGetTime() - time < (uint) *(int*) ((IntPtr) pGstruct3_0 + 40));
     if ((IntPtr) pByte_0 != IntPtr.Zero)
       *pByte_0 = num;
     *(int*) ((IntPtr) pGstruct3_0 + 24) = 2;
@@ -792,7 +792,7 @@ label_6:
 
   public static unsafe int smethod_8(byte byte_0, byte byte_1, GStruct4* pGstruct4_0, GStruct4* pGstruct4_1, byte byte_2, GStruct3* pGstruct3_0)
   {
-    if (\u003CModule\u003E.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
+    if (_Module.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
     {
       *(int*) ((IntPtr) pGstruct3_0 + 24) = 2;
       return 1;
@@ -804,72 +804,72 @@ label_6:
         if (((int) *(byte*) pGstruct4_0 & 1) != 0)
         {
           if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-            \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 4), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 4) >> 8));
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 4), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 4));
+            _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 4), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 4) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 4), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 4));
         }
         if (((int) *(byte*) pGstruct4_0 & 2) != 0)
         {
           if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-            \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 6), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 12) >> 8));
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 6), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 12));
+            _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 6), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 12) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 6), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 12));
         }
         if (((int) *(byte*) pGstruct4_0 & 4) != 0)
         {
           if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-            \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 8), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 10) >> 8));
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 8), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 10));
+            _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 8), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 10) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 8), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 10));
         }
         if (((int) *(byte*) pGstruct4_0 & 8) != 0)
         {
           if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-            \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 10), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 8) >> 8));
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 10), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 8));
+            _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 10), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 8) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 10), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 8));
         }
         if (((int) *(byte*) pGstruct4_0 & 16) != 0)
         {
           if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-            \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 12), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 6) >> 8));
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 12), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 6));
+            _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 12), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 6) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 12), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 6));
         }
       }
       if ((IntPtr) pGstruct4_0 != IntPtr.Zero && ((int) *(byte*) pGstruct4_0 & 32) != 0)
       {
         if (((int) *(byte*) pGstruct4_0 & 128) != 0)
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) >> 8));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) >> 8));
         if ((int) byte_1 == 0)
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) & 4294967279U));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) & 4294967279U));
         else if ((int) byte_1 == 16)
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) | 16U));
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) ((uint) *(ushort*) ((IntPtr) pGstruct4_0 + 2) | 16U));
         else
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 2));
-        if (\u003CModule\u003E.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) *(ushort*) ((IntPtr) pGstruct4_0 + 2));
+        if (_Module.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
           return 1;
       }
-      else if ((int) byte_1 != 1 && ((int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14)) & 16) != (int) byte_1)
+      else if ((int) byte_1 != 1 && ((int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14)) & 16) != (int) byte_1)
       {
         if ((IntPtr) pGstruct4_0 != IntPtr.Zero && ((int) *(byte*) pGstruct4_0 & 128) != 0)
-          \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) 0);
-        \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), byte_1);
-        if (\u003CModule\u003E.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
+          _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), (byte) 0);
+        _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 14), byte_1);
+        if (_Module.smethod_7((byte*) 0, *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) ((uint) byte_2 | 136U), byte_2, pGstruct3_0) != 0)
           return 1;
       }
-      \u003CModule\u003E.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 18), byte_0);
+      _Module.smethod_2(*(ushort*) ((IntPtr) pGstruct3_0 + 18), byte_0);
       if ((int) byte_0 != 144)
-        \u003CModule\u003E.Sleep(1U);
+        _Module.Sleep(1U);
       else
-        \u003CModule\u003E.Sleep(2U);
-      if (\u003CModule\u003E.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) != 0)
+        _Module.Sleep(2U);
+      if (_Module.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) != 0)
         return 1;
       if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 33) != 0)
       {
-        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
+        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
         if ((int) byte_0 == 236 || (int) byte_0 == 32)
         {
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 36) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 33) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 34) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 35) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 32) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 36) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 33) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 34) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 35) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 32) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
         }
         *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
         return 1;
@@ -878,41 +878,41 @@ label_6:
       {
         if ((int) byte_0 == 144 || (int) byte_0 == 8)
         {
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 36) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 33) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 34) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 35) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
-          *(sbyte*) ((IntPtr) pGstruct3_0 + 32) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 36) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 33) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 34) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 35) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
+          *(sbyte*) ((IntPtr) pGstruct3_0 + 32) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
         }
         if ((IntPtr) pGstruct4_1 != IntPtr.Zero)
         {
           if (((int) *(byte*) pGstruct4_1 & 32) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 2) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
+            *(short*) ((IntPtr) pGstruct4_1 + 2) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14));
           if (((int) *(byte*) pGstruct4_1 & 1) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 4) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 4));
+            *(short*) ((IntPtr) pGstruct4_1 + 4) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 4));
           if (((int) *(byte*) pGstruct4_1 & 16) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 6) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
+            *(short*) ((IntPtr) pGstruct4_1 + 6) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12));
           if (((int) *(byte*) pGstruct4_1 & 8) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 8) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
+            *(short*) ((IntPtr) pGstruct4_1 + 8) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
           if (((int) *(byte*) pGstruct4_1 & 4) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 10) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
+            *(short*) ((IntPtr) pGstruct4_1 + 10) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8));
           if (((int) *(byte*) pGstruct4_1 & 2) != 0)
-            *(short*) ((IntPtr) pGstruct4_1 + 12) = (short) (ushort) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
+            *(short*) ((IntPtr) pGstruct4_1 + 12) = (short) (ushort) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6));
           if (((int) *(byte*) pGstruct4_1 & 128) != 0)
           {
             if (((int) *(byte*) pGstruct4_1 & 32) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 2) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 2) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 2) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 2) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 14)) << 8);
             if (((int) *(byte*) pGstruct4_1 & 1) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 4) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 4) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 4)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 4) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 4) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 4)) << 8);
             if (((int) *(byte*) pGstruct4_1 & 16) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 6) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 6) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 6) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 6) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8);
             if (((int) *(byte*) pGstruct4_1 & 8) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 8) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 8) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 8) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 8) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10)) << 8);
             if (((int) *(byte*) pGstruct4_1 & 4) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 10) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 10) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 10) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 10) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 8)) << 8);
             if (((int) *(byte*) pGstruct4_1 & 2) != 0)
-              *(short*) ((IntPtr) pGstruct4_1 + 12) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 12) | (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6)) << 8);
+              *(short*) ((IntPtr) pGstruct4_1 + 12) = (short) ((int) *(ushort*) ((IntPtr) pGstruct4_1 + 12) | (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 6)) << 8);
           }
         }
         return 0;
@@ -932,12 +932,12 @@ label_6:
     __memset((Struct4&) ((IntPtr) &struct4 + 1), 0, 63);
     *pUint_0 = 0U;
     byte num1 = (int) uint_3 != 0 ? (byte) 0 : (byte) 1;
-    while (\u003CModule\u003E.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) == 0)
+    while (_Module.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) == 0)
     {
       if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 8) != 0)
       {
         if ((int) num1 != 0)
-          uint_3 = (uint) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8 | (uint) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
+          uint_3 = (uint) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8 | (uint) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
         if (uint_2 - *pUint_0 < uint_3)
           uint_3 = uint_2 - *pUint_0;
         uint num2;
@@ -956,7 +956,7 @@ label_6:
             uint num5 = uint_3 % 64U;
             for (num3 = 0U; num3 < num4; ++num3)
             {
-              \u003CModule\u003E.smethod_4((byte*) &struct4, (byte) 64);
+              _Module.smethod_4((byte*) &struct4, (byte) 64);
               for (uint index = 0U; index < 64U; ++index)
               {
                 // ISSUE: cast to a reference type
@@ -964,10 +964,10 @@ label_6:
                 *(sbyte*) ((IntPtr) pVoid_0 + ((int) index + (int) num3 * 64)) = (sbyte) ^(byte&) ((IntPtr) &struct4 + (int) index);
               }
             }
-            \u003CModule\u003E.memset((void*) &struct4, 0, 64U);
+            _Module.memset((void*) &struct4, 0, 64U);
             if ((int) num5 != 0)
             {
-              \u003CModule\u003E.smethod_4((byte*) &struct4, (byte) num5);
+              _Module.smethod_4((byte*) &struct4, (byte) num5);
               for (uint index = 0U; index < num5; ++index)
               {
                 // ISSUE: cast to a reference type
@@ -980,13 +980,13 @@ label_6:
           {
             num2 = uint_3 >> 1;
             for (num3 = 0U; num3 < num2; ++num3)
-              *(short*) ((IntPtr) pVoid_0 + (int) num3 * 2) = (short) \u003CModule\u003E.smethod_1(*(ushort*) pGstruct3_0);
+              *(short*) ((IntPtr) pVoid_0 + (int) num3 * 2) = (short) _Module.smethod_1(*(ushort*) pGstruct3_0);
           }
         }
         else
         {
           for (num3 = 0U; num3 < num2; ++num3)
-            *(sbyte*) ((IntPtr) pVoid_0 + (int) num3) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) pGstruct3_0);
+            *(sbyte*) ((IntPtr) pVoid_0 + (int) num3) = (sbyte) _Module.smethod_0(*(ushort*) pGstruct3_0);
         }
         if ((int) *(byte*) ((IntPtr) pGstruct3_0 + 22) == 0)
         {
@@ -995,27 +995,27 @@ label_6:
           {
             if (num2 > 1U)
             {
-              *(short*) ((IntPtr) pVoid_0 + (int) num3 * 4) = (short) \u003CModule\u003E.smethod_1(*(ushort*) pGstruct3_0);
+              *(short*) ((IntPtr) pVoid_0 + (int) num3 * 4) = (short) _Module.smethod_1(*(ushort*) pGstruct3_0);
               if (num2 > 2U)
-                *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 4 + 4) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) pGstruct3_0);
+                *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 4 + 4) = (sbyte) _Module.smethod_0(*(ushort*) pGstruct3_0);
             }
             else
-              *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 4) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) pGstruct3_0);
+              *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 4) = (sbyte) _Module.smethod_0(*(ushort*) pGstruct3_0);
           }
         }
         else if ((int) *(byte*) ((IntPtr) pGstruct3_0 + 22) == 1 && (int) *(ushort*) pGstruct3_0 != 0 && (int) num2 == ((int) uint_3 & 1))
-          *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 2) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) pGstruct3_0);
+          *(sbyte*) ((IntPtr) pVoid_0 + (int) num3 * 2) = (sbyte) _Module.smethod_0(*(ushort*) pGstruct3_0);
         *pUint_0 = *pUint_0 + uint_3;
         if (*pUint_0 >= uint_2)
           return 0;
         pVoid_0 += (int) uint_3;
-        int num6 = (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
+        int num6 = (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
       }
       else
       {
         if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 33) == 0)
           return 0;
-        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
+        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
         *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
         return 1;
       }
@@ -1035,12 +1035,12 @@ label_6:
     __memset((Struct5&) ((IntPtr) &struct5 + 1), 0, 55);
     *pUint_0 = 0U;
     byte num1 = (int) uint_3 != 0 ? (byte) 0 : (byte) 1;
-    while (\u003CModule\u003E.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) == 0)
+    while (_Module.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) == 0)
     {
       if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 8) != 0)
       {
         if ((int) num1 != 0)
-          uint_3 = (uint) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8 | (uint) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
+          uint_3 = (uint) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 12)) << 8 | (uint) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 10));
         if (uint_2 - *pUint_0 < uint_3)
           uint_3 = uint_2 - *pUint_0;
         uint num2;
@@ -1066,9 +1066,9 @@ label_6:
                 // ISSUE: explicit reference operation
                 ^(sbyte&) ((IntPtr) &struct5 + (int) index) = (sbyte) *(byte*) ((IntPtr) pVoid_0 + ((int) index + (int) num3 * 56));
               }
-              \u003CModule\u003E.smethod_5((byte*) &struct5, (byte) 56);
+              _Module.smethod_5((byte*) &struct5, (byte) 56);
             }
-            \u003CModule\u003E.memset((void*) &struct5, 0, 56U);
+            _Module.memset((void*) &struct5, 0, 56U);
             if ((int) num5 != 0)
             {
               for (uint index = 0U; index < num5; ++index)
@@ -1077,20 +1077,20 @@ label_6:
                 // ISSUE: explicit reference operation
                 ^(sbyte&) ((IntPtr) &struct5 + (int) index) = (sbyte) *(byte*) ((IntPtr) pVoid_0 + ((int) index + (int) num4 * 56));
               }
-              \u003CModule\u003E.smethod_5((byte*) &struct5, (byte) num5);
+              _Module.smethod_5((byte*) &struct5, (byte) num5);
             }
           }
           else
           {
             num2 = uint_3 >> 1;
             for (num3 = 0U; num3 < num2; ++num3)
-              \u003CModule\u003E.smethod_3(*(ushort*) pGstruct3_0, *(ushort*) ((IntPtr) pVoid_0 + (int) num3 * 2));
+              _Module.smethod_3(*(ushort*) pGstruct3_0, *(ushort*) ((IntPtr) pVoid_0 + (int) num3 * 2));
           }
         }
         else
         {
           for (num3 = 0U; num3 < num2; ++num3)
-            \u003CModule\u003E.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3));
+            _Module.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3));
         }
         if ((int) *(byte*) ((IntPtr) pGstruct3_0 + 22) == 0)
         {
@@ -1099,27 +1099,27 @@ label_6:
           {
             if (num2 > 1U)
             {
-              \u003CModule\u003E.smethod_3(*(ushort*) pGstruct3_0, *(ushort*) ((IntPtr) pVoid_0 + (int) num3 * 4));
+              _Module.smethod_3(*(ushort*) pGstruct3_0, *(ushort*) ((IntPtr) pVoid_0 + (int) num3 * 4));
               if (num2 > 2U)
-                \u003CModule\u003E.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 4 + 4));
+                _Module.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 4 + 4));
             }
             else
-              \u003CModule\u003E.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 4));
+              _Module.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 4));
           }
         }
         else if ((int) *(byte*) ((IntPtr) pGstruct3_0 + 22) == 1 && (int) *(ushort*) pGstruct3_0 != 0 && (int) num2 == ((int) uint_3 & 1))
-          \u003CModule\u003E.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 2));
+          _Module.smethod_2(*(ushort*) pGstruct3_0, *(byte*) ((IntPtr) pVoid_0 + (int) num3 * 2));
         *pUint_0 = *pUint_0 + uint_3;
         if (*pUint_0 >= uint_2)
           return 0;
         pVoid_0 += (int) uint_3;
-        int num6 = (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
+        int num6 = (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
       }
       else
       {
         if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 33) == 0)
           return 0;
-        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
+        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
         *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
         return 1;
       }
@@ -1129,22 +1129,22 @@ label_6:
 
   public static unsafe int smethod_11(byte byte_0, byte byte_1, GStruct4* pGstruct4_0, GStruct4* pGstruct4_1, byte byte_2, byte byte_3, GStruct3* pGstruct3_0)
   {
-    return \u003CModule\u003E.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
+    return _Module.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
   }
 
   public static unsafe int smethod_12(byte byte_0, byte byte_1, GStruct4* pGstruct4_0, GStruct4* pGstruct4_1, byte byte_2, void* pVoid_0, uint* pUint_0, uint uint_2, uint uint_3, byte byte_3, GStruct3* pGstruct3_0)
   {
-    int num = \u003CModule\u003E.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
+    int num = _Module.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
     if (num == 0)
-      num = \u003CModule\u003E.smethod_9(pVoid_0, pUint_0, uint_2, uint_3, pGstruct3_0);
+      num = _Module.smethod_9(pVoid_0, pUint_0, uint_2, uint_3, pGstruct3_0);
     return num;
   }
 
   public static unsafe int smethod_13(byte byte_0, byte byte_1, GStruct4* pGstruct4_0, GStruct4* pGstruct4_1, byte byte_2, void* pVoid_0, uint* pUint_0, uint uint_2, uint uint_3, byte byte_3, GStruct3* pGstruct3_0)
   {
-    int num = \u003CModule\u003E.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
+    int num = _Module.smethod_8(byte_0, byte_1, pGstruct4_0, pGstruct4_1, byte_2, pGstruct3_0);
     if (num == 0)
-      num = \u003CModule\u003E.smethod_10(pVoid_0, pUint_0, uint_2, uint_3, pGstruct3_0);
+      num = _Module.smethod_10(pVoid_0, pUint_0, uint_2, uint_3, pGstruct3_0);
     return num;
   }
 
@@ -1177,7 +1177,7 @@ label_6:
       // ISSUE: explicit reference operation
       ^(short&) ((IntPtr) &gstruct4 + 6) = (short) ((int) ushort_0 >> 8);
     }
-    if (\u003CModule\u003E.smethod_8((byte) 160, byte_0, &gstruct4, (GStruct4*) 0, (byte) 0, pGstruct3_0) != 0)
+    if (_Module.smethod_8((byte) 160, byte_0, &gstruct4, (GStruct4*) 0, (byte) 0, pGstruct3_0) != 0)
     {
       *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
       return 1;
@@ -1185,7 +1185,7 @@ label_6:
     else
     {
       uint num1;
-      if (\u003CModule\u003E.smethod_10((void*) pByte_0, &num1, uint_2, 512U, pGstruct3_0) != 0)
+      if (_Module.smethod_10((void*) pByte_0, &num1, uint_2, 512U, pGstruct3_0) != 0)
       {
         *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
         return 1;
@@ -1197,12 +1197,12 @@ label_6:
       }
       else
       {
-        int num2 = (int) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
-        if (\u003CModule\u003E.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) != 0)
+        int num2 = (int) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 20));
+        if (_Module.smethod_7((byte*) ((IntPtr) pGstruct3_0 + 28), *(ushort*) ((IntPtr) pGstruct3_0 + 20), (byte) sbyte.MinValue, (byte) 0, pGstruct3_0) != 0)
           return 1;
         if (((int) *(byte*) ((IntPtr) pGstruct3_0 + 28) & 33) == 0)
           return 0;
-        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) \u003CModule\u003E.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
+        *(sbyte*) ((IntPtr) pGstruct3_0 + 29) = (sbyte) _Module.smethod_0(*(ushort*) ((IntPtr) pGstruct3_0 + 2));
         *(int*) ((IntPtr) pGstruct3_0 + 24) = 0;
         return 1;
       }
@@ -1211,27 +1211,27 @@ label_6:
 
   public static unsafe int smethod_15(byte* pByte_0, uint uint_2, byte byte_0, byte byte_1, GStruct3* pGstruct3_0)
   {
-    return \u003CModule\u003E.smethod_14(pByte_0, uint_2, byte_0, (ushort) 0, pGstruct3_0);
+    return _Module.smethod_14(pByte_0, uint_2, byte_0, (ushort) 0, pGstruct3_0);
   }
 
   public static unsafe int smethod_16(byte* pByte_0, uint uint_2, byte byte_0, ushort ushort_0, void* pVoid_0, uint* pUint_0, uint uint_3, byte byte_1, GStruct3* pGstruct3_0)
   {
-    int num = \u003CModule\u003E.smethod_14(pByte_0, uint_2, byte_0, ushort_0, pGstruct3_0);
+    int num = _Module.smethod_14(pByte_0, uint_2, byte_0, ushort_0, pGstruct3_0);
     if (num == 0)
     {
-      \u003CModule\u003E.Sleep(50U);
-      num = \u003CModule\u003E.smethod_9(pVoid_0, pUint_0, uint_3, 0U, pGstruct3_0);
+      _Module.Sleep(50U);
+      num = _Module.smethod_9(pVoid_0, pUint_0, uint_3, 0U, pGstruct3_0);
     }
     return num;
   }
 
   public static unsafe int smethod_17(byte* pByte_0, uint uint_2, byte byte_0, ushort ushort_0, void* pVoid_0, uint* pUint_0, uint uint_3, byte byte_1, GStruct3* pGstruct3_0)
   {
-    int num = \u003CModule\u003E.smethod_14(pByte_0, uint_2, byte_0, ushort_0, pGstruct3_0);
+    int num = _Module.smethod_14(pByte_0, uint_2, byte_0, ushort_0, pGstruct3_0);
     if (num == 0)
     {
-      \u003CModule\u003E.Sleep(50U);
-      num = \u003CModule\u003E.smethod_10(pVoid_0, pUint_0, uint_3, 0U, pGstruct3_0);
+      _Module.Sleep(50U);
+      num = _Module.smethod_10(pVoid_0, pUint_0, uint_3, 0U, pGstruct3_0);
     }
     return num;
   }
@@ -1240,37 +1240,37 @@ label_6:
   {
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) ^(int&) ((IntPtr) &\u003CModule\u003E.struct11_0 + int_43 * 4), __arglist ());
+    _Module.fprintf(pGstruct5_0, (sbyte*) ^(int&) ((IntPtr) &_Module.struct11_0 + int_43 * 4), __arglist ());
   }
 
   public static unsafe void smethod_19(GStruct5* pGstruct5_0, GStruct6* pGstruct6_0)
   {
     if (*(int*) pGstruct6_0 != 0)
     {
-      \u003CModule\u003E.smethod_18(pGstruct5_0, *(int*) pGstruct6_0);
-      \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct6_0, __arglist ());
+      _Module.smethod_18(pGstruct5_0, *(int*) pGstruct6_0);
+      _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct6_0, __arglist ());
     }
     else if (((int) *(byte*) ((IntPtr) pGstruct6_0 + 4) & 32) == 0 && ((int) *(byte*) ((IntPtr) pGstruct6_0 + 4) & 1) == 0)
     {
-      \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct7_0, __arglist ());
+      _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct7_0, __arglist ());
     }
     else
     {
       if (((int) *(byte*) ((IntPtr) pGstruct6_0 + 4) & 32) != 0)
-        \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct1_1, __arglist ());
+        _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct1_1, __arglist ());
       if (((int) *(byte*) ((IntPtr) pGstruct6_0 + 4) & 1) == 0 && ((int) *(byte*) ((IntPtr) pGstruct6_0 + 4) & 32) == 0)
         return;
       if (((int) *(byte*) ((IntPtr) pGstruct6_0 + 5) & 4) != 0)
-        \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct8_0, __arglist ());
-      \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct9_0, __arglist ((int) *(byte*) ((IntPtr) pGstruct6_0 + 5)));
+        _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct8_0, __arglist ());
+      _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct9_0, __arglist ((int) *(byte*) ((IntPtr) pGstruct6_0 + 5)));
       for (byte index = (byte) 0; (int) index < 8; ++index)
       {
         if (((int) *(byte*) ((IntPtr) pGstruct6_0 + 5) & 128 >> (int) index) == 0)
-          \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct6_1, __arglist ());
+          _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct6_1, __arglist ());
         else
-          \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct6_2, __arglist ());
+          _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct6_2, __arglist ());
       }
-      \u003CModule\u003E.fprintf(pGstruct5_0, (sbyte*) &\u003CModule\u003E.struct10_0, __arglist ());
+      _Module.fprintf(pGstruct5_0, (sbyte*) &_Module.struct10_0, __arglist ());
     }
   }
 
@@ -1291,10 +1291,10 @@ label_6:
 
   public static unsafe void smethod_21(GStruct3* pGstruct3_0, ushort ushort_0, ushort ushort_1, byte byte_0, uint uint_2)
   {
-    \u003CModule\u003E.smethod_20((GStruct7*) pGstruct3_0, ushort_0, ushort_1);
+    _Module.smethod_20((GStruct7*) pGstruct3_0, ushort_0, ushort_1);
     *(sbyte*) ((IntPtr) pGstruct3_0 + 22) = (sbyte) byte_0;
-    \u003CModule\u003E.memset((void*) ((IntPtr) pGstruct3_0 + 24), 0, 8U);
-    \u003CModule\u003E.memset((void*) ((IntPtr) pGstruct3_0 + 32), 0, 5U);
+    _Module.memset((void*) ((IntPtr) pGstruct3_0 + 24), 0, 8U);
+    _Module.memset((void*) ((IntPtr) pGstruct3_0 + 32), 0, 5U);
     *(int*) ((IntPtr) pGstruct3_0 + 40) = (int) uint_2;
   }
 
@@ -1322,7 +1322,7 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) @struct3_1 = (sbyte) ((int) ushort_0 + 32);
-    if (\u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 1, (sbyte*) &struct3_2, 3) == 1)
+    if (_Module.smethod_30((sbyte*) &struct3_1, 1, (sbyte*) &struct3_2, 3) == 1)
     {
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -1358,7 +1358,7 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) @struct3_1 = (sbyte) ((int) ushort_0 + 32);
-    if (\u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 1, (sbyte*) &struct3_2, 3) == 1)
+    if (_Module.smethod_30((sbyte*) &struct3_1, 1, (sbyte*) &struct3_2, 3) == 1)
     {
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -1398,9 +1398,9 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 1) = (sbyte) byte_0;
-    if (\u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 2, (sbyte*) &struct3_2, int_44) != 1)
+    if (_Module.smethod_30((sbyte*) &struct3_1, 2, (sbyte*) &struct3_2, int_44) != 1)
       return;
-    \u003CModule\u003E.memcpy((void*) pByte_0, (void*) &struct3_2, (uint) byte_0);
+    _Module.memcpy((void*) pByte_0, (void*) &struct3_2, (uint) byte_0);
   }
 
   public static unsafe void smethod_25(byte* pByte_0, byte byte_0)
@@ -1429,7 +1429,7 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 1) = (sbyte) byte_0;
-    \u003CModule\u003E.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, 2);
+    _Module.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, 2);
   }
 
   public static unsafe void smethod_26(ushort ushort_0, byte byte_0)
@@ -1460,7 +1460,7 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 1) = (sbyte) byte_0;
-    \u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 3, (sbyte*) &struct3_2, 1);
+    _Module.smethod_30((sbyte*) &struct3_1, 3, (sbyte*) &struct3_2, 1);
   }
 
   public static unsafe void smethod_27(ushort ushort_0, ushort ushort_1)
@@ -1491,7 +1491,7 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct3_1 + 2) = (sbyte) (((int) ushort_1 & 65280) >> 8);
-    \u003CModule\u003E.smethod_30((sbyte*) &struct3_1, 3, (sbyte*) &struct3_2, 1);
+    _Module.smethod_30((sbyte*) &struct3_1, 3, (sbyte*) &struct3_2, 1);
   }
 
   public static unsafe int smethod_28(byte byte_0)
@@ -1578,23 +1578,23 @@ label_6:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    return \u003CModule\u003E.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, int_44) == 1 && (int_44 == 1 && (int) ^(sbyte&) @struct3_2 == (int) ^(sbyte&) @struct3_1) ? 1 : 0;
+    return _Module.smethod_30((sbyte*) &struct3_1, int_43, (sbyte*) &struct3_2, int_44) == 1 && (int_44 == 1 && (int) ^(sbyte&) @struct3_2 == (int) ^(sbyte&) @struct3_1) ? 1 : 0;
   }
 
   public static unsafe int smethod_29()
   {
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    ushort num = (int) ^(byte&) ((IntPtr) &\u003CModule\u003E.gstruct10_0 + 14) != 1 ? (ushort) 33587 : (ushort) 33591;
-    \u003CModule\u003E.usb_init();
-    \u003CModule\u003E.usb_find_busses();
-    \u003CModule\u003E.usb_find_devices();
-    GStruct8* busses = \u003CModule\u003E.usb_get_busses();
-    \u003CModule\u003E.usb_set_debug(4);
+    ushort num = (int) ^(byte&) ((IntPtr) &_Module.gstruct10_0 + 14) != 1 ? (ushort) 33587 : (ushort) 33591;
+    _Module.usb_init();
+    _Module.usb_find_busses();
+    _Module.usb_find_devices();
+    GStruct8* busses = _Module.usb_get_busses();
+    _Module.usb_set_debug(4);
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    ^(int&) @\u003CModule\u003E.gstruct10_0 = 0;
+    ^(int&) @_Module.gstruct10_0 = 0;
     for (GStruct8* gstruct8Ptr = busses; (IntPtr) gstruct8Ptr != IntPtr.Zero; gstruct8Ptr = (GStruct8*) *(int*) gstruct8Ptr)
     {
       for (GStruct9* pGstruct9_0 = (GStruct9*) *(int*) ((IntPtr) gstruct8Ptr + 520); (IntPtr) pGstruct9_0 != IntPtr.Zero; pGstruct9_0 = (GStruct9*) *(int*) pGstruct9_0)
@@ -1604,24 +1604,24 @@ label_6:
           // ISSUE: explicit reference operation
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          ^(int&) @\u003CModule\u003E.gstruct10_0 = (int) \u003CModule\u003E.usb_open(pGstruct9_0);
+          ^(int&) @_Module.gstruct10_0 = (int) _Module.usb_open(pGstruct9_0);
         }
       }
     }
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    if (^(int&) @\u003CModule\u003E.gstruct10_0 == 0)
+    if (^(int&) @_Module.gstruct10_0 == 0)
       return 0;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    if (\u003CModule\u003E.usb_set_configuration((void**) ^(int&) @\u003CModule\u003E.gstruct10_0, 1) < 0)
+    if (_Module.usb_set_configuration((void**) ^(int&) @_Module.gstruct10_0, 1) < 0)
     {
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      \u003CModule\u003E.usb_close((void**) ^(int&) @\u003CModule\u003E.gstruct10_0);
+      _Module.usb_close((void**) ^(int&) @_Module.gstruct10_0);
       return 0;
     }
     else
@@ -1629,17 +1629,17 @@ label_6:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (\u003CModule\u003E.usb_claim_interface((void**) ^(int&) @\u003CModule\u003E.gstruct10_0, 0) < 0)
+      if (_Module.usb_claim_interface((void**) ^(int&) @_Module.gstruct10_0, 0) < 0)
       {
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.usb_close((void**) ^(int&) @\u003CModule\u003E.gstruct10_0);
+        _Module.usb_close((void**) ^(int&) @_Module.gstruct10_0);
         return 0;
       }
       else
       {
-        \u003CModule\u003E.smethod_28((byte) 2);
+        _Module.smethod_28((byte) 2);
         return 1;
       }
     }
@@ -1650,24 +1650,24 @@ label_6:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    if (^(int&) @\u003CModule\u003E.gstruct10_0 == 0)
-      \u003CModule\u003E.smethod_29();
+    if (^(int&) @_Module.gstruct10_0 == 0)
+      _Module.smethod_29();
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    if (\u003CModule\u003E.usb_bulk_write((void**) ^(int&) @\u003CModule\u003E.gstruct10_0, 1, pSbyte_0, int_43, 15000) != int_43)
+    if (_Module.usb_bulk_write((void**) ^(int&) @_Module.gstruct10_0, 1, pSbyte_0, int_43, 15000) != int_43)
       return 0;
     if (int_44 == 0)
       return 1;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    if (\u003CModule\u003E.usb_bulk_read((void**) ^(int&) @\u003CModule\u003E.gstruct10_0, 129, pSbyte_1, int_44, 15000) != int_44)
+    if (_Module.usb_bulk_read((void**) ^(int&) @_Module.gstruct10_0, 129, pSbyte_1, int_44, 15000) != int_44)
       return 0;
     if (int_44 > 4)
     {
       Struct3 struct3;
-      \u003CModule\u003E.memcpy((void*) &struct3, (void*) pSbyte_1, 64U);
+      _Module.memcpy((void*) &struct3, (void*) pSbyte_1, 64U);
     }
     return 1;
   }
@@ -1676,12 +1676,12 @@ label_6:
   {
     if (int_43 == 5)
     {
-      GStruct11* windowA = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_0);
+      GStruct11* windowA = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_0);
       GStruct11* pGstruct11_0 = (GStruct11*) uint_2;
       GStruct12 gstruct12_1;
       GStruct12 gstruct12_2;
       GStruct12 gstruct12_3;
-      if ((IntPtr) windowA != IntPtr.Zero && (IntPtr) pGstruct11_0 != IntPtr.Zero && (windowA != pGstruct11_0 && \u003CModule\u003E.GetWindowRect(\u003CModule\u003E.GetDesktopWindow(), &gstruct12_1) != 0) && (\u003CModule\u003E.GetWindowRect(windowA, &gstruct12_2) != 0 && \u003CModule\u003E.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
+      if ((IntPtr) windowA != IntPtr.Zero && (IntPtr) pGstruct11_0 != IntPtr.Zero && (windowA != pGstruct11_0 && _Module.GetWindowRect(_Module.GetDesktopWindow(), &gstruct12_1) != 0) && (_Module.GetWindowRect(windowA, &gstruct12_2) != 0 && _Module.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
       {
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
@@ -1778,14 +1778,14 @@ label_6:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
+        _Module.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
       }
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_0);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_0);
       return 0;
     }
     else
     {
-      \u003CModule\u003E.CallNextHookEx(\u003CModule\u003E.pGstruct14_0, int_43, uint_2, int_44);
+      _Module.CallNextHookEx(_Module.pGstruct14_0, int_43, uint_2, int_44);
       return 0;
     }
   }
@@ -1794,13 +1794,13 @@ label_6:
   {
     if (int_43 == 5)
     {
-      GStruct11* windowA1 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_1);
-      GStruct11* windowA2 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct13_0);
+      GStruct11* windowA1 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_1);
+      GStruct11* windowA2 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct13_0);
       GStruct11* pGstruct11_0 = (GStruct11*) uint_2;
       GStruct12 gstruct12_1;
       GStruct12 gstruct12_2;
       GStruct12 gstruct12_3;
-      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (\u003CModule\u003E.GetWindowRect(\u003CModule\u003E.GetDesktopWindow(), &gstruct12_1) != 0 && \u003CModule\u003E.GetWindowRect(windowA2, &gstruct12_2) != 0 && \u003CModule\u003E.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
+      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (_Module.GetWindowRect(_Module.GetDesktopWindow(), &gstruct12_1) != 0 && _Module.GetWindowRect(windowA2, &gstruct12_2) != 0 && _Module.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
       {
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
@@ -1897,12 +1897,12 @@ label_6:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
+        _Module.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
       }
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_1);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_1);
     }
     else
-      \u003CModule\u003E.CallNextHookEx(\u003CModule\u003E.pGstruct14_1, int_43, uint_2, int_44);
+      _Module.CallNextHookEx(_Module.pGstruct14_1, int_43, uint_2, int_44);
     return 0;
   }
 
@@ -1910,13 +1910,13 @@ label_6:
   {
     if (int_43 == 5)
     {
-      GStruct11* windowA1 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_2);
-      GStruct11* windowA2 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct14_0);
+      GStruct11* windowA1 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_2);
+      GStruct11* windowA2 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct14_0);
       GStruct11* pGstruct11_0 = (GStruct11*) uint_2;
       GStruct12 gstruct12_1;
       GStruct12 gstruct12_2;
       GStruct12 gstruct12_3;
-      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (\u003CModule\u003E.GetWindowRect(\u003CModule\u003E.GetDesktopWindow(), &gstruct12_1) != 0 && \u003CModule\u003E.GetWindowRect(windowA2, &gstruct12_2) != 0 && \u003CModule\u003E.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
+      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (_Module.GetWindowRect(_Module.GetDesktopWindow(), &gstruct12_1) != 0 && _Module.GetWindowRect(windowA2, &gstruct12_2) != 0 && _Module.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
       {
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
@@ -2013,12 +2013,12 @@ label_6:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
+        _Module.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
       }
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_2);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_2);
     }
     else
-      \u003CModule\u003E.CallNextHookEx(\u003CModule\u003E.pGstruct14_2, int_43, uint_2, int_44);
+      _Module.CallNextHookEx(_Module.pGstruct14_2, int_43, uint_2, int_44);
     return 0;
   }
 
@@ -2026,13 +2026,13 @@ label_6:
   {
     if (int_43 == 5)
     {
-      GStruct11* windowA1 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_3);
-      GStruct11* windowA2 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct15_0);
+      GStruct11* windowA1 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_3);
+      GStruct11* windowA2 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct15_0);
       GStruct11* pGstruct11_0 = (GStruct11*) uint_2;
       GStruct12 gstruct12_1;
       GStruct12 gstruct12_2;
       GStruct12 gstruct12_3;
-      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (\u003CModule\u003E.GetWindowRect(\u003CModule\u003E.GetDesktopWindow(), &gstruct12_1) != 0 && \u003CModule\u003E.GetWindowRect(windowA2, &gstruct12_2) != 0 && \u003CModule\u003E.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
+      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (_Module.GetWindowRect(_Module.GetDesktopWindow(), &gstruct12_1) != 0 && _Module.GetWindowRect(windowA2, &gstruct12_2) != 0 && _Module.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
       {
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
@@ -2129,12 +2129,12 @@ label_6:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
+        _Module.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
       }
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_3);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_3);
     }
     else
-      \u003CModule\u003E.CallNextHookEx(\u003CModule\u003E.pGstruct14_3, int_43, uint_2, int_44);
+      _Module.CallNextHookEx(_Module.pGstruct14_3, int_43, uint_2, int_44);
     return 0;
   }
 
@@ -2142,13 +2142,13 @@ label_6:
   {
     if (int_43 == 5)
     {
-      GStruct11* windowA1 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_4);
-      GStruct11* windowA2 = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct16_0);
+      GStruct11* windowA1 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_4);
+      GStruct11* windowA2 = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct16_0);
       GStruct11* pGstruct11_0 = (GStruct11*) uint_2;
       GStruct12 gstruct12_1;
       GStruct12 gstruct12_2;
       GStruct12 gstruct12_3;
-      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (\u003CModule\u003E.GetWindowRect(\u003CModule\u003E.GetDesktopWindow(), &gstruct12_1) != 0 && \u003CModule\u003E.GetWindowRect(windowA2, &gstruct12_2) != 0 && \u003CModule\u003E.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
+      if ((IntPtr) windowA2 != IntPtr.Zero && windowA1 != pGstruct11_0 && ((IntPtr) pGstruct11_0 != IntPtr.Zero && windowA2 != pGstruct11_0) && (_Module.GetWindowRect(_Module.GetDesktopWindow(), &gstruct12_1) != 0 && _Module.GetWindowRect(windowA2, &gstruct12_2) != 0 && _Module.GetWindowRect(pGstruct11_0, &gstruct12_3) != 0))
       {
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
@@ -2245,12 +2245,12 @@ label_6:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        \u003CModule\u003E.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
+        _Module.MoveWindow(pGstruct11_0, ^(int&) @gstruct13_2, ^(int&) ((IntPtr) &gstruct13_2 + 4), int_45, int_46, 0);
       }
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_4);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_4);
     }
     else
-      \u003CModule\u003E.CallNextHookEx(\u003CModule\u003E.pGstruct14_4, int_43, uint_2, int_44);
+      _Module.CallNextHookEx(_Module.pGstruct14_4, int_43, uint_2, int_44);
     return 0;
   }
 
@@ -2261,12 +2261,12 @@ label_6:
 
   public static unsafe sbyte* smethod_37(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2)
   {
-    return (sbyte*) \u003CModule\u003E.memcpy((void*) pSbyte_0, (void*) pSbyte_1, uint_2);
+    return (sbyte*) _Module.memcpy((void*) pSbyte_0, (void*) pSbyte_1, uint_2);
   }
 
   public static unsafe sbyte* smethod_38(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2)
   {
-    return (sbyte*) \u003CModule\u003E.memmove((void*) pSbyte_0, (void*) pSbyte_1, uint_2);
+    return (sbyte*) _Module.memmove((void*) pSbyte_0, (void*) pSbyte_1, uint_2);
   }
 
   public static unsafe GStruct18* smethod_39(GStruct18* pGstruct18_0, GStruct18* pGstruct18_1)
@@ -2276,13 +2276,13 @@ label_6:
 
   public static unsafe GStruct29* smethod_40(GStruct29* pGstruct29_0, GStruct29* pGstruct29_1)
   {
-    \u003CModule\u003E.smethod_47((GStruct63*) pGstruct29_0, (GStruct63*) pGstruct29_1);
+    _Module.smethod_47((GStruct63*) pGstruct29_0, (GStruct63*) pGstruct29_1);
     return pGstruct29_0;
   }
 
   public static unsafe GStruct30* smethod_41(GStruct30* pGstruct30_0, GStruct30* pGstruct30_1)
   {
-    \u003CModule\u003E.smethod_42(pGstruct30_0, pGstruct30_1);
+    _Module.smethod_42(pGstruct30_0, pGstruct30_1);
     return pGstruct30_0;
   }
 
@@ -2296,7 +2296,7 @@ label_6:
   public static unsafe void smethod_43(GStruct35.GStruct37* pGstruct37_0)
   {
     GStruct39 gstruct39;
-    \u003CModule\u003E.std\u002E_Lockit\u002E__ctor(&gstruct39, 0);
+    _Module.std\u002E_Lockit\u002E__ctor(&gstruct39, 0);
     // ISSUE: fault handler
     try
     {
@@ -2306,15 +2306,15 @@ label_6:
     __fault
     {
       // ISSUE: cast to a function pointer type
-      \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_0, (void*) &gstruct39);
+      _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_0, (void*) &gstruct39);
     }
-    \u003CModule\u003E.std\u002E_Lockit\u002E__dtor(&gstruct39);
+    _Module.std\u002E_Lockit\u002E__dtor(&gstruct39);
   }
 
   public static unsafe GStruct35* smethod_44(GStruct35* pGstruct35_0, GStruct35* pGstruct35_1)
   {
     *(int*) pGstruct35_0 = *(int*) pGstruct35_1;
-    \u003CModule\u003E.smethod_43((GStruct35.GStruct37*) *(int*) pGstruct35_0);
+    _Module.smethod_43((GStruct35.GStruct37*) *(int*) pGstruct35_0);
     return pGstruct35_0;
   }
 
@@ -2322,9 +2322,9 @@ label_6:
   {
     GStruct61 gstruct61;
     GStruct61* pGstruct61_0 = &gstruct61;
-    \u003CModule\u003E.smethod_53((GStruct69*) pGstruct19_0, \u003CModule\u003E.smethod_54(pGstruct61_0, (GStruct61*) pGstruct19_1));
-    \u003CModule\u003E.smethod_51(pGstruct19_0, false, 0U);
-    \u003CModule\u003E.smethod_50(pGstruct19_0, pGstruct19_1, 0U, \u003CModule\u003E.uint_0);
+    _Module.smethod_53((GStruct69*) pGstruct19_0, _Module.smethod_54(pGstruct61_0, (GStruct61*) pGstruct19_1));
+    _Module.smethod_51(pGstruct19_0, false, 0U);
+    _Module.smethod_50(pGstruct19_0, pGstruct19_1, 0U, _Module.uint_0);
     return pGstruct19_0;
   }
 
@@ -2337,39 +2337,39 @@ label_6:
   {
     GStruct62 gstruct62;
     GStruct62* pGstruct62_0 = &gstruct62;
-    \u003CModule\u003E.smethod_58((GStruct70*) pGstruct63_0, \u003CModule\u003E.smethod_49(pGstruct62_0, (GStruct62*) pGstruct63_1));
-    \u003CModule\u003E.smethod_56(pGstruct63_0, false, 0U);
-    \u003CModule\u003E.smethod_55(pGstruct63_0, pGstruct63_1, 0U, \u003CModule\u003E.uint_1);
+    _Module.smethod_58((GStruct70*) pGstruct63_0, _Module.smethod_49(pGstruct62_0, (GStruct62*) pGstruct63_1));
+    _Module.smethod_56(pGstruct63_0, false, 0U);
+    _Module.smethod_55(pGstruct63_0, pGstruct63_1, 0U, _Module.uint_1);
     return pGstruct63_0;
   }
 
   public static unsafe void smethod_48(GStruct63* pGstruct63_0)
   {
-    \u003CModule\u003E.smethod_56(pGstruct63_0, true, 0U);
+    _Module.smethod_56(pGstruct63_0, true, 0U);
   }
 
   public static unsafe GStruct62* smethod_49(GStruct62* pGstruct62_0, GStruct62* pGstruct62_1)
   {
-    \u003CModule\u003E.smethod_54((GStruct61*) pGstruct62_0, (GStruct61*) pGstruct62_1);
+    _Module.smethod_54((GStruct61*) pGstruct62_0, (GStruct61*) pGstruct62_1);
     return pGstruct62_0;
   }
 
   public static unsafe GStruct19* smethod_50(GStruct19* pGstruct19_0, GStruct19* pGstruct19_1, uint uint_2, uint uint_3)
   {
-    if (\u003CModule\u003E.smethod_46(pGstruct19_1) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct19_0);
-    uint uint_2_1 = \u003CModule\u003E.smethod_46(pGstruct19_1) - uint_2;
+    if (_Module.smethod_46(pGstruct19_1) < uint_2)
+      _Module.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct19_0);
+    uint uint_2_1 = _Module.smethod_46(pGstruct19_1) - uint_2;
     if (uint_3 < uint_2_1)
       uint_2_1 = uint_3;
     if (pGstruct19_0 == pGstruct19_1)
     {
-      \u003CModule\u003E.smethod_59(pGstruct19_0, uint_2 + uint_2_1, \u003CModule\u003E.uint_0);
-      \u003CModule\u003E.smethod_59(pGstruct19_0, 0U, uint_2);
+      _Module.smethod_59(pGstruct19_0, uint_2 + uint_2_1, _Module.uint_0);
+      _Module.smethod_59(pGstruct19_0, 0U, uint_2);
     }
-    else if (\u003CModule\u003E.smethod_61(pGstruct19_0, uint_2_1, false))
+    else if (_Module.smethod_61(pGstruct19_0, uint_2_1, false))
     {
-      \u003CModule\u003E.smethod_37(\u003CModule\u003E.smethod_62(pGstruct19_0), \u003CModule\u003E.smethod_52(pGstruct19_1) + (int) uint_2, uint_2_1);
-      \u003CModule\u003E.smethod_60(pGstruct19_0, uint_2_1);
+      _Module.smethod_37(_Module.smethod_62(pGstruct19_0), _Module.smethod_52(pGstruct19_1) + (int) uint_2, uint_2_1);
+      _Module.smethod_60(pGstruct19_0, uint_2_1);
     }
     return pGstruct19_0;
   }
@@ -2380,11 +2380,11 @@ label_6:
     {
       sbyte* numPtr = (sbyte*) *(int*) ((IntPtr) pGstruct19_0 + 4);
       if (0U < uint_2)
-        \u003CModule\u003E.smethod_37((sbyte*) ((IntPtr) pGstruct19_0 + 4), numPtr, uint_2);
-      \u003CModule\u003E.smethod_63((GStruct61*) pGstruct19_0, numPtr, (uint) (*(int*) ((IntPtr) pGstruct19_0 + 24) + 1));
+        _Module.smethod_37((sbyte*) ((IntPtr) pGstruct19_0 + 4), numPtr, uint_2);
+      _Module.smethod_63((GStruct61*) pGstruct19_0, numPtr, (uint) (*(int*) ((IntPtr) pGstruct19_0 + 24) + 1));
     }
     *(int*) ((IntPtr) pGstruct19_0 + 24) = 15;
-    \u003CModule\u003E.smethod_60(pGstruct19_0, uint_2);
+    _Module.smethod_60(pGstruct19_0, uint_2);
   }
 
   public static unsafe sbyte* smethod_52(GStruct19* pGstruct19_0)
@@ -2397,7 +2397,7 @@ label_6:
 
   public static unsafe GStruct69* smethod_53(GStruct69* pGstruct69_0, GStruct61* pGstruct61_0)
   {
-    \u003CModule\u003E.smethod_54((GStruct61*) pGstruct69_0, pGstruct61_0);
+    _Module.smethod_54((GStruct61*) pGstruct69_0, pGstruct61_0);
     return pGstruct69_0;
   }
 
@@ -2408,20 +2408,20 @@ label_6:
 
   public static unsafe GStruct63* smethod_55(GStruct63* pGstruct63_0, GStruct63* pGstruct63_1, uint uint_2, uint uint_3)
   {
-    if (\u003CModule\u003E.smethod_65(pGstruct63_1) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct63_0);
-    uint uint_2_1 = \u003CModule\u003E.smethod_65(pGstruct63_1) - uint_2;
+    if (_Module.smethod_65(pGstruct63_1) < uint_2)
+      _Module.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct63_0);
+    uint uint_2_1 = _Module.smethod_65(pGstruct63_1) - uint_2;
     if (uint_3 < uint_2_1)
       uint_2_1 = uint_3;
     if (pGstruct63_0 == pGstruct63_1)
     {
-      \u003CModule\u003E.smethod_64(pGstruct63_0, uint_2 + uint_2_1, \u003CModule\u003E.uint_1);
-      \u003CModule\u003E.smethod_64(pGstruct63_0, 0U, uint_2);
+      _Module.smethod_64(pGstruct63_0, uint_2 + uint_2_1, _Module.uint_1);
+      _Module.smethod_64(pGstruct63_0, 0U, uint_2);
     }
-    else if (\u003CModule\u003E.smethod_67(pGstruct63_0, uint_2_1, false))
+    else if (_Module.smethod_67(pGstruct63_0, uint_2_1, false))
     {
-      \u003CModule\u003E.smethod_37(\u003CModule\u003E.smethod_68(pGstruct63_0), \u003CModule\u003E.smethod_57(pGstruct63_1) + (int) uint_2, uint_2_1);
-      \u003CModule\u003E.smethod_66(pGstruct63_0, uint_2_1);
+      _Module.smethod_37(_Module.smethod_68(pGstruct63_0), _Module.smethod_57(pGstruct63_1) + (int) uint_2, uint_2_1);
+      _Module.smethod_66(pGstruct63_0, uint_2_1);
     }
     return pGstruct63_0;
   }
@@ -2432,11 +2432,11 @@ label_6:
     {
       sbyte* numPtr = (sbyte*) *(int*) ((IntPtr) pGstruct63_0 + 4);
       if (0U < uint_2)
-        \u003CModule\u003E.smethod_37((sbyte*) ((IntPtr) pGstruct63_0 + 4), numPtr, uint_2);
-      \u003CModule\u003E.smethod_69((GStruct62*) pGstruct63_0, numPtr, (uint) (*(int*) ((IntPtr) pGstruct63_0 + 24) + 1));
+        _Module.smethod_37((sbyte*) ((IntPtr) pGstruct63_0 + 4), numPtr, uint_2);
+      _Module.smethod_69((GStruct62*) pGstruct63_0, numPtr, (uint) (*(int*) ((IntPtr) pGstruct63_0 + 24) + 1));
     }
     *(int*) ((IntPtr) pGstruct63_0 + 24) = 15;
-    \u003CModule\u003E.smethod_66(pGstruct63_0, uint_2);
+    _Module.smethod_66(pGstruct63_0, uint_2);
   }
 
   public static unsafe sbyte* smethod_57(GStruct63* pGstruct63_0)
@@ -2449,21 +2449,21 @@ label_6:
 
   public static unsafe GStruct70* smethod_58(GStruct70* pGstruct70_0, GStruct62* pGstruct62_0)
   {
-    \u003CModule\u003E.smethod_49((GStruct62*) pGstruct70_0, pGstruct62_0);
+    _Module.smethod_49((GStruct62*) pGstruct70_0, pGstruct62_0);
     return pGstruct70_0;
   }
 
   public static unsafe GStruct19* smethod_59(GStruct19* pGstruct19_0, uint uint_2, uint uint_3)
   {
     if ((uint) *(int*) ((IntPtr) pGstruct19_0 + 20) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct19_0);
+      _Module.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct19_0);
     if ((uint) *(int*) ((IntPtr) pGstruct19_0 + 20) - uint_2 < uint_3)
       uint_3 = (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) - uint_2;
     if (0U < uint_3)
     {
-      \u003CModule\u003E.smethod_38(\u003CModule\u003E.smethod_62(pGstruct19_0) + (int) uint_2, \u003CModule\u003E.smethod_62(pGstruct19_0) + (int) uint_2 + (int) uint_3, (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) - uint_2 - uint_3);
+      _Module.smethod_38(_Module.smethod_62(pGstruct19_0) + (int) uint_2, _Module.smethod_62(pGstruct19_0) + (int) uint_2 + (int) uint_3, (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) - uint_2 - uint_3);
       uint uint_2_1 = (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) - uint_3;
-      \u003CModule\u003E.smethod_60(pGstruct19_0, uint_2_1);
+      _Module.smethod_60(pGstruct19_0, uint_2_1);
     }
     return pGstruct19_0;
   }
@@ -2472,23 +2472,23 @@ label_6:
   {
     sbyte num = (sbyte) 0;
     *(int*) ((IntPtr) pGstruct19_0 + 20) = (int) uint_2;
-    \u003CModule\u003E.smethod_36(\u003CModule\u003E.smethod_62(pGstruct19_0) + (int) uint_2, &num);
+    _Module.smethod_36(_Module.smethod_62(pGstruct19_0) + (int) uint_2, &num);
   }
 
   [return: MarshalAs(UnmanagedType.U1)]
   public static unsafe bool smethod_61(GStruct19* pGstruct19_0, uint uint_2, [MarshalAs(UnmanagedType.U1)] bool bool_0)
   {
-    if (\u003CModule\u003E.smethod_70(pGstruct19_0) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xlen((GStruct84*) pGstruct19_0);
+    if (_Module.smethod_70(pGstruct19_0) < uint_2)
+      _Module.std\u002E_String_base\u002E_Xlen((GStruct84*) pGstruct19_0);
     if ((uint) *(int*) ((IntPtr) pGstruct19_0 + 24) < uint_2)
-      \u003CModule\u003E.smethod_71(pGstruct19_0, uint_2, (uint) *(int*) ((IntPtr) pGstruct19_0 + 20));
+      _Module.smethod_71(pGstruct19_0, uint_2, (uint) *(int*) ((IntPtr) pGstruct19_0 + 20));
     else if (bool_0 && uint_2 < 16U)
     {
       uint uint_2_1 = uint_2 >= (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) ? (uint) *(int*) ((IntPtr) pGstruct19_0 + 20) : uint_2;
-      \u003CModule\u003E.smethod_51(pGstruct19_0, true, uint_2_1);
+      _Module.smethod_51(pGstruct19_0, true, uint_2_1);
     }
     else if ((int) uint_2 == 0)
-      \u003CModule\u003E.smethod_60(pGstruct19_0, 0U);
+      _Module.smethod_60(pGstruct19_0, 0U);
     return 0U < uint_2;
   }
 
@@ -2502,20 +2502,20 @@ label_6:
 
   public static unsafe void smethod_63(GStruct61* pGstruct61_0, sbyte* pSbyte_0, uint uint_2)
   {
-    \u003CModule\u003E.delete((void*) pSbyte_0);
+    _Module.delete((void*) pSbyte_0);
   }
 
   public static unsafe GStruct63* smethod_64(GStruct63* pGstruct63_0, uint uint_2, uint uint_3)
   {
     if ((uint) *(int*) ((IntPtr) pGstruct63_0 + 20) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct63_0);
+      _Module.std\u002E_String_base\u002E_Xran((GStruct84*) pGstruct63_0);
     if ((uint) *(int*) ((IntPtr) pGstruct63_0 + 20) - uint_2 < uint_3)
       uint_3 = (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) - uint_2;
     if (0U < uint_3)
     {
-      \u003CModule\u003E.smethod_38(\u003CModule\u003E.smethod_68(pGstruct63_0) + (int) uint_2, \u003CModule\u003E.smethod_68(pGstruct63_0) + (int) uint_2 + (int) uint_3, (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) - uint_2 - uint_3);
+      _Module.smethod_38(_Module.smethod_68(pGstruct63_0) + (int) uint_2, _Module.smethod_68(pGstruct63_0) + (int) uint_2 + (int) uint_3, (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) - uint_2 - uint_3);
       uint uint_2_1 = (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) - uint_3;
-      \u003CModule\u003E.smethod_66(pGstruct63_0, uint_2_1);
+      _Module.smethod_66(pGstruct63_0, uint_2_1);
     }
     return pGstruct63_0;
   }
@@ -2529,23 +2529,23 @@ label_6:
   {
     sbyte num = (sbyte) 0;
     *(int*) ((IntPtr) pGstruct63_0 + 20) = (int) uint_2;
-    \u003CModule\u003E.smethod_36(\u003CModule\u003E.smethod_68(pGstruct63_0) + (int) uint_2, &num);
+    _Module.smethod_36(_Module.smethod_68(pGstruct63_0) + (int) uint_2, &num);
   }
 
   [return: MarshalAs(UnmanagedType.U1)]
   public static unsafe bool smethod_67(GStruct63* pGstruct63_0, uint uint_2, [MarshalAs(UnmanagedType.U1)] bool bool_0)
   {
-    if (\u003CModule\u003E.smethod_72(pGstruct63_0) < uint_2)
-      \u003CModule\u003E.std\u002E_String_base\u002E_Xlen((GStruct84*) pGstruct63_0);
+    if (_Module.smethod_72(pGstruct63_0) < uint_2)
+      _Module.std\u002E_String_base\u002E_Xlen((GStruct84*) pGstruct63_0);
     if ((uint) *(int*) ((IntPtr) pGstruct63_0 + 24) < uint_2)
-      \u003CModule\u003E.smethod_73(pGstruct63_0, uint_2, (uint) *(int*) ((IntPtr) pGstruct63_0 + 20));
+      _Module.smethod_73(pGstruct63_0, uint_2, (uint) *(int*) ((IntPtr) pGstruct63_0 + 20));
     else if (bool_0 && uint_2 < 16U)
     {
       uint uint_2_1 = uint_2 >= (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) ? (uint) *(int*) ((IntPtr) pGstruct63_0 + 20) : uint_2;
-      \u003CModule\u003E.smethod_56(pGstruct63_0, true, uint_2_1);
+      _Module.smethod_56(pGstruct63_0, true, uint_2_1);
     }
     else if ((int) uint_2 == 0)
-      \u003CModule\u003E.smethod_66(pGstruct63_0, 0U);
+      _Module.smethod_66(pGstruct63_0, 0U);
     return 0U < uint_2;
   }
 
@@ -2559,12 +2559,12 @@ label_6:
 
   public static unsafe void smethod_69(GStruct62* pGstruct62_0, sbyte* pSbyte_0, uint uint_2)
   {
-    \u003CModule\u003E.smethod_77((void*) pSbyte_0);
+    _Module.smethod_77((void*) pSbyte_0);
   }
 
   public static unsafe uint smethod_70(GStruct19* pGstruct19_0)
   {
-    uint num = \u003CModule\u003E.smethod_75((GStruct61*) pGstruct19_0);
+    uint num = _Module.smethod_75((GStruct61*) pGstruct19_0);
     if (num <= 1U)
       return 1U;
     else
@@ -2573,40 +2573,40 @@ label_6:
 
   public static unsafe void smethod_71(GStruct19* pGstruct19_0, uint uint_2, uint uint_3)
   {
-    uint num1 = (uint) \u003CModule\u003E.__CxxQueryExceptionSize();
+    uint num1 = (uint) _Module.__CxxQueryExceptionSize();
     // ISSUE: untyped stack allocation
     int num2 = (int) __untypedstackalloc((int) num1 * 2);
     uint num3 = uint_2 | 15U;
-    if (\u003CModule\u003E.smethod_70(pGstruct19_0) < num3)
+    if (_Module.smethod_70(pGstruct19_0) < num3)
       num3 = uint_2;
     else if (num3 / 3U < (uint) *(int*) ((IntPtr) pGstruct19_0 + 24) / 2U)
     {
-      if ((uint) *(int*) ((IntPtr) pGstruct19_0 + 24) <= \u003CModule\u003E.smethod_70(pGstruct19_0) - (uint) *(int*) ((IntPtr) pGstruct19_0 + 24) / 2U)
+      if ((uint) *(int*) ((IntPtr) pGstruct19_0 + 24) <= _Module.smethod_70(pGstruct19_0) - (uint) *(int*) ((IntPtr) pGstruct19_0 + 24) / 2U)
         num3 = (uint) *(int*) ((IntPtr) pGstruct19_0 + 24) + (uint) *(int*) ((IntPtr) pGstruct19_0 + 24) / 2U;
     }
     sbyte* pSbyte_0;
     try
     {
       int num4 = num2 + (int) num1;
-      pSbyte_0 = \u003CModule\u003E.smethod_74((GStruct61*) pGstruct19_0, num3 + 1U);
+      pSbyte_0 = _Module.smethod_74((GStruct61*) pGstruct19_0, num3 + 1U);
     }
     catch
     {
       Marshal.GetExceptionCode();
-      if (\u003CModule\u003E.__CxxExceptionFilter((void*) Marshal.GetExceptionPointers(), (void*) 0, 0, (void*) 0) != 0)
+      if (_Module.__CxxExceptionFilter((void*) Marshal.GetExceptionPointers(), (void*) 0, 0, (void*) 0) != 0)
         throw;
     }
     if (0U < uint_3)
-      \u003CModule\u003E.smethod_37(pSbyte_0, \u003CModule\u003E.smethod_62(pGstruct19_0), uint_3);
-    \u003CModule\u003E.smethod_51(pGstruct19_0, true, 0U);
+      _Module.smethod_37(pSbyte_0, _Module.smethod_62(pGstruct19_0), uint_3);
+    _Module.smethod_51(pGstruct19_0, true, 0U);
     *(int*) ((IntPtr) pGstruct19_0 + 4) = (int) pSbyte_0;
     *(int*) ((IntPtr) pGstruct19_0 + 24) = (int) num3;
-    \u003CModule\u003E.smethod_60(pGstruct19_0, uint_3);
+    _Module.smethod_60(pGstruct19_0, uint_3);
   }
 
   public static unsafe uint smethod_72(GStruct63* pGstruct63_0)
   {
-    uint num = \u003CModule\u003E.smethod_75((GStruct61*) pGstruct63_0);
+    uint num = _Module.smethod_75((GStruct61*) pGstruct63_0);
     if (num <= 1U)
       return 1U;
     else
@@ -2615,40 +2615,40 @@ label_6:
 
   public static unsafe void smethod_73(GStruct63* pGstruct63_0, uint uint_2, uint uint_3)
   {
-    uint num1 = (uint) \u003CModule\u003E.__CxxQueryExceptionSize();
+    uint num1 = (uint) _Module.__CxxQueryExceptionSize();
     // ISSUE: untyped stack allocation
     int num2 = (int) __untypedstackalloc((int) num1 * 2);
     uint num3 = uint_2 | 15U;
-    if (\u003CModule\u003E.smethod_72(pGstruct63_0) < num3)
+    if (_Module.smethod_72(pGstruct63_0) < num3)
       num3 = uint_2;
     else if (num3 / 3U < (uint) *(int*) ((IntPtr) pGstruct63_0 + 24) / 2U)
     {
-      if ((uint) *(int*) ((IntPtr) pGstruct63_0 + 24) <= \u003CModule\u003E.smethod_72(pGstruct63_0) - (uint) *(int*) ((IntPtr) pGstruct63_0 + 24) / 2U)
+      if ((uint) *(int*) ((IntPtr) pGstruct63_0 + 24) <= _Module.smethod_72(pGstruct63_0) - (uint) *(int*) ((IntPtr) pGstruct63_0 + 24) / 2U)
         num3 = (uint) *(int*) ((IntPtr) pGstruct63_0 + 24) + (uint) *(int*) ((IntPtr) pGstruct63_0 + 24) / 2U;
     }
     sbyte* pSbyte_0;
     try
     {
       int num4 = num2 + (int) num1;
-      pSbyte_0 = \u003CModule\u003E.smethod_76((GStruct62*) pGstruct63_0, num3 + 1U);
+      pSbyte_0 = _Module.smethod_76((GStruct62*) pGstruct63_0, num3 + 1U);
     }
     catch
     {
       Marshal.GetExceptionCode();
-      if (\u003CModule\u003E.__CxxExceptionFilter((void*) Marshal.GetExceptionPointers(), (void*) 0, 0, (void*) 0) != 0)
+      if (_Module.__CxxExceptionFilter((void*) Marshal.GetExceptionPointers(), (void*) 0, 0, (void*) 0) != 0)
         throw;
     }
     if (0U < uint_3)
-      \u003CModule\u003E.smethod_37(pSbyte_0, \u003CModule\u003E.smethod_68(pGstruct63_0), uint_3);
-    \u003CModule\u003E.smethod_56(pGstruct63_0, true, 0U);
+      _Module.smethod_37(pSbyte_0, _Module.smethod_68(pGstruct63_0), uint_3);
+    _Module.smethod_56(pGstruct63_0, true, 0U);
     *(int*) ((IntPtr) pGstruct63_0 + 4) = (int) pSbyte_0;
     *(int*) ((IntPtr) pGstruct63_0 + 24) = (int) num3;
-    \u003CModule\u003E.smethod_66(pGstruct63_0, uint_3);
+    _Module.smethod_66(pGstruct63_0, uint_3);
   }
 
   public static unsafe sbyte* smethod_74(GStruct61* pGstruct61_0, uint uint_2)
   {
-    return \u003CModule\u003E.smethod_78(uint_2, (sbyte*) 0);
+    return _Module.smethod_78(uint_2, (sbyte*) 0);
   }
 
   public static unsafe uint smethod_75(GStruct61* pGstruct61_0)
@@ -2658,34 +2658,34 @@ label_6:
 
   public static unsafe sbyte* smethod_76(GStruct62* pGstruct62_0, uint uint_2)
   {
-    return (sbyte*) \u003CModule\u003E.smethod_159(uint_2, &\u003CModule\u003E.gstruct72_0, (sbyte*) &\u003CModule\u003E.struct21_0, 87);
+    return (sbyte*) _Module.smethod_159(uint_2, &_Module.gstruct72_0, (sbyte*) &_Module.struct21_0, 87);
   }
 
   public static unsafe void smethod_77(void* pVoid_0)
   {
     if ((IntPtr) pVoid_0 == IntPtr.Zero)
       return;
-    \u003CModule\u003E.free(pVoid_0);
+    _Module.free(pVoid_0);
   }
 
   public static unsafe sbyte* smethod_78(uint uint_2, sbyte* pSbyte_0)
   {
-    return (sbyte*) \u003CModule\u003E.@new(uint_2);
+    return (sbyte*) _Module.@new(uint_2);
   }
 
   public static unsafe int smethod_79(GStruct0* pGstruct0_0, GStruct0* pGstruct0_1)
   {
-    return \u003CModule\u003E.memcmp((void*) pGstruct0_0, (void*) pGstruct0_1, 16U) == 0 ? 1 : 0;
+    return _Module.memcmp((void*) pGstruct0_0, (void*) pGstruct0_1, 16U) == 0 ? 1 : 0;
   }
 
   public static unsafe int smethod_80(GStruct0* pGstruct0_0, GStruct0* pGstruct0_1)
   {
-    return \u003CModule\u003E.smethod_79(pGstruct0_0, pGstruct0_1);
+    return _Module.smethod_79(pGstruct0_0, pGstruct0_1);
   }
 
   public static unsafe int smethod_81(GStruct86* pGstruct86_0, int int_43, ushort ushort_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_2, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_2, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -2694,7 +2694,7 @@ label_6:
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
     byte num1 = (byte) 1;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       GStruct88 gstruct88;
       // ISSUE: explicit reference operation
@@ -2705,42 +2705,42 @@ label_6:
       uint num3 = 0U;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num2, &num3, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+      if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num2, &num3, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
         return 2;
       uint uint_2_2 = 0U;
       bool flag = false;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (((int) num2 & 1024) == 0 && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
+      if (((int) num2 & 1024) == 0 && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
         flag = true;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (!flag && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
+      if (!flag && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
         flag = true;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (!flag && (((int) num2 & 1024) == 0 || (int) num3 != 29) && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
+      if (!flag && (((int) num2 & 1024) == 0 || (int) num3 != 29) && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
         flag = true;
       if (flag)
       {
         uint uint_2_3 = 0U;
         uint uint_2_4 = uint_2_2;
-        while ((int) \u003CModule\u003E.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
+        while ((int) _Module.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
         {
           if ((int) uint_2_4 != (int) uint_2_2)
           {
-            int num4 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+            int num4 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
           }
           uint_2_4 = uint_2_3;
           uint num5;
-          if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Size_Ex(&num5, uint_2_3, 0U, (void*) 0) == 0)
+          if ((int) _Module.CM_Get_Res_Des_Data_Size_Ex(&num5, uint_2_3, 0U, (void*) 0) == 0)
           {
-            byte* numPtr = (byte*) \u003CModule\u003E.@new(num5);
+            byte* numPtr = (byte*) _Module.@new(num5);
             if ((IntPtr) numPtr != IntPtr.Zero)
             {
-              if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr, num5, 0U, (void*) 0) != 0)
+              if ((int) _Module.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr, num5, 0U, (void*) 0) != 0)
               {
-                \u003CModule\u003E.delete((void*) numPtr);
+                _Module.delete((void*) numPtr);
               }
               else
               {
@@ -2748,10 +2748,10 @@ label_6:
                 if (*(long*) ((IntPtr) gstruct89Ptr + 16) - *(long*) ((IntPtr) gstruct89Ptr + 8) + 1L != 0L && *(long*) ((IntPtr) gstruct89Ptr + 8) + 7L == *(long*) ((IntPtr) gstruct89Ptr + 16) && int_43 < (int) ushort_0)
                 {
                   Struct27 struct27;
-                  \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                  \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
-                  \u003CModule\u003E._strlwr((sbyte*) &struct27);
-                  uint num6 = ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_2) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_0) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_1) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_3) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_2) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_3) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_1) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_4) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_5) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_2) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_6) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_7) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_3) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_8) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_9) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_4) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_10) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_11) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_5) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_12) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_13) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_6) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_14) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_15) != IntPtr.Zero)) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_7) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_16) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_17) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_8) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_18) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_19) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_9) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_20) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_21) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_10) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_22) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_23) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_11) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_24) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_25) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_12) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_26) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_27) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_13) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_28) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_29) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_14) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_30) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_31) != IntPtr.Zero))) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_15) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_32) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_33) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_16) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_34) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_35) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_17) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_36) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_37) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_18) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_38) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_39) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_19) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_40) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_41) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_20) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_42) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_43) != IntPtr.Zero)) ? 0U : (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_4) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_44) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_45) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_5) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_46) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_47) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_6) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_48) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_49) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_7) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_50) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_51) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_8) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_52) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_53) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_9) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_54) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_55) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_10) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_56) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_57) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_11) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_58) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_59) != IntPtr.Zero)) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_12) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_60) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_61) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_13) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_62) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_63) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_14) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_64) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_65) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_15) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_66) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_67) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_16) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_68) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_69) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct10_17) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_70) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_71) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_21) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_72) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_73) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_22) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_74) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_75) != IntPtr.Zero))) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_23) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_76) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_77) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_24) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_78) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_79) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_25) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_80) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_81) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_26) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_82) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_83) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_27) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_84) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_85) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_28) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_86) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_87) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_29) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_88) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_89) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_30) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_90) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_91) != IntPtr.Zero)) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_31) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_92) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_93) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_32) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_94) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_95) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_33) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_96) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_97) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_34) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_98) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_99) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_35) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_100) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_101) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_36) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_102) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_103) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_37) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_104) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_105) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct23_38) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_106) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_107) != IntPtr.Zero)))) ? 1U : 2U);
+                  _Module.memset((void*) &struct27, 0, 1024U);
+                  _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
+                  _Module._strlwr((sbyte*) &struct27);
+                  uint num6 = ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_2) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_0) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_1) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_3) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_2) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_3) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_1) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_4) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_5) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_2) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_6) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_7) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_3) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_8) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_9) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_4) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_10) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_11) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_5) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_12) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_13) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_6) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_14) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_15) != IntPtr.Zero)) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_7) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_16) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_17) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_8) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_18) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_19) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_9) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_20) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_21) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_10) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_22) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_23) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_11) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_24) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_25) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_12) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_26) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_27) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_13) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_28) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_29) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_14) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_30) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_31) != IntPtr.Zero))) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_15) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_32) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_33) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_16) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_34) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_35) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_17) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_36) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_37) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_18) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_38) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_39) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_19) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_40) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_41) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_20) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_42) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_43) != IntPtr.Zero)) ? 0U : (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_4) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_44) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_45) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_5) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_46) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_47) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_6) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_48) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_49) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_7) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_50) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_51) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_8) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_52) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_53) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_9) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_54) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_55) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_10) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_56) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_57) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_11) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_58) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_59) != IntPtr.Zero)) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_12) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_60) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_61) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_13) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_62) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_63) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_14) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_64) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_65) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_15) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_66) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_67) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_16) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_68) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_69) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct10_17) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_70) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_71) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_21) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_72) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_73) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_22) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_74) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_75) != IntPtr.Zero))) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_23) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_76) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_77) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_24) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_78) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_79) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_25) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_80) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_81) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_26) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_82) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_83) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_27) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_84) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_85) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_28) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_86) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_87) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_29) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_88) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_89) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_30) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_90) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_91) != IntPtr.Zero)) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_31) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_92) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_93) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_32) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_94) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_95) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_33) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_96) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_97) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_34) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_98) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_99) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_35) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_100) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_101) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_36) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_102) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_103) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_37) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_104) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_105) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct23_38) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_106) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_107) != IntPtr.Zero)))) ? 1U : 2U);
                   if (*(long*) ((IntPtr) gstruct89Ptr + 8) == 496L)
                   {
                     if ((int) num6 != 0 && (int) num6 != 2)
@@ -2762,8 +2762,8 @@ label_6:
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 1;
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                        \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                        _Module.memset((void*) &struct27, 0, 1024U);
+                        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                         ++int_43;
                       }
                     }
@@ -2773,15 +2773,15 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                       *(short*) ((IntPtr) pGstruct86_0 + int_43 * 72) = (short) 496;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -80;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                     }
                   }
@@ -2795,8 +2795,8 @@ label_6:
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 1;
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 1;
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                        \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                        _Module.memset((void*) &struct27, 0, 1024U);
+                        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                         ++int_43;
                       }
                     }
@@ -2806,15 +2806,15 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 1;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                       *(short*) ((IntPtr) pGstruct86_0 + int_43 * 72) = (short) 368;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 1;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -80;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                     }
                   }
@@ -2829,8 +2829,8 @@ label_6:
                       else
                         *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 1;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                       *(short*) ((IntPtr) pGstruct86_0 + int_43 * 72) = (short) (uint) *(long*) ((IntPtr) gstruct89Ptr + 8);
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 0;
@@ -2845,8 +2845,8 @@ label_6:
                         num1 = (byte) 1;
                       }
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -80;
-                      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.memset((void*) &struct27, 0, 1024U);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                     }
                   }
@@ -2865,30 +2865,30 @@ label_6:
                       num1 = (byte) 1;
                     }
                     *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                    \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-                    \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                    _Module.memset((void*) &struct27, 0, 1024U);
+                    _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                     ++int_43;
                   }
                 }
-                \u003CModule\u003E.delete((void*) numPtr);
+                _Module.delete((void*) numPtr);
               }
             }
           }
         }
         if ((int) uint_2_4 != (int) uint_2_2)
         {
-          int num7 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+          int num7 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
         }
-        int num8 = (int) \u003CModule\u003E.CM_Free_Log_Conf_Handle(uint_2_2);
+        int num8 = (int) _Module.CM_Free_Log_Conf_Handle(uint_2_2);
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return int_43;
   }
 
   public static unsafe int smethod_82(GStruct86* pGstruct86_0, int int_43, ushort ushort_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA((GStruct0*) 0, (sbyte*) 0, (GStruct11*) 0, 6U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA((GStruct0*) 0, (sbyte*) 0, (GStruct11*) 0, 6U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -2896,19 +2896,19 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       sbyte* numPtr1 = (sbyte*) 0;
       uint uint_3 = 0U;
       Struct27 struct27;
-      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-      while (\u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0) == 0 && (int) \u003CModule\u003E.GetLastError() == 122)
+      _Module.memset((void*) &struct27, 0, 1024U);
+      while (_Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0) == 0 && (int) _Module.GetLastError() == 122)
       {
         if ((IntPtr) numPtr1 != IntPtr.Zero)
-          \u003CModule\u003E.LocalFree((void*) numPtr1);
-        numPtr1 = (sbyte*) \u003CModule\u003E.LocalAlloc(64U, uint_3);
+          _Module.LocalFree((void*) numPtr1);
+        numPtr1 = (sbyte*) _Module.LocalAlloc(64U, uint_3);
       }
-      if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_1) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_2) != IntPtr.Zero)
+      if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_1) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_2) != IntPtr.Zero)
       {
         GStruct88 gstruct88;
         // ISSUE: explicit reference operation
@@ -2919,21 +2919,21 @@ label_6:
         uint num2 = 0U;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+        if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
           return 2;
         uint uint_2_2 = 0U;
         bool flag = false;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (((int) num1 & 1024) == 0 && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
+        if (((int) num1 & 1024) == 0 && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
           flag = true;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (!flag && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
+        if (!flag && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
           flag = true;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (!flag && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
+        if (!flag && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
           flag = true;
         if (flag)
         {
@@ -2942,23 +2942,23 @@ label_6:
           int num3 = 0;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
-          while ((int) \u003CModule\u003E.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
+          int num4 = (int) _Module.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          while ((int) _Module.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
           {
             if ((int) uint_2_4 != (int) uint_2_2)
             {
-              int num5 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+              int num5 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
             }
             uint_2_4 = uint_2_3;
             uint num6;
-            if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Size_Ex(&num6, uint_2_3, 0U, (void*) 0) == 0)
+            if ((int) _Module.CM_Get_Res_Des_Data_Size_Ex(&num6, uint_2_3, 0U, (void*) 0) == 0)
             {
-              byte* numPtr2 = (byte*) \u003CModule\u003E.@new(num6);
+              byte* numPtr2 = (byte*) _Module.@new(num6);
               if ((IntPtr) numPtr2 != IntPtr.Zero)
               {
-                if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr2, num6, 0U, (void*) 0) != 0)
+                if ((int) _Module.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr2, num6, 0U, (void*) 0) != 0)
                 {
-                  \u003CModule\u003E.delete((void*) numPtr2);
+                  _Module.delete((void*) numPtr2);
                 }
                 else
                 {
@@ -2972,7 +2972,7 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
                       *(int*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 68) = (int) num2;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                     }
                     else if (num3 == 1)
                     {
@@ -2980,7 +2980,7 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
                       *(int*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 68) = (int) num2;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                     }
                     else if (num3 == 2)
                     {
@@ -2988,7 +2988,7 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
                       *(int*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 68) = (int) num2;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                       ++num3;
                       if (int_43 > (int) ushort_0)
@@ -2998,35 +2998,35 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -80;
                       *(int*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 68) = (int) num2;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                     }
                     ++int_43;
                     ++num3;
                   }
-                  \u003CModule\u003E.delete((void*) numPtr2);
+                  _Module.delete((void*) numPtr2);
                 }
               }
             }
           }
           if ((int) uint_2_4 != (int) uint_2_2)
           {
-            int num7 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+            int num7 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
           }
-          int num8 = (int) \u003CModule\u003E.CM_Free_Log_Conf_Handle(uint_2_2);
+          int num8 = (int) _Module.CM_Free_Log_Conf_Handle(uint_2_2);
         }
         else
           continue;
       }
       if ((IntPtr) numPtr1 != IntPtr.Zero)
-        \u003CModule\u003E.LocalFree((void*) numPtr1);
+        _Module.LocalFree((void*) numPtr1);
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return int_43;
   }
 
   public static unsafe int smethod_83(GStruct86* pGstruct86_0, int int_43, ushort ushort_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA((GStruct0*) 0, (sbyte*) 0, (GStruct11*) 0, 6U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA((GStruct0*) 0, (sbyte*) 0, (GStruct11*) 0, 6U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -3034,13 +3034,13 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       Struct27 struct27;
-      \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
-      \u003CModule\u003E._strlwr((sbyte*) &struct27);
-      if (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_2) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_108) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_109) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_3) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_110) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_111) != IntPtr.Zero || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_4) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_112) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_113) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_5) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_114) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_115) != IntPtr.Zero) || (((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_6) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_116) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_117) != IntPtr.Zero || ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct25_7) != IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_118) != IntPtr.Zero) && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct35_119) != IntPtr.Zero))
+      _Module.memset((void*) &struct27, 0, 1024U);
+      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
+      _Module._strlwr((sbyte*) &struct27);
+      if (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_2) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_108) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_109) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_3) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_110) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_111) != IntPtr.Zero || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_4) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_112) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_113) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_5) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_114) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_115) != IntPtr.Zero) || (((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_6) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_116) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_117) != IntPtr.Zero || ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct25_7) != IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_118) != IntPtr.Zero) && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct35_119) != IntPtr.Zero))
       {
         GStruct88 gstruct88;
         // ISSUE: explicit reference operation
@@ -3051,21 +3051,21 @@ label_6:
         uint num2 = 0U;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+        if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
           return 2;
         uint uint_2_2 = 0U;
         int num3 = 0;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (((int) num1 & 1024) == 0 && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
+        if (((int) num1 & 1024) == 0 && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
           num3 = 1;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (num3 == 0 && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
+        if (num3 == 0 && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
           num3 = 1;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (num3 == 0 && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
+        if (num3 == 0 && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
           num3 = 1;
         if (num3 != 0)
         {
@@ -3073,24 +3073,24 @@ label_6:
           uint uint_2_4 = uint_2_2;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           int num5 = 0;
-          while ((int) \u003CModule\u003E.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
+          while ((int) _Module.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
           {
             if ((int) uint_2_4 != (int) uint_2_2)
             {
-              int num6 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+              int num6 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
             }
             uint_2_4 = uint_2_3;
             uint num7;
-            if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Size_Ex(&num7, uint_2_3, 0U, (void*) 0) == 0)
+            if ((int) _Module.CM_Get_Res_Des_Data_Size_Ex(&num7, uint_2_3, 0U, (void*) 0) == 0)
             {
-              byte* numPtr = (byte*) \u003CModule\u003E.@new(num7);
+              byte* numPtr = (byte*) _Module.@new(num7);
               if ((IntPtr) numPtr != IntPtr.Zero)
               {
-                if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr, num7, 0U, (void*) 0) != 0)
+                if ((int) _Module.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr, num7, 0U, (void*) 0) != 0)
                 {
-                  \u003CModule\u003E.delete((void*) numPtr);
+                  _Module.delete((void*) numPtr);
                 }
                 else
                 {
@@ -3104,31 +3104,31 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
                       *(int*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 68) = (int) num2;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                     }
                     ++int_43;
                     ++num5;
                   }
-                  \u003CModule\u003E.delete((void*) numPtr);
+                  _Module.delete((void*) numPtr);
                 }
               }
             }
           }
           if ((int) uint_2_4 != (int) uint_2_2)
           {
-            int num8 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+            int num8 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
           }
-          int num9 = (int) \u003CModule\u003E.CM_Free_Log_Conf_Handle(uint_2_2);
+          int num9 = (int) _Module.CM_Free_Log_Conf_Handle(uint_2_2);
         }
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return int_43;
   }
 
   public static unsafe int smethod_84(GStruct86* pGstruct86_0, int int_43, ushort ushort_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_0, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_0, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -3136,21 +3136,21 @@ label_6:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       sbyte* numPtr1 = (sbyte*) 0;
       uint uint_3 = 0U;
       Struct27 struct27_1;
-      \u003CModule\u003E.memset((void*) &struct27_1, 0, 1024U);
+      _Module.memset((void*) &struct27_1, 0, 1024U);
       Struct27 struct27_2;
-      \u003CModule\u003E.memset((void*) &struct27_2, 0, 1024U);
-      while (\u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27_1, 1024U, (uint*) 0) == 0 && (int) \u003CModule\u003E.GetLastError() == 122)
+      _Module.memset((void*) &struct27_2, 0, 1024U);
+      while (_Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27_1, 1024U, (uint*) 0) == 0 && (int) _Module.GetLastError() == 122)
       {
         if ((IntPtr) numPtr1 != IntPtr.Zero)
-          \u003CModule\u003E.LocalFree((void*) numPtr1);
-        numPtr1 = (sbyte*) \u003CModule\u003E.LocalAlloc(64U, uint_3);
+          _Module.LocalFree((void*) numPtr1);
+        numPtr1 = (sbyte*) _Module.LocalAlloc(64U, uint_3);
       }
-      if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27_1, (sbyte*) &\u003CModule\u003E.struct24_3) == IntPtr.Zero || (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27_1, (sbyte*) &\u003CModule\u003E.struct24_4) == IntPtr.Zero)
+      if ((IntPtr) _Module.strstr((sbyte*) &struct27_1, (sbyte*) &_Module.struct24_3) == IntPtr.Zero || (IntPtr) _Module.strstr((sbyte*) &struct27_1, (sbyte*) &_Module.struct24_4) == IntPtr.Zero)
       {
         GStruct88 gstruct88;
         // ISSUE: explicit reference operation
@@ -3161,47 +3161,47 @@ label_6:
         uint num2 = 0U;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+        if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
           return 2;
         uint uint_2_2 = 0U;
         bool flag = false;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (((int) num1 & 1024) == 0 && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
+        if (((int) num1 & 1024) == 0 && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 2U, (void*) 0) == 0)
           flag = true;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (!flag && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
+        if (!flag && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 4U, (void*) 0) == 0)
           flag = true;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if (!flag && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) \u003CModule\u003E.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
+        if (!flag && (((int) num1 & 1024) == 0 || (int) num2 != 29) && (int) _Module.CM_Get_First_Log_Conf_Ex(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 3U, (void*) 0) == 0)
           flag = true;
         if (flag)
         {
           uint uint_2_3 = 0U;
           uint uint_2_4 = uint_2_2;
-          while ((int) \u003CModule\u003E.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
+          while ((int) _Module.CM_Get_Next_Res_Des_Ex(&uint_2_3, uint_2_4, 2U, (uint*) 0, 0U, (void*) 0) == 0)
           {
             if ((int) uint_2_4 != (int) uint_2_2)
             {
-              int num3 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+              int num3 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
             }
             uint_2_4 = uint_2_3;
             uint num4;
-            if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Size_Ex(&num4, uint_2_3, 0U, (void*) 0) == 0)
+            if ((int) _Module.CM_Get_Res_Des_Data_Size_Ex(&num4, uint_2_3, 0U, (void*) 0) == 0)
             {
-              byte* numPtr2 = (byte*) \u003CModule\u003E.@new(num4);
+              byte* numPtr2 = (byte*) _Module.@new(num4);
               if ((IntPtr) numPtr2 != IntPtr.Zero)
               {
-                if ((int) \u003CModule\u003E.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr2, num4, 0U, (void*) 0) != 0)
+                if ((int) _Module.CM_Get_Res_Des_Data_Ex(uint_2_3, (void*) numPtr2, num4, 0U, (void*) 0) != 0)
                 {
-                  \u003CModule\u003E.delete((void*) numPtr2);
+                  _Module.delete((void*) numPtr2);
                 }
                 else
                 {
-                  \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) &struct27_2, 1024U, (uint*) 0);
-                  if ((((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27_2, (sbyte*) &\u003CModule\u003E.struct35_120) != IntPtr.Zero ? 1 : 0) | ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27_2, (sbyte*) &\u003CModule\u003E.struct22_1) != IntPtr.Zero ? 1 : 0)) == 0)
+                  _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) &struct27_2, 1024U, (uint*) 0);
+                  if ((((IntPtr) _Module.strstr((sbyte*) &struct27_2, (sbyte*) &_Module.struct35_120) != IntPtr.Zero ? 1 : 0) | ((IntPtr) _Module.strstr((sbyte*) &struct27_2, (sbyte*) &_Module.struct22_1) != IntPtr.Zero ? 1 : 0)) == 0)
                   {
                     GStruct89* gstruct89Ptr = (GStruct89*) numPtr2;
                     if (*(long*) ((IntPtr) gstruct89Ptr + 16) - *(long*) ((IntPtr) gstruct89Ptr + 8) + 1L != 0L)
@@ -3210,28 +3210,28 @@ label_6:
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 2) = (sbyte) 1;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 3) = (sbyte) 0;
                       *(sbyte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 4) = (sbyte) -96;
-                      \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
+                      _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct86_0 + int_43 * 72 + 5), 1024U, (uint*) 0);
                       ++int_43;
                     }
                   }
-                  \u003CModule\u003E.delete((void*) numPtr2);
+                  _Module.delete((void*) numPtr2);
                 }
               }
             }
           }
           if ((int) uint_2_4 != (int) uint_2_2)
           {
-            int num5 = (int) \u003CModule\u003E.CM_Free_Res_Des_Handle(uint_2_4);
+            int num5 = (int) _Module.CM_Free_Res_Des_Handle(uint_2_4);
           }
-          int num6 = (int) \u003CModule\u003E.CM_Free_Log_Conf_Handle(uint_2_2);
+          int num6 = (int) _Module.CM_Free_Log_Conf_Handle(uint_2_2);
         }
         else
           continue;
       }
       if ((IntPtr) numPtr1 != IntPtr.Zero)
-        \u003CModule\u003E.LocalFree((void*) numPtr1);
+        _Module.LocalFree((void*) numPtr1);
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return int_43;
   }
 
@@ -14274,23 +14274,23 @@ label_6:
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct36 + 3677) = (sbyte) 0;
     Struct37 struct37;
-    \u003CModule\u003E.memset((void*) &struct37, 0, 40U);
+    _Module.memset((void*) &struct37, 0, 40U);
     uint num1 = 0U;
-    int num2 = (int) \u003CModule\u003E.smethod_157();
+    int num2 = (int) _Module.smethod_157();
     for (int index1 = 0; index1 <= num2; ++index1)
     {
       for (int index2 = 0; index2 <= 31; ++index2)
       {
         for (int index3 = 0; index3 <= 7; ++index3)
         {
-          \u003CModule\u003E.memset((void*) &struct37, 0, 40U);
+          _Module.memset((void*) &struct37, 0, 40U);
           uint num3 = 0U;
           while (num3 <= 36U)
           {
-            \u003CModule\u003E.smethod_156((uint) ((((index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8 | (int) num3 & -4));
+            _Module.smethod_156((uint) ((((index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8 | (int) num3 & -4));
             // ISSUE: cast to a reference type
             // ISSUE: explicit reference operation
-            ^(int&) ((IntPtr) &struct37 + (int) num3) = (int) \u003CModule\u003E.smethod_153();
+            ^(int&) ((IntPtr) &struct37 + (int) num3) = (int) _Module.smethod_153();
             num3 += 4U;
           }
           // ISSUE: explicit reference operation
@@ -14636,22 +14636,22 @@ label_6:
   public static unsafe int smethod_86(GStruct86* pGstruct86_0, int int_43, ushort ushort_0)
   {
     Struct37 struct37;
-    \u003CModule\u003E.memset((void*) &struct37, 0, 40U);
-    int num1 = (int) \u003CModule\u003E.smethod_157();
+    _Module.memset((void*) &struct37, 0, 40U);
+    int num1 = (int) _Module.smethod_157();
     for (int index1 = 0; index1 <= num1; ++index1)
     {
       for (int index2 = 0; index2 <= 31; ++index2)
       {
         for (int index3 = 0; index3 <= 7; ++index3)
         {
-          \u003CModule\u003E.memset((void*) &struct37, 0, 40U);
+          _Module.memset((void*) &struct37, 0, 40U);
           uint num2 = 0U;
           while (num2 <= 36U)
           {
-            \u003CModule\u003E.smethod_156((uint) ((((index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8 | (int) num2 & -4));
+            _Module.smethod_156((uint) ((((index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8 | (int) num2 & -4));
             // ISSUE: cast to a reference type
             // ISSUE: explicit reference operation
-            ^(int&) ((IntPtr) &struct37 + (int) num2) = (int) \u003CModule\u003E.smethod_153();
+            ^(int&) ((IntPtr) &struct37 + (int) num2) = (int) _Module.smethod_153();
             num2 += 4U;
           }
           // ISSUE: explicit reference operation
@@ -14793,10 +14793,10 @@ label_6:
   public static unsafe int smethod_87()
   {
     GStruct0 gstruct0;
-    \u003CModule\u003E.SetupDiClassGuidsFromNameA((sbyte*) &\u003CModule\u003E.struct7_2, &gstruct0, 1U, (uint*) 0);
-    if (\u003CModule\u003E.smethod_80(&gstruct0, &\u003CModule\u003E.gstruct0_1) != 0)
+    _Module.SetupDiClassGuidsFromNameA((sbyte*) &_Module.struct7_2, &gstruct0, 1U, (uint*) 0);
+    if (_Module.smethod_80(&gstruct0, &_Module.gstruct0_1) != 0)
       return 1;
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&gstruct0, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&gstruct0, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -14806,10 +14806,10 @@ label_6:
     ^(int&) @gstruct87 = 28;
     uint num1 = 0U;
     uint num2 = 0U;
-    uint num3 = (uint) \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, 0U, &gstruct87);
+    uint num3 = (uint) _Module.SetupDiEnumDeviceInfo(classDevsA, 0U, &gstruct87);
     if ((int) num3 == 0)
     {
-      \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+      _Module.SetupDiDestroyDeviceInfoList(classDevsA);
       return 2;
     }
     else
@@ -14821,52 +14821,52 @@ label_6:
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         ^(int&) @gstruct88 = 287;
-        \u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88);
+        _Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88);
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        int num4 = (int) \u003CModule\u003E.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+        int num4 = (int) _Module.CM_Get_DevNode_Status(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
       }
-      \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+      _Module.SetupDiDestroyDeviceInfoList(classDevsA);
       return (int) num2;
     }
   }
 
   public static unsafe uint smethod_88(sbyte* pSbyte_0)
   {
-    return \u003CModule\u003E.strlen(pSbyte_0);
+    return _Module.strlen(pSbyte_0);
   }
 
   public static unsafe int smethod_89(GStruct81* pGstruct81_0, GStruct81* pGstruct81_1, sbyte* pSbyte_0, int int_43)
   {
-    if (new Class0(new string((sbyte*) &\u003CModule\u003E.struct118_0)).method_0())
+    if (new Class0(new string((sbyte*) &_Module.struct118_0)).method_0())
     {
-      GStruct11* windowA = \u003CModule\u003E.FindWindowA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct12_6);
+      GStruct11* windowA = _Module.FindWindowA((sbyte*) 0, (sbyte*) &_Module.struct12_6);
       if ((IntPtr) windowA == IntPtr.Zero)
       {
-        windowA = \u003CModule\u003E.FindWindowA((sbyte*) &\u003CModule\u003E.struct9_29, (sbyte*) 0);
+        windowA = _Module.FindWindowA((sbyte*) &_Module.struct9_29, (sbyte*) 0);
         if ((IntPtr) windowA == IntPtr.Zero)
-          windowA = \u003CModule\u003E.FindWindowA((sbyte*) &\u003CModule\u003E.struct26_1, (sbyte*) 0);
+          windowA = _Module.FindWindowA((sbyte*) &_Module.struct26_1, (sbyte*) 0);
       }
-      GStruct11* windowExA1 = \u003CModule\u003E.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct16_5);
-      GStruct11* windowExA2 = \u003CModule\u003E.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct16_6);
-      GStruct11* windowExA3 = \u003CModule\u003E.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct16_7);
+      GStruct11* windowExA1 = _Module.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &_Module.struct16_5);
+      GStruct11* windowExA2 = _Module.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &_Module.struct16_6);
+      GStruct11* windowExA3 = _Module.FindWindowExA(windowA, (GStruct11*) 0, (sbyte*) 0, (sbyte*) &_Module.struct16_7);
       string[] commandLineArgs = Environment.GetCommandLineArgs();
       if (commandLineArgs.Length == 3)
       {
         int int_43_1 = (int) (void*) Marshal.StringToHGlobalAnsi(commandLineArgs[1]);
         if (string.Compare(commandLineArgs[2], "Source") == 0)
-          \u003CModule\u003E.SendMessageA(windowExA1, 12U, 0U, int_43_1);
+          _Module.SendMessageA(windowExA1, 12U, 0U, int_43_1);
         else if (string.Compare(commandLineArgs[2], "Target") == 0)
-          \u003CModule\u003E.SendMessageA(windowExA2, 12U, 0U, int_43_1);
+          _Module.SendMessageA(windowExA2, 12U, 0U, int_43_1);
         else if (string.Compare(commandLineArgs[2], "DBupdate") == 0)
-          \u003CModule\u003E.SendMessageA(windowExA3, 12U, 0U, int_43_1);
+          _Module.SendMessageA(windowExA3, 12U, 0U, int_43_1);
       }
       else if (commandLineArgs.Length == 2)
       {
         int int_43_1 = (int) (void*) Marshal.StringToHGlobalAnsi(commandLineArgs[1]);
-        \u003CModule\u003E.SendMessageA(windowExA1, 12U, 0U, int_43_1);
+        _Module.SendMessageA(windowExA1, 12U, 0U, int_43_1);
       }
-      \u003CModule\u003E.ShowWindow(windowA, 9);
+      _Module.ShowWindow(windowA, 9);
       return 0;
     }
     else
@@ -14881,8 +14881,8 @@ label_6:
   {
     GStruct61 gstruct61;
     GStruct61* pGstruct61_0 = &gstruct61;
-    \u003CModule\u003E.smethod_53((GStruct69*) pGstruct19_0, \u003CModule\u003E.smethod_97(pGstruct61_0));
-    \u003CModule\u003E.smethod_51(pGstruct19_0, false, 0U);
+    _Module.smethod_53((GStruct69*) pGstruct19_0, _Module.smethod_97(pGstruct61_0));
+    _Module.smethod_51(pGstruct19_0, false, 0U);
     return pGstruct19_0;
   }
 
@@ -14890,35 +14890,35 @@ label_6:
   {
     GStruct61 gstruct61;
     GStruct61* pGstruct61_0 = &gstruct61;
-    \u003CModule\u003E.smethod_53((GStruct69*) pGstruct19_0, \u003CModule\u003E.smethod_97(pGstruct61_0));
-    \u003CModule\u003E.smethod_51(pGstruct19_0, false, 0U);
-    \u003CModule\u003E.smethod_96(pGstruct19_0, pSbyte_0);
+    _Module.smethod_53((GStruct69*) pGstruct19_0, _Module.smethod_97(pGstruct61_0));
+    _Module.smethod_51(pGstruct19_0, false, 0U);
+    _Module.smethod_96(pGstruct19_0, pSbyte_0);
     return pGstruct19_0;
   }
 
   public static unsafe void smethod_92(GStruct19* pGstruct19_0)
   {
-    \u003CModule\u003E.smethod_51(pGstruct19_0, true, 0U);
+    _Module.smethod_51(pGstruct19_0, true, 0U);
   }
 
   public static unsafe GStruct19* smethod_93(GStruct19* pGstruct19_0, GStruct19* pGstruct19_1)
   {
-    return \u003CModule\u003E.smethod_95(pGstruct19_0, pGstruct19_1);
+    return _Module.smethod_95(pGstruct19_0, pGstruct19_1);
   }
 
   public static unsafe sbyte* smethod_94(GStruct19* pGstruct19_0)
   {
-    return \u003CModule\u003E.smethod_52(pGstruct19_0);
+    return _Module.smethod_52(pGstruct19_0);
   }
 
   public static unsafe GStruct19* smethod_95(GStruct19* pGstruct19_0, GStruct19* pGstruct19_1)
   {
-    return \u003CModule\u003E.smethod_50(pGstruct19_0, pGstruct19_1, 0U, \u003CModule\u003E.uint_0);
+    return _Module.smethod_50(pGstruct19_0, pGstruct19_1, 0U, _Module.uint_0);
   }
 
   public static unsafe GStruct19* smethod_96(GStruct19* pGstruct19_0, sbyte* pSbyte_0)
   {
-    return \u003CModule\u003E.smethod_98(pGstruct19_0, pSbyte_0, \u003CModule\u003E.smethod_88(pSbyte_0));
+    return _Module.smethod_98(pGstruct19_0, pSbyte_0, _Module.smethod_88(pSbyte_0));
   }
 
   public static unsafe GStruct61* smethod_97(GStruct61* pGstruct61_0)
@@ -14928,12 +14928,12 @@ label_6:
 
   public static unsafe GStruct19* smethod_98(GStruct19* pGstruct19_0, sbyte* pSbyte_0, uint uint_2)
   {
-    if (\u003CModule\u003E.smethod_99(pGstruct19_0, pSbyte_0))
-      return \u003CModule\u003E.smethod_50(pGstruct19_0, pGstruct19_0, (uint) ((IntPtr) pSbyte_0 - (IntPtr) \u003CModule\u003E.smethod_62(pGstruct19_0)), uint_2);
-    if (\u003CModule\u003E.smethod_61(pGstruct19_0, uint_2, false))
+    if (_Module.smethod_99(pGstruct19_0, pSbyte_0))
+      return _Module.smethod_50(pGstruct19_0, pGstruct19_0, (uint) ((IntPtr) pSbyte_0 - (IntPtr) _Module.smethod_62(pGstruct19_0)), uint_2);
+    if (_Module.smethod_61(pGstruct19_0, uint_2, false))
     {
-      \u003CModule\u003E.smethod_37(\u003CModule\u003E.smethod_62(pGstruct19_0), pSbyte_0, uint_2);
-      \u003CModule\u003E.smethod_60(pGstruct19_0, uint_2);
+      _Module.smethod_37(_Module.smethod_62(pGstruct19_0), pSbyte_0, uint_2);
+      _Module.smethod_60(pGstruct19_0, uint_2);
     }
     return pGstruct19_0;
   }
@@ -14941,7 +14941,7 @@ label_6:
   [return: MarshalAs(UnmanagedType.U1)]
   public static unsafe bool smethod_99(GStruct19* pGstruct19_0, sbyte* pSbyte_0)
   {
-    return pSbyte_0 >= \u003CModule\u003E.smethod_62(pGstruct19_0) && \u003CModule\u003E.smethod_62(pGstruct19_0) + *(int*) ((IntPtr) pGstruct19_0 + 20) > pSbyte_0;
+    return pSbyte_0 >= _Module.smethod_62(pGstruct19_0) && _Module.smethod_62(pGstruct19_0) + *(int*) ((IntPtr) pGstruct19_0 + 20) > pSbyte_0;
   }
 
   public static unsafe void smethod_100(GStruct102* pGstruct102_0, GStruct103* pGstruct103_0)
@@ -14965,31 +14965,31 @@ label_6:
     uint num2;
     if (uint_2 >= uint_2_1)
     {
-      \u003CModule\u003E.smethod_106(pGstruct102_0, (byte*) ((IntPtr) pGstruct103_0 + 24 + (int) num1), pByte_0, uint_2_1);
-      \u003CModule\u003E.smethod_103(pGstruct102_0, (uint*) pGstruct103_0, (byte*) ((IntPtr) pGstruct103_0 + 24));
+      _Module.smethod_106(pGstruct102_0, (byte*) ((IntPtr) pGstruct103_0 + 24 + (int) num1), pByte_0, uint_2_1);
+      _Module.smethod_103(pGstruct102_0, (uint*) pGstruct103_0, (byte*) ((IntPtr) pGstruct103_0 + 24));
       num2 = uint_2_1;
       while (num2 + 63U < uint_2)
       {
-        \u003CModule\u003E.smethod_103(pGstruct102_0, (uint*) pGstruct103_0, pByte_0 + (int) num2);
+        _Module.smethod_103(pGstruct102_0, (uint*) pGstruct103_0, pByte_0 + (int) num2);
         num2 += 64U;
       }
       num1 = 0U;
     }
     else
       num2 = 0U;
-    \u003CModule\u003E.smethod_106(pGstruct102_0, (byte*) ((IntPtr) pGstruct103_0 + 24 + (int) num1), pByte_0 + (int) num2, uint_2 - num2);
+    _Module.smethod_106(pGstruct102_0, (byte*) ((IntPtr) pGstruct103_0 + 24 + (int) num1), pByte_0 + (int) num2, uint_2 - num2);
   }
 
   public static unsafe void smethod_102(GStruct102* pGstruct102_0, byte* pByte_0, GStruct103* pGstruct103_0)
   {
     Struct103 struct103;
-    \u003CModule\u003E.smethod_104(pGstruct102_0, (byte*) &struct103, (uint*) ((IntPtr) pGstruct103_0 + 16), 8U);
+    _Module.smethod_104(pGstruct102_0, (byte*) &struct103, (uint*) ((IntPtr) pGstruct103_0 + 16), 8U);
     uint num = (uint) *(int*) ((IntPtr) pGstruct103_0 + 16) >> 3 & 63U;
     uint uint_2 = num >= 56U ? 120U - num : 56U - num;
-    \u003CModule\u003E.smethod_101(pGstruct102_0, pGstruct103_0, (byte*) &\u003CModule\u003E.struct4_1, uint_2);
-    \u003CModule\u003E.smethod_101(pGstruct102_0, pGstruct103_0, (byte*) &struct103, 8U);
-    \u003CModule\u003E.smethod_104(pGstruct102_0, pByte_0, (uint*) pGstruct103_0, 16U);
-    \u003CModule\u003E.smethod_107(pGstruct102_0, (byte*) pGstruct103_0, 0, 88U);
+    _Module.smethod_101(pGstruct102_0, pGstruct103_0, (byte*) &_Module.struct4_1, uint_2);
+    _Module.smethod_101(pGstruct102_0, pGstruct103_0, (byte*) &struct103, 8U);
+    _Module.smethod_104(pGstruct102_0, pByte_0, (uint*) pGstruct103_0, 16U);
+    _Module.smethod_107(pGstruct102_0, (byte*) pGstruct103_0, 0, 88U);
   }
 
   public static unsafe void smethod_103(GStruct102* pGstruct102_0, uint* pUint_0, byte* pByte_0)
@@ -14999,7 +14999,7 @@ label_6:
     uint num3 = (uint) *(int*) ((IntPtr) pUint_0 + 8);
     uint num4 = (uint) *(int*) ((IntPtr) pUint_0 + 12);
     Struct124 struct124;
-    \u003CModule\u003E.smethod_105(pGstruct102_0, (uint*) &struct124, pByte_0, 64U);
+    _Module.smethod_105(pGstruct102_0, (uint*) &struct124, pByte_0, 64U);
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
@@ -15264,7 +15264,7 @@ label_6:
     *(int*) ((IntPtr) pUint_0 + 4) = *(int*) ((IntPtr) pUint_0 + 4) + (int) num132;
     *(int*) ((IntPtr) pUint_0 + 8) = *(int*) ((IntPtr) pUint_0 + 8) + (int) num130;
     *(int*) ((IntPtr) pUint_0 + 12) = *(int*) ((IntPtr) pUint_0 + 12) + (int) num128;
-    \u003CModule\u003E.smethod_107(pGstruct102_0, (byte*) &struct124, 0, 64U);
+    _Module.smethod_107(pGstruct102_0, (byte*) &struct124, 0, 64U);
   }
 
   public static unsafe void smethod_104(GStruct102* pGstruct102_0, byte* pByte_0, uint* pUint_0, uint uint_2)
@@ -15321,26 +15321,26 @@ label_6:
       try
       {
         GStruct103 gstruct103;
-        \u003CModule\u003E.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
-        \u003CModule\u003E.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) \u003CModule\u003E.smethod_94(pGstruct19_1), \u003CModule\u003E.smethod_117(pGstruct19_1));
+        _Module.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
+        _Module.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) _Module.smethod_94(pGstruct19_1), _Module.smethod_117(pGstruct19_1));
         Struct28 struct28;
         // ISSUE: explicit reference operation
         // ISSUE: explicit reference operation
         // ISSUE: cpblk instruction
-        __memcpy(@struct28, @\u003CModule\u003E.struct19_1, 1);
+        __memcpy(@struct28, @_Module.struct19_1, 1);
         // ISSUE: cast to a reference type
         // ISSUE: initblk instruction
         __memset((Struct28&) ((IntPtr) &struct28 + 1), 0, 15);
-        \u003CModule\u003E.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
-        \u003CModule\u003E.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
+        _Module.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
+        _Module.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
         num |= 1U;
       }
       __fault
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_1);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_1);
       }
-      \u003CModule\u003E.smethod_92(pGstruct19_1);
+      _Module.smethod_92(pGstruct19_1);
     }
     __fault
     {
@@ -15348,7 +15348,7 @@ label_6:
       {
         uint local_0_1 = num & 4294967294U;
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_0);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_0);
       }
     }
     return pGstruct19_0;
@@ -15361,29 +15361,29 @@ label_6:
     Struct125 struct125;
     for (int index = 0; index < 16; ++index)
     {
-      \u003CModule\u003E.sprintf((sbyte*) ((IntPtr) &struct125 + num2), (sbyte*) &\u003CModule\u003E.struct35_134, __arglist ((int) pByte_0[index]));
+      _Module.sprintf((sbyte*) ((IntPtr) &struct125 + num2), (sbyte*) &_Module.struct35_134, __arglist ((int) pByte_0[index]));
       num2 += 2;
     }
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct125 + 32) = (sbyte) 0;
-    \u003CModule\u003E.smethod_91(pGstruct19_0, (sbyte*) &struct125);
+    _Module.smethod_91(pGstruct19_0, (sbyte*) &struct125);
     uint num3 = num1 | 1U;
     return pGstruct19_0;
   }
 
   public static unsafe GStruct93* smethod_111(GStruct93* pGstruct93_0)
   {
-    GStruct102* pGstruct102_0 = (GStruct102*) \u003CModule\u003E.@new(1U);
+    GStruct102* pGstruct102_0 = (GStruct102*) _Module.@new(1U);
     GStruct102* gstruct102Ptr;
     // ISSUE: fault handler
     try
     {
-      gstruct102Ptr = (IntPtr) pGstruct102_0 == IntPtr.Zero ? (GStruct102*) (ValueType) 0 : (GStruct102*) (ValueType) (IntPtr) \u003CModule\u003E.smethod_108(pGstruct102_0);
+      gstruct102Ptr = (IntPtr) pGstruct102_0 == IntPtr.Zero ? (GStruct102*) (ValueType) 0 : (GStruct102*) (ValueType) (IntPtr) _Module.smethod_108(pGstruct102_0);
     }
     __fault
     {
-      \u003CModule\u003E.delete((void*) pGstruct102_0);
+      _Module.delete((void*) pGstruct102_0);
     }
     *(int*) pGstruct93_0 = (int) gstruct102Ptr;
     return pGstruct93_0;
@@ -15391,7 +15391,7 @@ label_6:
 
   public static unsafe void smethod_112(GStruct93* pGstruct93_0)
   {
-    \u003CModule\u003E.delete((void*) *(int*) pGstruct93_0);
+    _Module.delete((void*) *(int*) pGstruct93_0);
   }
 
   public static unsafe GStruct19* smethod_113(GStruct93* pGstruct93_0, GStruct19* pGstruct19_0, GStruct19* pGstruct19_1)
@@ -15404,16 +15404,16 @@ label_6:
       try
       {
         GStruct19 gstruct19;
-        GStruct19* pGstruct19_1_1 = \u003CModule\u003E.smethod_45(&gstruct19, pGstruct19_1);
-        \u003CModule\u003E.smethod_109(pGstruct93_0, pGstruct19_0, pGstruct19_1_1);
+        GStruct19* pGstruct19_1_1 = _Module.smethod_45(&gstruct19, pGstruct19_1);
+        _Module.smethod_109(pGstruct93_0, pGstruct19_0, pGstruct19_1_1);
         num |= 1U;
       }
       __fault
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_1);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_1);
       }
-      \u003CModule\u003E.smethod_92(pGstruct19_1);
+      _Module.smethod_92(pGstruct19_1);
     }
     __fault
     {
@@ -15421,7 +15421,7 @@ label_6:
       {
         uint local_0_1 = num & 4294967294U;
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_0);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_0);
       }
     }
     return pGstruct19_0;
@@ -15437,10 +15437,10 @@ label_6:
       // ISSUE: fault handler
       try
       {
-        pGstruct5_0 = \u003CModule\u003E.fopen(\u003CModule\u003E.smethod_94(pGstruct19_1), (sbyte*) &\u003CModule\u003E.struct18_13);
+        pGstruct5_0 = _Module.fopen(_Module.smethod_94(pGstruct19_1), (sbyte*) &_Module.struct18_13);
         if ((IntPtr) pGstruct5_0 == IntPtr.Zero)
         {
-          \u003CModule\u003E.smethod_91(pGstruct19_0, (sbyte*) &\u003CModule\u003E.struct18_14);
+          _Module.smethod_91(pGstruct19_0, (sbyte*) &_Module.struct18_14);
           num1 |= 1U;
         }
         else
@@ -15449,37 +15449,37 @@ label_6:
       __fault
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_1);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_1);
       }
-      \u003CModule\u003E.smethod_92(pGstruct19_1);
+      _Module.smethod_92(pGstruct19_1);
       goto label_14;
 label_5:
       // ISSUE: fault handler
       try
       {
         GStruct103 gstruct103;
-        \u003CModule\u003E.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
+        _Module.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
         while (true)
         {
           Struct126 struct126;
-          int num2 = (int) \u003CModule\u003E.fread((void*) &struct126, 1U, 1024U, pGstruct5_0);
+          int num2 = (int) _Module.fread((void*) &struct126, 1U, 1024U, pGstruct5_0);
           if (num2 != 0)
-            \u003CModule\u003E.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num2);
+            _Module.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num2);
           else
             break;
         }
         Struct28 struct28;
-        \u003CModule\u003E.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
-        \u003CModule\u003E.fclose(pGstruct5_0);
-        \u003CModule\u003E.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
+        _Module.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
+        _Module.fclose(pGstruct5_0);
+        _Module.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
         num1 |= 1U;
       }
       __fault
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_1);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_1);
       }
-      \u003CModule\u003E.smethod_92(pGstruct19_1);
+      _Module.smethod_92(pGstruct19_1);
     }
     __fault
     {
@@ -15487,7 +15487,7 @@ label_5:
       {
         uint local_0_1 = num1 & 4294967294U;
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_0);
+        _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_0);
       }
     }
 label_14:
@@ -15498,23 +15498,23 @@ label_14:
   {
     uint num1 = 0U;
     GStruct103 gstruct103;
-    \u003CModule\u003E.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
+    _Module.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
     int num2 = (int) (uint_2 / 1024U);
     int num3 = (int) (uint_2 % 1024U);
     Struct126 struct126;
     for (int index = 0; index < num2; ++index)
     {
-      \u003CModule\u003E.memcpy((void*) &struct126, (void*) (pByte_0 + index * 1024), 1024U);
-      \u003CModule\u003E.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, 1024U);
+      _Module.memcpy((void*) &struct126, (void*) (pByte_0 + index * 1024), 1024U);
+      _Module.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, 1024U);
     }
     if (num3 != 0)
     {
-      \u003CModule\u003E.memcpy((void*) &struct126, (void*) (pByte_0 + num2 * 1024), (uint) num3);
-      \u003CModule\u003E.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num3);
+      _Module.memcpy((void*) &struct126, (void*) (pByte_0 + num2 * 1024), (uint) num3);
+      _Module.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num3);
     }
     Struct28 struct28;
-    \u003CModule\u003E.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
-    \u003CModule\u003E.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
+    _Module.smethod_102((GStruct102*) *(int*) pGstruct93_0, (byte*) &struct28, &gstruct103);
+    _Module.smethod_110(pGstruct93_0, pGstruct19_0, (byte*) &struct28);
     uint num4 = num1 | 1U;
     return pGstruct19_0;
   }
@@ -15525,41 +15525,41 @@ label_14:
     // ISSUE: fault handler
     try
     {
-      pGstruct5_0 = \u003CModule\u003E.fopen(\u003CModule\u003E.smethod_94(pGstruct19_0), (sbyte*) &\u003CModule\u003E.struct18_15);
+      pGstruct5_0 = _Module.fopen(_Module.smethod_94(pGstruct19_0), (sbyte*) &_Module.struct18_15);
       if ((IntPtr) pGstruct5_0 != IntPtr.Zero)
         goto label_3;
     }
     __fault
     {
       // ISSUE: cast to a function pointer type
-      \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_0);
+      _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_0);
     }
-    \u003CModule\u003E.smethod_92(pGstruct19_0);
+    _Module.smethod_92(pGstruct19_0);
     return;
 label_3:
     // ISSUE: fault handler
     try
     {
       GStruct103 gstruct103;
-      \u003CModule\u003E.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
+      _Module.smethod_100((GStruct102*) *(int*) pGstruct93_0, &gstruct103);
       while (true)
       {
         Struct126 struct126;
-        int num = (int) \u003CModule\u003E.fread((void*) &struct126, 1U, 1024U, pGstruct5_0);
+        int num = (int) _Module.fread((void*) &struct126, 1U, 1024U, pGstruct5_0);
         if (num != 0)
-          \u003CModule\u003E.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num);
+          _Module.smethod_101((GStruct102*) *(int*) pGstruct93_0, &gstruct103, (byte*) &struct126, (uint) num);
         else
           break;
       }
-      \u003CModule\u003E.smethod_102((GStruct102*) *(int*) pGstruct93_0, pByte_0, &gstruct103);
-      \u003CModule\u003E.fclose(pGstruct5_0);
+      _Module.smethod_102((GStruct102*) *(int*) pGstruct93_0, pByte_0, &gstruct103);
+      _Module.fclose(pGstruct5_0);
     }
     __fault
     {
       // ISSUE: cast to a function pointer type
-      \u003CModule\u003E.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) \u003CModule\u003E.ppInt_14, (void*) pGstruct19_0);
+      _Module.__CxxCallUnwindDtor((__FnPtr<void (void*)>) (IntPtr) _Module.ppInt_14, (void*) pGstruct19_0);
     }
-    \u003CModule\u003E.smethod_92(pGstruct19_0);
+    _Module.smethod_92(pGstruct19_0);
   }
 
   public static unsafe uint smethod_117(GStruct19* pGstruct19_0)
@@ -15569,7 +15569,7 @@ label_3:
 
   public static unsafe int smethod_118(GStruct99* pGstruct99_0, int int_43, ushort ushort_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_6, (sbyte*) 0, (GStruct11*) 0, 18U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_6, (sbyte*) 0, (GStruct11*) 0, 18U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -15582,7 +15582,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct104 = 796;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       GStruct88 gstruct88;
       // ISSUE: explicit reference operation
@@ -15599,82 +15599,82 @@ label_3:
       uint uint_2_2 = 0U;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+      if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
         return 2;
       if (int_43 < (int) ushort_0)
       {
         Struct27 struct27;
-        \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
+        _Module.memset((void*) &struct27, 0, 1024U);
         uint num3 = 10U;
-        GStruct106* pGstruct106_0 = \u003CModule\u003E.SetupDiOpenDevRegKey(classDevsA, &gstruct87, 1U, 0U, 1U, 983103U);
-        \u003CModule\u003E.RegQueryValueExA(pGstruct106_0, (sbyte*) &\u003CModule\u003E.struct24_11, (uint*) 0, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324), &num3);
-        \u003CModule\u003E.RegCloseKey(pGstruct106_0);
-        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 12), 1024U, (uint*) 0);
-        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 9U, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 73), 1024U, (uint*) 0);
-        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
-        \u003CModule\u003E._strlwr((sbyte*) &struct27);
-        if (\u003CModule\u003E.memcmp((void*) &struct27, (void*) &\u003CModule\u003E.struct25_12, 3U) == 0)
+        GStruct106* pGstruct106_0 = _Module.SetupDiOpenDevRegKey(classDevsA, &gstruct87, 1U, 0U, 1U, 983103U);
+        _Module.RegQueryValueExA(pGstruct106_0, (sbyte*) &_Module.struct24_11, (uint*) 0, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324), &num3);
+        _Module.RegCloseKey(pGstruct106_0);
+        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 0U, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 12), 1024U, (uint*) 0);
+        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 9U, (uint*) 0, (byte*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 73), 1024U, (uint*) 0);
+        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 1U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
+        _Module._strlwr((sbyte*) &struct27);
+        if (_Module.memcmp((void*) &struct27, (void*) &_Module.struct25_12, 3U) == 0)
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 0;
         else
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 1;
-        if (\u003CModule\u003E.memcmp((void*) &struct27, (void*) &\u003CModule\u003E.struct98_2, 15U) == 0)
+        if (_Module.memcmp((void*) &struct27, (void*) &_Module.struct98_2, 15U) == 0)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 0;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
-          \u003CModule\u003E.smethod_120((int) uint_2_1, uint_2_2);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          _Module.smethod_120((int) uint_2_1, uint_2_2);
         }
-        if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_12) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_13) != IntPtr.Zero)
+        if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_12) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_13) != IntPtr.Zero)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 4;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 316) = (int) uint_2_2;
         }
-        if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_14) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_15) != IntPtr.Zero)
+        if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_14) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_15) != IntPtr.Zero)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 4;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 316) = (int) uint_2_2;
         }
-        if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_16) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_17) != IntPtr.Zero)
+        if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_16) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_17) != IntPtr.Zero)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 7;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 316) = (int) uint_2_2;
         }
-        if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_18) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_19) != IntPtr.Zero)
+        if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_18) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_19) != IntPtr.Zero)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 6;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 316) = (int) uint_2_2;
         }
-        if ((IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_20) != IntPtr.Zero && (IntPtr) \u003CModule\u003E.strstr((sbyte*) &struct27, (sbyte*) &\u003CModule\u003E.struct24_21) != IntPtr.Zero)
+        if ((IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_20) != IntPtr.Zero && (IntPtr) _Module.strstr((sbyte*) &struct27, (sbyte*) &_Module.struct24_21) != IntPtr.Zero)
         {
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 8) = 9;
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
+          int num4 = (int) _Module.CM_Get_Parent(&uint_2_2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U);
           *(int*) ((IntPtr) pGstruct99_0 + int_43 * 324 + 316) = (int) uint_2_2;
         }
         ++int_43;
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return int_43;
   }
 
   public static unsafe int smethod_119(int int_43, uint uint_2)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_3, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_3, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -15682,7 +15682,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       GStruct88 gstruct88;
       // ISSUE: explicit reference operation
@@ -15693,45 +15693,45 @@ label_3:
       uint num2 = 0U;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+      if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
         return 2;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       if (^(int&) ((IntPtr) &gstruct87 + 20) == (int) uint_2)
       {
         Struct27 struct27;
-        \u003CModule\u003E.memset((void*) &struct27, 0, 1024U);
-        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 13U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
-        if (\u003CModule\u003E.memcmp((void*) &struct27, (void*) &\u003CModule\u003E.struct15_9, 12U) == 0)
+        _Module.memset((void*) &struct27, 0, 1024U);
+        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 13U, (uint*) 0, (byte*) &struct27, 1024U, (uint*) 0);
+        if (_Module.memcmp((void*) &struct27, (void*) &_Module.struct15_9, 12U) == 0)
         {
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          ^(int&) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 8) = 2;
+          ^(int&) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 8) = 2;
           break;
         }
-        else if (\u003CModule\u003E.memcmp((void*) &struct27, (void*) &\u003CModule\u003E.struct15_10, 12U) == 0)
+        else if (_Module.memcmp((void*) &struct27, (void*) &_Module.struct15_10, 12U) == 0)
         {
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          ^(int&) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 8) = 3;
+          ^(int&) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 8) = 3;
           break;
         }
         else
         {
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          ^(int&) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 8) = 0;
+          ^(int&) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 8) = 0;
           break;
         }
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0;
   }
 
   public static unsafe int smethod_120(int int_43, uint uint_2)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_3, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_3, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -15739,7 +15739,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2_1 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
+    for (uint uint_2_1 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2_1, &gstruct87) != 0; ++uint_2_1)
     {
       GStruct88 gstruct88;
       // ISSUE: explicit reference operation
@@ -15750,24 +15750,24 @@ label_3:
       uint num2 = 0U;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if (\u003CModule\u003E.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) \u003CModule\u003E.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
+      if (_Module.SetupDiGetDeviceInfoListDetailA(classDevsA, &gstruct88) == 0 && (int) _Module.CM_Get_DevNode_Status_Ex(&num1, &num2, (uint) ^(int&) ((IntPtr) &gstruct87 + 20), 0U, (void*) 0) != 0)
         return 2;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       if (^(int&) ((IntPtr) &gstruct87 + 20) == (int) uint_2)
       {
-        \u003CModule\u003E.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 9U, (uint*) 0, (byte*) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 73), 1024U, (uint*) 0);
+        _Module.SetupDiGetDeviceRegistryPropertyA(classDevsA, &gstruct87, 9U, (uint*) 0, (byte*) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 73), 1024U, (uint*) 0);
         break;
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0;
   }
 
   public static unsafe int smethod_121()
   {
     uint uint_2;
-    return (int) \u003CModule\u003E.CM_Locate_DevNodeA(&uint_2, (sbyte*) 0, 0U) != 0 || (int) \u003CModule\u003E.CM_Reenumerate_DevNode(uint_2, 0U) != 0 ? 1 : 0;
+    return (int) _Module.CM_Locate_DevNodeA(&uint_2, (sbyte*) 0, 0U) != 0 || (int) _Module.CM_Reenumerate_DevNode(uint_2, 0U) != 0 ? 1 : 0;
   }
 
   public static unsafe int smethod_122(byte* pByte_0)
@@ -15775,12 +15775,12 @@ label_3:
     sbyte num1 = (sbyte) ((int) (sbyte) *pByte_0 & -33);
     if ((int) num1 < 65 || (int) num1 > 90)
       return 1;
-    Struct79 struct79 = (Struct79) \u003CModule\u003E.struct25_13;
+    Struct79 struct79 = (Struct79) _Module.struct25_13;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) @struct79 = num1;
-    Struct70 struct70 = (Struct70) \u003CModule\u003E.struct18_16;
+    Struct70 struct70 = (Struct70) _Module.struct18_16;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
@@ -15789,30 +15789,30 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: explicit reference operation
     // ISSUE: cpblk instruction
-    __memcpy(@struct109, @\u003CModule\u003E.struct10_26, 7);
+    __memcpy(@struct109, @_Module.struct10_26, 7);
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct109 + 4) = num1;
     int int_43 = -1;
-    void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) &struct109, 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
+    void* fileA = _Module.CreateFileA((sbyte*) &struct109, 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
     if ((IntPtr) fileA == IntPtr(-1))
       return 1;
     uint num2 = 0U;
     GStruct107 gstruct107;
-    if (\u003CModule\u003E.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num2, (GStruct95*) 0) != 0)
+    if (_Module.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num2, (GStruct95*) 0) != 0)
     {
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       int_43 = ^(int&) ((IntPtr) &gstruct107 + 4);
     }
-    \u003CModule\u003E.CloseHandle(fileA);
+    _Module.CloseHandle(fileA);
     if (int_43 == -1)
       return 1;
-    uint driveTypeA = \u003CModule\u003E.GetDriveTypeA((sbyte*) &struct79);
+    uint driveTypeA = _Module.GetDriveTypeA((sbyte*) &struct79);
     Struct68 struct68;
-    if ((int) \u003CModule\u003E.QueryDosDeviceA((sbyte*) &struct70, (sbyte*) &struct68, 260U) == 0)
+    if ((int) _Module.QueryDosDeviceA((sbyte*) &struct70, (sbyte*) &struct68, 260U) == 0)
       return 1;
-    uint uint_2 = \u003CModule\u003E.smethod_123(int_43, driveTypeA, (sbyte*) &struct68);
+    uint uint_2 = _Module.smethod_123(int_43, driveTypeA, (sbyte*) &struct68);
     if ((int) uint_2 == 0)
       return 1;
     int num3 = 0;
@@ -15822,16 +15822,16 @@ label_3:
     // ISSUE: explicit reference operation
     ^(short&) @struct127 = (short) 0;
     bool flag = false;
-    int num4 = (int) \u003CModule\u003E.CM_Get_Parent(&0U, uint_2, 0U);
+    int num4 = (int) _Module.CM_Get_Parent(&0U, uint_2, 0U);
     for (int index = 1; index <= 3; ++index)
     {
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       ^(short&) @struct127 = (short) 0;
-      int num5 = (int) \u003CModule\u003E.CM_Query_And_Remove_SubTreeW(uint_2, &num3, (ushort*) &struct127, 260U, 2U) != 0 || num3 != 0 ? 0 : 1;
+      int num5 = (int) _Module.CM_Query_And_Remove_SubTreeW(uint_2, &num3, (ushort*) &struct127, 260U, 2U) != 0 || num3 != 0 ? 0 : 1;
       if (!(flag = num5 != 0))
-        \u003CModule\u003E.Sleep(500U);
+        _Module.Sleep(500U);
       else
         break;
     }
@@ -15840,24 +15840,24 @@ label_3:
 
   public static unsafe uint smethod_123(int int_43, uint uint_2, sbyte* pSbyte_0)
   {
-    bool flag = (IntPtr) \u003CModule\u003E.strstr(pSbyte_0, (sbyte*) &\u003CModule\u003E.struct22_6) != IntPtr.Zero;
+    bool flag = (IntPtr) _Module.strstr(pSbyte_0, (sbyte*) &_Module.struct22_6) != IntPtr.Zero;
     GStruct0* pGstruct0_0;
     switch (uint_2)
     {
       case 2U:
         if (flag)
           return 0U;
-        pGstruct0_0 = &\u003CModule\u003E.gstruct0_7;
+        pGstruct0_0 = &_Module.gstruct0_7;
         break;
       case 3U:
         return 0U;
       case 5U:
-        pGstruct0_0 = &\u003CModule\u003E.gstruct0_5;
+        pGstruct0_0 = &_Module.gstruct0_5;
         break;
       default:
         return 0U;
     }
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(pGstruct0_0, (sbyte*) 0, (GStruct11*) 0, 18U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(pGstruct0_0, (sbyte*) 0, (GStruct11*) 0, 18U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 0U;
     uint uint_2_1 = 0U;
@@ -15868,36 +15868,36 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct108 = 28;
-    for (; \u003CModule\u003E.SetupDiEnumDeviceInterfaces(classDevsA, (GStruct87*) 0, pGstruct0_0, uint_2_1, &gstruct108) != 0; ++uint_2_1)
+    for (; _Module.SetupDiEnumDeviceInterfaces(classDevsA, (GStruct87*) 0, pGstruct0_0, uint_2_1, &gstruct108) != 0; ++uint_2_1)
     {
       uint uint_2_2 = 0U;
-      \u003CModule\u003E.SetupDiGetDeviceInterfaceDetailA(classDevsA, &gstruct108, (GStruct109*) 0, 0U, &uint_2_2, (GStruct87*) 0);
+      _Module.SetupDiGetDeviceInterfaceDetailA(classDevsA, &gstruct108, (GStruct109*) 0, 0U, &uint_2_2, (GStruct87*) 0);
       if ((int) uint_2_2 != 0 && uint_2_2 <= 1024U)
       {
         *(int*) pGstruct109_0 = 5;
         GStruct87 gstruct87;
-        \u003CModule\u003E.memset((void*) &gstruct87, 0, 28U);
+        _Module.memset((void*) &gstruct87, 0, 28U);
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         ^(int&) @gstruct87 = 28;
-        if (\u003CModule\u003E.SetupDiGetDeviceInterfaceDetailA(classDevsA, &gstruct108, pGstruct109_0, uint_2_2, &uint_2_2, &gstruct87) != 0)
+        if (_Module.SetupDiGetDeviceInterfaceDetailA(classDevsA, &gstruct108, pGstruct109_0, uint_2_2, &uint_2_2, &gstruct87) != 0)
         {
-          void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) ((IntPtr) pGstruct109_0 + 4), 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
+          void* fileA = _Module.CreateFileA((sbyte*) ((IntPtr) pGstruct109_0 + 4), 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
           if ((IntPtr) fileA != IntPtr(-1))
           {
             uint num = 0U;
             GStruct107 gstruct107;
             // ISSUE: cast to a reference type
             // ISSUE: explicit reference operation
-            if (\u003CModule\u003E.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num, (GStruct95*) 0) == 0 || int_43 != ^(int&) ((IntPtr) &gstruct107 + 4))
+            if (_Module.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num, (GStruct95*) 0) == 0 || int_43 != ^(int&) ((IntPtr) &gstruct107 + 4))
             {
-              \u003CModule\u003E.CloseHandle(fileA);
+              _Module.CloseHandle(fileA);
             }
             else
             {
-              \u003CModule\u003E.CloseHandle(fileA);
-              \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+              _Module.CloseHandle(fileA);
+              _Module.SetupDiDestroyDeviceInfoList(classDevsA);
               // ISSUE: cast to a reference type
               // ISSUE: explicit reference operation
               return (uint) ^(int&) ((IntPtr) &gstruct87 + 20);
@@ -15906,7 +15906,7 @@ label_3:
         }
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0U;
   }
 
@@ -15915,12 +15915,12 @@ label_3:
     sbyte num1 = (sbyte) ((int) (sbyte) *pByte_0 & -33);
     if ((int) num1 < 65 || (int) num1 > 90)
       return 1;
-    Struct79 struct79 = (Struct79) \u003CModule\u003E.struct25_14;
+    Struct79 struct79 = (Struct79) _Module.struct25_14;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) @struct79 = num1;
-    Struct70 struct70 = (Struct70) \u003CModule\u003E.struct18_17;
+    Struct70 struct70 = (Struct70) _Module.struct18_17;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
@@ -15929,33 +15929,33 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: explicit reference operation
     // ISSUE: cpblk instruction
-    __memcpy(@struct109, @\u003CModule\u003E.struct10_27, 7);
+    __memcpy(@struct109, @_Module.struct10_27, 7);
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(sbyte&) ((IntPtr) &struct109 + 4) = num1;
     int int_43 = -1;
-    void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) &struct109, 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
+    void* fileA = _Module.CreateFileA((sbyte*) &struct109, 0U, 3U, (GStruct100*) 0, 3U, 0U, (void*) 0);
     if ((IntPtr) fileA == IntPtr(-1))
       return 1;
     uint num2 = 0U;
     GStruct107 gstruct107;
-    if (\u003CModule\u003E.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num2, (GStruct95*) 0) != 0)
+    if (_Module.DeviceIoControl(fileA, 2953344U, (void*) 0, 0U, (void*) &gstruct107, 12U, &num2, (GStruct95*) 0) != 0)
     {
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       int_43 = ^(int&) ((IntPtr) &gstruct107 + 4);
     }
-    \u003CModule\u003E.CloseHandle(fileA);
+    _Module.CloseHandle(fileA);
     if (int_43 == -1)
       return 1;
-    uint driveTypeA = \u003CModule\u003E.GetDriveTypeA((sbyte*) &struct79);
+    uint driveTypeA = _Module.GetDriveTypeA((sbyte*) &struct79);
     Struct68 struct68;
-    if ((int) \u003CModule\u003E.QueryDosDeviceA((sbyte*) &struct70, (sbyte*) &struct68, 260U) == 0)
+    if ((int) _Module.QueryDosDeviceA((sbyte*) &struct70, (sbyte*) &struct68, 260U) == 0)
       return 1;
-    uint num3 = \u003CModule\u003E.smethod_123(int_43, driveTypeA, (sbyte*) &struct68);
+    uint num3 = _Module.smethod_123(int_43, driveTypeA, (sbyte*) &struct68);
     if ((int) num3 == 0)
       return 1;
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -15963,7 +15963,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
+    for (uint uint_2 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
     {
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
@@ -15990,19 +15990,19 @@ label_3:
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         ^(int&) ((IntPtr) &gstruct110 + 8) = 2;
-        if (\u003CModule\u003E.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
+        if (_Module.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
           return 2;
-        if (\u003CModule\u003E.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
+        if (_Module.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
           return 3;
       }
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0;
   }
 
   public static unsafe int smethod_125()
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -16010,7 +16010,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
+    for (uint uint_2 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
     {
       GStruct110 gstruct110;
       // ISSUE: explicit reference operation
@@ -16033,18 +16033,18 @@ label_3:
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       ^(int&) ((IntPtr) &gstruct110 + 8) = 1;
-      if (\u003CModule\u003E.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
+      if (_Module.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
         return 2;
-      if (\u003CModule\u003E.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
+      if (_Module.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
         return 3;
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0;
   }
 
   public static unsafe int smethod_126(byte byte_0)
   {
-    void* classDevsA = \u003CModule\u003E.SetupDiGetClassDevsA(&\u003CModule\u003E.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
+    void* classDevsA = _Module.SetupDiGetClassDevsA(&_Module.gstruct0_4, (sbyte*) 0, (GStruct11*) 0, 2U);
     if ((IntPtr) classDevsA == IntPtr(-1))
       return 1;
     GStruct87 gstruct87;
@@ -16052,7 +16052,7 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(int&) @gstruct87 = 28;
-    for (uint uint_2 = 0U; \u003CModule\u003E.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
+    for (uint uint_2 = 0U; _Module.SetupDiEnumDeviceInfo(classDevsA, uint_2, &gstruct87) != 0; ++uint_2)
     {
       GStruct110 gstruct110;
       // ISSUE: explicit reference operation
@@ -16084,12 +16084,12 @@ label_3:
         // ISSUE: explicit reference operation
         ^(int&) ((IntPtr) &gstruct110 + 8) = 2;
       }
-      if (\u003CModule\u003E.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
+      if (_Module.SetupDiSetClassInstallParamsA(classDevsA, &gstruct87, (GStruct117*) &gstruct110, 20U) == 0)
         return 2;
-      if (\u003CModule\u003E.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
+      if (_Module.SetupDiCallClassInstaller(18U, classDevsA, &gstruct87) == 0)
         return 3;
     }
-    \u003CModule\u003E.SetupDiDestroyDeviceInfoList(classDevsA);
+    _Module.SetupDiDestroyDeviceInfoList(classDevsA);
     return 0;
   }
 
@@ -16099,7 +16099,7 @@ label_3:
     uint num1;
     if ((int) ushort_0 == 0)
     {
-      \u003CModule\u003E.memset((void*) &gstruct111, 0, 2060U);
+      _Module.memset((void*) &gstruct111, 0, 2060U);
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
@@ -16116,7 +16116,7 @@ label_3:
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       ^(short&) ((IntPtr) &gstruct111 + 10) = (short) 4;
-      int num2 = \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229264U, (void*) &gstruct111, 2060U, (void*) &gstruct111, 2060U, &num1, (GStruct95*) 0);
+      int num2 = _Module.DeviceIoControl(pVoid_0, 2229264U, (void*) &gstruct111, 2060U, (void*) &gstruct111, 2060U, &num1, (GStruct95*) 0);
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16125,7 +16125,7 @@ label_3:
       if (num2 == 0)
         return ushort.MaxValue;
     }
-    \u003CModule\u003E.memset((void*) &gstruct111, 0, 2060U);
+    _Module.memset((void*) &gstruct111, 0, 2060U);
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
@@ -16145,9 +16145,9 @@ label_3:
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     ^(short&) ((IntPtr) &gstruct111 + 10) = (short) byte.MaxValue;
-    \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229264U, (void*) &gstruct111, 2060U, (void*) &gstruct111, 2060U, &num1, (GStruct95*) 0);
+    _Module.DeviceIoControl(pVoid_0, 2229264U, (void*) &gstruct111, 2060U, (void*) &gstruct111, 2060U, &num1, (GStruct95*) 0);
     // ISSUE: cast to a reference type
-    \u003CModule\u003E.sprintf(pSbyte_0, (sbyte*) &\u003CModule\u003E.struct25_15, __arglist ((GStruct111&) ((IntPtr) &gstruct111 + 12 + 2)));
+    _Module.sprintf(pSbyte_0, (sbyte*) &_Module.struct25_15, __arglist ((GStruct111&) ((IntPtr) &gstruct111 + 12 + 2)));
     return ushort_0;
   }
 
@@ -16155,15 +16155,15 @@ label_3:
   {
     pByte_0 += 14;
     if ((int) *pByte_0 != 0)
-      ushort_0 = \u003CModule\u003E.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 133));
+      ushort_0 = _Module.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 133));
     if ((int) ushort_0 == (int) ushort.MaxValue)
       return ushort_0;
     ++pByte_0;
     if ((int) *pByte_0 != 0)
-      ushort_0 = \u003CModule\u003E.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 193));
+      ushort_0 = _Module.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 193));
     ++pByte_0;
     if ((int) *pByte_0 != 0)
-      ushort_0 = \u003CModule\u003E.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &\u003CModule\u003E.struct122_0 + int_43 * 324 + 253));
+      ushort_0 = _Module.smethod_127(pVoid_0, uint_2, ushort_0, *pByte_0, (sbyte*) ((IntPtr) &_Module.struct122_0 + int_43 * 324 + 253));
     return ushort_0;
   }
 
@@ -16174,7 +16174,7 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: explicit reference operation
     // ISSUE: cpblk instruction
-    __memcpy(@struct128, @\u003CModule\u003E.struct35_135, 5);
+    __memcpy(@struct128, @_Module.struct35_135, 5);
     // ISSUE: cast to a reference type
     // ISSUE: initblk instruction
     __memset((Struct128&) ((IntPtr) &struct128 + 5), 0, 251);
@@ -16187,7 +16187,7 @@ label_3:
       // ISSUE: explicit reference operation
       ^(int&) @gstruct115 = (int) uint_2;
       uint num1;
-      \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229260U, (void*) &gstruct115, 387U, (void*) &gstruct115, 387U, &num1, (GStruct95*) 0);
+      _Module.DeviceIoControl(pVoid_0, 2229260U, (void*) &gstruct115, 387U, (void*) &gstruct115, 387U, &num1, (GStruct95*) 0);
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       byte num2 = (byte) ^(int&) ((IntPtr) &gstruct115 + 31);
@@ -16196,12 +16196,12 @@ label_3:
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       ^(int&) @gstruct114 = (int) uint_2;
-      \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229280U, (void*) &gstruct114, 520U, (void*) &gstruct114, 520U, &num1, (GStruct95*) 0);
+      _Module.DeviceIoControl(pVoid_0, 2229280U, (void*) &gstruct114, 520U, (void*) &gstruct114, 520U, &num1, (GStruct95*) 0);
       Struct27 struct27;
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      \u003CModule\u003E.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct114 + 8), (int) ((uint) ^(int&) ((IntPtr) &gstruct114 + 4) / 2U), (sbyte*) &struct27, 252, (sbyte*) 0, (int*) 0);
-      int num3 = (int) \u003CModule\u003E.strlen((sbyte*) &struct27);
+      _Module.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct114 + 8), (int) ((uint) ^(int&) ((IntPtr) &gstruct114 + 4) / 2U), (sbyte*) &struct27, 252, (sbyte*) 0, (int*) 0);
+      int num3 = (int) _Module.strlen((sbyte*) &struct27);
       if ((int) num2 == 1)
       {
         // ISSUE: cast to a reference type
@@ -16210,7 +16210,7 @@ label_3:
         {
           for (int index = 0; index < 20; ++index)
           {
-            if (\u003CModule\u003E.memcmp((void*) &struct27, (void*) ((IntPtr) &\u003CModule\u003E.struct122_0 + index * 324 + 73), 43U) != 0)
+            if (_Module.memcmp((void*) &struct27, (void*) ((IntPtr) &_Module.struct122_0 + index * 324 + 73), 43U) != 0)
             {
               int_43_1 = 20;
             }
@@ -16219,11 +16219,11 @@ label_3:
               int_43_1 = index;
               // ISSUE: cast to a reference type
               // ISSUE: explicit reference operation
-              ^(int&) ((IntPtr) &\u003CModule\u003E.struct122_0 + index * 324 + 320) = (int) uint_2;
+              ^(int&) ((IntPtr) &_Module.struct122_0 + index * 324 + 320) = (int) uint_2;
               break;
             }
           }
-          \u003CModule\u003E.smethod_128(pVoid_0, uint_2, ushort_0, (byte*) ((IntPtr) &gstruct115 + 4), int_43_1);
+          _Module.smethod_128(pVoid_0, uint_2, ushort_0, (byte*) ((IntPtr) &gstruct115 + 4), int_43_1);
         }
         else
         {
@@ -16232,17 +16232,17 @@ label_3:
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
           ^(int&) @gstruct112 = (int) uint_2;
-          \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229268U, (void*) &gstruct112, 520U, (void*) &gstruct112, 520U, &num1, (GStruct95*) 0);
+          _Module.DeviceIoControl(pVoid_0, 2229268U, (void*) &gstruct112, 520U, (void*) &gstruct112, 520U, &num1, (GStruct95*) 0);
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          \u003CModule\u003E.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct112 + 8), (int) ((uint) ^(int&) ((IntPtr) &gstruct112 + 4) / 2U), (sbyte*) ((IntPtr) &struct128 + 4), 252, (sbyte*) 0, (int*) 0);
-          void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) &struct128, 1073741824U, 2U, &\u003CModule\u003E.gstruct100_0, 3U, 0U, (void*) 0);
+          _Module.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct112 + 8), (int) ((uint) ^(int&) ((IntPtr) &gstruct112 + 4) / 2U), (sbyte*) ((IntPtr) &struct128 + 4), 252, (sbyte*) 0, (int*) 0);
+          void* fileA = _Module.CreateFileA((sbyte*) &struct128, 1073741824U, 2U, &_Module.gstruct100_0, 3U, 0U, (void*) 0);
           GStruct113 gstruct113;
-          \u003CModule\u003E.DeviceIoControl(fileA, 2229256U, (void*) &gstruct113, 76U, (void*) &gstruct113, 76U, &num1, (GStruct95*) 0);
+          _Module.DeviceIoControl(fileA, 2229256U, (void*) &gstruct113, 76U, (void*) &gstruct113, 76U, &num1, (GStruct95*) 0);
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          \u003CModule\u003E.smethod_129(fileA, ^(byte&) ((IntPtr) &gstruct113 + 6), int_43 + 1);
-          \u003CModule\u003E.CloseHandle(fileA);
+          _Module.smethod_129(fileA, ^(byte&) ((IntPtr) &gstruct113 + 6), int_43 + 1);
+          _Module.CloseHandle(fileA);
         }
       }
     }
@@ -16254,27 +16254,27 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: explicit reference operation
     // ISSUE: cpblk instruction
-    __memcpy(@struct128, @\u003CModule\u003E.struct35_136, 5);
+    __memcpy(@struct128, @_Module.struct35_136, 5);
     // ISSUE: cast to a reference type
     // ISSUE: initblk instruction
     __memset((Struct128&) ((IntPtr) &struct128 + 5), 0, 251);
     GStruct116 gstruct116;
     uint num;
-    if (\u003CModule\u003E.DeviceIoControl(pVoid_0, 2229284U, (void*) &gstruct116, 516U, (void*) &gstruct116, 516U, &num, (GStruct95*) 0) == 0)
-      return \u003CModule\u003E.GetLastError();
-    \u003CModule\u003E.DeviceIoControl(pVoid_0, 2229256U, (void*) &gstruct116, 516U, (void*) &gstruct116, 516U, &num, (GStruct95*) 0);
+    if (_Module.DeviceIoControl(pVoid_0, 2229284U, (void*) &gstruct116, 516U, (void*) &gstruct116, 516U, &num, (GStruct95*) 0) == 0)
+      return _Module.GetLastError();
+    _Module.DeviceIoControl(pVoid_0, 2229256U, (void*) &gstruct116, 516U, (void*) &gstruct116, 516U, &num, (GStruct95*) 0);
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct116 + 4), (int) ((uint) ^(int&) @gstruct116 / 2U), (sbyte*) ((IntPtr) &struct128 + 4), 252, (sbyte*) 0, (int*) 0);
-    void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) &struct128, 1073741824U, 2U, &\u003CModule\u003E.gstruct100_0, 3U, 0U, (void*) 0);
+    _Module.WideCharToMultiByte(0U, 0U, (ushort*) ((IntPtr) &gstruct116 + 4), (int) ((uint) ^(int&) @gstruct116 / 2U), (sbyte*) ((IntPtr) &struct128 + 4), 252, (sbyte*) 0, (int*) 0);
+    void* fileA = _Module.CreateFileA((sbyte*) &struct128, 1073741824U, 2U, &_Module.gstruct100_0, 3U, 0U, (void*) 0);
     GStruct113 gstruct113;
-    if ((IntPtr) fileA == IntPtr(-1) || \u003CModule\u003E.DeviceIoControl(fileA, 2229256U, (void*) &gstruct113, 76U, (void*) &gstruct113, 76U, &num, (GStruct95*) 0) == 0)
-      return \u003CModule\u003E.GetLastError();
+    if ((IntPtr) fileA == IntPtr(-1) || _Module.DeviceIoControl(fileA, 2229256U, (void*) &gstruct113, 76U, (void*) &gstruct113, 76U, &num, (GStruct95*) 0) == 0)
+      return _Module.GetLastError();
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.smethod_129(fileA, ^(byte&) ((IntPtr) &gstruct113 + 6), 0);
-    \u003CModule\u003E.CloseHandle(fileA);
+    _Module.smethod_129(fileA, ^(byte&) ((IntPtr) &gstruct113 + 6), 0);
+    _Module.CloseHandle(fileA);
     return 0U;
   }
 
@@ -16284,28 +16284,28 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: explicit reference operation
     // ISSUE: cpblk instruction
-    __memcpy(@struct129, @\u003CModule\u003E.struct24_22, 9);
+    __memcpy(@struct129, @_Module.struct24_22, 9);
     uint num = 0U;
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    ^(int&) @\u003CModule\u003E.gstruct100_0 = 12;
+    ^(int&) @_Module.gstruct100_0 = 12;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct100_0 + 4) = 0;
+    ^(int&) ((IntPtr) &_Module.gstruct100_0 + 4) = 0;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct100_0 + 8) = 0;
+    ^(int&) ((IntPtr) &_Module.gstruct100_0 + 8) = 0;
     for (int index = 0; index < 10; ++index)
     {
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       ^(sbyte&) ((IntPtr) &struct129 + 7) = (sbyte) (index + 48);
-      void* fileA = \u003CModule\u003E.CreateFileA((sbyte*) &struct129, 1073741824U, 2U, &\u003CModule\u003E.gstruct100_0, 3U, 0U, (void*) 0);
+      void* fileA = _Module.CreateFileA((sbyte*) &struct129, 1073741824U, 2U, &_Module.gstruct100_0, 3U, 0U, (void*) 0);
       if ((((IntPtr) fileA != IntPtr(-1) ? 1 : 0) & ((int) num == 0 ? 1 : 0)) != 0)
       {
-        num = \u003CModule\u003E.smethod_130(fileA);
-        \u003CModule\u003E.CloseHandle(fileA);
+        num = _Module.smethod_130(fileA);
+        _Module.CloseHandle(fileA);
       }
     }
     return (int) num;
@@ -16314,37 +16314,37 @@ label_3:
   public static unsafe int smethod_132(void* pVoid_0, int int_43)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236496U, (void*) &int_43, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236496U, (void*) &int_43, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_133(void* pVoid_0, byte* pByte_0)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236512U, (void*) 0, 0U, (void*) pByte_0, 1U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236512U, (void*) 0, 0U, (void*) pByte_0, 1U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_134(void* pVoid_0, byte byte_0)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236504U, (void*) &byte_0, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236504U, (void*) &byte_0, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_135(void* pVoid_0, int int_43)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236500U, (void*) &int_43, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236500U, (void*) &int_43, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_136(void* pVoid_0, byte* pByte_0)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236516U, (void*) 0, 0U, (void*) pByte_0, 1U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236516U, (void*) 0, 0U, (void*) pByte_0, 1U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_137(void* pVoid_0, byte byte_0)
   {
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236508U, (void*) &byte_0, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236508U, (void*) &byte_0, 1U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_138(void* pVoid_0, byte byte_0)
@@ -16365,7 +16365,7 @@ label_3:
     // ISSUE: explicit reference operation
     ^(short&) ((IntPtr) &struct130 + 2) = (short) (ushort) byte_0;
     uint num;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236428U, (void*) &struct130, 4U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236428U, (void*) &struct130, 4U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_139(void* pVoid_0, byte* pByte_0)
@@ -16383,7 +16383,7 @@ label_3:
     // ISSUE: explicit reference operation
     ^(short&) @struct130 = (short) 141;
     uint num1;
-    int num2 = \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236568U, (void*) &struct130, 4U, (void*) &struct130, 4U, &num1, (GStruct95*) 0);
+    int num2 = _Module.DeviceIoControl(pVoid_0, 2236568U, (void*) &struct130, 4U, (void*) &struct130, 4U, &num1, (GStruct95*) 0);
     if (num2 != 0)
     {
       // ISSUE: explicit reference operation
@@ -16398,7 +16398,7 @@ label_3:
   {
     ushort num1;
     uint num2;
-    int num3 = \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236560U, (void*) 0, 0U, (void*) &num1, 2U, &num2, (GStruct95*) 0);
+    int num3 = _Module.DeviceIoControl(pVoid_0, 2236560U, (void*) 0, 0U, (void*) &num1, 2U, &num2, (GStruct95*) 0);
     if (num3 != 0)
       *pUshort_0 = num1;
     return num3;
@@ -16408,16 +16408,16 @@ label_3:
   {
     ushort num1 = ushort_0;
     uint num2;
-    return \u003CModule\u003E.DeviceIoControl(pVoid_0, 2236556U, (void*) &num1, 2U, (void*) 0, 0U, &num2, (GStruct95*) 0);
+    return _Module.DeviceIoControl(pVoid_0, 2236556U, (void*) &num1, 2U, (void*) 0, 0U, &num2, (GStruct95*) 0);
   }
 
   public static unsafe int smethod_142(uint* pUint_0, byte* pByte_0, int int_43)
   {
     int num1 = 0;
-    *pUint_0 = (uint) ((int) \u003CModule\u003E._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) pByte_0, 8) & -16711936);
-    *(int*) ((IntPtr) pUint_0 + 4) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936;
-    *(int*) ((IntPtr) pUint_0 + 8) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936;
-    *(int*) ((IntPtr) pUint_0 + 12) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936;
+    *pUint_0 = (uint) ((int) _Module._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) pByte_0, 8) & -16711936);
+    *(int*) ((IntPtr) pUint_0 + 4) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936;
+    *(int*) ((IntPtr) pUint_0 + 8) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936;
+    *(int*) ((IntPtr) pUint_0 + 12) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936;
     if (int_43 == 128)
     {
       while (true)
@@ -16433,7 +16433,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        *(int*) ((IntPtr) pUint_0 + 16) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct132_0 + num1 * 4);
+        *(int*) ((IntPtr) pUint_0 + 16) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &_Module.struct132_0 + num1 * 4);
         *(int*) ((IntPtr) pUint_0 + 20) = *(int*) ((IntPtr) pUint_0 + 4) ^ *(int*) ((IntPtr) pUint_0 + 16);
         *(int*) ((IntPtr) pUint_0 + 24) = *(int*) ((IntPtr) pUint_0 + 8) ^ *(int*) ((IntPtr) pUint_0 + 20);
         *(int*) ((IntPtr) pUint_0 + 28) = *(int*) ((IntPtr) pUint_0 + 12) ^ *(int*) ((IntPtr) pUint_0 + 24);
@@ -16447,8 +16447,8 @@ label_3:
     }
     else
     {
-      *(int*) ((IntPtr) pUint_0 + 16) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 16), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 16), 8) & -16711936;
-      *(int*) ((IntPtr) pUint_0 + 20) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 20), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 20), 8) & -16711936;
+      *(int*) ((IntPtr) pUint_0 + 16) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 16), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 16), 8) & -16711936;
+      *(int*) ((IntPtr) pUint_0 + 20) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 20), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 20), 8) & -16711936;
       if (int_43 == 192)
       {
         while (true)
@@ -16464,7 +16464,7 @@ label_3:
           // ISSUE: explicit reference operation
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          *(int*) ((IntPtr) pUint_0 + 24) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct132_0 + num1 * 4);
+          *(int*) ((IntPtr) pUint_0 + 24) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &_Module.struct132_0 + num1 * 4);
           *(int*) ((IntPtr) pUint_0 + 28) = *(int*) ((IntPtr) pUint_0 + 4) ^ *(int*) ((IntPtr) pUint_0 + 24);
           *(int*) ((IntPtr) pUint_0 + 32) = *(int*) ((IntPtr) pUint_0 + 8) ^ *(int*) ((IntPtr) pUint_0 + 28);
           *(int*) ((IntPtr) pUint_0 + 36) = *(int*) ((IntPtr) pUint_0 + 12) ^ *(int*) ((IntPtr) pUint_0 + 32);
@@ -16482,8 +16482,8 @@ label_3:
       }
       else
       {
-        *(int*) ((IntPtr) pUint_0 + 24) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 24), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 24), 8) & -16711936;
-        *(int*) ((IntPtr) pUint_0 + 28) = (int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 28), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 28), 8) & -16711936;
+        *(int*) ((IntPtr) pUint_0 + 24) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 24), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 24), 8) & -16711936;
+        *(int*) ((IntPtr) pUint_0 + 28) = (int) _Module._lrotl((uint) *(int*) (pByte_0 + 28), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 28), 8) & -16711936;
         if (int_43 != 256)
           return 0;
         while (true)
@@ -16499,7 +16499,7 @@ label_3:
           // ISSUE: explicit reference operation
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          *(int*) ((IntPtr) pUint_0 + 32) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct132_0 + num1 * 4);
+          *(int*) ((IntPtr) pUint_0 + 32) = (int) *pUint_0 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num2 & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num2 >> 24) * 4) & (int) byte.MaxValue ^ ^(int&) ((IntPtr) &_Module.struct132_0 + num1 * 4);
           *(int*) ((IntPtr) pUint_0 + 36) = *(int*) ((IntPtr) pUint_0 + 4) ^ *(int*) ((IntPtr) pUint_0 + 32);
           *(int*) ((IntPtr) pUint_0 + 40) = *(int*) ((IntPtr) pUint_0 + 8) ^ *(int*) ((IntPtr) pUint_0 + 36);
           *(int*) ((IntPtr) pUint_0 + 44) = *(int*) ((IntPtr) pUint_0 + 12) ^ *(int*) ((IntPtr) pUint_0 + 40);
@@ -16515,7 +16515,7 @@ label_3:
             // ISSUE: explicit reference operation
             // ISSUE: cast to a reference type
             // ISSUE: explicit reference operation
-            *(int*) ((IntPtr) pUint_0 + 48) = *(int*) ((IntPtr) pUint_0 + 16) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num3 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num3 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue;
+            *(int*) ((IntPtr) pUint_0 + 48) = *(int*) ((IntPtr) pUint_0 + 16) ^ ^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num3 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num3 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue;
             *(int*) ((IntPtr) pUint_0 + 52) = *(int*) ((IntPtr) pUint_0 + 20) ^ *(int*) ((IntPtr) pUint_0 + 48);
             *(int*) ((IntPtr) pUint_0 + 56) = *(int*) ((IntPtr) pUint_0 + 24) ^ *(int*) ((IntPtr) pUint_0 + 52);
             *(int*) ((IntPtr) pUint_0 + 60) = *(int*) ((IntPtr) pUint_0 + 28) ^ *(int*) ((IntPtr) pUint_0 + 56);
@@ -16531,7 +16531,7 @@ label_3:
 
   public static unsafe int smethod_143(uint* pUint_0, byte* pByte_0, int int_43)
   {
-    int num1 = \u003CModule\u003E.smethod_142(pUint_0, pByte_0, int_43);
+    int num1 = _Module.smethod_142(pUint_0, pByte_0, int_43);
     int index1 = 0;
     int index2 = num1 * 4;
     while (index1 < index2)
@@ -16570,7 +16570,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      *pUint_0 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (*pUint_0 >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (*pUint_0 >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (*pUint_0 >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) *pUint_0 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4));
+      *pUint_0 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (^(int&) ((IntPtr) &_Module.struct131_2 + (int) (*pUint_0 >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (*pUint_0 >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (*pUint_0 >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) *pUint_0 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16587,7 +16587,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      *(int*) ((IntPtr) pUint_0 + 4) = ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 4) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
+      *(int*) ((IntPtr) pUint_0 + 4) = ^(int&) ((IntPtr) &_Module.struct131_6 + (^(int&) ((IntPtr) &_Module.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 4) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + (^(int&) ((IntPtr) &_Module.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 4) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16604,7 +16604,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      *(int*) ((IntPtr) pUint_0 + 8) = ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
+      *(int*) ((IntPtr) pUint_0 + 8) = ^(int&) ((IntPtr) &_Module.struct131_6 + (^(int&) ((IntPtr) &_Module.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 8) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + (^(int&) ((IntPtr) &_Module.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16621,17 +16621,17 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      *(int*) ((IntPtr) pUint_0 + 12) = ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 12) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
+      *(int*) ((IntPtr) pUint_0 + 12) = ^(int&) ((IntPtr) &_Module.struct131_6 + (^(int&) ((IntPtr) &_Module.struct131_2 + (int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 24) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 16) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + (^(int&) ((IntPtr) &_Module.struct131_2 + ((int) ((uint) *(int*) ((IntPtr) pUint_0 + 12) >> 8) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + (^(int&) ((IntPtr) &_Module.struct131_2 + (*(int*) ((IntPtr) pUint_0 + 12) & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) * 4);
     }
     return num1;
   }
 
   public static unsafe void smethod_144(uint* pUint_0, int int_43, byte* pByte_0, byte* pByte_1)
   {
-    uint num1 = (uint) ((int) \u003CModule\u003E._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) pByte_0, 8) & -16711936) ^ *pUint_0;
-    uint num2 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 4));
-    uint num3 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 8));
-    uint num4 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 12));
+    uint num1 = (uint) ((int) _Module._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) pByte_0, 8) & -16711936) ^ *pUint_0;
+    uint num2 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 4));
+    uint num3 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 8));
+    uint num4 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 12));
     int num5 = int_43 >> 1;
     uint num6;
     uint num7;
@@ -16647,7 +16647,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num6 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num1 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num4 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 16));
+      num6 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num1 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num4 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 16));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16656,7 +16656,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num7 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num2 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num4 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num1 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 20));
+      num7 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num2 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num4 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num1 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 20));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16665,7 +16665,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num8 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num3 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num4 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num1 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num2 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 24));
+      num8 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num3 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num4 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num1 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num2 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 24));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16674,7 +16674,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num9 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num4 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num1 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num3 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 28));
+      num9 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num4 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num1 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num3 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 28));
       pUint_0 += 32;
       --num5;
       if (num5 != 0)
@@ -16687,7 +16687,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num1 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num6 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num9 & (int) byte.MaxValue) * 4)) ^ *pUint_0;
+        num1 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num6 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num9 & (int) byte.MaxValue) * 4)) ^ *pUint_0;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16696,7 +16696,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num2 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num7 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num6 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 4));
+        num2 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num7 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num6 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 4));
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16705,7 +16705,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num3 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num8 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num7 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 8));
+        num3 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num8 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num7 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 8));
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16714,7 +16714,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num4 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_1 + (int) (num9 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_0 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_3 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_9 + ((int) num8 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 12));
+        num4 = (uint) (^(int&) ((IntPtr) &_Module.struct131_1 + (int) (num9 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_0 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_3 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_9 + ((int) num8 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 12));
       }
       else
         break;
@@ -16727,8 +16727,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_1 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num6 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num9 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) ^ *pUint_0;
-    *(int*) pByte_1 = (int) \u003CModule\u003E._lrotl(uint_2_1, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_1, 8) & -16711936;
+    uint uint_2_1 = (uint) (^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num6 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num9 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) ^ *pUint_0;
+    *(int*) pByte_1 = (int) _Module._lrotl(uint_2_1, 8) & 16711935 | (int) _Module._lrotr(uint_2_1, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16737,8 +16737,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_2 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num7 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num6 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 4));
-    *(int*) (pByte_1 + 4) = (int) \u003CModule\u003E._lrotl(uint_2_2, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_2, 8) & -16711936;
+    uint uint_2_2 = (uint) (^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num7 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num6 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 4));
+    *(int*) (pByte_1 + 4) = (int) _Module._lrotl(uint_2_2, 8) & 16711935 | (int) _Module._lrotr(uint_2_2, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16747,8 +16747,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_3 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num8 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num7 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 8));
-    *(int*) (pByte_1 + 8) = (int) \u003CModule\u003E._lrotl(uint_2_3, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_3, 8) & -16711936;
+    uint uint_2_3 = (uint) (^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num8 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num7 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 8));
+    *(int*) (pByte_1 + 8) = (int) _Module._lrotl(uint_2_3, 8) & 16711935 | (int) _Module._lrotr(uint_2_3, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16757,16 +16757,16 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_4 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + (int) (num9 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_2 + ((int) num8 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 12));
-    *(int*) (pByte_1 + 12) = (int) \u003CModule\u003E._lrotl(uint_2_4, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_4, 8) & -16711936;
+    uint uint_2_4 = (uint) (^(int&) ((IntPtr) &_Module.struct131_2 + (int) (num9 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_2 + ((int) num8 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 12));
+    *(int*) (pByte_1 + 12) = (int) _Module._lrotl(uint_2_4, 8) & 16711935 | (int) _Module._lrotr(uint_2_4, 8) & -16711936;
   }
 
   public static unsafe void smethod_145(uint* pUint_0, int int_43, byte* pByte_0, byte* pByte_1)
   {
-    uint num1 = (uint) ((int) \u003CModule\u003E._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) pByte_0, 8) & -16711936) ^ *pUint_0;
-    uint num2 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 4));
-    uint num3 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 8));
-    uint num4 = (uint) (((int) \u003CModule\u003E._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) \u003CModule\u003E._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 12));
+    uint num1 = (uint) ((int) _Module._lrotl((uint) *(int*) pByte_0, 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) pByte_0, 8) & -16711936) ^ *pUint_0;
+    uint num2 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 4), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 4), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 4));
+    uint num3 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 8), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 8), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 8));
+    uint num4 = (uint) (((int) _Module._lrotl((uint) *(int*) (pByte_0 + 12), 8) & 16711935 | (int) _Module._lrotr((uint) *(int*) (pByte_0 + 12), 8) & -16711936) ^ *(int*) ((IntPtr) pUint_0 + 12));
     int num5 = int_43 >> 1;
     uint num6;
     uint num7;
@@ -16782,7 +16782,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num6 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num1 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num4 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num2 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 16));
+      num6 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num1 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num4 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num3 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num2 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 16));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16791,7 +16791,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num9 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num2 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num1 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num4 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num3 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 20));
+      num9 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num2 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num1 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num4 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num3 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 20));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16800,7 +16800,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num8 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num3 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num1 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num4 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 24));
+      num8 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num3 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num2 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num1 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num4 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 24));
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
@@ -16809,7 +16809,7 @@ label_3:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      num7 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num4 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num1 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 28));
+      num7 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num4 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num3 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num2 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num1 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 28));
       pUint_0 += 32;
       --num5;
       if (num5 != 0)
@@ -16822,7 +16822,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num1 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num6 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num9 & (int) byte.MaxValue) * 4)) ^ *pUint_0;
+        num1 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num6 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num9 & (int) byte.MaxValue) * 4)) ^ *pUint_0;
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16831,7 +16831,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num2 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num9 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num8 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 4));
+        num2 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num9 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num8 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 4));
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16840,7 +16840,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num3 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num8 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num7 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 8));
+        num3 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num8 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num7 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 8));
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
@@ -16849,7 +16849,7 @@ label_3:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        num4 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_6 + (int) (num7 >> 24) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_4 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_7 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_5 + ((int) num6 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 12));
+        num4 = (uint) (^(int&) ((IntPtr) &_Module.struct131_6 + (int) (num7 >> 24) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_4 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_7 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) ^ ^(int&) ((IntPtr) &_Module.struct131_5 + ((int) num6 & (int) byte.MaxValue) * 4) ^ *(int*) ((IntPtr) pUint_0 + 12));
       }
       else
         break;
@@ -16862,8 +16862,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_1 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + (int) (num6 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) num9 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) ^ *pUint_0;
-    *(int*) pByte_1 = (int) \u003CModule\u003E._lrotl(uint_2_1, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_1, 8) & -16711936;
+    uint uint_2_1 = (uint) (^(int&) ((IntPtr) &_Module.struct131_8 + (int) (num6 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num7 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num8 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) num9 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue) ^ *pUint_0;
+    *(int*) pByte_1 = (int) _Module._lrotl(uint_2_1, 8) & 16711935 | (int) _Module._lrotr(uint_2_1, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16872,8 +16872,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_2 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + (int) (num9 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) num8 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 4));
-    *(int*) (pByte_1 + 4) = (int) \u003CModule\u003E._lrotl(uint_2_2, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_2, 8) & -16711936;
+    uint uint_2_2 = (uint) (^(int&) ((IntPtr) &_Module.struct131_8 + (int) (num9 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num6 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num7 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) num8 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 4));
+    *(int*) (pByte_1 + 4) = (int) _Module._lrotl(uint_2_2, 8) & 16711935 | (int) _Module._lrotr(uint_2_2, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16882,8 +16882,8 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_3 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + (int) (num8 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) num7 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 8));
-    *(int*) (pByte_1 + 8) = (int) \u003CModule\u003E._lrotl(uint_2_3, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_3, 8) & -16711936;
+    uint uint_2_3 = (uint) (^(int&) ((IntPtr) &_Module.struct131_8 + (int) (num8 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num9 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num6 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) num7 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 8));
+    *(int*) (pByte_1 + 8) = (int) _Module._lrotl(uint_2_3, 8) & 16711935 | (int) _Module._lrotr(uint_2_3, 8) & -16711936;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
@@ -16892,72 +16892,72 @@ label_3:
     // ISSUE: explicit reference operation
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    uint uint_2_4 = (uint) (^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + (int) (num7 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &\u003CModule\u003E.struct131_8 + ((int) num6 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 12));
-    *(int*) (pByte_1 + 12) = (int) \u003CModule\u003E._lrotl(uint_2_4, 8) & 16711935 | (int) \u003CModule\u003E._lrotr(uint_2_4, 8) & -16711936;
+    uint uint_2_4 = (uint) (^(int&) ((IntPtr) &_Module.struct131_8 + (int) (num7 >> 24) * 4) & -16777216 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num8 >> 16) & (int) byte.MaxValue) * 4) & 16711680 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) (num9 >> 8) & (int) byte.MaxValue) * 4) & 65280 ^ ^(int&) ((IntPtr) &_Module.struct131_8 + ((int) num6 & (int) byte.MaxValue) * 4) & (int) byte.MaxValue ^ *(int*) ((IntPtr) pUint_0 + 12));
+    *(int*) (pByte_1 + 12) = (int) _Module._lrotl(uint_2_4, 8) & 16711935 | (int) _Module._lrotr(uint_2_4, 8) & -16711936;
   }
 
   public static unsafe int smethod_146(sbyte* pSbyte_0)
   {
-    \u003CModule\u003E.memset((void*) pSbyte_0, 0, 260U);
-    if ((int) \u003CModule\u003E.GetModuleFileNameA((GStruct81*) 0, pSbyte_0, 260U) == 0)
+    _Module.memset((void*) pSbyte_0, 0, 260U);
+    if ((int) _Module.GetModuleFileNameA((GStruct81*) 0, pSbyte_0, 260U) == 0)
       return 1;
-    *\u003CModule\u003E.strrchr(pSbyte_0, 92) = (sbyte) 0;
+    *_Module.strrchr(pSbyte_0, 92) = (sbyte) 0;
     return 0;
   }
 
   public static unsafe int smethod_147(sbyte* pSbyte_0, sbyte* pSbyte_1)
   {
-    GStruct118* pGstruct118_0 = \u003CModule\u003E.OpenSCManagerA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct65_12, 983103U);
+    GStruct118* pGstruct118_0 = _Module.OpenSCManagerA((sbyte*) 0, (sbyte*) &_Module.struct65_12, 983103U);
     if ((IntPtr) pGstruct118_0 == IntPtr.Zero)
       return 1;
-    GStruct118* serviceA = \u003CModule\u003E.CreateServiceA(pGstruct118_0, pSbyte_1, pSbyte_1, 983551U, 1U, 3U, 1U, pSbyte_0, (sbyte*) 0, (uint*) 0, (sbyte*) 0, (sbyte*) 0, (sbyte*) 0);
-    \u003CModule\u003E.CloseServiceHandle(pGstruct118_0);
+    GStruct118* serviceA = _Module.CreateServiceA(pGstruct118_0, pSbyte_1, pSbyte_1, 983551U, 1U, 3U, 1U, pSbyte_0, (sbyte*) 0, (uint*) 0, (sbyte*) 0, (sbyte*) 0, (sbyte*) 0);
+    _Module.CloseServiceHandle(pGstruct118_0);
     if ((IntPtr) serviceA == IntPtr.Zero)
       return 2;
-    if (\u003CModule\u003E.StartServiceA(serviceA, 0U, (sbyte**) 0) == 0)
+    if (_Module.StartServiceA(serviceA, 0U, (sbyte**) 0) == 0)
     {
-      \u003CModule\u003E.CloseServiceHandle(serviceA);
+      _Module.CloseServiceHandle(serviceA);
       return 3;
     }
     else
     {
-      \u003CModule\u003E.CloseServiceHandle(serviceA);
+      _Module.CloseServiceHandle(serviceA);
       return 0;
     }
   }
 
   public static unsafe int smethod_148(sbyte* pSbyte_0)
   {
-    GStruct118* pGstruct118_0_1 = \u003CModule\u003E.OpenSCManagerA((sbyte*) 0, (sbyte*) &\u003CModule\u003E.struct65_13, 983103U);
+    GStruct118* pGstruct118_0_1 = _Module.OpenSCManagerA((sbyte*) 0, (sbyte*) &_Module.struct65_13, 983103U);
     if ((IntPtr) pGstruct118_0_1 == IntPtr.Zero)
       return 1;
-    GStruct118* pGstruct118_0_2 = \u003CModule\u003E.OpenServiceA(pGstruct118_0_1, pSbyte_0, 983551U);
-    \u003CModule\u003E.CloseServiceHandle(pGstruct118_0_1);
+    GStruct118* pGstruct118_0_2 = _Module.OpenServiceA(pGstruct118_0_1, pSbyte_0, 983551U);
+    _Module.CloseServiceHandle(pGstruct118_0_1);
     if ((IntPtr) pGstruct118_0_2 == IntPtr.Zero)
       return 2;
     GStruct119 gstruct119;
-    \u003CModule\u003E.ControlService(pGstruct118_0_2, 1U, &gstruct119);
-    if (\u003CModule\u003E.DeleteService(pGstruct118_0_2) == 0)
+    _Module.ControlService(pGstruct118_0_2, 1U, &gstruct119);
+    if (_Module.DeleteService(pGstruct118_0_2) == 0)
     {
-      \u003CModule\u003E.CloseServiceHandle(pGstruct118_0_2);
+      _Module.CloseServiceHandle(pGstruct118_0_2);
       return 3;
     }
     else
     {
-      \u003CModule\u003E.CloseServiceHandle(pGstruct118_0_2);
+      _Module.CloseServiceHandle(pGstruct118_0_2);
       return 0;
     }
   }
 
   public static unsafe int smethod_149(void** ppVoid_0)
   {
-    *(int*) ppVoid_0 = (int) \u003CModule\u003E.CreateFileA((sbyte*) &\u003CModule\u003E.struct74_6, (uint) int.MinValue, 0U, (GStruct100*) 0, 3U, 128U, (void*) 0);
+    *(int*) ppVoid_0 = (int) _Module.CreateFileA((sbyte*) &_Module.struct74_6, (uint) int.MinValue, 0U, (GStruct100*) 0, 3U, 128U, (void*) 0);
     return *(int*) ppVoid_0 == -1 ? 1 : 0;
   }
 
   public static unsafe int smethod_150(void* pVoid_0)
   {
-    \u003CModule\u003E.CloseHandle(pVoid_0);
+    _Module.CloseHandle(pVoid_0);
     return 0;
   }
 
@@ -16967,7 +16967,7 @@ label_3:
     uint num2;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621465600U, (void*) &ushort_0, 4U, (void*) &num1, 1U, &num2, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621465600U, (void*) &ushort_0, 4U, (void*) &num1, 1U, &num2, (GStruct95*) 0);
     return num1;
   }
 
@@ -16977,7 +16977,7 @@ label_3:
     uint num2;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621465604U, (void*) &ushort_0, 4U, (void*) &num1, 2U, &num2, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621465604U, (void*) &ushort_0, 4U, (void*) &num1, 2U, &num2, (GStruct95*) 0);
     return num1;
   }
 
@@ -16988,7 +16988,7 @@ label_3:
     uint num3;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621465608U, (void*) &num2, 4U, (void*) &num1, 4U, &num3, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621465608U, (void*) &num2, 4U, (void*) &num1, 4U, &num3, (GStruct95*) 0);
     return num1;
   }
 
@@ -17005,7 +17005,7 @@ label_3:
     uint num;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621449280U, (void*) &gstruct120, 5U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621449280U, (void*) &gstruct120, 5U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe void smethod_155(ushort ushort_0, ushort ushort_1)
@@ -17021,7 +17021,7 @@ label_3:
     uint num;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621449284U, (void*) &gstruct120, 6U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621449284U, (void*) &gstruct120, 6U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static unsafe void smethod_156(uint uint_2)
@@ -17037,7 +17037,7 @@ label_3:
     uint num;
     // ISSUE: cast to a reference type
     // ISSUE: explicit reference operation
-    \u003CModule\u003E.DeviceIoControl((void*) ^(int&) ((IntPtr) &\u003CModule\u003E.gstruct101_0 + 4), 2621449288U, (void*) &gstruct120, 8U, (void*) 0, 0U, &num, (GStruct95*) 0);
+    _Module.DeviceIoControl((void*) ^(int&) ((IntPtr) &_Module.gstruct101_0 + 4), 2621449288U, (void*) &gstruct120, 8U, (void*) 0, 0U, &num, (GStruct95*) 0);
   }
 
   public static uint smethod_157()
@@ -17049,8 +17049,8 @@ label_3:
       {
         for (uint index3 = 0U; index3 < 8U; ++index3)
         {
-          \u003CModule\u003E.smethod_156((uint) (((((int) index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8));
-          if ((int) (ushort) \u003CModule\u003E.smethod_153() != (int) ushort.MaxValue)
+          _Module.smethod_156((uint) (((((int) index1 | (int) short.MinValue) * 32 | (int) (ushort) index2) * 8 | (int) (ushort) index3) << 8));
+          if ((int) (ushort) _Module.smethod_153() != (int) ushort.MaxValue)
             num = index1;
         }
       }

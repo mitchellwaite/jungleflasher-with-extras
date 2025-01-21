@@ -47,10 +47,13 @@
     <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Form1_DnSpy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Form1.resx</DependentUpon>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="_Module.cs" />
     <Compile Include="System\Runtime\CompilerServices\SuppressIldasmAttribute.cs" />
@@ -338,6 +341,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AxInterop\SHDocVw.dll" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Common_Barcode.resx">
       <DependentUpon>Common_Barcode.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,10 +358,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FixSerial.resx">
       <DependentUpon>FixSerial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FreeKey.resx">
       <DependentUpon>FreeKey.cs</DependentUpon>
@@ -375,6 +377,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Job_history.resx">
       <DependentUpon>Job_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

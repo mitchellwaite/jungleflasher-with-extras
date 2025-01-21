@@ -296,8 +296,8 @@ namespace ns0
     private Button button9;
     private Button button10;
     private Button button25;
-    private AxWebBrowser axWebBrowser_0;
-    private AxWebBrowser axWebBrowser_1;
+    //private AxWebBrowser axWebBrowser_0;
+    //private AxWebBrowser axWebBrowser_1;
     private PictureBox pictureBox3;
     private TabPage tabPage5;
     private Button button30;
@@ -437,7 +437,8 @@ namespace ns0
     public string string_22;
     private unsafe void** ppVoid_0;
     public string string_23;
-    public string string_24;
+        private IContainer components;
+        public string string_24;
 
     public Form1()
     {
@@ -513,3504 +514,3947 @@ namespace ns0
 
     private void InitializeComponent()
     {
-      this.icontainer_0 = (IContainer) new Container();
-      this.tabControl1 = new TabControl();
-      this.tabPage9 = new TabPage();
-      this.contextMenu_2 = new ContextMenu();
-      this.menuItem_5 = new MenuItem();
-      this.menuItem_6 = new MenuItem();
-      this.menuItem_7 = new MenuItem();
-      this.menuItem_12 = new MenuItem();
-      this.menuItem_13 = new MenuItem();
-      this.menuItem_19 = new MenuItem();
-      this.menuItem_33 = new MenuItem();
-      this.label40 = new Label();
-      this.label44 = new Label();
-      this.label43 = new Label();
-      this.label41 = new Label();
-      this.label37 = new Label();
-      this.textBox15 = new TextBox();
-      this.textBox14 = new TextBox();
-      this.label19 = new Label();
-      this.textBox9 = new TextBox();
-      this.label15 = new Label();
-      this.label7 = new Label();
-      this.label6 = new Label();
-      this.label5 = new Label();
-      this.label4 = new Label();
-      this.label3 = new Label();
-      this.label16 = new Label();
-      this.label8 = new Label();
-      this.label101 = new Label();
-      this.axWebBrowser_0 = new AxWebBrowser();
-      this.axWebBrowser_1 = new AxWebBrowser();
-      this.textBox19 = new TextBox();
-      this.tabControl2 = new TabControl();
-      this.tabPage10 = new TabPage();
-      this.contextMenu_1 = new ContextMenu();
-      this.menuItem_2 = new MenuItem();
-      this.menuItem_3 = new MenuItem();
-      this.menuItem_4 = new MenuItem();
-      this.menuItem_11 = new MenuItem();
-      this.menuItem_20 = new MenuItem();
-      this.menuItem_32 = new MenuItem();
-      this.menuItem_37 = new MenuItem();
-      this.label71 = new Label();
-      this.label50 = new Label();
-      this.textBox11 = new TextBox();
-      this.label55 = new Label();
-      this.label48 = new Label();
-      this.label47 = new Label();
-      this.textBox17 = new TextBox();
-      this.label17 = new Label();
-      this.label18 = new Label();
-      this.label9 = new Label();
-      this.label10 = new Label();
-      this.label11 = new Label();
-      this.label12 = new Label();
-      this.label13 = new Label();
-      this.label14 = new Label();
-      this.label20 = new Label();
-      this.label49 = new Label();
-      this.textBox5 = new TextBox();
-      this.OpenSource = new Button();
-      this.DumpDrive = new Button();
-      this.SaveTarget = new Button();
-      this.OpeniXtreme = new Button();
-      this.button6 = new Button();
-      this.tabControl3 = new TabControl();
-      this.tabPage3 = new TabPage();
-      this.label45 = new Label();
-      this.label128 = new Label();
-      this.label39 = new Label();
-      this.label46 = new Label();
-      this.label42 = new Label();
-      this.label38 = new Label();
-      this.textBox3 = new TextBox();
-      this.label21 = new Label();
-      this.label22 = new Label();
-      this.label23 = new Label();
-      this.label24 = new Label();
-      this.label25 = new Label();
-      this.label26 = new Label();
-      this.label27 = new Label();
-      this.label28 = new Label();
-      this.label29 = new Label();
-      this.textBox16 = new TextBox();
-      this.textBox8 = new TextBox();
-      this.tabPage7 = new TabPage();
-      this.textBox7 = new TextBox();
-      this.tabPage11 = new TabPage();
-      this.textBox10 = new TextBox();
-      this.tabPage12 = new TabPage();
-      this.textBox12 = new TextBox();
-      this.tabControl4 = new TabControl();
-      this.tabPage1 = new TabPage();
-      this.label129 = new Label();
-      this.label54 = new Label();
-      this.textBox1 = new TextBox();
-      this.label56 = new Label();
-      this.label53 = new Label();
-      this.label52 = new Label();
-      this.label51 = new Label();
-      this.textBox18 = new TextBox();
-      this.label1 = new Label();
-      this.label2 = new Label();
-      this.label30 = new Label();
-      this.label31 = new Label();
-      this.label32 = new Label();
-      this.label33 = new Label();
-      this.label34 = new Label();
-      this.label35 = new Label();
-      this.label36 = new Label();
-      this.tabPage2 = new TabPage();
-      this.textBox2 = new TextBox();
-      this.tabPage4 = new TabPage();
-      this.textBox4 = new TextBox();
-      this.tabPage13 = new TabPage();
-      this.textBox13 = new TextBox();
-      this.checkBox3 = new CheckBox();
-      this.button2 = new Button();
-      this.tabControl5 = new TabControl();
-      this.Firmtools = new TabPage();
-      this.button41 = new Button();
-      this.linkLabel1 = new LinkLabel();
-      this.button29 = new Button();
-      this.pictureBox1 = new PictureBox();
-      this.linkLabel4 = new LinkLabel();
-      this.DVDKey32 = new TabPage();
-      this.button39 = new Button();
-      this.button38 = new Button();
-      this.checkBox15 = new CheckBox();
-      this.button32 = new Button();
-      this.button10 = new Button();
-      this.button8 = new Button();
-      this.button4 = new Button();
-      this.button1 = new Button();
-      this.checkBox9 = new CheckBox();
-      this.checkBox8 = new CheckBox();
-      this.button28 = new Button();
-      this.checkBox4 = new CheckBox();
-      this.checkBox2 = new CheckBox();
-      this.button5 = new Button();
-      this.contextMenu_3 = new ContextMenu();
-      this.menuItem_14 = new MenuItem();
-      this.menuItem_15 = new MenuItem();
-      this.menuItem_16 = new MenuItem();
-      this.menuItem_17 = new MenuItem();
-      this.menuItem_18 = new MenuItem();
-      this.groupBox16 = new GroupBox();
-      this.contextMenu_4 = new ContextMenu();
-      this.menuItem_21 = new MenuItem();
-      this.menuItem_22 = new MenuItem();
-      this.menuItem_23 = new MenuItem();
-      this.menuItem_24 = new MenuItem();
-      this.pictureBox5 = new PictureBox();
-      this.pictureBox7 = new PictureBox();
-      this.label131 = new Label();
-      this.label130 = new Label();
-      this.label92 = new Label();
-      this.label93 = new Label();
-      this.label94 = new Label();
-      this.label106 = new Label();
-      this.label107 = new Label();
-      this.label108 = new Label();
-      this.label109 = new Label();
-      this.label110 = new Label();
-      this.comboBox1 = new ComboBox();
-      this.label111 = new Label();
-      this.groupBox17 = new GroupBox();
-      this.pictureBox10 = new PictureBox();
-      this.pictureBox8 = new PictureBox();
-      this.label112 = new Label();
-      this.label113 = new Label();
-      this.label115 = new Label();
-      this.label116 = new Label();
-      this.label117 = new Label();
-      this.label123 = new Label();
-      this.label124 = new Label();
-      this.label125 = new Label();
-      this.label126 = new Label();
-      this.label127 = new Label();
-      this.comboBox10 = new ComboBox();
-      this.label57 = new Label();
-      this.groupBox2 = new GroupBox();
-      this.contextMenu_5 = new ContextMenu();
-      this.menuItem_25 = new MenuItem();
-      this.menuItem_26 = new MenuItem();
-      this.menuItem_27 = new MenuItem();
-      this.menuItem_29 = new MenuItem();
-      this.menuItem_28 = new MenuItem();
-      this.menuItem_30 = new MenuItem();
-      this.menuItem_31 = new MenuItem();
-      this.label103 = new Label();
-      this.label63 = new Label();
-      this.label105 = new Label();
-      this.label104 = new Label();
-      this.label102 = new Label();
-      this.label64 = new Label();
-      this.label65 = new Label();
-      this.label66 = new Label();
-      this.groupBox4 = new GroupBox();
-      this.label88 = new Label();
-      this.label87 = new Label();
-      this.label69 = new Label();
-      this.label70 = new Label();
-      this.Benq = new TabPage();
-      this.checkBox16 = new CheckBox();
-      this.checkBox10 = new CheckBox();
-      this.checkBox11 = new CheckBox();
-      this.linkLabel2 = new LinkLabel();
-      this.groupBox9 = new GroupBox();
-      this.radioButton21 = new RadioButton();
-      this.button42 = new Button();
-      this.radioButton20 = new RadioButton();
-      this.radioButton19 = new RadioButton();
-      this.button14 = new Button();
-      this.button13 = new Button();
-      this.button15 = new Button();
-      this.button17 = new Button();
-      this.button16 = new Button();
-      this.groupBox7 = new GroupBox();
-      this.button40 = new Button();
-      this.button18 = new Button();
-      this.button7 = new Button();
-      this.button21 = new Button();
-      this.groupBox1 = new GroupBox();
-      this.pictureBox2 = new PictureBox();
-      this.pictureBox6 = new PictureBox();
-      this.label133 = new Label();
-      this.label132 = new Label();
-      this.label72 = new Label();
-      this.label58 = new Label();
-      this.label59 = new Label();
-      this.label60 = new Label();
-      this.label61 = new Label();
-      this.label62 = new Label();
-      this.label67 = new Label();
-      this.label68 = new Label();
-      this.comboBox7 = new ComboBox();
-      this.label73 = new Label();
-      this.groupBox3 = new GroupBox();
-      this.pictureBox11 = new PictureBox();
-      this.pictureBox9 = new PictureBox();
-      this.label74 = new Label();
-      this.label75 = new Label();
-      this.label76 = new Label();
-      this.label81 = new Label();
-      this.label83 = new Label();
-      this.label84 = new Label();
-      this.label85 = new Label();
-      this.label86 = new Label();
-      this.label95 = new Label();
-      this.label96 = new Label();
-      this.groupBox6 = new GroupBox();
-      this.label118 = new Label();
-      this.label122 = new Label();
-      this.label121 = new Label();
-      this.label120 = new Label();
-      this.label119 = new Label();
-      this.label114 = new Label();
-      this.label77 = new Label();
-      this.label78 = new Label();
-      this.label79 = new Label();
-      this.label80 = new Label();
-      this.checkBox5 = new CheckBox();
-      this.button9 = new Button();
-      this.Hitachi = new TabPage();
-      this.radioButton18 = new RadioButton();
-      this.radioButton17 = new RadioButton();
-      this.groupBox8 = new GroupBox();
-      this.radioButton5 = new RadioButton();
-      this.radioButton4 = new RadioButton();
-      this.radioButton3 = new RadioButton();
-      this.radioButton2 = new RadioButton();
-      this.radioButton1 = new RadioButton();
-      this.groupBox15 = new GroupBox();
-      this.button22 = new Button();
-      this.button3 = new Button();
-      this.comboBox16 = new ComboBox();
-      this.contextMenu_0 = new ContextMenu();
-      this.menuItem_0 = new MenuItem();
-      this.menuItem_1 = new MenuItem();
-      this.menuItem_8 = new MenuItem();
-      this.menuItem_9 = new MenuItem();
-      this.menuItem_10 = new MenuItem();
-      this.menuItem_38 = new MenuItem();
-      this.menuItem_39 = new MenuItem();
-      this.menuItem_40 = new MenuItem();
-      this.menuItem_41 = new MenuItem();
-      this.menuItem_42 = new MenuItem();
-      this.menuItem_49 = new MenuItem();
-      this.menuItem_48 = new MenuItem();
-      this.menuItem_44 = new MenuItem();
-      this.menuItem_46 = new MenuItem();
-      this.menuItem_50 = new MenuItem();
-      this.menuItem_45 = new MenuItem();
-      this.menuItem_51 = new MenuItem();
-      this.menuItem_47 = new MenuItem();
-      this.menuItem_52 = new MenuItem();
-      this.menuItem_43 = new MenuItem();
-      this.button27 = new Button();
-      this.button23 = new Button();
-      this.groupBox14 = new GroupBox();
-      this.button24 = new Button();
-      this.button12 = new Button();
-      this.checkBox1 = new CheckBox();
-      this.linkLabel3 = new LinkLabel();
-      this.groupBox12 = new GroupBox();
-      this.listBox5 = new ListBox();
-      this.groupBox13 = new GroupBox();
-      this.button25 = new Button();
-      this.label99 = new Label();
-      this.label97 = new Label();
-      this.label98 = new Label();
-      this.label100 = new Label();
-      this.button11 = new Button();
-      this.label82 = new Label();
-      this.label89 = new Label();
-      this.label91 = new Label();
-      this.comboBox13 = new ComboBox();
-      this.button20 = new Button();
-      this.button19 = new Button();
-      this.label90 = new Label();
-      this.groupBox11 = new GroupBox();
-      this.radioButton16 = new RadioButton();
-      this.radioButton11 = new RadioButton();
-      this.radioButton10 = new RadioButton();
-      this.radioButton9 = new RadioButton();
-      this.radioButton8 = new RadioButton();
-      this.radioButton7 = new RadioButton();
-      this.radioButton6 = new RadioButton();
-      this.button26 = new Button();
-      this.groupBox5 = new GroupBox();
-      this.radioButton12 = new RadioButton();
-      this.radioButton13 = new RadioButton();
-      this.radioButton14 = new RadioButton();
-      this.radioButton15 = new RadioButton();
-      this.tabPage5 = new TabPage();
-      this.pictureBox4 = new PictureBox();
-      this.button31 = new Button();
-      this.button30 = new Button();
-      this.checkBox7 = new CheckBox();
-      this.checkBox6 = new CheckBox();
-      this.textBox6 = new TextBox();
-      this.toolTip_0 = new ToolTip(this.icontainer_0);
-      this.pictureBox3 = new PictureBox();
-      this.button48 = new Button();
-      this.button47 = new Button();
-      this.button46 = new Button();
-      this.button45 = new Button();
-      this.button44 = new Button();
-      this.button43 = new Button();
-      this.textBox20 = new TextBox();
-      this.label135 = new Label();
-      this.groupBox18 = new GroupBox();
-      this.contextMenu_6 = new ContextMenu();
-      this.menuItem_34 = new MenuItem();
-      this.menuItem_35 = new MenuItem();
-      this.menuItem_36 = new MenuItem();
-      this.tabControl1.SuspendLayout();
-      this.tabPage9.SuspendLayout();
-      ((ISupportInitialize) this.axWebBrowser_0).BeginInit();
-      ((ISupportInitialize) this.axWebBrowser_1).BeginInit();
-      this.tabControl2.SuspendLayout();
-      this.tabPage10.SuspendLayout();
-      this.tabControl3.SuspendLayout();
-      this.tabPage3.SuspendLayout();
-      this.tabPage7.SuspendLayout();
-      this.tabPage11.SuspendLayout();
-      this.tabPage12.SuspendLayout();
-      this.tabControl4.SuspendLayout();
-      this.tabPage1.SuspendLayout();
-      this.tabPage2.SuspendLayout();
-      this.tabPage4.SuspendLayout();
-      this.tabPage13.SuspendLayout();
-      this.tabControl5.SuspendLayout();
-      this.Firmtools.SuspendLayout();
-      this.DVDKey32.SuspendLayout();
-      this.groupBox16.SuspendLayout();
-      this.groupBox17.SuspendLayout();
-      this.groupBox2.SuspendLayout();
-      this.groupBox4.SuspendLayout();
-      this.Benq.SuspendLayout();
-      this.groupBox9.SuspendLayout();
-      this.groupBox7.SuspendLayout();
-      this.groupBox1.SuspendLayout();
-      this.groupBox3.SuspendLayout();
-      this.groupBox6.SuspendLayout();
-      this.Hitachi.SuspendLayout();
-      this.groupBox8.SuspendLayout();
-      this.groupBox15.SuspendLayout();
-      this.groupBox14.SuspendLayout();
-      this.groupBox12.SuspendLayout();
-      this.groupBox13.SuspendLayout();
-      this.groupBox11.SuspendLayout();
-      this.groupBox5.SuspendLayout();
-      this.tabPage5.SuspendLayout();
-      this.groupBox18.SuspendLayout();
-      this.SuspendLayout();
-      this.tabControl1.AllowDrop = true;
-      this.tabControl1.Controls.Add((Control) this.tabPage9);
-      Point point1 = new Point(8, 16);
-      this.tabControl1.Location = point1;
-      this.tabControl1.Name = "tabControl1";
-      this.tabControl1.SelectedIndex = 0;
-      Size size1 = new Size(552, 144);
-      this.tabControl1.Size = size1;
-      this.tabControl1.TabIndex = 0;
-      this.tabPage9.AllowDrop = true;
-      this.tabPage9.ContextMenu = this.contextMenu_2;
-      this.tabPage9.Controls.Add((Control) this.label40);
-      this.tabPage9.Controls.Add((Control) this.label44);
-      this.tabPage9.Controls.Add((Control) this.label43);
-      this.tabPage9.Controls.Add((Control) this.label41);
-      this.tabPage9.Controls.Add((Control) this.label37);
-      this.tabPage9.Controls.Add((Control) this.textBox15);
-      this.tabPage9.Controls.Add((Control) this.textBox14);
-      this.tabPage9.Controls.Add((Control) this.label19);
-      this.tabPage9.Controls.Add((Control) this.textBox9);
-      this.tabPage9.Controls.Add((Control) this.label15);
-      this.tabPage9.Controls.Add((Control) this.label7);
-      this.tabPage9.Controls.Add((Control) this.label6);
-      this.tabPage9.Controls.Add((Control) this.label5);
-      this.tabPage9.Controls.Add((Control) this.label4);
-      this.tabPage9.Controls.Add((Control) this.label3);
-      this.tabPage9.Controls.Add((Control) this.label16);
-      this.tabPage9.Controls.Add((Control) this.label8);
-      this.tabPage9.Controls.Add((Control) this.label101);
-      Point point2 = new Point(4, 22);
-      this.tabPage9.Location = point2;
-      this.tabPage9.Name = "tabPage9";
-      Size size2 = new Size(544, 118);
-      this.tabPage9.Size = size2;
-      this.tabPage9.TabIndex = 4;
-      this.tabPage9.Text = "Source";
-      this.tabPage9.DragEnter += new DragEventHandler(this.tabPage12_DragEnter);
-      this.tabPage9.DragDrop += new DragEventHandler(this.tabPage12_DragDrop);
-      this.contextMenu_2.MenuItems.AddRange(new MenuItem[7]
-      {
-        this.menuItem_5,
-        this.menuItem_6,
-        this.menuItem_7,
-        this.menuItem_12,
-        this.menuItem_13,
-        this.menuItem_19,
-        this.menuItem_33
-      });
-      this.menuItem_5.Index = 0;
-      this.menuItem_5.Text = "Load f/w";
-      this.menuItem_5.Click += new EventHandler(this.menuItem_5_Click);
-      this.menuItem_6.Enabled = false;
-      this.menuItem_6.Index = 1;
-      this.menuItem_6.Text = "Clear Source";
-      this.menuItem_6.Click += new EventHandler(this.menuItem_6_Click);
-      this.menuItem_7.Enabled = false;
-      this.menuItem_7.Index = 2;
-      this.menuItem_7.Text = "Update d/b";
-      this.menuItem_7.Click += new EventHandler(this.menuItem_7_Click);
-      this.menuItem_12.Index = 3;
-      this.menuItem_12.Text = "Open Key d/b";
-      this.menuItem_12.Click += new EventHandler(this.menuItem_12_Click);
-      this.menuItem_13.Enabled = false;
-      this.menuItem_13.Index = 4;
-      this.menuItem_13.Text = "History";
-      this.menuItem_13.Click += new EventHandler(this.menuItem_13_Click);
-      this.menuItem_19.Enabled = false;
-      this.menuItem_19.Index = 5;
-      this.menuItem_19.Text = "Verify Key";
-      this.menuItem_19.Click += new EventHandler(this.menuItem_19_Click);
-      this.menuItem_33.Enabled = false;
-      this.menuItem_33.Index = 6;
-      this.menuItem_33.Text = "Auto LT-Plus";
-      this.menuItem_33.Click += new EventHandler(this.menuItem_33_Click);
-      this.label40.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, (byte) 0);
-      Point point3 = new Point(320, 96);
-      this.label40.Location = point3;
-      this.label40.Name = "label40";
-      Size size3 = new Size(216, 16);
-      this.label40.Size = size3;
-      this.label40.TabIndex = 29;
-      this.label44.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point4 = new Point(48, 96);
-      this.label44.Location = point4;
-      this.label44.Name = "label44";
-      Size size4 = new Size(208, 16);
-      this.label44.Size = size4;
-      this.label44.TabIndex = 32;
-      Point point5 = new Point(16, 96);
-      this.label43.Location = point5;
-      this.label43.Name = "label43";
-      Size size5 = new Size(40, 16);
-      this.label43.Size = size5;
-      this.label43.TabIndex = 31;
-      this.label43.Text = "OSIG:";
-      Point point6 = new Point(256, 96);
-      this.label41.Location = point6;
-      this.label41.Name = "label41";
-      Size size6 = new Size(72, 16);
-      this.label41.Size = size6;
-      this.label41.TabIndex = 30;
-      this.label41.Text = "Spoofed As:";
-      this.label41.Visible = false;
-      Point point7 = new Point(376, 48);
-      this.label37.Location = point7;
-      this.label37.Name = "label37";
-      Size size7 = new Size(48, 16);
-      this.label37.Size = size7;
-      this.label37.TabIndex = 26;
-      this.textBox15.BackColor = SystemColors.Window;
-      Point point8 = new Point(16, 16);
-      this.textBox15.Location = point8;
-      this.textBox15.Name = "textBox15";
-      this.textBox15.ReadOnly = true;
-      Size size8 = new Size(512, 20);
-      this.textBox15.Size = size8;
-      this.textBox15.TabIndex = 25;
-      this.textBox15.Text = "";
-      this.textBox14.BackColor = SystemColors.Window;
-      Point point9 = new Point(88, 130);
-      this.textBox14.Location = point9;
-      this.textBox14.Name = "textBox14";
-      this.textBox14.ReadOnly = true;
-      Size size9 = new Size(440, 20);
-      this.textBox14.Size = size9;
-      this.textBox14.TabIndex = 24;
-      this.textBox14.Text = "";
-      this.textBox14.Visible = false;
-      Point point10 = new Point(304, 48);
-      this.label19.Location = point10;
-      this.label19.Name = "label19";
-      Size size10 = new Size(72, 16);
-      this.label19.Size = size10;
-      this.label19.TabIndex = 12;
-      this.label19.Text = "DVD Key @";
-      this.textBox9.BackColor = SystemColors.Window;
-      Point point11 = new Point(296, 64);
-      this.textBox9.Location = point11;
-      this.textBox9.Name = "textBox9";
-      this.textBox9.ReadOnly = true;
-      Size size11 = new Size(232, 20);
-      this.textBox9.Size = size11;
-      this.textBox9.TabIndex = 11;
-      this.textBox9.Text = "";
-      Point point12 = new Point(184, 48);
-      this.label15.Location = point12;
-      this.label15.Name = "label15";
-      Size size12 = new Size(120, 16);
-      this.label15.Size = size12;
-      this.label15.TabIndex = 9;
-      this.label15.Text = "Firmware Type";
-      Point point13 = new Point(64, 68);
-      this.label7.Location = point13;
-      this.label7.Name = "label7";
-      Size size13 = new Size(64, 16);
-      this.label7.Size = size13;
-      this.label7.TabIndex = 5;
-      Point point14 = new Point(16, 68);
-      this.label6.Location = point14;
-      this.label6.Name = "label6";
-      Size size14 = new Size(48, 16);
-      this.label6.Size = size14;
-      this.label6.TabIndex = 4;
-      Point point15 = new Point(128, 48);
-      this.label5.Location = point15;
-      this.label5.Name = "label5";
-      Size size15 = new Size(64, 16);
-      this.label5.Size = size15;
-      this.label5.TabIndex = 3;
-      this.label5.Text = "Rev";
-      Point point16 = new Point(64, 48);
-      this.label4.Location = point16;
-      this.label4.Name = "label4";
-      Size size16 = new Size(64, 16);
-      this.label4.Size = size16;
-      this.label4.TabIndex = 2;
-      this.label4.Text = "Model ";
-      Point point17 = new Point(16, 48);
-      this.label3.Location = point17;
-      this.label3.Name = "label3";
-      Size size17 = new Size(72, 16);
-      this.label3.Size = size17;
-      this.label3.TabIndex = 1;
-      this.label3.Text = "Vendor";
-      Point point18 = new Point(184, 68);
-      this.label16.Location = point18;
-      this.label16.Name = "label16";
-      Size size18 = new Size(120, 24);
-      this.label16.Size = size18;
-      this.label16.TabIndex = 10;
-      Point point19 = new Point(128, 68);
-      this.label8.Location = point19;
-      this.label8.Name = "label8";
-      Size size19 = new Size(64, 16);
-      this.label8.Size = size19;
-      this.label8.TabIndex = 6;
-      Point point20 = new Point(432, 48);
-      this.label101.Location = point20;
-      this.label101.Name = "label101";
-      Size size20 = new Size(90, 16);
-      this.label101.Size = size20;
-      this.label101.TabIndex = 36;
-      ((AxHost) this.axWebBrowser_0).Enabled = true;
-      Point point21 = new Point(678, 6);
-      ((Control) this.axWebBrowser_0).Location = point21;
-      ((AxHost) this.axWebBrowser_0).OcxState = (AxHost.State) resourceManager.GetObject("axWebBrowser1.OcxState");
-      Size size21 = new Size(564, 164);
-      ((Control) this.axWebBrowser_0).Size = size21;
-      ((Control) this.axWebBrowser_0).TabIndex = 74;
-      // ISSUE: method pointer
-      this.axWebBrowser_0.add_NewWindow3(new DWebBrowserEvents2_NewWindow3EventHandler((object) this, __methodptr(axWebBrowser_0_NewWindow3)));
-      // ISSUE: method pointer
-      this.axWebBrowser_0.add_NavigateError(new DWebBrowserEvents2_NavigateErrorEventHandler((object) this, __methodptr(axWebBrowser_0_NavigateError)));
-      // ISSUE: method pointer
-      this.axWebBrowser_0.add_NavigateComplete2(new DWebBrowserEvents2_NavigateComplete2EventHandler((object) this, __methodptr(axWebBrowser_0_NavigateComplete2)));
-      ((AxHost) this.axWebBrowser_1).ContainingControl = (ContainerControl) this;
-      ((AxHost) this.axWebBrowser_1).Enabled = true;
-      Point point22 = new Point(8, 8);
-      ((Control) this.axWebBrowser_1).Location = point22;
-      ((AxHost) this.axWebBrowser_1).OcxState = (AxHost.State) resourceManager.GetObject("axWebBrowser2.OcxState");
-      Size size22 = new Size(640, 328);
-      ((Control) this.axWebBrowser_1).Size = size22;
-      ((Control) this.axWebBrowser_1).TabIndex = 74;
-      // ISSUE: method pointer
-      this.axWebBrowser_1.add_NewWindow3(new DWebBrowserEvents2_NewWindow3EventHandler((object) this, __methodptr(axWebBrowser_1_NewWindow3)));
-      // ISSUE: method pointer
-      this.axWebBrowser_1.add_NavigateError(new DWebBrowserEvents2_NavigateErrorEventHandler((object) this, __methodptr(axWebBrowser_1_NavigateError)));
-      this.textBox19.BackColor = SystemColors.Window;
-      Point point23 = new Point(368, 432);
-      this.textBox19.Location = point23;
-      this.textBox19.Name = "textBox19";
-      Size size23 = new Size(112, 20);
-      this.textBox19.Size = size23;
-      this.textBox19.TabIndex = 29;
-      this.textBox19.Text = "EasyToFindSource";
-      this.textBox19.TextChanged += new EventHandler(this.textBox19_TextChanged);
-      this.tabControl2.Controls.Add((Control) this.tabPage10);
-      Point point24 = new Point(8, 208);
-      this.tabControl2.Location = point24;
-      this.tabControl2.Name = "tabControl2";
-      this.tabControl2.SelectedIndex = 0;
-      Size size24 = new Size(552, 144);
-      this.tabControl2.Size = size24;
-      this.tabControl2.TabIndex = 3;
-      this.tabPage10.AllowDrop = true;
-      this.tabPage10.ContextMenu = this.contextMenu_1;
-      this.tabPage10.Controls.Add((Control) this.label71);
-      this.tabPage10.Controls.Add((Control) this.label50);
-      this.tabPage10.Controls.Add((Control) this.textBox11);
-      this.tabPage10.Controls.Add((Control) this.label55);
-      this.tabPage10.Controls.Add((Control) this.label48);
-      this.tabPage10.Controls.Add((Control) this.label47);
-      this.tabPage10.Controls.Add((Control) this.textBox17);
-      this.tabPage10.Controls.Add((Control) this.label17);
-      this.tabPage10.Controls.Add((Control) this.label18);
-      this.tabPage10.Controls.Add((Control) this.label9);
-      this.tabPage10.Controls.Add((Control) this.label10);
-      this.tabPage10.Controls.Add((Control) this.label11);
-      this.tabPage10.Controls.Add((Control) this.label12);
-      this.tabPage10.Controls.Add((Control) this.label13);
-      this.tabPage10.Controls.Add((Control) this.label14);
-      this.tabPage10.Controls.Add((Control) this.label20);
-      this.tabPage10.Controls.Add((Control) this.label49);
-      Point point25 = new Point(4, 22);
-      this.tabPage10.Location = point25;
-      this.tabPage10.Name = "tabPage10";
-      Size size25 = new Size(544, 118);
-      this.tabPage10.Size = size25;
-      this.tabPage10.TabIndex = 4;
-      this.tabPage10.Text = "Target";
-      this.tabPage10.DragEnter += new DragEventHandler(this.tabPage13_DragEnter);
-      this.tabPage10.DragDrop += new DragEventHandler(this.tabPage13_DragDrop);
-      this.contextMenu_1.MenuItems.AddRange(new MenuItem[7]
-      {
-        this.menuItem_2,
-        this.menuItem_3,
-        this.menuItem_4,
-        this.menuItem_11,
-        this.menuItem_20,
-        this.menuItem_32,
-        this.menuItem_37
-      });
-      this.menuItem_2.Index = 0;
-      this.menuItem_2.Text = "Load f/w";
-      this.menuItem_2.Click += new EventHandler(this.menuItem_2_Click);
-      this.menuItem_3.Index = 1;
-      this.menuItem_3.Text = "Load iXtreme";
-      this.menuItem_3.Click += new EventHandler(this.menuItem_3_Click);
-      this.menuItem_4.Enabled = false;
-      this.menuItem_4.Index = 2;
-      this.menuItem_4.Text = "Clear Target";
-      this.menuItem_4.Click += new EventHandler(this.menuItem_4_Click);
-      this.menuItem_11.Enabled = false;
-      this.menuItem_11.Index = 3;
-      this.menuItem_11.Text = "Save Dummy";
-      this.menuItem_11.Click += new EventHandler(this.menuItem_11_Click);
-      this.menuItem_20.Enabled = false;
-      this.menuItem_20.Index = 4;
-      this.menuItem_20.Text = "Verify Key";
-      this.menuItem_20.Click += new EventHandler(this.menuItem_20_Click);
-      this.menuItem_32.Enabled = false;
-      this.menuItem_32.Index = 5;
-      this.menuItem_32.Text = "Write Key";
-      this.menuItem_32.Visible = false;
-      this.menuItem_32.Click += new EventHandler(this.menuItem_32_Click);
-      this.menuItem_37.Enabled = false;
-      this.menuItem_37.Index = 6;
-      this.menuItem_37.Text = "Key C/R";
-      this.menuItem_37.Visible = false;
-      this.menuItem_37.Click += new EventHandler(this.menuItem_37_Click);
-      Point point26 = new Point(432, 48);
-      this.label71.Location = point26;
-      this.label71.Name = "label71";
-      Size size26 = new Size(90, 16);
-      this.label71.Size = size26;
-      this.label71.TabIndex = 35;
-      this.label50.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, (byte) 0);
-      Point point27 = new Point(320, 96);
-      this.label50.Location = point27;
-      this.label50.Name = "label50";
-      Size size27 = new Size(216, 16);
-      this.label50.Size = size27;
-      this.label50.TabIndex = 33;
-      this.textBox11.BackColor = SystemColors.Window;
-      Point point28 = new Point(296, 64);
-      this.textBox11.Location = point28;
-      this.textBox11.Name = "textBox11";
-      this.textBox11.ReadOnly = true;
-      Size size28 = new Size(232, 20);
-      this.textBox11.Size = size28;
-      this.textBox11.TabIndex = 21;
-      this.textBox11.Text = "";
-      this.textBox11.TextChanged += new EventHandler(this.textBox11_TextChanged);
-      Point point29 = new Point(376, 48);
-      this.label55.Location = point29;
-      this.label55.Name = "label55";
-      Size size29 = new Size(48, 16);
-      this.label55.Size = size29;
-      this.label55.TabIndex = 34;
-      this.label48.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point30 = new Point(48, 96);
-      this.label48.Location = point30;
-      this.label48.Name = "label48";
-      Size size30 = new Size(208, 16);
-      this.label48.Size = size30;
-      this.label48.TabIndex = 33;
-      Point point31 = new Point(16, 96);
-      this.label47.Location = point31;
-      this.label47.Name = "label47";
-      Size size31 = new Size(40, 16);
-      this.label47.Size = size31;
-      this.label47.TabIndex = 32;
-      this.label47.Text = "OSIG:";
-      this.textBox17.BackColor = SystemColors.Window;
-      Point point32 = new Point(16, 16);
-      this.textBox17.Location = point32;
-      this.textBox17.Name = "textBox17";
-      this.textBox17.ReadOnly = true;
-      Size size32 = new Size(512, 20);
-      this.textBox17.Size = size32;
-      this.textBox17.TabIndex = 26;
-      this.textBox17.Text = "";
-      Point point33 = new Point(184, 68);
-      this.label17.Location = point33;
-      this.label17.Name = "label17";
-      Size size33 = new Size(128, 24);
-      this.label17.Size = size33;
-      this.label17.TabIndex = 18;
-      Point point34 = new Point(184, 48);
-      this.label18.Location = point34;
-      this.label18.Name = "label18";
-      Size size34 = new Size(120, 16);
-      this.label18.Size = size34;
-      this.label18.TabIndex = 17;
-      this.label18.Text = "Firmware Type";
-      Point point35 = new Point(128, 68);
-      this.label9.Location = point35;
-      this.label9.Name = "label9";
-      Size size35 = new Size(64, 16);
-      this.label9.Size = size35;
-      this.label9.TabIndex = 14;
-      Point point36 = new Point(64, 68);
-      this.label10.Location = point36;
-      this.label10.Name = "label10";
-      Size size36 = new Size(72, 16);
-      this.label10.Size = size36;
-      this.label10.TabIndex = 13;
-      Point point37 = new Point(16, 68);
-      this.label11.Location = point37;
-      this.label11.Name = "label11";
-      Size size37 = new Size(72, 16);
-      this.label11.Size = size37;
-      this.label11.TabIndex = 12;
-      Point point38 = new Point(128, 48);
-      this.label12.Location = point38;
-      this.label12.Name = "label12";
-      Size size38 = new Size(64, 16);
-      this.label12.Size = size38;
-      this.label12.TabIndex = 11;
-      this.label12.Text = "Rev";
-      Point point39 = new Point(64, 48);
-      this.label13.Location = point39;
-      this.label13.Name = "label13";
-      Size size39 = new Size(64, 16);
-      this.label13.Size = size39;
-      this.label13.TabIndex = 10;
-      this.label13.Text = "Model ";
-      Point point40 = new Point(16, 48);
-      this.label14.Location = point40;
-      this.label14.Name = "label14";
-      Size size40 = new Size(48, 16);
-      this.label14.Size = size40;
-      this.label14.TabIndex = 9;
-      this.label14.Text = "Vendor";
-      Point point41 = new Point(304, 48);
-      this.label20.Location = point41;
-      this.label20.Name = "label20";
-      Size size41 = new Size(72, 16);
-      this.label20.Size = size41;
-      this.label20.TabIndex = 22;
-      this.label20.Text = "DVD Key @";
-      Point point42 = new Point(256, 96);
-      this.label49.Location = point42;
-      this.label49.Name = "label49";
-      Size size42 = new Size(72, 16);
-      this.label49.Size = size42;
-      this.label49.TabIndex = 33;
-      this.label49.Text = "Spoofed As:";
-      this.label49.Visible = false;
-      this.textBox5.BackColor = SystemColors.Window;
-      Point point43 = new Point(504, 432);
-      this.textBox5.Location = point43;
-      this.textBox5.Name = "textBox5";
-      Size size43 = new Size(112, 20);
-      this.textBox5.Size = size43;
-      this.textBox5.TabIndex = 28;
-      this.textBox5.Text = "EasyToFindTarget";
-      this.textBox5.TextChanged += new EventHandler(this.textBox5_TextChanged);
-      this.OpenSource.FlatStyle = FlatStyle.System;
-      Point point44 = new Point(568, 120);
-      this.OpenSource.Location = point44;
-      this.OpenSource.Name = "OpenSource";
-      Size size44 = new Size(80, 40);
-      this.OpenSource.Size = size44;
-      this.OpenSource.TabIndex = 7;
-      this.OpenSource.Text = "Open Source Firmware";
-      this.OpenSource.Click += new EventHandler(this.OpenSource_Click);
-      this.DumpDrive.Enabled = false;
-      this.DumpDrive.FlatStyle = FlatStyle.System;
-      Point point45 = new Point(568, 64);
-      this.DumpDrive.Location = point45;
-      this.DumpDrive.Name = "DumpDrive";
-      Size size45 = new Size(80, 40);
-      this.DumpDrive.Size = size45;
-      this.DumpDrive.TabIndex = 8;
-      this.DumpDrive.Text = " Save Drive  Key ";
-      this.DumpDrive.Click += new EventHandler(this.DumpDrive_Click);
-      this.SaveTarget.Enabled = false;
-      this.SaveTarget.FlatStyle = FlatStyle.System;
-      Point point46 = new Point(568, 312);
-      this.SaveTarget.Location = point46;
-      this.SaveTarget.Name = "SaveTarget";
-      Size size46 = new Size(80, 40);
-      this.SaveTarget.Size = size46;
-      this.SaveTarget.TabIndex = 15;
-      this.SaveTarget.Text = "Save to File";
-      this.SaveTarget.Click += new EventHandler(this.SaveTarget_Click);
-      this.OpeniXtreme.FlatStyle = FlatStyle.System;
-      Point point47 = new Point(568, 200);
-      this.OpeniXtreme.Location = point47;
-      this.OpeniXtreme.Name = "OpeniXtreme";
-      Size size47 = new Size(80, 40);
-      this.OpeniXtreme.Size = size47;
-      this.OpeniXtreme.TabIndex = 19;
-      this.OpeniXtreme.Text = "Open Target Firmware";
-      this.OpeniXtreme.Click += new EventHandler(this.OpeniXtreme_Click);
-      this.button6.Enabled = false;
-      this.button6.FlatStyle = FlatStyle.System;
-      Point point48 = new Point(136, 176);
-      this.button6.Location = point48;
-      this.button6.Name = "button6";
-      Size size48 = new Size(288, 24);
-      this.button6.Size = size48;
-      this.button6.TabIndex = 20;
-      this.button6.Text = "Spoof Source to Target";
-      this.toolTip_0.SetToolTip((Control) this.button6, "Copy Key, Inquiry, Identify and serial from Source to Target");
-      this.button6.Click += new EventHandler(this.button6_Click);
-      this.tabControl3.Controls.Add((Control) this.tabPage3);
-      this.tabControl3.Controls.Add((Control) this.tabPage7);
-      this.tabControl3.Controls.Add((Control) this.tabPage11);
-      this.tabControl3.Controls.Add((Control) this.tabPage12);
-      Point point49 = new Point(8, 16);
-      this.tabControl3.Location = point49;
-      this.tabControl3.Name = "tabControl3";
-      this.tabControl3.SelectedIndex = 0;
-      Size size49 = new Size(552, 144);
-      this.tabControl3.Size = size49;
-      this.tabControl3.TabIndex = 21;
-      this.tabControl3.Visible = false;
-      this.tabPage3.AllowDrop = true;
-      this.tabPage3.ContextMenu = this.contextMenu_2;
-      this.tabPage3.Controls.Add((Control) this.label45);
-      this.tabPage3.Controls.Add((Control) this.label128);
-      this.tabPage3.Controls.Add((Control) this.label39);
-      this.tabPage3.Controls.Add((Control) this.label46);
-      this.tabPage3.Controls.Add((Control) this.label42);
-      this.tabPage3.Controls.Add((Control) this.label38);
-      this.tabPage3.Controls.Add((Control) this.textBox3);
-      this.tabPage3.Controls.Add((Control) this.label21);
-      this.tabPage3.Controls.Add((Control) this.label22);
-      this.tabPage3.Controls.Add((Control) this.label23);
-      this.tabPage3.Controls.Add((Control) this.label24);
-      this.tabPage3.Controls.Add((Control) this.label25);
-      this.tabPage3.Controls.Add((Control) this.label26);
-      this.tabPage3.Controls.Add((Control) this.label27);
-      this.tabPage3.Controls.Add((Control) this.label28);
-      this.tabPage3.Controls.Add((Control) this.label29);
-      this.tabPage3.Controls.Add((Control) this.textBox16);
-      this.tabPage3.Controls.Add((Control) this.textBox8);
-      Point point50 = new Point(4, 22);
-      this.tabPage3.Location = point50;
-      this.tabPage3.Name = "tabPage3";
-      Size size50 = new Size(544, 118);
-      this.tabPage3.Size = size50;
-      this.tabPage3.TabIndex = 4;
-      this.tabPage3.Text = "Source";
-      this.tabPage3.DragEnter += new DragEventHandler(this.tabPage12_DragEnter);
-      this.tabPage3.DragDrop += new DragEventHandler(this.tabPage12_DragDrop);
-      this.label45.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point51 = new Point(48, 96);
-      this.label45.Location = point51;
-      this.label45.Name = "label45";
-      Size size51 = new Size(208, 16);
-      this.label45.Size = size51;
-      this.label45.TabIndex = 33;
-      Point point52 = new Point(432, 48);
-      this.label128.Location = point52;
-      this.label128.Name = "label128";
-      Size size52 = new Size(90, 16);
-      this.label128.Size = size52;
-      this.label128.TabIndex = 37;
-      this.label39.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, (byte) 0);
-      Point point53 = new Point(320, 96);
-      this.label39.Location = point53;
-      this.label39.Name = "label39";
-      Size size53 = new Size(216, 16);
-      this.label39.Size = size53;
-      this.label39.TabIndex = 28;
-      Point point54 = new Point(16, 96);
-      this.label46.Location = point54;
-      this.label46.Name = "label46";
-      Size size54 = new Size(40, 16);
-      this.label46.Size = size54;
-      this.label46.TabIndex = 34;
-      this.label46.Text = "OSIG:";
-      Point point55 = new Point(256, 96);
-      this.label42.Location = point55;
-      this.label42.Name = "label42";
-      Size size55 = new Size(72, 16);
-      this.label42.Size = size55;
-      this.label42.TabIndex = 29;
-      this.label42.Text = "Spoofed As:";
-      this.label42.Visible = false;
-      Point point56 = new Point(376, 48);
-      this.label38.Location = point56;
-      this.label38.Name = "label38";
-      Size size56 = new Size(48, 16);
-      this.label38.Size = size56;
-      this.label38.TabIndex = 27;
-      this.textBox3.BackColor = SystemColors.Window;
-      Point point57 = new Point(296, 64);
-      this.textBox3.Location = point57;
-      this.textBox3.Name = "textBox3";
-      this.textBox3.ReadOnly = true;
-      Size size57 = new Size(232, 20);
-      this.textBox3.Size = size57;
-      this.textBox3.TabIndex = 11;
-      this.textBox3.Text = "";
-      Point point58 = new Point(304, 48);
-      this.label21.Location = point58;
-      this.label21.Name = "label21";
-      Size size58 = new Size(72, 16);
-      this.label21.Size = size58;
-      this.label21.TabIndex = 12;
-      this.label21.Text = "DVD Key @";
-      Point point59 = new Point(184, 68);
-      this.label22.Location = point59;
-      this.label22.Name = "label22";
-      Size size59 = new Size(128, 24);
-      this.label22.Size = size59;
-      this.label22.TabIndex = 10;
-      Point point60 = new Point(184, 48);
-      this.label23.Location = point60;
-      this.label23.Name = "label23";
-      Size size60 = new Size(80, 24);
-      this.label23.Size = size60;
-      this.label23.TabIndex = 9;
-      this.label23.Text = "Firmware Type";
-      Point point61 = new Point(128, 68);
-      this.label24.Location = point61;
-      this.label24.Name = "label24";
-      Size size61 = new Size(64, 16);
-      this.label24.Size = size61;
-      this.label24.TabIndex = 6;
-      Point point62 = new Point(64, 68);
-      this.label25.Location = point62;
-      this.label25.Name = "label25";
-      Size size62 = new Size(72, 16);
-      this.label25.Size = size62;
-      this.label25.TabIndex = 5;
-      Point point63 = new Point(16, 68);
-      this.label26.Location = point63;
-      this.label26.Name = "label26";
-      Size size63 = new Size(72, 16);
-      this.label26.Size = size63;
-      this.label26.TabIndex = 4;
-      Point point64 = new Point(128, 48);
-      this.label27.Location = point64;
-      this.label27.Name = "label27";
-      Size size64 = new Size(64, 16);
-      this.label27.Size = size64;
-      this.label27.TabIndex = 3;
-      this.label27.Text = "Rev";
-      Point point65 = new Point(64, 48);
-      this.label28.Location = point65;
-      this.label28.Name = "label28";
-      Size size65 = new Size(64, 16);
-      this.label28.Size = size65;
-      this.label28.TabIndex = 2;
-      this.label28.Text = "Model ";
-      Point point66 = new Point(16, 48);
-      this.label29.Location = point66;
-      this.label29.Name = "label29";
-      Size size66 = new Size(72, 24);
-      this.label29.Size = size66;
-      this.label29.TabIndex = 1;
-      this.label29.Text = "Vendor";
-      this.textBox16.BackColor = SystemColors.Window;
-      Point point67 = new Point(16, 16);
-      this.textBox16.Location = point67;
-      this.textBox16.Name = "textBox16";
-      this.textBox16.ReadOnly = true;
-      Size size67 = new Size(512, 20);
-      this.textBox16.Size = size67;
-      this.textBox16.TabIndex = 26;
-      this.textBox16.Text = "";
-      this.textBox8.BackColor = SystemColors.Window;
-      Point point68 = new Point(88, 130);
-      this.textBox8.Location = point68;
-      this.textBox8.Name = "textBox8";
-      this.textBox8.ReadOnly = true;
-      Size size68 = new Size(440, 20);
-      this.textBox8.Size = size68;
-      this.textBox8.TabIndex = 23;
-      this.textBox8.Text = "";
-      this.textBox8.Visible = false;
-      this.tabPage7.AllowDrop = true;
-      this.tabPage7.Controls.Add((Control) this.textBox7);
-      Point point69 = new Point(4, 22);
-      this.tabPage7.Location = point69;
-      this.tabPage7.Name = "tabPage7";
-      Size size69 = new Size(544, 118);
-      this.tabPage7.Size = size69;
-      this.tabPage7.TabIndex = 0;
-      this.tabPage7.Text = "Inquiry";
-      this.tabPage7.Visible = false;
-      this.tabPage7.DragEnter += new DragEventHandler(this.tabPage12_DragEnter);
-      this.tabPage7.DragDrop += new DragEventHandler(this.tabPage12_DragDrop);
-      this.textBox7.BackColor = SystemColors.Window;
-      this.textBox7.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point70 = new Point(8, 8);
-      this.textBox7.Location = point70;
-      this.textBox7.Multiline = true;
-      this.textBox7.Name = "textBox7";
-      this.textBox7.ReadOnly = true;
-      this.textBox7.ScrollBars = ScrollBars.Vertical;
-      Size size70 = new Size(528, 96);
-      this.textBox7.Size = size70;
-      this.textBox7.TabIndex = 1;
-      this.textBox7.Text = "";
-      this.tabPage11.AllowDrop = true;
-      this.tabPage11.Controls.Add((Control) this.textBox10);
-      Point point71 = new Point(4, 22);
-      this.tabPage11.Location = point71;
-      this.tabPage11.Name = "tabPage11";
-      Size size71 = new Size(544, 118);
-      this.tabPage11.Size = size71;
-      this.tabPage11.TabIndex = 1;
-      this.tabPage11.Text = "Identify";
-      this.tabPage11.Visible = false;
-      this.tabPage11.DragEnter += new DragEventHandler(this.tabPage12_DragEnter);
-      this.tabPage11.DragDrop += new DragEventHandler(this.tabPage12_DragDrop);
-      this.textBox10.BackColor = SystemColors.Window;
-      this.textBox10.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point72 = new Point(8, 8);
-      this.textBox10.Location = point72;
-      this.textBox10.Multiline = true;
-      this.textBox10.Name = "textBox10";
-      this.textBox10.ReadOnly = true;
-      this.textBox10.ScrollBars = ScrollBars.Vertical;
-      Size size72 = new Size(528, 96);
-      this.textBox10.Size = size72;
-      this.textBox10.TabIndex = 2;
-      this.textBox10.Text = "";
-      this.tabPage12.AllowDrop = true;
-      this.tabPage12.Controls.Add((Control) this.textBox12);
-      Point point73 = new Point(4, 22);
-      this.tabPage12.Location = point73;
-      this.tabPage12.Name = "tabPage12";
-      Size size73 = new Size(544, 118);
-      this.tabPage12.Size = size73;
-      this.tabPage12.TabIndex = 3;
-      this.tabPage12.Text = "Drive Serial";
-      this.tabPage12.Visible = false;
-      this.tabPage12.DragEnter += new DragEventHandler(this.tabPage12_DragEnter);
-      this.tabPage12.DragDrop += new DragEventHandler(this.tabPage12_DragDrop);
-      this.textBox12.BackColor = SystemColors.Window;
-      this.textBox12.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point74 = new Point(8, 8);
-      this.textBox12.Location = point74;
-      this.textBox12.Multiline = true;
-      this.textBox12.Name = "textBox12";
-      this.textBox12.ReadOnly = true;
-      this.textBox12.ScrollBars = ScrollBars.Vertical;
-      Size size74 = new Size(528, 96);
-      this.textBox12.Size = size74;
-      this.textBox12.TabIndex = 4;
-      this.textBox12.Text = "";
-      this.toolTip_0.SetToolTip((Control) this.textBox12, "For Dummy.bin double click to edit");
-      this.textBox12.DoubleClick += new EventHandler(this.textBox12_DoubleClick);
-      this.tabControl4.Controls.Add((Control) this.tabPage1);
-      this.tabControl4.Controls.Add((Control) this.tabPage2);
-      this.tabControl4.Controls.Add((Control) this.tabPage4);
-      this.tabControl4.Controls.Add((Control) this.tabPage13);
-      Point point75 = new Point(8, 208);
-      this.tabControl4.Location = point75;
-      this.tabControl4.Name = "tabControl4";
-      this.tabControl4.SelectedIndex = 0;
-      Size size75 = new Size(552, 144);
-      this.tabControl4.Size = size75;
-      this.tabControl4.TabIndex = 22;
-      this.tabPage1.AllowDrop = true;
-      this.tabPage1.ContextMenu = this.contextMenu_1;
-      this.tabPage1.Controls.Add((Control) this.label129);
-      this.tabPage1.Controls.Add((Control) this.label54);
-      this.tabPage1.Controls.Add((Control) this.textBox1);
-      this.tabPage1.Controls.Add((Control) this.label56);
-      this.tabPage1.Controls.Add((Control) this.label53);
-      this.tabPage1.Controls.Add((Control) this.label52);
-      this.tabPage1.Controls.Add((Control) this.label51);
-      this.tabPage1.Controls.Add((Control) this.textBox18);
-      this.tabPage1.Controls.Add((Control) this.label1);
-      this.tabPage1.Controls.Add((Control) this.label2);
-      this.tabPage1.Controls.Add((Control) this.label30);
-      this.tabPage1.Controls.Add((Control) this.label31);
-      this.tabPage1.Controls.Add((Control) this.label32);
-      this.tabPage1.Controls.Add((Control) this.label33);
-      this.tabPage1.Controls.Add((Control) this.label34);
-      this.tabPage1.Controls.Add((Control) this.label35);
-      this.tabPage1.Controls.Add((Control) this.label36);
-      Point point76 = new Point(4, 22);
-      this.tabPage1.Location = point76;
-      this.tabPage1.Name = "tabPage1";
-      Size size76 = new Size(544, 118);
-      this.tabPage1.Size = size76;
-      this.tabPage1.TabIndex = 4;
-      this.tabPage1.Text = "Target";
-      this.tabPage1.DragEnter += new DragEventHandler(this.tabPage13_DragEnter);
-      this.tabPage1.DragDrop += new DragEventHandler(this.tabPage13_DragDrop);
-      Point point77 = new Point(432, 48);
-      this.label129.Location = point77;
-      this.label129.Name = "label129";
-      Size size77 = new Size(90, 16);
-      this.label129.Size = size77;
-      this.label129.TabIndex = 37;
-      this.label54.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, (byte) 0);
-      Point point78 = new Point(320, 96);
-      this.label54.Location = point78;
-      this.label54.Name = "label54";
-      Size size78 = new Size(216, 16);
-      this.label54.Size = size78;
-      this.label54.TabIndex = 35;
-      this.textBox1.BackColor = SystemColors.Window;
-      Point point79 = new Point(296, 64);
-      this.textBox1.Location = point79;
-      this.textBox1.Name = "textBox1";
-      this.textBox1.ReadOnly = true;
-      Size size79 = new Size(232, 20);
-      this.textBox1.Size = size79;
-      this.textBox1.TabIndex = 21;
-      this.textBox1.Text = "";
-      Point point80 = new Point(376, 48);
-      this.label56.Location = point80;
-      this.label56.Name = "label56";
-      Size size80 = new Size(48, 16);
-      this.label56.Size = size80;
-      this.label56.TabIndex = 36;
-      this.label53.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point81 = new Point(48, 96);
-      this.label53.Location = point81;
-      this.label53.Name = "label53";
-      Size size81 = new Size(208, 16);
-      this.label53.Size = size81;
-      this.label53.TabIndex = 34;
-      Point point82 = new Point(256, 96);
-      this.label52.Location = point82;
-      this.label52.Name = "label52";
-      Size size82 = new Size(72, 16);
-      this.label52.Size = size82;
-      this.label52.TabIndex = 33;
-      this.label52.Text = "Spoofed As:";
-      this.label52.Visible = false;
-      Point point83 = new Point(16, 96);
-      this.label51.Location = point83;
-      this.label51.Name = "label51";
-      Size size83 = new Size(40, 16);
-      this.label51.Size = size83;
-      this.label51.TabIndex = 32;
-      this.label51.Text = "OSIG:";
-      this.textBox18.BackColor = SystemColors.Window;
-      Point point84 = new Point(16, 16);
-      this.textBox18.Location = point84;
-      this.textBox18.Name = "textBox18";
-      this.textBox18.ReadOnly = true;
-      Size size84 = new Size(512, 20);
-      this.textBox18.Size = size84;
-      this.textBox18.TabIndex = 27;
-      this.textBox18.Text = "";
-      Point point85 = new Point(184, 68);
-      this.label1.Location = point85;
-      this.label1.Name = "label1";
-      Size size85 = new Size(128, 24);
-      this.label1.Size = size85;
-      this.label1.TabIndex = 18;
-      Point point86 = new Point(184, 48);
-      this.label2.Location = point86;
-      this.label2.Name = "label2";
-      Size size86 = new Size(80, 16);
-      this.label2.Size = size86;
-      this.label2.TabIndex = 17;
-      this.label2.Text = "Firmware Type";
-      Point point87 = new Point(128, 68);
-      this.label30.Location = point87;
-      this.label30.Name = "label30";
-      Size size87 = new Size(64, 16);
-      this.label30.Size = size87;
-      this.label30.TabIndex = 14;
-      Point point88 = new Point(64, 68);
-      this.label31.Location = point88;
-      this.label31.Name = "label31";
-      Size size88 = new Size(72, 16);
-      this.label31.Size = size88;
-      this.label31.TabIndex = 13;
-      Point point89 = new Point(16, 68);
-      this.label32.Location = point89;
-      this.label32.Name = "label32";
-      Size size89 = new Size(72, 16);
-      this.label32.Size = size89;
-      this.label32.TabIndex = 12;
-      Point point90 = new Point(128, 48);
-      this.label33.Location = point90;
-      this.label33.Name = "label33";
-      Size size90 = new Size(64, 16);
-      this.label33.Size = size90;
-      this.label33.TabIndex = 11;
-      this.label33.Text = "Rev";
-      Point point91 = new Point(64, 48);
-      this.label34.Location = point91;
-      this.label34.Name = "label34";
-      Size size91 = new Size(64, 16);
-      this.label34.Size = size91;
-      this.label34.TabIndex = 10;
-      this.label34.Text = "Model ";
-      Point point92 = new Point(16, 48);
-      this.label35.Location = point92;
-      this.label35.Name = "label35";
-      Size size92 = new Size(48, 16);
-      this.label35.Size = size92;
-      this.label35.TabIndex = 9;
-      this.label35.Text = "Vendor";
-      Point point93 = new Point(304, 48);
-      this.label36.Location = point93;
-      this.label36.Name = "label36";
-      Size size93 = new Size(72, 16);
-      this.label36.Size = size93;
-      this.label36.TabIndex = 22;
-      this.label36.Text = "DVD Key @";
-      this.tabPage2.AllowDrop = true;
-      this.tabPage2.Controls.Add((Control) this.textBox2);
-      Point point94 = new Point(4, 22);
-      this.tabPage2.Location = point94;
-      this.tabPage2.Name = "tabPage2";
-      Size size94 = new Size(544, 118);
-      this.tabPage2.Size = size94;
-      this.tabPage2.TabIndex = 0;
-      this.tabPage2.Text = "Inquiry";
-      this.tabPage2.Visible = false;
-      this.tabPage2.DragEnter += new DragEventHandler(this.tabPage13_DragEnter);
-      this.tabPage2.DragDrop += new DragEventHandler(this.tabPage13_DragDrop);
-      this.textBox2.BackColor = SystemColors.Window;
-      this.textBox2.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point95 = new Point(8, 8);
-      this.textBox2.Location = point95;
-      this.textBox2.Multiline = true;
-      this.textBox2.Name = "textBox2";
-      this.textBox2.ReadOnly = true;
-      this.textBox2.ScrollBars = ScrollBars.Vertical;
-      Size size95 = new Size(528, 96);
-      this.textBox2.Size = size95;
-      this.textBox2.TabIndex = 1;
-      this.textBox2.Text = "";
-      this.tabPage4.AllowDrop = true;
-      this.tabPage4.Controls.Add((Control) this.textBox4);
-      Point point96 = new Point(4, 22);
-      this.tabPage4.Location = point96;
-      this.tabPage4.Name = "tabPage4";
-      Size size96 = new Size(544, 118);
-      this.tabPage4.Size = size96;
-      this.tabPage4.TabIndex = 1;
-      this.tabPage4.Text = "Identify";
-      this.tabPage4.Visible = false;
-      this.tabPage4.DragEnter += new DragEventHandler(this.tabPage13_DragEnter);
-      this.tabPage4.DragDrop += new DragEventHandler(this.tabPage13_DragDrop);
-      this.textBox4.BackColor = SystemColors.Window;
-      this.textBox4.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point97 = new Point(8, 8);
-      this.textBox4.Location = point97;
-      this.textBox4.Multiline = true;
-      this.textBox4.Name = "textBox4";
-      this.textBox4.ReadOnly = true;
-      this.textBox4.ScrollBars = ScrollBars.Vertical;
-      Size size97 = new Size(528, 96);
-      this.textBox4.Size = size97;
-      this.textBox4.TabIndex = 2;
-      this.textBox4.Text = "";
-      this.tabPage13.AllowDrop = true;
-      this.tabPage13.Controls.Add((Control) this.textBox13);
-      Point point98 = new Point(4, 22);
-      this.tabPage13.Location = point98;
-      this.tabPage13.Name = "tabPage13";
-      Size size98 = new Size(544, 118);
-      this.tabPage13.Size = size98;
-      this.tabPage13.TabIndex = 3;
-      this.tabPage13.Text = "Drive Serial";
-      this.tabPage13.Visible = false;
-      this.tabPage13.DragEnter += new DragEventHandler(this.tabPage13_DragEnter);
-      this.tabPage13.DragDrop += new DragEventHandler(this.tabPage13_DragDrop);
-      this.textBox13.BackColor = SystemColors.Window;
-      this.textBox13.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point99 = new Point(8, 8);
-      this.textBox13.Location = point99;
-      this.textBox13.Multiline = true;
-      this.textBox13.Name = "textBox13";
-      this.textBox13.ReadOnly = true;
-      this.textBox13.ScrollBars = ScrollBars.Vertical;
-      Size size99 = new Size(528, 96);
-      this.textBox13.Size = size99;
-      this.textBox13.TabIndex = 4;
-      this.textBox13.Text = "";
-      this.checkBox3.FlatStyle = FlatStyle.System;
-      Point point100 = new Point(16, 168);
-      this.checkBox3.Location = point100;
-      this.checkBox3.Name = "checkBox3";
-      Size size100 = new Size(104, 32);
-      this.checkBox3.Size = size100;
-      this.checkBox3.TabIndex = 24;
-      this.checkBox3.Text = "Advanced View";
-      this.checkBox3.CheckedChanged += new EventHandler(this.checkBox3_CheckedChanged);
-      this.button2.FlatStyle = FlatStyle.System;
-      Point point101 = new Point(440, 304);
-      this.button2.Location = point101;
-      this.button2.Name = "button2";
-      Size size101 = new Size(88, 24);
-      this.button2.Size = size101;
-      this.button2.TabIndex = 25;
-      this.button2.Text = "DummyGen";
-      this.toolTip_0.SetToolTip((Control) this.button2, "Build Dummy.bin from Inquiry.bin + Identify.bin + Key.bin");
-      this.button2.Click += new EventHandler(this.button2_Click);
-      this.tabControl5.Controls.Add((Control) this.Firmtools);
-      this.tabControl5.Controls.Add((Control) this.DVDKey32);
-      this.tabControl5.Controls.Add((Control) this.Benq);
-      this.tabControl5.Controls.Add((Control) this.Hitachi);
-      this.tabControl5.Controls.Add((Control) this.tabPage5);
-      Point point102 = new Point(8, 8);
-      this.tabControl5.Location = point102;
-      this.tabControl5.Multiline = true;
-      this.tabControl5.Name = "tabControl5";
-      this.tabControl5.SelectedIndex = 0;
-      Size size102 = new Size(664, 400);
-      this.tabControl5.Size = size102;
-      this.tabControl5.TabIndex = 26;
-      this.tabControl5.TabIndexChanged += new EventHandler(this.tabControl5_SelectedIndexChanged);
-      this.tabControl5.SelectedIndexChanged += new EventHandler(this.tabControl5_SelectedIndexChanged);
-      this.Firmtools.Controls.Add((Control) this.button41);
-      this.Firmtools.Controls.Add((Control) this.linkLabel1);
-      this.Firmtools.Controls.Add((Control) this.button29);
-      this.Firmtools.Controls.Add((Control) this.OpenSource);
-      this.Firmtools.Controls.Add((Control) this.OpeniXtreme);
-      this.Firmtools.Controls.Add((Control) this.button6);
-      this.Firmtools.Controls.Add((Control) this.checkBox3);
-      this.Firmtools.Controls.Add((Control) this.SaveTarget);
-      this.Firmtools.Controls.Add((Control) this.DumpDrive);
-      this.Firmtools.Controls.Add((Control) this.pictureBox1);
-      this.Firmtools.Controls.Add((Control) this.tabControl1);
-      this.Firmtools.Controls.Add((Control) this.tabControl3);
-      this.Firmtools.Controls.Add((Control) this.tabControl2);
-      this.Firmtools.Controls.Add((Control) this.tabControl4);
-      this.Firmtools.Controls.Add((Control) this.linkLabel4);
-      Point point103 = new Point(4, 22);
-      this.Firmtools.Location = point103;
-      this.Firmtools.Name = "Firmtools";
-      Size size103 = new Size(656, 374);
-      this.Firmtools.Size = size103;
-      this.Firmtools.TabIndex = 0;
-      this.Firmtools.Text = "  FirmwareTool 32  ";
-      this.button41.FlatStyle = FlatStyle.System;
-      Point point104 = new Point(568, 8);
-      this.button41.Location = point104;
-      this.button41.Name = "button41";
-      Size size104 = new Size(80, 40);
-      this.button41.Size = size104;
-      this.button41.TabIndex = 32;
-      this.button41.Text = "Open  KeyDb";
-      this.button41.Click += new EventHandler(this.button41_Click);
-      this.linkLabel1.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point105 = new Point(576, 168);
-      this.linkLabel1.Location = point105;
-      this.linkLabel1.Name = "linkLabel1";
-      Size size105 = new Size(64, 24);
-      this.linkLabel1.Size = size105;
-      this.linkLabel1.TabIndex = 29;
-      this.linkLabel1.TabStop = true;
-      this.linkLabel1.Text = "User Guide";
-      this.linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
-      this.toolTip_0.SetToolTip((Control) this.linkLabel1, "Click to download JungleFlasher.pdf");
-      this.linkLabel1.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-      this.button29.Enabled = false;
-      this.button29.FlatStyle = FlatStyle.System;
-      Point point106 = new Point(568, 256);
-      this.button29.Location = point106;
-      this.button29.Name = "button29";
-      Size size106 = new Size(80, 40);
-      this.button29.Size = size106;
-      this.button29.TabIndex = 27;
-      this.button29.Text = "Manual Spoofing";
-      this.button29.Click += new EventHandler(this.button29_Click);
-      this.pictureBox1.Image = (Image) resourceManager.GetObject("pictureBox1.Image");
-      Point point107 = new Point(448, 176);
-      this.pictureBox1.Location = point107;
-      this.pictureBox1.Name = "pictureBox1";
-      Size size107 = new Size(92, 26);
-      this.pictureBox1.Size = size107;
-      this.pictureBox1.TabIndex = 31;
-      this.pictureBox1.TabStop = false;
-      this.toolTip_0.SetToolTip((Control) this.pictureBox1, "Help Support JungleFlasher Development!");
-      this.pictureBox1.Visible = false;
-      this.pictureBox1.Click += new EventHandler(this.pictureBox4_Click);
-      this.pictureBox1.MouseEnter += new EventHandler(this.pictureBox3_MouseEnter);
-      this.pictureBox1.MouseLeave += new EventHandler(this.pictureBox3_MouseLeave);
-      this.linkLabel4.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point108 = new Point(576, 72);
-      this.linkLabel4.Location = point108;
-      this.linkLabel4.Name = "linkLabel4";
-      Size size108 = new Size(64, 24);
-      this.linkLabel4.Size = size108;
-      this.linkLabel4.TabIndex = 30;
-      this.linkLabel4.TabStop = true;
-      this.linkLabel4.Text = "Donate";
-      this.linkLabel4.TextAlign = ContentAlignment.MiddleCenter;
-      this.linkLabel4.Visible = false;
-      this.linkLabel4.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
-      this.DVDKey32.Controls.Add((Control) this.button39);
-      this.DVDKey32.Controls.Add((Control) this.button38);
-      this.DVDKey32.Controls.Add((Control) this.checkBox15);
-      this.DVDKey32.Controls.Add((Control) this.button32);
-      this.DVDKey32.Controls.Add((Control) this.button10);
-      this.DVDKey32.Controls.Add((Control) this.button8);
-      this.DVDKey32.Controls.Add((Control) this.button4);
-      this.DVDKey32.Controls.Add((Control) this.button1);
-      this.DVDKey32.Controls.Add((Control) this.checkBox9);
-      this.DVDKey32.Controls.Add((Control) this.checkBox8);
-      this.DVDKey32.Controls.Add((Control) this.button28);
-      this.DVDKey32.Controls.Add((Control) this.checkBox4);
-      this.DVDKey32.Controls.Add((Control) this.checkBox2);
-      this.DVDKey32.Controls.Add((Control) this.button5);
-      this.DVDKey32.Controls.Add((Control) this.groupBox16);
-      this.DVDKey32.Controls.Add((Control) this.comboBox1);
-      this.DVDKey32.Controls.Add((Control) this.label111);
-      this.DVDKey32.Controls.Add((Control) this.groupBox17);
-      this.DVDKey32.Controls.Add((Control) this.comboBox10);
-      this.DVDKey32.Controls.Add((Control) this.label57);
-      this.DVDKey32.Controls.Add((Control) this.groupBox2);
-      this.DVDKey32.Controls.Add((Control) this.groupBox4);
-      this.DVDKey32.Controls.Add((Control) this.button2);
-      Point point109 = new Point(4, 22);
-      this.DVDKey32.Location = point109;
-      this.DVDKey32.Name = "DVDKey32";
-      Size size109 = new Size(656, 374);
-      this.DVDKey32.Size = size109;
-      this.DVDKey32.TabIndex = 2;
-      this.DVDKey32.Text = "  DVDKey 32  ";
-      this.button39.FlatStyle = FlatStyle.System;
-      Point point110 = new Point(440, 272);
-      this.button39.Location = point110;
-      this.button39.Name = "button39";
-      Size size110 = new Size(88, 24);
-      this.button39.Size = size110;
-      this.button39.TabIndex = 104;
-      this.button39.Text = "SlimKey";
-      this.toolTip_0.SetToolTip((Control) this.button39, "Slim LiteOn -  extract Key, build dummy and open.");
-      this.button39.Click += new EventHandler(this.button39_Click);
-      this.button38.FlatStyle = FlatStyle.System;
-      Point point111 = new Point(344, 272);
-      this.button38.Location = point111;
-      this.button38.Name = "button38";
-      Size size111 = new Size(88, 24);
-      this.button38.Size = size111;
-      this.button38.TabIndex = 103;
-      this.button38.Text = "PhatKey";
-      this.toolTip_0.SetToolTip((Control) this.button38, "Phat LiteOn - use Pógó mo Thóin to extract Key, build dummy and open.");
-      this.button38.Click += new EventHandler(this.button38_Click);
-      this.checkBox15.FlatStyle = FlatStyle.System;
-      Point point112 = new Point(136, 24);
-      this.checkBox15.Location = point112;
-      this.checkBox15.Name = "checkBox15";
-      this.checkBox15.RightToLeft = RightToLeft.Yes;
-      Size size112 = new Size(72, 24);
-      this.checkBox15.Size = size112;
-      this.checkBox15.TabIndex = 102;
-      this.checkBox15.Text = "USB Only";
-      this.toolTip_0.SetToolTip((Control) this.checkBox15, "List only Via ports, may help if Mobo has unfriendly chipset");
-      this.checkBox15.CheckedChanged += new EventHandler(this.checkBox15_CheckedChanged);
-      this.button32.FlatStyle = FlatStyle.System;
-      Point point113 = new Point(344, 336);
-      this.button32.Location = point113;
-      this.button32.Name = "button32";
-      Size size113 = new Size(136, 24);
-      this.button32.Size = size113;
-      this.button32.TabIndex = 101;
-      this.button32.Text = "Dummy from KeyDB";
-      this.toolTip_0.SetToolTip((Control) this.button32, "Rebuild Dummy.bin from Lite-On with Key in KeyDB");
-      this.button32.Click += new EventHandler(this.button32_Click);
-      this.button10.FlatStyle = FlatStyle.System;
-      Point point114 = new Point(128, 48);
-      this.button10.Location = point114;
-      this.button10.Name = "button10";
-      Size size114 = new Size(24, 21);
-      this.button10.Size = size114;
-      this.button10.TabIndex = 100;
-      this.button10.Text = "...";
-      this.toolTip_0.SetToolTip((Control) this.button10, "Refresh Drive Properties");
-      this.button10.Click += new EventHandler(this.button10_Click);
-      this.button8.FlatStyle = FlatStyle.System;
-      Point point115 = new Point(456, 48);
-      this.button8.Location = point115;
-      this.button8.Name = "button8";
-      Size size115 = new Size(24, 21);
-      this.button8.Size = size115;
-      this.button8.TabIndex = 99;
-      this.button8.Text = "...";
-      this.toolTip_0.SetToolTip((Control) this.button8, "Refresh Com Ports");
-      this.button8.Click += new EventHandler(this.button8_Click);
-      this.button4.FlatStyle = FlatStyle.System;
-      Point point116 = new Point(536, 304);
-      this.button4.Location = point116;
-      this.button4.Name = "button4";
-      Size size116 = new Size(88, 24);
-      this.button4.Size = size116;
-      this.button4.TabIndex = 98;
-      this.button4.Text = "83 .key file";
-      this.toolTip_0.SetToolTip((Control) this.button4, "Import [barcode].bin.key , create dummy.bin, save and open.");
-      this.button4.Click += new EventHandler(this.button4_Click);
-      this.button1.FlatStyle = FlatStyle.System;
-      Point point117 = new Point(536, 272);
-      this.button1.Location = point117;
-      this.button1.Name = "button1";
-      Size size117 = new Size(88, 24);
-      this.button1.Size = size117;
-      this.button1.TabIndex = 97;
-      this.button1.Text = "LO83info";
-      this.toolTip_0.SetToolTip((Control) this.button1, "83850c - use LO83info to extract Key, build dummy and open.");
-      this.button1.Click += new EventHandler(this.button1_Click);
-      this.checkBox9.Checked = true;
-      this.checkBox9.CheckState = CheckState.Checked;
-      this.checkBox9.FlatStyle = FlatStyle.System;
-      Point point118 = new Point(504, 24);
-      this.checkBox9.Location = point118;
-      this.checkBox9.Name = "checkBox9";
-      this.checkBox9.RightToLeft = RightToLeft.Yes;
-      Size size118 = new Size(120, 24);
-      this.checkBox9.Size = size118;
-      this.checkBox9.TabIndex = 96;
-      this.checkBox9.Text = "Additional functions";
-      this.toolTip_0.SetToolTip((Control) this.checkBox9, "Tick to Enable Addition Kit Functions");
-      this.checkBox9.EnabledChanged += new EventHandler(this.checkBox9_EnabledChanged);
-      this.checkBox9.CheckedChanged += new EventHandler(this.checkBox9_CheckedChanged);
-      this.checkBox8.FlatStyle = FlatStyle.System;
-      Point point119 = new Point(504, 48);
-      this.checkBox8.Location = point119;
-      this.checkBox8.Name = "checkBox8";
-      this.checkBox8.RightToLeft = RightToLeft.Yes;
-      Size size119 = new Size(120, 24);
-      this.checkBox8.Size = size119;
-      this.checkBox8.TabIndex = 95;
-      this.checkBox8.Text = "Dummy.bin Only";
-      this.toolTip_0.SetToolTip((Control) this.checkBox8, "Tick to save dummy.bin only.");
-      this.button28.FlatStyle = FlatStyle.System;
-      Point point120 = new Point(488, 336);
-      this.button28.Location = point120;
-      this.button28.Name = "button28";
-      Size size120 = new Size(136, 24);
-      this.button28.Size = size120;
-      this.button28.TabIndex = 94;
-      this.button28.Text = "Dummy from iXtreme";
-      this.toolTip_0.SetToolTip((Control) this.button28, "Extract Key from ix1.5 flashed Lite-On");
-      this.button28.Click += new EventHandler(this.button28_Click);
-      this.checkBox4.FlatStyle = FlatStyle.System;
-      Point point121 = new Point(216, 24);
-      this.checkBox4.Location = point121;
-      this.checkBox4.Name = "checkBox4";
-      this.checkBox4.RightToLeft = RightToLeft.Yes;
-      Size size121 = new Size(88, 24);
-      this.checkBox4.Size = size121;
-      this.checkBox4.TabIndex = 93;
-      this.checkBox4.Text = "VIA ports Only";
-      this.toolTip_0.SetToolTip((Control) this.checkBox4, "List only Via ports, may help if Mobo has unfriendly chipset");
-      this.checkBox4.CheckedChanged += new EventHandler(this.checkBox4_CheckedChanged);
-      this.checkBox2.FlatStyle = FlatStyle.System;
-      Point point122 = new Point(176, 48);
-      this.checkBox2.Location = point122;
-      this.checkBox2.Name = "checkBox2";
-      this.checkBox2.RightToLeft = RightToLeft.Yes;
-      Size size122 = new Size(128, 24);
-      this.checkBox2.Size = size122;
-      this.checkBox2.TabIndex = 92;
-      this.checkBox2.Text = "Include non-IDE Ports";
-      this.toolTip_0.SetToolTip((Control) this.checkBox2, " IO ports in the SCSIAdapter Device Class");
-      this.checkBox2.Visible = false;
-      this.checkBox2.CheckedChanged += new EventHandler(this.checkBox2_CheckedChanged);
-      this.button5.ContextMenu = this.contextMenu_3;
-      this.button5.FlatStyle = FlatStyle.System;
-      Point point123 = new Point(344, 304);
-      this.button5.Location = point123;
-      this.button5.Name = "button5";
-      Size size123 = new Size(88, 24);
-      this.button5.Size = size123;
-      this.button5.TabIndex = 91;
-      this.button5.Text = "DVDKey32";
-      this.toolTip_0.SetToolTip((Control) this.button5, "74850c - use DVDKey32 to extract Key, build dummy and open.");
-      this.button5.Click += new EventHandler(this.button5_Click);
-      this.contextMenu_3.MenuItems.AddRange(new MenuItem[5]
-      {
-        this.menuItem_14,
-        this.menuItem_15,
-        this.menuItem_16,
-        this.menuItem_17,
-        this.menuItem_18
-      });
-      this.menuItem_14.Index = 0;
-      this.menuItem_14.Text = "No Delay";
-      this.menuItem_14.Click += new EventHandler(this.menuItem_14_Click);
-      this.menuItem_15.Index = 1;
-      this.menuItem_15.Text = "5 Secs";
-      this.menuItem_15.Click += new EventHandler(this.menuItem_15_Click);
-      this.menuItem_16.Index = 2;
-      this.menuItem_16.Text = "10 Secs";
-      this.menuItem_16.Click += new EventHandler(this.menuItem_16_Click);
-      this.menuItem_17.Index = 3;
-      this.menuItem_17.Text = "15 Secs";
-      this.menuItem_17.Click += new EventHandler(this.menuItem_17_Click);
-      this.menuItem_18.Index = 4;
-      this.menuItem_18.Text = "20 Secs";
-      this.menuItem_18.Click += new EventHandler(this.menuItem_18_Click);
-      this.groupBox16.ContextMenu = this.contextMenu_4;
-      this.groupBox16.Controls.Add((Control) this.pictureBox5);
-      this.groupBox16.Controls.Add((Control) this.pictureBox7);
-      this.groupBox16.Controls.Add((Control) this.label131);
-      this.groupBox16.Controls.Add((Control) this.label130);
-      this.groupBox16.Controls.Add((Control) this.label92);
-      this.groupBox16.Controls.Add((Control) this.label93);
-      this.groupBox16.Controls.Add((Control) this.label94);
-      this.groupBox16.Controls.Add((Control) this.label106);
-      this.groupBox16.Controls.Add((Control) this.label107);
-      this.groupBox16.Controls.Add((Control) this.label108);
-      this.groupBox16.Controls.Add((Control) this.label109);
-      this.groupBox16.Controls.Add((Control) this.label110);
-      this.groupBox16.FlatStyle = FlatStyle.System;
-      Point point124 = new Point(32, 240);
-      this.groupBox16.Location = point124;
-      this.groupBox16.Name = "groupBox16";
-      Size size124 = new Size(280, 128);
-      this.groupBox16.Size = size124;
-      this.groupBox16.TabIndex = 90;
-      this.groupBox16.TabStop = false;
-      this.groupBox16.Text = "Drive Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox16, "Properties of Drive on IO port selected");
-      this.contextMenu_4.MenuItems.AddRange(new MenuItem[4]
-      {
-        this.menuItem_21,
-        this.menuItem_22,
-        this.menuItem_23,
-        this.menuItem_24
-      });
-      this.menuItem_21.Enabled = false;
-      this.menuItem_21.Index = 0;
-      this.menuItem_21.Text = "Load Last File";
-      this.menuItem_21.Click += new EventHandler(this.menuItem_21_Click);
-      this.menuItem_22.Enabled = false;
-      this.menuItem_22.Index = 1;
-      this.menuItem_22.Text = "Open Job Folder";
-      this.menuItem_22.Click += new EventHandler(this.menuItem_22_Click);
-      this.menuItem_23.Enabled = false;
-      this.menuItem_23.Index = 2;
-      this.menuItem_23.Text = "Job History";
-      this.menuItem_23.Click += new EventHandler(this.menuItem_23_Click);
-      this.menuItem_24.Enabled = false;
-      this.menuItem_24.Index = 3;
-      this.menuItem_24.Text = "Open KeyDB";
-      this.menuItem_24.Click += new EventHandler(this.menuItem_24_Click);
-      this.pictureBox5.Image = (Image) resourceManager.GetObject("pictureBox5.Image");
-      Point point125 = new Point(160, 104);
-      this.pictureBox5.Location = point125;
-      this.pictureBox5.Name = "pictureBox5";
-      Size size125 = new Size(19, 19);
-      this.pictureBox5.Size = size125;
-      this.pictureBox5.TabIndex = 37;
-      this.pictureBox5.TabStop = false;
-      this.pictureBox5.Visible = false;
-      this.pictureBox7.Image = (Image) resourceManager.GetObject("pictureBox7.Image");
-      Point point126 = new Point(160, 104);
-      this.pictureBox7.Location = point126;
-      this.pictureBox7.Name = "pictureBox7";
-      Size size126 = new Size(19, 19);
-      this.pictureBox7.Size = size126;
-      this.pictureBox7.TabIndex = 36;
-      this.pictureBox7.TabStop = false;
-      this.pictureBox7.Visible = false;
-      Point point127 = new Point(88, 104);
-      this.label131.Location = point127;
-      this.label131.Name = "label131";
-      Size size127 = new Size(112, 16);
-      this.label131.Size = size127;
-      this.label131.TabIndex = 35;
-      Point point128 = new Point(16, 104);
-      this.label130.Location = point128;
-      this.label130.Name = "label130";
-      Size size128 = new Size(56, 16);
-      this.label130.Size = size128;
-      this.label130.TabIndex = 34;
-      this.label130.Text = "DVD Key:";
-      Point point129 = new Point(88, 82);
-      this.label92.Location = point129;
-      this.label92.Name = "label92";
-      Size size129 = new Size(176, 16);
-      this.label92.Size = size129;
-      this.label92.TabIndex = 13;
-      Point point130 = new Point(16, 82);
-      this.label93.Location = point130;
-      this.label93.Name = "label93";
-      Size size130 = new Size(72, 16);
-      this.label93.Size = size130;
-      this.label93.TabIndex = 12;
-      this.label93.Text = "Reserved:";
-      Point point131 = new Point(16, 16);
-      this.label94.Location = point131;
-      this.label94.Name = "label94";
-      Size size131 = new Size(72, 16);
-      this.label94.Size = size131;
-      this.label94.TabIndex = 11;
-      this.label94.Text = "Vendor:";
-      Point point132 = new Point(88, 60);
-      this.label106.Location = point132;
-      this.label106.Name = "label106";
-      Size size132 = new Size(176, 16);
-      this.label106.Size = size132;
-      this.label106.TabIndex = 10;
-      Point point133 = new Point(16, 38);
-      this.label107.Location = point133;
-      this.label107.Name = "label107";
-      Size size133 = new Size(56, 16);
-      this.label107.Size = size133;
-      this.label107.TabIndex = 9;
-      this.label107.Text = "Name:";
-      Point point134 = new Point(16, 60);
-      this.label108.Location = point134;
-      this.label108.Name = "label108";
-      Size size134 = new Size(64, 16);
-      this.label108.Size = size134;
-      this.label108.TabIndex = 8;
-      this.label108.Text = "F/W Rev:";
-      Point point135 = new Point(88, 38);
-      this.label109.Location = point135;
-      this.label109.Name = "label109";
-      Size size135 = new Size(176, 16);
-      this.label109.Size = size135;
-      this.label109.TabIndex = 7;
-      Point point136 = new Point(88, 16);
-      this.label110.Location = point136;
-      this.label110.Name = "label110";
-      Size size136 = new Size(176, 16);
-      this.label110.Size = size136;
-      this.label110.TabIndex = 6;
-      this.comboBox1.Cursor = Cursors.Default;
-      this.comboBox1.ItemHeight = 13;
-      Point point137 = new Point(40, 48);
-      this.comboBox1.Location = point137;
-      this.comboBox1.Name = "comboBox1";
-      Size size137 = new Size(80, 21);
-      this.comboBox1.Size = size137;
-      this.comboBox1.TabIndex = 89;
-      this.comboBox1.SelectedIndexChanged += new EventHandler(this.comboBox1_SelectedIndexChanged);
-      Point point138 = new Point(40, 24);
-      this.label111.Location = point138;
-      this.label111.Name = "label111";
-      Size size138 = new Size(56, 16);
-      this.label111.Size = size138;
-      this.label111.TabIndex = 88;
-      this.label111.Text = "I/O Port";
-      this.groupBox17.Controls.Add((Control) this.pictureBox10);
-      this.groupBox17.Controls.Add((Control) this.pictureBox8);
-      this.groupBox17.Controls.Add((Control) this.label112);
-      this.groupBox17.Controls.Add((Control) this.label113);
-      this.groupBox17.Controls.Add((Control) this.label115);
-      this.groupBox17.Controls.Add((Control) this.label116);
-      this.groupBox17.Controls.Add((Control) this.label117);
-      this.groupBox17.Controls.Add((Control) this.label123);
-      this.groupBox17.Controls.Add((Control) this.label124);
-      this.groupBox17.Controls.Add((Control) this.label125);
-      this.groupBox17.Controls.Add((Control) this.label126);
-      this.groupBox17.Controls.Add((Control) this.label127);
-      this.groupBox17.FlatStyle = FlatStyle.System;
-      Point point139 = new Point(32, 80);
-      this.groupBox17.Location = point139;
-      this.groupBox17.Name = "groupBox17";
-      Size size139 = new Size(280, 152);
-      this.groupBox17.Size = size139;
-      this.groupBox17.TabIndex = 87;
-      this.groupBox17.TabStop = false;
-      this.groupBox17.Text = "Port Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox17, "Properites of IO port selected");
-      this.pictureBox10.Image = (Image) resourceManager.GetObject("pictureBox10.Image");
-      Point point140 = new Point(232, 16);
-      this.pictureBox10.Location = point140;
-      this.pictureBox10.Name = "pictureBox10";
-      Size size140 = new Size(35, 29);
-      this.pictureBox10.Size = size140;
-      this.pictureBox10.TabIndex = 39;
-      this.pictureBox10.TabStop = false;
-      this.pictureBox8.Image = (Image) resourceManager.GetObject("pictureBox8.Image");
-      Point point141 = new Point(232, 16);
-      this.pictureBox8.Location = point141;
-      this.pictureBox8.Name = "pictureBox8";
-      Size size141 = new Size(35, 29);
-      this.pictureBox8.Size = size141;
-      this.pictureBox8.TabIndex = 38;
-      this.pictureBox8.TabStop = false;
-      this.pictureBox8.Visible = false;
-      Point point142 = new Point(16, 112);
-      this.label112.Location = point142;
-      this.label112.Name = "label112";
-      Size size142 = new Size(72, 16);
-      this.label112.Size = size142;
-      this.label112.TabIndex = 12;
-      this.label112.Text = "Device:";
-      Point point143 = new Point(88, 112);
-      this.label113.Location = point143;
-      this.label113.Name = "label113";
-      Size size143 = new Size(176, 32);
-      this.label113.Size = size143;
-      this.label113.TabIndex = 11;
-      Point point144 = new Point(88, 88);
-      this.label115.Location = point144;
-      this.label115.Name = "label115";
-      Size size144 = new Size(176, 16);
-      this.label115.Size = size144;
-      this.label115.TabIndex = 10;
-      Point point145 = new Point(88, 64);
-      this.label116.Location = point145;
-      this.label116.Name = "label116";
-      Size size145 = new Size(176, 16);
-      this.label116.Size = size145;
-      this.label116.TabIndex = 9;
-      Point point146 = new Point(88, 40);
-      this.label117.Location = point146;
-      this.label117.Name = "label117";
-      Size size146 = new Size(176, 16);
-      this.label117.Size = size146;
-      this.label117.TabIndex = 8;
-      Point point147 = new Point(88, 16);
-      this.label123.Location = point147;
-      this.label123.Name = "label123";
-      Size size147 = new Size(176, 16);
-      this.label123.Size = size147;
-      this.label123.TabIndex = 7;
-      Point point148 = new Point(16, 16);
-      this.label124.Location = point148;
-      this.label124.Name = "label124";
-      Size size148 = new Size(88, 16);
-      this.label124.Size = size148;
-      this.label124.TabIndex = 6;
-      this.label124.Text = "I/O Address:";
-      Point point149 = new Point(16, 40);
-      this.label125.Location = point149;
-      this.label125.Name = "label125";
-      Size size149 = new Size(72, 16);
-      this.label125.Size = size149;
-      this.label125.TabIndex = 5;
-      this.label125.Text = "Type:";
-      Point point150 = new Point(16, 64);
-      this.label126.Location = point150;
-      this.label126.Name = "label126";
-      Size size150 = new Size(72, 16);
-      this.label126.Size = size150;
-      this.label126.TabIndex = 4;
-      this.label126.Text = "Channel:";
-      Point point151 = new Point(16, 88);
-      this.label127.Location = point151;
-      this.label127.Name = "label127";
-      Size size151 = new Size(72, 16);
-      this.label127.Size = size151;
-      this.label127.TabIndex = 3;
-      this.label127.Text = "Postion:";
-      this.comboBox10.Cursor = Cursors.Default;
-      Point point152 = new Point(352, 48);
-      this.comboBox10.Location = point152;
-      this.comboBox10.Name = "comboBox10";
-      Size size152 = new Size(96, 21);
-      this.comboBox10.Size = size152;
-      this.comboBox10.TabIndex = 27;
-      this.comboBox10.SelectedIndexChanged += new EventHandler(this.comboBox10_SelectedIndexChanged);
-      Point point153 = new Point(352, 24);
-      this.label57.Location = point153;
-      this.label57.Name = "label57";
-      Size size153 = new Size(96, 16);
-      this.label57.Size = size153;
-      this.label57.TabIndex = 19;
-      this.label57.Text = "Com Port";
-      this.groupBox2.ContextMenu = this.contextMenu_5;
-      this.groupBox2.Controls.Add((Control) this.label103);
-      this.groupBox2.Controls.Add((Control) this.label63);
-      this.groupBox2.Controls.Add((Control) this.label105);
-      this.groupBox2.Controls.Add((Control) this.label104);
-      this.groupBox2.Controls.Add((Control) this.label102);
-      this.groupBox2.Controls.Add((Control) this.label64);
-      this.groupBox2.Controls.Add((Control) this.label65);
-      this.groupBox2.Controls.Add((Control) this.label66);
-      this.groupBox2.FlatStyle = FlatStyle.System;
-      Point point154 = new Point(344, 80);
-      this.groupBox2.Location = point154;
-      this.groupBox2.Name = "groupBox2";
-      Size size154 = new Size(280, 112);
-      this.groupBox2.Size = size154;
-      this.groupBox2.TabIndex = 21;
-      this.groupBox2.TabStop = false;
-      this.groupBox2.Text = "Com Port Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox2, "Properites of COM port selected");
-      this.contextMenu_5.MenuItems.AddRange(new MenuItem[7]
-      {
-        this.menuItem_25,
-        this.menuItem_26,
-        this.menuItem_27,
-        this.menuItem_29,
-        this.menuItem_28,
-        this.menuItem_30,
-        this.menuItem_31
-      });
-      this.menuItem_25.Index = 0;
-      this.menuItem_25.Text = "Open Tray";
-      this.menuItem_25.Click += new EventHandler(this.menuItem_25_Click);
-      this.menuItem_26.Index = 1;
-      this.menuItem_26.Text = "Close Tray";
-      this.menuItem_26.Click += new EventHandler(this.menuItem_26_Click);
-      this.menuItem_27.Index = 2;
-      this.menuItem_27.Text = "Half Tray";
-      this.menuItem_27.Click += new EventHandler(this.menuItem_27_Click);
-      this.menuItem_29.Index = 3;
-      this.menuItem_29.Text = "-";
-      this.menuItem_28.Index = 4;
-      this.menuItem_28.Text = "Power On";
-      this.menuItem_28.Click += new EventHandler(this.menuItem_28_Click);
-      this.menuItem_30.Index = 5;
-      this.menuItem_30.Text = "Power Off";
-      this.menuItem_30.Click += new EventHandler(this.menuItem_30_Click);
-      this.menuItem_31.Index = 6;
-      this.menuItem_31.Text = "Power Cycle";
-      this.menuItem_31.Click += new EventHandler(this.menuItem_31_Click);
-      Point point155 = new Point(64, 88);
-      this.label103.Location = point155;
-      this.label103.Name = "label103";
-      Size size155 = new Size(208, 16);
-      this.label103.Size = size155;
-      this.label103.TabIndex = 16;
-      Point point156 = new Point(16, 88);
-      this.label63.Location = point156;
-      this.label63.Name = "label63";
-      Size size156 = new Size(40, 16);
-      this.label63.Size = size156;
-      this.label63.TabIndex = 15;
-      this.label63.Text = "Status:";
-      Point point157 = new Point(64, 64);
-      this.label105.Location = point157;
-      this.label105.Name = "label105";
-      Size size157 = new Size(208, 16);
-      this.label105.Size = size157;
-      this.label105.TabIndex = 14;
-      Point point158 = new Point(64, 40);
-      this.label104.Location = point158;
-      this.label104.Name = "label104";
-      Size size158 = new Size(208, 16);
-      this.label104.Size = size158;
-      this.label104.TabIndex = 13;
-      Point point159 = new Point(64, 16);
-      this.label102.Location = point159;
-      this.label102.Name = "label102";
-      Size size159 = new Size(200, 16);
-      this.label102.Size = size159;
-      this.label102.TabIndex = 11;
-      Point point160 = new Point(16, 40);
-      this.label64.Location = point160;
-      this.label64.Name = "label64";
-      Size size160 = new Size(40, 16);
-      this.label64.Size = size160;
-      this.label64.TabIndex = 9;
-      this.label64.Text = "Type:";
-      Point point161 = new Point(16, 64);
-      this.label65.Location = point161;
-      this.label65.Name = "label65";
-      Size size161 = new Size(40, 16);
-      this.label65.Size = size161;
-      this.label65.TabIndex = 8;
-      this.label65.Text = "Name:";
-      Point point162 = new Point(16, 16);
-      this.label66.Location = point162;
-      this.label66.Name = "label66";
-      Size size162 = new Size(40, 16);
-      this.label66.Size = size162;
-      this.label66.TabIndex = 7;
-      this.label66.Text = "Port:";
-      this.groupBox4.Controls.Add((Control) this.label88);
-      this.groupBox4.Controls.Add((Control) this.label87);
-      this.groupBox4.Controls.Add((Control) this.label69);
-      this.groupBox4.Controls.Add((Control) this.label70);
-      this.groupBox4.FlatStyle = FlatStyle.System;
-      Point point163 = new Point(344, 200);
-      this.groupBox4.Location = point163;
-      this.groupBox4.Name = "groupBox4";
-      Size size163 = new Size(280, 64);
-      this.groupBox4.Size = size163;
-      this.groupBox4.TabIndex = 23;
-      this.groupBox4.TabStop = false;
-      this.groupBox4.Text = "Drive Key";
-      this.toolTip_0.SetToolTip((Control) this.groupBox4, "Key from Lite-On Drive");
-      Point point164 = new Point(72, 40);
-      this.label88.Location = point164;
-      this.label88.Name = "label88";
-      Size size164 = new Size(128, 16);
-      this.label88.Size = size164;
-      this.label88.TabIndex = 15;
-      Point point165 = new Point(46, 16);
-      this.label87.Location = point165;
-      this.label87.Name = "label87";
-      Size size165 = new Size(230, 16);
-      this.label87.Size = size165;
-      this.label87.TabIndex = 14;
-      Point point166 = new Point(8, 16);
-      this.label69.Location = point166;
-      this.label69.Name = "label69";
-      Size size166 = new Size(48, 16);
-      this.label69.Size = size166;
-      this.label69.TabIndex = 8;
-      this.label69.Text = "Key:";
-      Point point167 = new Point(8, 40);
-      this.label70.Location = point167;
-      this.label70.Name = "label70";
-      Size size167 = new Size(48, 16);
-      this.label70.Size = size167;
-      this.label70.TabIndex = 11;
-      this.label70.Text = "Status:";
-      this.Benq.Controls.Add((Control) this.checkBox16);
-      this.Benq.Controls.Add((Control) this.checkBox10);
-      this.Benq.Controls.Add((Control) this.checkBox11);
-      this.Benq.Controls.Add((Control) this.linkLabel2);
-      this.Benq.Controls.Add((Control) this.groupBox9);
-      this.Benq.Controls.Add((Control) this.groupBox7);
-      this.Benq.Controls.Add((Control) this.groupBox1);
-      this.Benq.Controls.Add((Control) this.comboBox7);
-      this.Benq.Controls.Add((Control) this.label73);
-      this.Benq.Controls.Add((Control) this.groupBox3);
-      this.Benq.Controls.Add((Control) this.groupBox6);
-      this.Benq.Controls.Add((Control) this.checkBox5);
-      this.Benq.Controls.Add((Control) this.button9);
-      Point point168 = new Point(4, 22);
-      this.Benq.Location = point168;
-      this.Benq.Name = "Benq";
-      Size size168 = new Size(656, 374);
-      this.Benq.Size = size168;
-      this.Benq.TabIndex = 3;
-      this.Benq.Text = "  MTK Flash 32  ";
-      this.checkBox16.FlatStyle = FlatStyle.System;
-      Point point169 = new Point(136, 24);
-      this.checkBox16.Location = point169;
-      this.checkBox16.Name = "checkBox16";
-      this.checkBox16.RightToLeft = RightToLeft.Yes;
-      Size size169 = new Size(72, 24);
-      this.checkBox16.Size = size169;
-      this.checkBox16.TabIndex = 103;
-      this.checkBox16.Text = "USB Only";
-      this.toolTip_0.SetToolTip((Control) this.checkBox16, "List only Via ports, may help if Mobo has unfriendly chipset");
-      this.checkBox16.CheckedChanged += new EventHandler(this.checkBox16_CheckedChanged);
-      this.checkBox10.FlatStyle = FlatStyle.System;
-      Point point170 = new Point(216, 24);
-      this.checkBox10.Location = point170;
-      this.checkBox10.Name = "checkBox10";
-      this.checkBox10.RightToLeft = RightToLeft.Yes;
-      Size size170 = new Size(88, 24);
-      this.checkBox10.Size = size170;
-      this.checkBox10.TabIndex = 100;
-      this.checkBox10.Text = "VIA ports Only";
-      this.toolTip_0.SetToolTip((Control) this.checkBox10, "List only Via ports, may help if Mobo has unfriendly chipset");
-      this.checkBox10.CheckedChanged += new EventHandler(this.checkBox10_CheckedChanged);
-      this.checkBox11.FlatStyle = FlatStyle.System;
-      Point point171 = new Point(160, 48);
-      this.checkBox11.Location = point171;
-      this.checkBox11.Name = "checkBox11";
-      this.checkBox11.RightToLeft = RightToLeft.Yes;
-      Size size171 = new Size(144, 24);
-      this.checkBox11.Size = size171;
-      this.checkBox11.TabIndex = 99;
-      this.checkBox11.Text = "Include non-IDE Ports";
-      this.toolTip_0.SetToolTip((Control) this.checkBox11, " IO ports in the SCSIAdapter Device Class");
-      this.checkBox11.Visible = false;
-      this.checkBox11.CheckedChanged += new EventHandler(this.checkBox11_CheckedChanged);
-      this.linkLabel2.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point172 = new Point(544, 8);
-      this.linkLabel2.Location = point172;
-      this.linkLabel2.Name = "linkLabel2";
-      Size size172 = new Size(80, 16);
-      this.linkLabel2.Size = size172;
-      this.linkLabel2.TabIndex = 98;
-      this.linkLabel2.TabStop = true;
-      this.linkLabel2.Text = "activate.iso";
-      this.linkLabel2.TextAlign = ContentAlignment.MiddleCenter;
-      this.toolTip_0.SetToolTip((Control) this.linkLabel2, "Burn to DL-DVD, then Insert to Unlock iXtreme Sammy.");
-      this.linkLabel2.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-      this.groupBox9.Controls.Add((Control) this.radioButton21);
-      this.groupBox9.Controls.Add((Control) this.button42);
-      this.groupBox9.Controls.Add((Control) this.radioButton20);
-      this.groupBox9.Controls.Add((Control) this.radioButton19);
-      this.groupBox9.Controls.Add((Control) this.button14);
-      this.groupBox9.Controls.Add((Control) this.button13);
-      this.groupBox9.Controls.Add((Control) this.button15);
-      this.groupBox9.Controls.Add((Control) this.button17);
-      this.groupBox9.Controls.Add((Control) this.button16);
-      this.groupBox9.FlatStyle = FlatStyle.System;
-      Point point173 = new Point(344, 256);
-      this.groupBox9.Location = point173;
-      this.groupBox9.Name = "groupBox9";
-      Size size173 = new Size(280, 112);
-      this.groupBox9.Size = size173;
-      this.groupBox9.TabIndex = 97;
-      this.groupBox9.TabStop = false;
-      this.groupBox9.Text = "Flashing Tasks";
-      Point point174 = new Point(136, 88);
-      this.radioButton21.Location = point174;
-      this.radioButton21.Name = "radioButton21";
-      this.radioButton21.RightToLeft = RightToLeft.Yes;
-      Size size174 = new Size(56, 16);
-      this.radioButton21.Size = size174;
-      this.radioButton21.TabIndex = 63;
-      this.radioButton21.Text = "Slim2";
-      this.toolTip_0.SetToolTip((Control) this.radioButton21, "Select Newer Slim MTK Vendor Commands");
-      this.radioButton21.Visible = false;
-      this.button42.FlatStyle = FlatStyle.System;
-      Point point175 = new Point(208, 80);
-      this.button42.Location = point175;
-      this.button42.Name = "button42";
-      Size size175 = new Size(56, 24);
-      this.button42.Size = size175;
-      this.button42.TabIndex = 62;
-      this.button42.Text = "Lock Spi";
-      this.toolTip_0.SetToolTip((Control) this.button42, "Lock/UnLock external Spi on 0225 replacement PCB");
-      this.button42.Click += new EventHandler(this.button42_Click);
-      this.radioButton20.Checked = true;
-      Point point176 = new Point(16, 88);
-      this.radioButton20.Location = point176;
-      this.radioButton20.Name = "radioButton20";
-      this.radioButton20.RightToLeft = RightToLeft.Yes;
-      Size size176 = new Size(48, 16);
-      this.radioButton20.Size = size176;
-      this.radioButton20.TabIndex = 61;
-      this.radioButton20.TabStop = true;
-      this.radioButton20.Text = "Phat";
-      this.toolTip_0.SetToolTip((Control) this.radioButton20, "Select Legacy MTK Vendor Commands");
-      Point point177 = new Point(80, 88);
-      this.radioButton19.Location = point177;
-      this.radioButton19.Name = "radioButton19";
-      this.radioButton19.RightToLeft = RightToLeft.Yes;
-      Size size177 = new Size(48, 16);
-      this.radioButton19.Size = size177;
-      this.radioButton19.TabIndex = 60;
-      this.radioButton19.Text = "Slim";
-      this.toolTip_0.SetToolTip((Control) this.radioButton19, "Select Newer Slim MTK Vendor Commands");
-      this.radioButton19.CheckedChanged += new EventHandler(this.radioButton19_CheckedChanged);
-      this.button14.FlatStyle = FlatStyle.System;
-      Point point178 = new Point(104, 48);
-      this.button14.Location = point178;
-      this.button14.Name = "button14";
-      Size size178 = new Size(72, 24);
-      this.button14.Size = size178;
-      this.button14.TabIndex = 58;
-      this.button14.Text = "Erase";
-      this.toolTip_0.SetToolTip((Control) this.button14, "Erase Flash Device");
-      this.button14.Click += new EventHandler(this.button14_Click);
-      this.button13.FlatStyle = FlatStyle.System;
-      Point point179 = new Point(192, 48);
-      this.button13.Location = point179;
-      this.button13.Name = "button13";
-      Size size179 = new Size(72, 24);
-      this.button13.Size = size179;
-      this.button13.TabIndex = 59;
-      this.button13.Text = "Write";
-      this.toolTip_0.SetToolTip((Control) this.button13, "Erase and Write Target Buffer to Flash Device");
-      this.button13.Click += new EventHandler(this.button13_Click);
-      this.button15.FlatStyle = FlatStyle.System;
-      Point point180 = new Point(16, 48);
-      this.button15.Location = point180;
-      this.button15.Name = "button15";
-      Size size180 = new Size(72, 24);
-      this.button15.Size = size180;
-      this.button15.TabIndex = 57;
-      this.button15.Text = "Read";
-      this.toolTip_0.SetToolTip((Control) this.button15, "Read Flash to Source Buffer");
-      this.button15.Click += new EventHandler(this.button15_Click);
-      this.button17.FlatStyle = FlatStyle.System;
-      Point point181 = new Point(16, 16);
-      this.button17.Location = point181;
-      this.button17.Name = "button17";
-      Size size181 = new Size(116, 24);
-      this.button17.Size = size181;
-      this.button17.TabIndex = 56;
-      this.button17.Text = " Intro / Device ID";
-      this.toolTip_0.SetToolTip((Control) this.button17, "Introduce Vendor Mode and get flash Device Info");
-      this.button17.Click += new EventHandler(this.button17_Click);
-      this.button16.FlatStyle = FlatStyle.System;
-      Point point182 = new Point(148, 16);
-      this.button16.Location = point182;
-      this.button16.Name = "button16";
-      Size size182 = new Size(116, 24);
-      this.button16.Size = size182;
-      this.button16.TabIndex = 57;
-      this.button16.Text = "Outro / ATA Reset";
-      this.toolTip_0.SetToolTip((Control) this.button16, "Leave Vendor Mode and reset then inquire drive");
-      this.button16.Click += new EventHandler(this.button16_Click);
-      this.groupBox7.Controls.Add((Control) this.button40);
-      this.groupBox7.Controls.Add((Control) this.button18);
-      this.groupBox7.Controls.Add((Control) this.button7);
-      this.groupBox7.Controls.Add((Control) this.button21);
-      this.groupBox7.FlatStyle = FlatStyle.System;
-      Point point183 = new Point(344, 24);
-      this.groupBox7.Location = point183;
-      this.groupBox7.Name = "groupBox7";
-      Size size183 = new Size(280, 72);
-      this.groupBox7.Size = size183;
-      this.groupBox7.TabIndex = 96;
-      this.groupBox7.TabStop = false;
-      this.groupBox7.Text = "360 Tools";
-      this.button40.FlatStyle = FlatStyle.System;
-      Point point184 = new Point(208, 20);
-      this.button40.Location = point184;
-      this.button40.Name = "button40";
-      Size size184 = new Size(56, 40);
-      this.button40.Size = size184;
-      this.button40.TabIndex = 96;
-      this.button40.Text = "Slim UnLock";
-      this.toolTip_0.SetToolTip((Control) this.button40, "Send Unique Password to unlock Spi!");
-      this.button40.Click += new EventHandler(this.button40_Click);
-      this.button18.FlatStyle = FlatStyle.System;
-      Point point185 = new Point(16, 20);
-      this.button18.Location = point185;
-      this.button18.Name = "button18";
-      Size size185 = new Size(56, 40);
-      this.button18.Size = size185;
-      this.button18.TabIndex = 60;
-      this.button18.Text = "Benq   UnLock";
-      this.toolTip_0.SetToolTip((Control) this.button18, "Send 49 Magic Keys to Unlock all VAD6038, Stock, pre ix1.5 to LT");
-      this.button18.Click += new EventHandler(this.button18_Click);
-      this.button7.FlatStyle = FlatStyle.System;
-      Point point186 = new Point(144, 20);
-      this.button7.Location = point186;
-      this.button7.Name = "button7";
-      Size size186 = new Size(56, 40);
-      this.button7.Size = size186;
-      this.button7.TabIndex = 95;
-      this.button7.Text = "Lite-On Erase";
-      this.toolTip_0.SetToolTip((Control) this.button7, "Erases Lite-on via Intro-of-Death... make sure you have your Keys!");
-      this.button7.Click += new EventHandler(this.button7_Click);
-      this.button21.FlatStyle = FlatStyle.System;
-      Point point187 = new Point(80, 20);
-      this.button21.Location = point187;
-      this.button21.Name = "button21";
-      Size size187 = new Size(56, 40);
-      this.button21.Size = size187;
-      this.button21.TabIndex = 67;
-      this.button21.Text = "Sammy UnLock";
-      this.toolTip_0.SetToolTip((Control) this.button21, "UnLocks Stock MS28s, for pre ix1.5 use activate.iso");
-      this.button21.Click += new EventHandler(this.button21_Click);
-      this.groupBox1.ContextMenu = this.contextMenu_4;
-      this.groupBox1.Controls.Add((Control) this.pictureBox2);
-      this.groupBox1.Controls.Add((Control) this.pictureBox6);
-      this.groupBox1.Controls.Add((Control) this.label133);
-      this.groupBox1.Controls.Add((Control) this.label132);
-      this.groupBox1.Controls.Add((Control) this.label72);
-      this.groupBox1.Controls.Add((Control) this.label58);
-      this.groupBox1.Controls.Add((Control) this.label59);
-      this.groupBox1.Controls.Add((Control) this.label60);
-      this.groupBox1.Controls.Add((Control) this.label61);
-      this.groupBox1.Controls.Add((Control) this.label62);
-      this.groupBox1.Controls.Add((Control) this.label67);
-      this.groupBox1.Controls.Add((Control) this.label68);
-      this.groupBox1.FlatStyle = FlatStyle.System;
-      Point point188 = new Point(32, 240);
-      this.groupBox1.Location = point188;
-      this.groupBox1.Name = "groupBox1";
-      Size size188 = new Size(280, 128);
-      this.groupBox1.Size = size188;
-      this.groupBox1.TabIndex = 94;
-      this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Drive Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox1, "Properites of Drive on IO port selected");
-      this.pictureBox2.Image = (Image) resourceManager.GetObject("pictureBox2.Image");
-      Point point189 = new Point(160, 104);
-      this.pictureBox2.Location = point189;
-      this.pictureBox2.Name = "pictureBox2";
-      Size size189 = new Size(19, 19);
-      this.pictureBox2.Size = size189;
-      this.pictureBox2.TabIndex = 32;
-      this.pictureBox2.TabStop = false;
-      this.pictureBox2.Visible = false;
-      this.pictureBox6.Image = (Image) resourceManager.GetObject("pictureBox6.Image");
-      Point point190 = new Point(160, 104);
-      this.pictureBox6.Location = point190;
-      this.pictureBox6.Name = "pictureBox6";
-      Size size190 = new Size(19, 19);
-      this.pictureBox6.Size = size190;
-      this.pictureBox6.TabIndex = 35;
-      this.pictureBox6.TabStop = false;
-      this.pictureBox6.Visible = false;
-      Point point191 = new Point(88, 104);
-      this.label133.Location = point191;
-      this.label133.Name = "label133";
-      Size size191 = new Size(112, 16);
-      this.label133.Size = size191;
-      this.label133.TabIndex = 34;
-      Point point192 = new Point(16, 104);
-      this.label132.Location = point192;
-      this.label132.Name = "label132";
-      Size size192 = new Size(72, 16);
-      this.label132.Size = size192;
-      this.label132.TabIndex = 33;
-      this.label132.Text = "DVD Key:";
-      Point point193 = new Point(88, 16);
-      this.label72.Location = point193;
-      this.label72.Name = "label72";
-      Size size193 = new Size(176, 16);
-      this.label72.Size = size193;
-      this.label72.TabIndex = 6;
-      Point point194 = new Point(88, 82);
-      this.label58.Location = point194;
-      this.label58.Name = "label58";
-      Size size194 = new Size(176, 16);
-      this.label58.Size = size194;
-      this.label58.TabIndex = 13;
-      Point point195 = new Point(16, 82);
-      this.label59.Location = point195;
-      this.label59.Name = "label59";
-      Size size195 = new Size(72, 16);
-      this.label59.Size = size195;
-      this.label59.TabIndex = 12;
-      this.label59.Text = "Reserved:";
-      Point point196 = new Point(16, 16);
-      this.label60.Location = point196;
-      this.label60.Name = "label60";
-      Size size196 = new Size(72, 16);
-      this.label60.Size = size196;
-      this.label60.TabIndex = 11;
-      this.label60.Text = "Vendor:";
-      Point point197 = new Point(88, 60);
-      this.label61.Location = point197;
-      this.label61.Name = "label61";
-      Size size197 = new Size(176, 16);
-      this.label61.Size = size197;
-      this.label61.TabIndex = 10;
-      Point point198 = new Point(16, 38);
-      this.label62.Location = point198;
-      this.label62.Name = "label62";
-      Size size198 = new Size(56, 16);
-      this.label62.Size = size198;
-      this.label62.TabIndex = 9;
-      this.label62.Text = "Name:";
-      Point point199 = new Point(16, 60);
-      this.label67.Location = point199;
-      this.label67.Name = "label67";
-      Size size199 = new Size(64, 16);
-      this.label67.Size = size199;
-      this.label67.TabIndex = 8;
-      this.label67.Text = "F/W Rev:";
-      Point point200 = new Point(88, 38);
-      this.label68.Location = point200;
-      this.label68.Name = "label68";
-      Size size200 = new Size(176, 16);
-      this.label68.Size = size200;
-      this.label68.TabIndex = 7;
-      this.comboBox7.Cursor = Cursors.Default;
-      this.comboBox7.ItemHeight = 13;
-      Point point201 = new Point(40, 48);
-      this.comboBox7.Location = point201;
-      this.comboBox7.Name = "comboBox7";
-      Size size201 = new Size(80, 21);
-      this.comboBox7.Size = size201;
-      this.comboBox7.TabIndex = 93;
-      this.comboBox7.SelectedIndexChanged += new EventHandler(this.comboBox7_SelectedIndexChanged);
-      Point point202 = new Point(40, 24);
-      this.label73.Location = point202;
-      this.label73.Name = "label73";
-      Size size202 = new Size(56, 16);
-      this.label73.Size = size202;
-      this.label73.TabIndex = 92;
-      this.label73.Text = "I/O Port";
-      this.groupBox3.Controls.Add((Control) this.pictureBox11);
-      this.groupBox3.Controls.Add((Control) this.pictureBox9);
-      this.groupBox3.Controls.Add((Control) this.label74);
-      this.groupBox3.Controls.Add((Control) this.label75);
-      this.groupBox3.Controls.Add((Control) this.label76);
-      this.groupBox3.Controls.Add((Control) this.label81);
-      this.groupBox3.Controls.Add((Control) this.label83);
-      this.groupBox3.Controls.Add((Control) this.label84);
-      this.groupBox3.Controls.Add((Control) this.label85);
-      this.groupBox3.Controls.Add((Control) this.label86);
-      this.groupBox3.Controls.Add((Control) this.label95);
-      this.groupBox3.Controls.Add((Control) this.label96);
-      this.groupBox3.FlatStyle = FlatStyle.System;
-      Point point203 = new Point(32, 80);
-      this.groupBox3.Location = point203;
-      this.groupBox3.Name = "groupBox3";
-      Size size203 = new Size(280, 152);
-      this.groupBox3.Size = size203;
-      this.groupBox3.TabIndex = 91;
-      this.groupBox3.TabStop = false;
-      this.groupBox3.Text = "Port Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox3, "Properites of IO port selected");
-      this.pictureBox11.Image = (Image) resourceManager.GetObject("pictureBox11.Image");
-      Point point204 = new Point(232, 16);
-      this.pictureBox11.Location = point204;
-      this.pictureBox11.Name = "pictureBox11";
-      Size size204 = new Size(35, 29);
-      this.pictureBox11.Size = size204;
-      this.pictureBox11.TabIndex = 40;
-      this.pictureBox11.TabStop = false;
-      this.pictureBox9.Image = (Image) resourceManager.GetObject("pictureBox9.Image");
-      Point point205 = new Point(232, 16);
-      this.pictureBox9.Location = point205;
-      this.pictureBox9.Name = "pictureBox9";
-      Size size205 = new Size(35, 29);
-      this.pictureBox9.Size = size205;
-      this.pictureBox9.TabIndex = 39;
-      this.pictureBox9.TabStop = false;
-      this.pictureBox9.Visible = false;
-      Point point206 = new Point(16, 112);
-      this.label74.Location = point206;
-      this.label74.Name = "label74";
-      Size size206 = new Size(72, 16);
-      this.label74.Size = size206;
-      this.label74.TabIndex = 12;
-      this.label74.Text = "Device:";
-      Point point207 = new Point(88, 112);
-      this.label75.Location = point207;
-      this.label75.Name = "label75";
-      Size size207 = new Size(176, 32);
-      this.label75.Size = size207;
-      this.label75.TabIndex = 11;
-      Point point208 = new Point(88, 88);
-      this.label76.Location = point208;
-      this.label76.Name = "label76";
-      Size size208 = new Size(176, 16);
-      this.label76.Size = size208;
-      this.label76.TabIndex = 10;
-      Point point209 = new Point(88, 64);
-      this.label81.Location = point209;
-      this.label81.Name = "label81";
-      Size size209 = new Size(176, 16);
-      this.label81.Size = size209;
-      this.label81.TabIndex = 9;
-      Point point210 = new Point(88, 40);
-      this.label83.Location = point210;
-      this.label83.Name = "label83";
-      Size size210 = new Size(176, 16);
-      this.label83.Size = size210;
-      this.label83.TabIndex = 8;
-      Point point211 = new Point(88, 16);
-      this.label84.Location = point211;
-      this.label84.Name = "label84";
-      Size size211 = new Size(176, 16);
-      this.label84.Size = size211;
-      this.label84.TabIndex = 7;
-      Point point212 = new Point(16, 16);
-      this.label85.Location = point212;
-      this.label85.Name = "label85";
-      Size size212 = new Size(88, 16);
-      this.label85.Size = size212;
-      this.label85.TabIndex = 6;
-      this.label85.Text = "I/O Address:";
-      Point point213 = new Point(16, 40);
-      this.label86.Location = point213;
-      this.label86.Name = "label86";
-      Size size213 = new Size(72, 16);
-      this.label86.Size = size213;
-      this.label86.TabIndex = 5;
-      this.label86.Text = "Type:";
-      Point point214 = new Point(16, 64);
-      this.label95.Location = point214;
-      this.label95.Name = "label95";
-      Size size214 = new Size(72, 16);
-      this.label95.Size = size214;
-      this.label95.TabIndex = 4;
-      this.label95.Text = "Channel:";
-      Point point215 = new Point(16, 88);
-      this.label96.Location = point215;
-      this.label96.Name = "label96";
-      Size size215 = new Size(72, 16);
-      this.label96.Size = size215;
-      this.label96.TabIndex = 3;
-      this.label96.Text = "Postion:";
-      this.groupBox6.Controls.Add((Control) this.label118);
-      this.groupBox6.Controls.Add((Control) this.label122);
-      this.groupBox6.Controls.Add((Control) this.label121);
-      this.groupBox6.Controls.Add((Control) this.label120);
-      this.groupBox6.Controls.Add((Control) this.label119);
-      this.groupBox6.Controls.Add((Control) this.label114);
-      this.groupBox6.Controls.Add((Control) this.label77);
-      this.groupBox6.Controls.Add((Control) this.label78);
-      this.groupBox6.Controls.Add((Control) this.label79);
-      this.groupBox6.Controls.Add((Control) this.label80);
-      this.groupBox6.FlatStyle = FlatStyle.System;
-      Point point216 = new Point(344, 104);
-      this.groupBox6.Location = point216;
-      this.groupBox6.Name = "groupBox6";
-      Size size216 = new Size(280, 144);
-      this.groupBox6.Size = size216;
-      this.groupBox6.TabIndex = 50;
-      this.groupBox6.TabStop = false;
-      this.groupBox6.Text = "Flash Chip Properties";
-      this.toolTip_0.SetToolTip((Control) this.groupBox6, "Properites of Flash device in Drive on IO port selected");
-      Point point217 = new Point(80, 24);
-      this.label118.Location = point217;
-      this.label118.Name = "label118";
-      Size size217 = new Size(192, 16);
-      this.label118.Size = size217;
-      this.label118.TabIndex = 13;
-      Point point218 = new Point(80, 120);
-      this.label122.Location = point218;
-      this.label122.Name = "label122";
-      Size size218 = new Size(192, 16);
-      this.label122.Size = size218;
-      this.label122.TabIndex = 17;
-      Point point219 = new Point(80, 96);
-      this.label121.Location = point219;
-      this.label121.Name = "label121";
-      Size size219 = new Size(192, 16);
-      this.label121.Size = size219;
-      this.label121.TabIndex = 16;
-      Point point220 = new Point(80, 72);
-      this.label120.Location = point220;
-      this.label120.Name = "label120";
-      Size size220 = new Size(192, 16);
-      this.label120.Size = size220;
-      this.label120.TabIndex = 15;
-      Point point221 = new Point(80, 48);
-      this.label119.Location = point221;
-      this.label119.Name = "label119";
-      Size size221 = new Size(192, 16);
-      this.label119.Size = size221;
-      this.label119.TabIndex = 14;
-      Point point222 = new Point(16, 48);
-      this.label114.Location = point222;
-      this.label114.Name = "label114";
-      Size size222 = new Size(56, 16);
-      this.label114.Size = size222;
-      this.label114.TabIndex = 12;
-      this.label114.Text = "Device ID:";
-      Point point223 = new Point(16, 72);
-      this.label77.Location = point223;
-      this.label77.Name = "label77";
-      Size size223 = new Size(56, 16);
-      this.label77.Size = size223;
-      this.label77.TabIndex = 9;
-      this.label77.Text = "Name:";
-      Point point224 = new Point(16, 96);
-      this.label78.Location = point224;
-      this.label78.Name = "label78";
-      Size size224 = new Size(56, 16);
-      this.label78.Size = size224;
-      this.label78.TabIndex = 8;
-      this.label78.Text = "Size:";
-      Point point225 = new Point(16, 24);
-      this.label79.Location = point225;
-      this.label79.Name = "label79";
-      Size size225 = new Size(64, 16);
-      this.label79.Size = size225;
-      this.label79.TabIndex = 7;
-      this.label79.Text = "Vendor ID:";
-      Point point226 = new Point(16, 120);
-      this.label80.Location = point226;
-      this.label80.Name = "label80";
-      Size size226 = new Size(56, 16);
-      this.label80.Size = size226;
-      this.label80.TabIndex = 11;
-      this.label80.Text = "Type:";
-      this.checkBox5.FlatStyle = FlatStyle.System;
-      Point point227 = new Point(344, 8);
-      this.checkBox5.Location = point227;
-      this.checkBox5.Name = "checkBox5";
-      this.checkBox5.RightToLeft = RightToLeft.Yes;
-      this.checkBox5.TabIndex = 94;
-      this.checkBox5.Text = "Do Device ID";
-      this.checkBox5.Visible = false;
-      this.button9.FlatStyle = FlatStyle.System;
-      Point point228 = new Point(128, 48);
-      this.button9.Location = point228;
-      this.button9.Name = "button9";
-      Size size227 = new Size(24, 21);
-      this.button9.Size = size227;
-      this.button9.TabIndex = 60;
-      this.button9.Text = "...";
-      this.toolTip_0.SetToolTip((Control) this.button9, "Refresh Drive Properties");
-      this.button9.Click += new EventHandler(this.button9_Click);
-      this.Hitachi.Controls.Add((Control) this.radioButton18);
-      this.Hitachi.Controls.Add((Control) this.radioButton17);
-      this.Hitachi.Controls.Add((Control) this.groupBox8);
-      this.Hitachi.Controls.Add((Control) this.groupBox15);
-      this.Hitachi.Controls.Add((Control) this.groupBox14);
-      this.Hitachi.Controls.Add((Control) this.groupBox12);
-      this.Hitachi.Controls.Add((Control) this.groupBox13);
-      this.Hitachi.Controls.Add((Control) this.groupBox11);
-      this.Hitachi.Controls.Add((Control) this.groupBox5);
-      Point point229 = new Point(4, 22);
-      this.Hitachi.Location = point229;
-      this.Hitachi.Name = "Hitachi";
-      Size size228 = new Size(656, 374);
-      this.Hitachi.Size = size228;
-      this.Hitachi.TabIndex = 6;
-      this.Hitachi.Text = "  Hitachi GDR3120  ";
-      this.radioButton18.FlatStyle = FlatStyle.System;
-      Point point230 = new Point(216, 40);
-      this.radioButton18.Location = point230;
-      this.radioButton18.Name = "radioButton18";
-      this.radioButton18.RightToLeft = RightToLeft.Yes;
-      Size size229 = new Size(88, 24);
-      this.radioButton18.Size = size229;
-      this.radioButton18.TabIndex = 72;
-      this.radioButton18.Text = "Use Port IO";
-      this.toolTip_0.SetToolTip((Control) this.radioButton18, "Communicate with drive via Port IO");
-      this.radioButton18.CheckedChanged += new EventHandler(this.radioButton18_CheckedChanged);
-      this.radioButton17.FlatStyle = FlatStyle.System;
-      Point point231 = new Point(200, 12);
-      this.radioButton17.Location = point231;
-      this.radioButton17.Name = "radioButton17";
-      this.radioButton17.RightToLeft = RightToLeft.Yes;
-      this.radioButton17.TabIndex = 71;
-      this.radioButton17.Text = "Use Win API";
-      this.toolTip_0.SetToolTip((Control) this.radioButton17, "Communicate with drive via windows Drive letter");
-      this.groupBox8.Controls.Add((Control) this.radioButton5);
-      this.groupBox8.Controls.Add((Control) this.radioButton4);
-      this.groupBox8.Controls.Add((Control) this.radioButton3);
-      this.groupBox8.Controls.Add((Control) this.radioButton2);
-      this.groupBox8.Controls.Add((Control) this.radioButton1);
-      this.groupBox8.FlatStyle = FlatStyle.System;
-      Point point232 = new Point(208, 72);
-      this.groupBox8.Location = point232;
-      this.groupBox8.Name = "groupBox8";
-      Size size230 = new Size(112, 160);
-      this.groupBox8.Size = size230;
-      this.groupBox8.TabIndex = 61;
-      this.groupBox8.TabStop = false;
-      this.groupBox8.Text = "Drive Revision";
-      this.radioButton5.FlatStyle = FlatStyle.System;
-      Point point233 = new Point(32, 128);
-      this.radioButton5.Location = point233;
-      this.radioButton5.Name = "radioButton5";
-      this.radioButton5.RightToLeft = RightToLeft.Yes;
-      Size size231 = new Size(64, 24);
-      this.radioButton5.Size = size231;
-      this.radioButton5.TabIndex = 4;
-      this.radioButton5.Text = "79 / 78";
-      this.radioButton5.CheckedChanged += new EventHandler(this.radioButton5_CheckedChanged);
-      this.radioButton4.FlatStyle = FlatStyle.System;
-      Point point234 = new Point(32, 100);
-      this.radioButton4.Location = point234;
-      this.radioButton4.Name = "radioButton4";
-      this.radioButton4.RightToLeft = RightToLeft.Yes;
-      Size size232 = new Size(64, 24);
-      this.radioButton4.Size = size232;
-      this.radioButton4.TabIndex = 3;
-      this.radioButton4.Text = "59 / 58";
-      this.radioButton3.FlatStyle = FlatStyle.System;
-      Point point235 = new Point(32, 72);
-      this.radioButton3.Location = point235;
-      this.radioButton3.Name = "radioButton3";
-      this.radioButton3.RightToLeft = RightToLeft.Yes;
-      Size size233 = new Size(64, 24);
-      this.radioButton3.Size = size233;
-      this.radioButton3.TabIndex = 2;
-      this.radioButton3.Text = "47 / 46";
-      this.radioButton2.FlatStyle = FlatStyle.System;
-      Point point236 = new Point(32, 44);
-      this.radioButton2.Location = point236;
-      this.radioButton2.Name = "radioButton2";
-      this.radioButton2.RightToLeft = RightToLeft.Yes;
-      Size size234 = new Size(64, 24);
-      this.radioButton2.Size = size234;
-      this.radioButton2.TabIndex = 1;
-      this.radioButton2.Text = "36";
-      this.radioButton1.FlatStyle = FlatStyle.System;
-      Point point237 = new Point(32, 16);
-      this.radioButton1.Location = point237;
-      this.radioButton1.Name = "radioButton1";
-      this.radioButton1.RightToLeft = RightToLeft.Yes;
-      Size size235 = new Size(64, 24);
-      this.radioButton1.Size = size235;
-      this.radioButton1.TabIndex = 0;
-      this.radioButton1.Text = "40 / 32";
-      this.groupBox15.Controls.Add((Control) this.button22);
-      this.groupBox15.Controls.Add((Control) this.button3);
-      this.groupBox15.Controls.Add((Control) this.comboBox16);
-      this.groupBox15.Controls.Add((Control) this.button27);
-      this.groupBox15.Controls.Add((Control) this.button23);
-      this.groupBox15.FlatStyle = FlatStyle.System;
-      Point point238 = new Point(336, 8);
-      this.groupBox15.Location = point238;
-      this.groupBox15.Name = "groupBox15";
-      Size size236 = new Size(312, 96);
-      this.groupBox15.Size = size236;
-      this.groupBox15.TabIndex = 70;
-      this.groupBox15.TabStop = false;
-      this.groupBox15.Text = "Drive";
-      this.button22.FlatStyle = FlatStyle.System;
-      Point point239 = new Point(160, 56);
-      this.button22.Location = point239;
-      this.button22.Name = "button22";
-      Size size237 = new Size(64, 24);
-      this.button22.Size = size237;
-      this.button22.TabIndex = 64;
-      this.button22.Text = "Query";
-      this.toolTip_0.SetToolTip((Control) this.button22, "Inquire drive letter.");
-      this.button22.Click += new EventHandler(this.button22_Click);
-      this.button3.FlatStyle = FlatStyle.System;
-      Point point240 = new Point(16, 56);
-      this.button3.Location = point240;
-      this.button3.Name = "button3";
-      Size size238 = new Size(64, 24);
-      this.button3.Size = size238;
-      this.button3.TabIndex = 63;
-      this.button3.Text = "Refresh";
-      this.toolTip_0.SetToolTip((Control) this.button3, "Refresh Windows Drive list");
-      this.button3.Click += new EventHandler(this.button3_Click);
-      this.comboBox16.ContextMenu = this.contextMenu_0;
-      Point point241 = new Point(16, 24);
-      this.comboBox16.Location = point241;
-      this.comboBox16.Name = "comboBox16";
-      Size size239 = new Size(280, 21);
-      this.comboBox16.Size = size239;
-      this.comboBox16.TabIndex = 5;
-      this.contextMenu_0.MenuItems.AddRange(new MenuItem[6]
-      {
-        this.menuItem_0,
-        this.menuItem_1,
-        this.menuItem_8,
-        this.menuItem_9,
-        this.menuItem_10,
-        this.menuItem_38
-      });
-      this.menuItem_0.Index = 0;
-      this.menuItem_0.Text = "Open";
-      this.menuItem_0.Click += new EventHandler(this.menuItem_0_Click);
-      this.menuItem_1.Index = 1;
-      this.menuItem_1.Text = "Close";
-      this.menuItem_1.Click += new EventHandler(this.menuItem_1_Click);
-      this.menuItem_8.Index = 2;
-      this.menuItem_8.Text = "Remove";
-      this.menuItem_8.Click += new EventHandler(this.menuItem_8_Click);
-      this.menuItem_9.Index = 3;
-      this.menuItem_9.Text = "Disable";
-      this.menuItem_9.Click += new EventHandler(this.menuItem_9_Click);
-      this.menuItem_10.Index = 4;
-      this.menuItem_10.Text = "Enable All";
-      this.menuItem_10.Click += new EventHandler(this.menuItem_10_Click);
-      this.menuItem_38.Index = 5;
-      this.menuItem_38.MenuItems.AddRange(new MenuItem[14]
-      {
-        this.menuItem_39,
-        this.menuItem_40,
-        this.menuItem_41,
-        this.menuItem_42,
-        this.menuItem_49,
-        this.menuItem_48,
-        this.menuItem_44,
-        this.menuItem_46,
-        this.menuItem_50,
-        this.menuItem_45,
-        this.menuItem_51,
-        this.menuItem_47,
-        this.menuItem_52,
-        this.menuItem_43
-      });
-      this.menuItem_38.Text = "BurnMax";
-      this.menuItem_38.Visible = false;
-      this.menuItem_39.Index = 0;
-      this.menuItem_39.Text = "iHAS A";
-      this.menuItem_39.Click += new EventHandler(this.menuItem_39_Click);
-      this.menuItem_40.Index = 1;
-      this.menuItem_40.Text = "iHAS B";
-      this.menuItem_40.Click += new EventHandler(this.menuItem_40_Click);
-      this.menuItem_41.Index = 2;
-      this.menuItem_41.Text = "iHAS C/D";
-      this.menuItem_41.Click += new EventHandler(this.menuItem_41_Click);
-      this.menuItem_42.Index = 3;
-      this.menuItem_42.Text = "iHAS W";
-      this.menuItem_42.Click += new EventHandler(this.menuItem_42_Click);
-      this.menuItem_49.Index = 4;
-      this.menuItem_49.Text = "eTAU108";
-      this.menuItem_49.Click += new EventHandler(this.menuItem_49_Click);
-      this.menuItem_48.Index = 5;
-      this.menuItem_48.Text = "-";
-      this.menuItem_44.Index = 6;
-      this.menuItem_44.Text = "DVR-220L";
-      this.menuItem_44.Click += new EventHandler(this.menuItem_44_Click);
-      this.menuItem_46.Index = 7;
-      this.menuItem_46.Text = "DVR-218L";
-      this.menuItem_46.Click += new EventHandler(this.menuItem_46_Click);
-      this.menuItem_50.Index = 8;
-      this.menuItem_50.Text = "-";
-      this.menuItem_45.Index = 9;
-      this.menuItem_45.Text = "TSST SE-208AB";
-      this.menuItem_45.Click += new EventHandler(this.menuItem_45_Click);
-      this.menuItem_51.Index = 10;
-      this.menuItem_51.Text = "-";
-      this.menuItem_47.Index = 11;
-      this.menuItem_47.Text = "DRW-24B1LT";
-      this.menuItem_47.Click += new EventHandler(this.menuItem_47_Click);
-      this.menuItem_52.Index = 12;
-      this.menuItem_52.Text = "-";
-      this.menuItem_43.Index = 13;
-      this.menuItem_43.Text = "Scan";
-      this.menuItem_43.Click += new EventHandler(this.menuItem_43_Click);
-      this.button27.FlatStyle = FlatStyle.System;
-      Point point242 = new Point(88, 56);
-      this.button27.Location = point242;
-      this.button27.Name = "button27";
-      Size size240 = new Size(64, 24);
-      this.button27.Size = size240;
-      this.button27.TabIndex = 94;
-      this.button27.Text = "Scan";
-      this.toolTip_0.SetToolTip((Control) this.button27, "Scan for Hardware Changes");
-      this.button27.Click += new EventHandler(this.button27_Click);
-      this.button23.FlatStyle = FlatStyle.System;
-      Point point243 = new Point(232, 56);
-      this.button23.Location = point243;
-      this.button23.Name = "button23";
-      Size size241 = new Size(64, 24);
-      this.button23.Size = size241;
-      this.button23.TabIndex = 65;
-      this.button23.Text = "USmodeB";
-      this.button23.Click += new EventHandler(this.button23_Click);
-      this.groupBox14.Controls.Add((Control) this.button24);
-      this.groupBox14.Controls.Add((Control) this.button12);
-      this.groupBox14.Controls.Add((Control) this.checkBox1);
-      this.groupBox14.Controls.Add((Control) this.linkLabel3);
-      this.groupBox14.FlatStyle = FlatStyle.System;
-      Point point244 = new Point(8, 272);
-      this.groupBox14.Location = point244;
-      this.groupBox14.Name = "groupBox14";
-      Size size242 = new Size(184, 96);
-      this.groupBox14.Size = size242;
-      this.groupBox14.TabIndex = 69;
-      this.groupBox14.TabStop = false;
-      this.groupBox14.Text = "79 Unlock";
-      this.button24.Enabled = false;
-      this.button24.FlatStyle = FlatStyle.System;
-      Point point245 = new Point(16, 56);
-      this.button24.Location = point245;
-      this.button24.Name = "button24";
-      Size size243 = new Size(72, 24);
-      this.button24.Size = size243;
-      this.button24.TabIndex = 60;
-      this.button24.Text = "Play";
-      this.button24.Click += new EventHandler(this.button24_Click);
-      this.button12.FlatStyle = FlatStyle.System;
-      Point point246 = new Point(96, 56);
-      this.button12.Location = point246;
-      this.button12.Name = "button12";
-      Size size244 = new Size(72, 24);
-      this.button12.Size = size244;
-      this.button12.TabIndex = 59;
-      this.button12.Text = "79 Unlock";
-      this.button12.Click += new EventHandler(this.button12_Click);
-      this.checkBox1.Checked = true;
-      this.checkBox1.CheckState = CheckState.Checked;
-      this.checkBox1.FlatStyle = FlatStyle.System;
-      Point point247 = new Point(96, 8);
-      this.checkBox1.Location = point247;
-      this.checkBox1.Name = "checkBox1";
-      this.checkBox1.RightToLeft = RightToLeft.Yes;
-      Size size245 = new Size(80, 24);
-      this.checkBox1.Size = size245;
-      this.checkBox1.TabIndex = 61;
-      this.checkBox1.Text = "automatic";
-      this.checkBox1.CheckedChanged += new EventHandler(this.checkBox1_CheckedChanged);
-      this.linkLabel3.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point248 = new Point(8, 32);
-      this.linkLabel3.Location = point248;
-      this.linkLabel3.Name = "linkLabel3";
-      Size size246 = new Size(168, 16);
-      this.linkLabel3.Size = size246;
-      this.linkLabel3.TabIndex = 99;
-      this.linkLabel3.TabStop = true;
-      this.linkLabel3.Text = "Insert the 79 Unlock Audio CD.";
-      this.linkLabel3.TextAlign = ContentAlignment.MiddleCenter;
-      this.linkLabel3.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-      this.groupBox12.Controls.Add((Control) this.listBox5);
-      this.groupBox12.FlatStyle = FlatStyle.System;
-      Point point249 = new Point(504, 112);
-      this.groupBox12.Location = point249;
-      this.groupBox12.Name = "groupBox12";
-      Size size247 = new Size(144, 256);
-      this.groupBox12.Size = size247;
-      this.groupBox12.TabIndex = 68;
-      this.groupBox12.TabStop = false;
-      this.groupBox12.Text = "Sector List";
-      this.listBox5.Font = new Font("Courier New", 9f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      this.listBox5.ItemHeight = 15;
-      this.listBox5.Items.AddRange(new object[11]
-      {
-        (object) "0x90003000",
-        (object) "0x90005000",
-        (object) "0x90006000",
-        (object) "0x9000A000",
-        (object) "0x9001C000",
-        (object) "0x90027000",
-        (object) "0x9002E000",
-        (object) "0x90033000",
-        (object) "0x90034000",
-        (object) "0x90035000",
-        (object) "0x9003E000"
-      });
-      Point point250 = new Point(16, 24);
-      this.listBox5.Location = point250;
-      this.listBox5.Name = "listBox5";
-      Size size248 = new Size(112, 214);
-      this.listBox5.Size = size248;
-      this.listBox5.TabIndex = 3;
-      this.toolTip_0.SetToolTip((Control) this.listBox5, "List of sectors to be flashed");
-      this.groupBox13.Controls.Add((Control) this.button25);
-      this.groupBox13.Controls.Add((Control) this.label99);
-      this.groupBox13.Controls.Add((Control) this.label97);
-      this.groupBox13.Controls.Add((Control) this.label98);
-      this.groupBox13.Controls.Add((Control) this.label100);
-      this.groupBox13.Controls.Add((Control) this.button11);
-      this.groupBox13.Controls.Add((Control) this.label82);
-      this.groupBox13.Controls.Add((Control) this.label89);
-      this.groupBox13.Controls.Add((Control) this.label91);
-      this.groupBox13.Controls.Add((Control) this.comboBox13);
-      this.groupBox13.Controls.Add((Control) this.button20);
-      this.groupBox13.Controls.Add((Control) this.button19);
-      this.groupBox13.Controls.Add((Control) this.label90);
-      this.groupBox13.FlatStyle = FlatStyle.System;
-      Point point251 = new Point(8, 8);
-      this.groupBox13.Location = point251;
-      this.groupBox13.Name = "groupBox13";
-      Size size249 = new Size(184, 256);
-      this.groupBox13.Size = size249;
-      this.groupBox13.TabIndex = 67;
-      this.groupBox13.TabStop = false;
-      this.groupBox13.Text = "Port Properties";
-      this.button25.FlatStyle = FlatStyle.System;
-      Point point252 = new Point(112, 24);
-      this.button25.Location = point252;
-      this.button25.Name = "button25";
-      Size size250 = new Size(24, 21);
-      this.button25.Size = size250;
-      this.button25.TabIndex = 94;
-      this.button25.Text = "...";
-      this.toolTip_0.SetToolTip((Control) this.button25, "Refresh Drive Properties");
-      this.button25.Click += new EventHandler(this.button25_Click);
-      Point point253 = new Point(56, 88);
-      this.label99.Location = point253;
-      this.label99.Name = "label99";
-      Size size251 = new Size(120, 16);
-      this.label99.Size = size251;
-      this.label99.TabIndex = 70;
-      Point point254 = new Point(72, 152);
-      this.label97.Location = point254;
-      this.label97.Name = "label97";
-      Size size252 = new Size(96, 32);
-      this.label97.Size = size252;
-      this.label97.TabIndex = 72;
-      Point point255 = new Point(72, 120);
-      this.label98.Location = point255;
-      this.label98.Name = "label98";
-      Size size253 = new Size(96, 16);
-      this.label98.Size = size253;
-      this.label98.TabIndex = 71;
-      Point point256 = new Point(56, 56);
-      this.label100.Location = point256;
-      this.label100.Name = "label100";
-      Size size254 = new Size(125, 16);
-      this.label100.Size = size254;
-      this.label100.TabIndex = 69;
-      this.button11.FlatStyle = FlatStyle.System;
-      Point point257 = new Point(16, 192);
-      this.button11.Location = point257;
-      this.button11.Name = "button11";
-      Size size255 = new Size(152, 24);
-      this.button11.Size = size255;
-      this.button11.TabIndex = 66;
-      this.button11.Text = "Send Mode-B";
-      this.button11.Click += new EventHandler(this.button11_Click);
-      Point point258 = new Point(8, 56);
-      this.label82.Location = point258;
-      this.label82.Name = "label82";
-      Size size256 = new Size(56, 16);
-      this.label82.Size = size256;
-      this.label82.TabIndex = 6;
-      this.label82.Text = "Vendor:";
-      Point point259 = new Point(8, 88);
-      this.label89.Location = point259;
-      this.label89.Name = "label89";
-      Size size257 = new Size(56, 16);
-      this.label89.Size = size257;
-      this.label89.TabIndex = 5;
-      this.label89.Text = "Name:";
-      Point point260 = new Point(8, 152);
-      this.label91.Location = point260;
-      this.label91.Name = "label91";
-      Size size258 = new Size(72, 16);
-      this.label91.Size = size258;
-      this.label91.TabIndex = 3;
-      this.label91.Text = "Reserved:";
-      Point point261 = new Point(16, 24);
-      this.comboBox13.Location = point261;
-      this.comboBox13.Name = "comboBox13";
-      Size size259 = new Size(88, 21);
-      this.comboBox13.Size = size259;
-      this.comboBox13.TabIndex = 68;
-      this.comboBox13.SelectedIndexChanged += new EventHandler(this.comboBox13_SelectedIndexChanged);
-      this.button20.FlatStyle = FlatStyle.System;
-      Point point262 = new Point(96, 224);
-      this.button20.Location = point262;
-      this.button20.Name = "button20";
-      Size size260 = new Size(72, 24);
-      this.button20.Size = size260;
-      this.button20.TabIndex = 93;
-      this.button20.Text = "Close";
-      this.button20.Click += new EventHandler(this.button20_Click);
-      this.button19.FlatStyle = FlatStyle.System;
-      Point point263 = new Point(16, 224);
-      this.button19.Location = point263;
-      this.button19.Name = "button19";
-      Size size261 = new Size(72, 24);
-      this.button19.Size = size261;
-      this.button19.TabIndex = 92;
-      this.button19.Text = "Open";
-      this.button19.Click += new EventHandler(this.button19_Click);
-      Point point264 = new Point(8, 120);
-      this.label90.Location = point264;
-      this.label90.Name = "label90";
-      Size size262 = new Size(80, 16);
-      this.label90.Size = size262;
-      this.label90.TabIndex = 4;
-      this.label90.Text = "F/W Rev:";
-      this.groupBox11.Controls.Add((Control) this.radioButton16);
-      this.groupBox11.Controls.Add((Control) this.radioButton11);
-      this.groupBox11.Controls.Add((Control) this.radioButton10);
-      this.groupBox11.Controls.Add((Control) this.radioButton9);
-      this.groupBox11.Controls.Add((Control) this.radioButton8);
-      this.groupBox11.Controls.Add((Control) this.radioButton7);
-      this.groupBox11.Controls.Add((Control) this.radioButton6);
-      this.groupBox11.Controls.Add((Control) this.button26);
-      this.groupBox11.FlatStyle = FlatStyle.System;
-      Point point265 = new Point(336, 112);
-      this.groupBox11.Location = point265;
-      this.groupBox11.Name = "groupBox11";
-      Size size263 = new Size(152, 256);
-      this.groupBox11.Size = size263;
-      this.groupBox11.TabIndex = 62;
-      this.groupBox11.TabStop = false;
-      this.groupBox11.Text = "Flashing Options";
-      this.radioButton16.Enabled = false;
-      this.radioButton16.FlatStyle = FlatStyle.System;
-      Point point266 = new Point(16, 184);
-      this.radioButton16.Location = point266;
-      this.radioButton16.Name = "radioButton16";
-      this.radioButton16.RightToLeft = RightToLeft.Yes;
-      Size size264 = new Size(120, 24);
-      this.radioButton16.Size = size264;
-      this.radioButton16.TabIndex = 62;
-      this.radioButton16.Text = "Free Flash";
-      this.toolTip_0.SetToolTip((Control) this.radioButton16, "Flash what you like, checks can be ignored.. **BE WARNED**");
-      this.radioButton16.CheckedChanged += new EventHandler(this.radioButton16_CheckedChanged);
-      this.radioButton11.FlatStyle = FlatStyle.System;
-      Point point267 = new Point(16, 16);
-      this.radioButton11.Location = point267;
-      this.radioButton11.Name = "radioButton11";
-      this.radioButton11.RightToLeft = RightToLeft.Yes;
-      Size size265 = new Size(120, 24);
-      this.radioButton11.Size = size265;
-      this.radioButton11.TabIndex = 61;
-      this.radioButton11.Text = "Dump Drive";
-      this.toolTip_0.SetToolTip((Control) this.radioButton11, "Dump and save flash image.");
-      this.radioButton11.CheckedChanged += new EventHandler(this.radioButton11_CheckedChanged);
-      this.radioButton10.FlatStyle = FlatStyle.System;
-      Point point268 = new Point(16, 156);
-      this.radioButton10.Location = point268;
-      this.radioButton10.Name = "radioButton10";
-      this.radioButton10.RightToLeft = RightToLeft.Yes;
-      Size size266 = new Size(120, 24);
-      this.radioButton10.Size = size266;
-      this.radioButton10.TabIndex = 4;
-      this.radioButton10.Text = "Set Checksum";
-      this.toolTip_0.SetToolTip((Control) this.radioButton10, "Flash checkum if incorrect or master -OR- Flash master is correct.");
-      this.radioButton10.CheckedChanged += new EventHandler(this.radioButton10_CheckedChanged);
-      this.radioButton9.FlatStyle = FlatStyle.System;
-      Point point269 = new Point(16, 128);
-      this.radioButton9.Location = point269;
-      this.radioButton9.Name = "radioButton9";
-      this.radioButton9.RightToLeft = RightToLeft.Yes;
-      Size size267 = new Size(120, 24);
-      this.radioButton9.Size = size267;
-      this.radioButton9.TabIndex = 3;
-      this.radioButton9.Text = "Restore Firmware";
-      this.toolTip_0.SetToolTip((Control) this.radioButton9, "Dump flash, load stock, build sector list and flash them... fix checksum.");
-      this.radioButton9.CheckedChanged += new EventHandler(this.radioButton9_CheckedChanged);
-      this.radioButton8.FlatStyle = FlatStyle.System;
-      Point point270 = new Point(16, 100);
-      this.radioButton8.Location = point270;
-      this.radioButton8.Name = "radioButton8";
-      this.radioButton8.RightToLeft = RightToLeft.Yes;
-      Size size268 = new Size(120, 24);
-      this.radioButton8.Size = size268;
-      this.radioButton8.TabIndex = 2;
-      this.radioButton8.Text = "Flash LT-Plus";
-      this.toolTip_0.SetToolTip((Control) this.radioButton8, "Dump flash, load latest iXtreme, build sector list and flash them.");
-      this.radioButton8.CheckedChanged += new EventHandler(this.radioButton8_CheckedChanged);
-      this.radioButton7.FlatStyle = FlatStyle.System;
-      Point point271 = new Point(16, 72);
-      this.radioButton7.Location = point271;
-      this.radioButton7.Name = "radioButton7";
-      this.radioButton7.RightToLeft = RightToLeft.Yes;
-      Size size269 = new Size(120, 24);
-      this.radioButton7.Size = size269;
-      this.radioButton7.TabIndex = 1;
-      this.radioButton7.Text = "Auto Spoof";
-      this.toolTip_0.SetToolTip((Control) this.radioButton7, "Dump flash, Spoof from Source, flash Sector differences.");
-      this.radioButton7.CheckedChanged += new EventHandler(this.radioButton7_CheckedChanged);
-      this.radioButton6.FlatStyle = FlatStyle.System;
-      Point point272 = new Point(16, 44);
-      this.radioButton6.Location = point272;
-      this.radioButton6.Name = "radioButton6";
-      this.radioButton6.RightToLeft = RightToLeft.Yes;
-      Size size270 = new Size(120, 24);
-      this.radioButton6.Size = size270;
-      this.radioButton6.TabIndex = 0;
-      this.radioButton6.Text = "Manual Spoof";
-      this.toolTip_0.SetToolTip((Control) this.radioButton6, "Dump flash, spoof manually, flash sector differences.");
-      this.radioButton6.CheckedChanged += new EventHandler(this.radioButton6_CheckedChanged);
-      this.button26.FlatStyle = FlatStyle.System;
-      Point point273 = new Point(16, 208);
-      this.button26.Location = point273;
-      this.button26.Name = "button26";
-      Size size271 = new Size(120, 40);
-      this.button26.Size = size271;
-      this.button26.TabIndex = 60;
-      this.button26.Text = "Delta Read";
-      this.button26.Click += new EventHandler(this.button26_Click);
-      this.groupBox5.Controls.Add((Control) this.radioButton12);
-      this.groupBox5.Controls.Add((Control) this.radioButton13);
-      this.groupBox5.Controls.Add((Control) this.radioButton14);
-      this.groupBox5.Controls.Add((Control) this.radioButton15);
-      this.groupBox5.FlatStyle = FlatStyle.System;
-      Point point274 = new Point(208, 240);
-      this.groupBox5.Location = point274;
-      this.groupBox5.Name = "groupBox5";
-      Size size272 = new Size(112, 128);
-      this.groupBox5.Size = size272;
-      this.groupBox5.TabIndex = 62;
-      this.groupBox5.TabStop = false;
-      this.groupBox5.Text = "Transfer Method";
-      this.radioButton12.Enabled = false;
-      this.radioButton12.FlatStyle = FlatStyle.System;
-      Point point275 = new Point(8, 100);
-      this.radioButton12.Location = point275;
-      this.radioButton12.Name = "radioButton12";
-      this.radioButton12.RightToLeft = RightToLeft.Yes;
-      Size size273 = new Size(88, 24);
-      this.radioButton12.Size = size273;
-      this.radioButton12.TabIndex = 3;
-      this.radioButton12.Text = "Ram Poke";
-      this.toolTip_0.SetToolTip((Control) this.radioButton12, "Communicate with drive via Vendor Poke commands.");
-      this.radioButton13.FlatStyle = FlatStyle.System;
-      Point point276 = new Point(8, 44);
-      this.radioButton13.Location = point276;
-      this.radioButton13.Name = "radioButton13";
-      this.radioButton13.RightToLeft = RightToLeft.Yes;
-      Size size274 = new Size(88, 24);
-      this.radioButton13.Size = size274;
-      this.radioButton13.TabIndex = 2;
-      this.radioButton13.Text = "Mode Select";
-      this.toolTip_0.SetToolTip((Control) this.radioButton13, "Communicate with drive via Mode Select commands, supports USB");
-      this.radioButton14.FlatStyle = FlatStyle.System;
-      Point point277 = new Point(8, 72);
-      this.radioButton14.Location = point277;
-      this.radioButton14.Name = "radioButton14";
-      this.radioButton14.RightToLeft = RightToLeft.Yes;
-      Size size275 = new Size(88, 24);
-      this.radioButton14.Size = size275;
-      this.radioButton14.TabIndex = 1;
-      this.radioButton14.Text = "Ram Upload";
-      this.toolTip_0.SetToolTip((Control) this.radioButton14, "Communicate with drive via Vendor Ram Upload commands.");
-      this.radioButton15.FlatStyle = FlatStyle.System;
-      Point point278 = new Point(8, 16);
-      this.radioButton15.Location = point278;
-      this.radioButton15.Name = "radioButton15";
-      this.radioButton15.RightToLeft = RightToLeft.Yes;
-      Size size276 = new Size(88, 24);
-      this.radioButton15.Size = size276;
-      this.radioButton15.TabIndex = 0;
-      this.radioButton15.Text = "Classic";
-      this.toolTip_0.SetToolTip((Control) this.radioButton15, "Dump via Classic ram peek Vendor command");
-      this.tabPage5.Controls.Add((Control) this.pictureBox4);
-      this.tabPage5.Controls.Add((Control) this.button31);
-      this.tabPage5.Controls.Add((Control) this.button30);
-      this.tabPage5.Controls.Add((Control) this.axWebBrowser_1);
-      Point point279 = new Point(4, 22);
-      this.tabPage5.Location = point279;
-      this.tabPage5.Name = "tabPage5";
-      Size size277 = new Size(656, 374);
-      this.tabPage5.Size = size277;
-      this.tabPage5.TabIndex = 7;
-      this.tabPage5.Text = "  IRC Channel  ";
-      this.pictureBox4.Image = (Image) resourceManager.GetObject("pictureBox4.Image");
-      Point point280 = new Point(552, 344);
-      this.pictureBox4.Location = point280;
-      this.pictureBox4.Name = "pictureBox4";
-      Size size278 = new Size(92, 26);
-      this.pictureBox4.Size = size278;
-      this.pictureBox4.TabIndex = 77;
-      this.pictureBox4.TabStop = false;
-      this.toolTip_0.SetToolTip((Control) this.pictureBox4, "Help Support JungleFlasher Development!");
-      this.pictureBox4.Visible = false;
-      this.pictureBox4.Click += new EventHandler(this.pictureBox4_Click);
-      this.pictureBox4.MouseEnter += new EventHandler(this.pictureBox3_MouseEnter);
-      this.pictureBox4.MouseLeave += new EventHandler(this.pictureBox3_MouseLeave);
-      Point point281 = new Point(112, 344);
-      this.button31.Location = point281;
-      this.button31.Name = "button31";
-      Size size279 = new Size(80, 24);
-      this.button31.Size = size279;
-      this.button31.TabIndex = 76;
-      this.button31.Text = "Disconnect";
-      this.button31.Click += new EventHandler(this.button31_Click);
-      Point point282 = new Point(16, 344);
-      this.button30.Location = point282;
-      this.button30.Name = "button30";
-      Size size280 = new Size(80, 24);
-      this.button30.Size = size280;
-      this.button30.TabIndex = 75;
-      this.button30.Text = "Connect";
-      this.button30.Click += new EventHandler(this.button30_Click);
-      this.checkBox7.Checked = true;
-      this.checkBox7.CheckState = CheckState.Checked;
-      Point point283 = new Point(536, 480);
-      this.checkBox7.Location = point283;
-      this.checkBox7.Name = "checkBox7";
-      this.checkBox7.RightToLeft = RightToLeft.Yes;
-      Size size281 = new Size(88, 24);
-      this.checkBox7.Size = size281;
-      this.checkBox7.TabIndex = 72;
-      this.checkBox7.Text = "Intel";
-      Point point284 = new Point(328, 480);
-      this.checkBox6.Location = point284;
-      this.checkBox6.Name = "checkBox6";
-      this.checkBox6.RightToLeft = RightToLeft.Yes;
-      Size size282 = new Size(88, 24);
-      this.checkBox6.Size = size282;
-      this.checkBox6.TabIndex = 71;
-      this.checkBox6.Text = "Use Port I/O";
-      this.textBox6.BackColor = SystemColors.Window;
-      this.textBox6.Font = new Font("Courier New", 8.25f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point285 = new Point(8, 416);
-      this.textBox6.Location = point285;
-      this.textBox6.MaxLength = 262142;
-      this.textBox6.Multiline = true;
-      this.textBox6.Name = "textBox6";
-      this.textBox6.ReadOnly = true;
-      this.textBox6.ScrollBars = ScrollBars.Vertical;
-      Size size283 = new Size(664, 152);
-      this.textBox6.Size = size283;
-      this.textBox6.TabIndex = 27;
-      this.textBox6.Text = "";
-      this.textBox6.DoubleClick += new EventHandler(this.textBox6_DoubleClick);
-      this.pictureBox3.Image = (Image) resourceManager.GetObject("pictureBox3.Image");
-      Point point286 = new Point(680, 8);
-      this.pictureBox3.Location = point286;
-      this.pictureBox3.Name = "pictureBox3";
-      Size size284 = new Size(160, 560);
-      this.pictureBox3.Size = size284;
-      this.pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-      this.pictureBox3.TabIndex = 32;
-      this.pictureBox3.TabStop = false;
-      this.toolTip_0.SetToolTip((Control) this.pictureBox3, "http://www.modtraders.co.uk/");
-      this.pictureBox3.Visible = false;
-      this.pictureBox3.Click += new EventHandler(this.pictureBox3_Click);
-      this.pictureBox3.MouseEnter += new EventHandler(this.pictureBox3_MouseEnter);
-      this.pictureBox3.MouseLeave += new EventHandler(this.pictureBox3_MouseLeave);
-      this.button48.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point287 = new Point(48, 80);
-      this.button48.Location = point287;
-      this.button48.Name = "button48";
-      Size size285 = new Size(32, 24);
-      this.button48.Size = size285;
-      this.button48.TabIndex = 5;
-      this.button48.Text = "Half";
-      this.toolTip_0.SetToolTip((Control) this.button48, "Click to half tray");
-      this.button48.Click += new EventHandler(this.button48_Click);
-      this.button47.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point288 = new Point(48, 48);
-      this.button47.Location = point288;
-      this.button47.Name = "button47";
-      Size size286 = new Size(32, 24);
-      this.button47.Size = size286;
-      this.button47.TabIndex = 4;
-      this.button47.Text = "Close";
-      this.toolTip_0.SetToolTip((Control) this.button47, "Click to close tray");
-      this.button47.Click += new EventHandler(this.button47_Click);
-      this.button46.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point289 = new Point(48, 16);
-      this.button46.Location = point289;
-      this.button46.Name = "button46";
-      Size size287 = new Size(32, 24);
-      this.button46.Size = size287;
-      this.button46.TabIndex = 3;
-      this.button46.Text = "Open";
-      this.toolTip_0.SetToolTip((Control) this.button46, "Click to open tray");
-      this.button46.Click += new EventHandler(this.button46_Click);
-      this.button45.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point290 = new Point(8, 80);
-      this.button45.Location = point290;
-      this.button45.Name = "button45";
-      Size size288 = new Size(32, 24);
-      this.button45.Size = size288;
-      this.button45.TabIndex = 2;
-      this.button45.Text = "Cycle";
-      this.toolTip_0.SetToolTip((Control) this.button45, "Click to power cycle drive");
-      this.button45.Click += new EventHandler(this.button45_Click);
-      this.button44.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point291 = new Point(8, 48);
-      this.button44.Location = point291;
-      this.button44.Name = "button44";
-      Size size289 = new Size(32, 24);
-      this.button44.Size = size289;
-      this.button44.TabIndex = 1;
-      this.button44.Text = "OFF";
-      this.toolTip_0.SetToolTip((Control) this.button44, "Click to power off drive");
-      this.button44.Click += new EventHandler(this.button44_Click);
-      this.button43.Font = new Font("Microsoft Sans Serif", 6f, FontStyle.Regular, GraphicsUnit.Point, (byte) 0);
-      Point point292 = new Point(8, 16);
-      this.button43.Location = point292;
-      this.button43.Name = "button43";
-      Size size290 = new Size(32, 24);
-      this.button43.Size = size290;
-      this.button43.TabIndex = 0;
-      this.button43.Text = "ON";
-      this.toolTip_0.SetToolTip((Control) this.button43, "Click to power on drive");
-      this.button43.Click += new EventHandler(this.button43_Click);
-      this.textBox20.BackColor = SystemColors.Window;
-      Point point293 = new Point(232, 432);
-      this.textBox20.Location = point293;
-      this.textBox20.Name = "textBox20";
-      Size size291 = new Size(112, 20);
-      this.textBox20.Size = size291;
-      this.textBox20.TabIndex = 73;
-      this.textBox20.Text = "EasyToFindUpdate";
-      this.textBox20.TextChanged += new EventHandler(this.textBox20_TextChanged);
-      this.label135.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, (byte) 0);
-      Point point294 = new Point(504, 12);
-      this.label135.Location = point294;
-      this.label135.Name = "label135";
-      this.label135.RightToLeft = RightToLeft.No;
-      Size size292 = new Size(160, 16);
-      this.label135.Size = size292;
-      this.label135.TabIndex = 75;
-      this.groupBox18.ContextMenu = this.contextMenu_6;
-      this.groupBox18.Controls.Add((Control) this.button48);
-      this.groupBox18.Controls.Add((Control) this.button47);
-      this.groupBox18.Controls.Add((Control) this.button46);
-      this.groupBox18.Controls.Add((Control) this.button45);
-      this.groupBox18.Controls.Add((Control) this.button44);
-      this.groupBox18.Controls.Add((Control) this.button43);
-      Point point295 = new Point(560, 432);
-      this.groupBox18.Location = point295;
-      this.groupBox18.Name = "groupBox18";
-      Size size293 = new Size(88, 112);
-      this.groupBox18.Size = size293;
-      this.groupBox18.TabIndex = 76;
-      this.groupBox18.TabStop = false;
-      this.groupBox18.Text = "CK3i";
-      this.groupBox18.Visible = false;
-      this.contextMenu_6.MenuItems.AddRange(new MenuItem[3]
-      {
-        this.menuItem_34,
-        this.menuItem_35,
-        this.menuItem_36
-      });
-      this.menuItem_34.Index = 0;
-      this.menuItem_34.Text = "750nS";
-      this.menuItem_35.Index = 1;
-      this.menuItem_35.Text = "+ 50mS";
-      this.menuItem_35.Click += new EventHandler(this.menuItem_35_Click);
-      this.menuItem_36.Index = 2;
-      this.menuItem_36.Text = "- 50mS";
-      this.menuItem_36.Click += new EventHandler(this.menuItem_36_Click);
-      Size size294 = new Size(5, 13);
-      this.AutoScaleBaseSize = size294;
-      this.BackColor = SystemColors.Control;
-      Size size295 = new Size(850, 576);
-      this.ClientSize = size295;
-      this.Controls.Add((Control) this.groupBox18);
-      this.Controls.Add((Control) this.label135);
-      this.Controls.Add((Control) this.textBox6);
-      this.Controls.Add((Control) this.textBox20);
-      this.Controls.Add((Control) this.textBox5);
-      this.Controls.Add((Control) this.textBox19);
-      this.Controls.Add((Control) this.checkBox7);
-      this.Controls.Add((Control) this.tabControl5);
-      this.Controls.Add((Control) this.checkBox6);
-      this.Controls.Add((Control) this.axWebBrowser_0);
-      this.Controls.Add((Control) this.pictureBox3);
-      this.FormBorderStyle = FormBorderStyle.FixedDialog;
-      this.HelpButton = true;
-      this.Icon = (Icon) resourceManager.GetObject("$this.Icon");
-      this.KeyPreview = true;
-      this.MaximizeBox = false;
-      Size size296 = new Size(856, 608);
-      this.MaximumSize = size296;
-      Size size297 = new Size(856, 608);
-      this.MinimumSize = size297;
-      this.Name = "Form1";
-      this.StartPosition = FormStartPosition.CenterScreen;
-      this.Text = "JungleFlasher 0.1.96 Beta";
-      this.KeyDown += new KeyEventHandler(this.Form1_KeyDown);
-      this.Closing += new CancelEventHandler(this.Form1_Closing);
-      this.Load += new EventHandler(this.Form1_Load);
-      this.Closed += new EventHandler(this.Form1_Closed);
-      this.tabControl1.ResumeLayout(false);
-      this.tabPage9.ResumeLayout(false);
-      ((ISupportInitialize) this.axWebBrowser_0).EndInit();
-      ((ISupportInitialize) this.axWebBrowser_1).EndInit();
-      this.tabControl2.ResumeLayout(false);
-      this.tabPage10.ResumeLayout(false);
-      this.tabControl3.ResumeLayout(false);
-      this.tabPage3.ResumeLayout(false);
-      this.tabPage7.ResumeLayout(false);
-      this.tabPage11.ResumeLayout(false);
-      this.tabPage12.ResumeLayout(false);
-      this.tabControl4.ResumeLayout(false);
-      this.tabPage1.ResumeLayout(false);
-      this.tabPage2.ResumeLayout(false);
-      this.tabPage4.ResumeLayout(false);
-      this.tabPage13.ResumeLayout(false);
-      this.tabControl5.ResumeLayout(false);
-      this.Firmtools.ResumeLayout(false);
-      this.DVDKey32.ResumeLayout(false);
-      this.groupBox16.ResumeLayout(false);
-      this.groupBox17.ResumeLayout(false);
-      this.groupBox2.ResumeLayout(false);
-      this.groupBox4.ResumeLayout(false);
-      this.Benq.ResumeLayout(false);
-      this.groupBox9.ResumeLayout(false);
-      this.groupBox7.ResumeLayout(false);
-      this.groupBox1.ResumeLayout(false);
-      this.groupBox3.ResumeLayout(false);
-      this.groupBox6.ResumeLayout(false);
-      this.Hitachi.ResumeLayout(false);
-      this.groupBox8.ResumeLayout(false);
-      this.groupBox15.ResumeLayout(false);
-      this.groupBox14.ResumeLayout(false);
-      this.groupBox12.ResumeLayout(false);
-      this.groupBox13.ResumeLayout(false);
-      this.groupBox11.ResumeLayout(false);
-      this.groupBox5.ResumeLayout(false);
-      this.tabPage5.ResumeLayout(false);
-      this.groupBox18.ResumeLayout(false);
-      this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.contextMenu_2 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_5 = new System.Windows.Forms.MenuItem();
+            this.menuItem_6 = new System.Windows.Forms.MenuItem();
+            this.menuItem_7 = new System.Windows.Forms.MenuItem();
+            this.menuItem_12 = new System.Windows.Forms.MenuItem();
+            this.menuItem_13 = new System.Windows.Forms.MenuItem();
+            this.menuItem_19 = new System.Windows.Forms.MenuItem();
+            this.menuItem_33 = new System.Windows.Forms.MenuItem();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.contextMenu_1 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_2 = new System.Windows.Forms.MenuItem();
+            this.menuItem_3 = new System.Windows.Forms.MenuItem();
+            this.menuItem_4 = new System.Windows.Forms.MenuItem();
+            this.menuItem_11 = new System.Windows.Forms.MenuItem();
+            this.menuItem_20 = new System.Windows.Forms.MenuItem();
+            this.menuItem_32 = new System.Windows.Forms.MenuItem();
+            this.menuItem_37 = new System.Windows.Forms.MenuItem();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.OpenSource = new System.Windows.Forms.Button();
+            this.DumpDrive = new System.Windows.Forms.Button();
+            this.SaveTarget = new System.Windows.Forms.Button();
+            this.OpeniXtreme = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tabControl5 = new System.Windows.Forms.TabControl();
+            this.Firmtools = new System.Windows.Forms.TabPage();
+            this.button41 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button29 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.DVDKey32 = new System.Windows.Forms.TabPage();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.contextMenu_3 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_14 = new System.Windows.Forms.MenuItem();
+            this.menuItem_15 = new System.Windows.Forms.MenuItem();
+            this.menuItem_16 = new System.Windows.Forms.MenuItem();
+            this.menuItem_17 = new System.Windows.Forms.MenuItem();
+            this.menuItem_18 = new System.Windows.Forms.MenuItem();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.contextMenu_4 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_21 = new System.Windows.Forms.MenuItem();
+            this.menuItem_22 = new System.Windows.Forms.MenuItem();
+            this.menuItem_23 = new System.Windows.Forms.MenuItem();
+            this.menuItem_24 = new System.Windows.Forms.MenuItem();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.label126 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.contextMenu_5 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_25 = new System.Windows.Forms.MenuItem();
+            this.menuItem_26 = new System.Windows.Forms.MenuItem();
+            this.menuItem_27 = new System.Windows.Forms.MenuItem();
+            this.menuItem_29 = new System.Windows.Forms.MenuItem();
+            this.menuItem_28 = new System.Windows.Forms.MenuItem();
+            this.menuItem_30 = new System.Windows.Forms.MenuItem();
+            this.menuItem_31 = new System.Windows.Forms.MenuItem();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.Benq = new System.Windows.Forms.TabPage();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.radioButton21 = new System.Windows.Forms.RadioButton();
+            this.button42 = new System.Windows.Forms.Button();
+            this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label119 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.Hitachi = new System.Windows.Forms.TabPage();
+            this.radioButton18 = new System.Windows.Forms.RadioButton();
+            this.radioButton17 = new System.Windows.Forms.RadioButton();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.contextMenu_0 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_0 = new System.Windows.Forms.MenuItem();
+            this.menuItem_1 = new System.Windows.Forms.MenuItem();
+            this.menuItem_8 = new System.Windows.Forms.MenuItem();
+            this.menuItem_9 = new System.Windows.Forms.MenuItem();
+            this.menuItem_10 = new System.Windows.Forms.MenuItem();
+            this.menuItem_38 = new System.Windows.Forms.MenuItem();
+            this.menuItem_39 = new System.Windows.Forms.MenuItem();
+            this.menuItem_40 = new System.Windows.Forms.MenuItem();
+            this.menuItem_41 = new System.Windows.Forms.MenuItem();
+            this.menuItem_42 = new System.Windows.Forms.MenuItem();
+            this.menuItem_49 = new System.Windows.Forms.MenuItem();
+            this.menuItem_48 = new System.Windows.Forms.MenuItem();
+            this.menuItem_44 = new System.Windows.Forms.MenuItem();
+            this.menuItem_46 = new System.Windows.Forms.MenuItem();
+            this.menuItem_50 = new System.Windows.Forms.MenuItem();
+            this.menuItem_45 = new System.Windows.Forms.MenuItem();
+            this.menuItem_51 = new System.Windows.Forms.MenuItem();
+            this.menuItem_47 = new System.Windows.Forms.MenuItem();
+            this.menuItem_52 = new System.Windows.Forms.MenuItem();
+            this.menuItem_43 = new System.Windows.Forms.MenuItem();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.label90 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.radioButton16 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.button26 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.radioButton15 = new System.Windows.Forms.RadioButton();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.toolTip_0 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label135 = new System.Windows.Forms.Label();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.contextMenu_6 = new System.Windows.Forms.ContextMenu();
+            this.menuItem_34 = new System.Windows.Forms.MenuItem();
+            this.menuItem_35 = new System.Windows.Forms.MenuItem();
+            this.menuItem_36 = new System.Windows.Forms.MenuItem();
+            this.tabControl1.SuspendLayout();
+            this.tabPage9.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.tabPage11.SuspendLayout();
+            this.tabPage12.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage13.SuspendLayout();
+            this.tabControl5.SuspendLayout();
+            this.Firmtools.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.DVDKey32.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.Benq.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.Hitachi.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox18.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.AllowDrop = true;
+            this.tabControl1.Controls.Add(this.tabPage9);
+            this.tabControl1.Location = new System.Drawing.Point(8, 16);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(552, 144);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.AllowDrop = true;
+            this.tabPage9.ContextMenu = this.contextMenu_2;
+            this.tabPage9.Controls.Add(this.label40);
+            this.tabPage9.Controls.Add(this.label44);
+            this.tabPage9.Controls.Add(this.label43);
+            this.tabPage9.Controls.Add(this.label41);
+            this.tabPage9.Controls.Add(this.label37);
+            this.tabPage9.Controls.Add(this.textBox15);
+            this.tabPage9.Controls.Add(this.textBox14);
+            this.tabPage9.Controls.Add(this.label19);
+            this.tabPage9.Controls.Add(this.textBox9);
+            this.tabPage9.Controls.Add(this.label15);
+            this.tabPage9.Controls.Add(this.label7);
+            this.tabPage9.Controls.Add(this.label6);
+            this.tabPage9.Controls.Add(this.label5);
+            this.tabPage9.Controls.Add(this.label4);
+            this.tabPage9.Controls.Add(this.label3);
+            this.tabPage9.Controls.Add(this.label16);
+            this.tabPage9.Controls.Add(this.label8);
+            this.tabPage9.Controls.Add(this.label101);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(544, 118);
+            this.tabPage9.TabIndex = 4;
+            this.tabPage9.Text = "Source";
+            this.tabPage9.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragDrop);
+            this.tabPage9.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragEnter);
+            // 
+            // contextMenu_2
+            // 
+            this.contextMenu_2.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_5,
+            this.menuItem_6,
+            this.menuItem_7,
+            this.menuItem_12,
+            this.menuItem_13,
+            this.menuItem_19,
+            this.menuItem_33});
+            // 
+            // menuItem_5
+            // 
+            this.menuItem_5.Index = 0;
+            this.menuItem_5.Text = "Load f/w";
+            this.menuItem_5.Click += new System.EventHandler(this.menuItem_5_Click);
+            // 
+            // menuItem_6
+            // 
+            this.menuItem_6.Enabled = false;
+            this.menuItem_6.Index = 1;
+            this.menuItem_6.Text = "Clear Source";
+            this.menuItem_6.Click += new System.EventHandler(this.menuItem_6_Click);
+            // 
+            // menuItem_7
+            // 
+            this.menuItem_7.Enabled = false;
+            this.menuItem_7.Index = 2;
+            this.menuItem_7.Text = "Update d/b";
+            this.menuItem_7.Click += new System.EventHandler(this.menuItem_7_Click);
+            // 
+            // menuItem_12
+            // 
+            this.menuItem_12.Index = 3;
+            this.menuItem_12.Text = "Open Key d/b";
+            this.menuItem_12.Click += new System.EventHandler(this.menuItem_12_Click);
+            // 
+            // menuItem_13
+            // 
+            this.menuItem_13.Enabled = false;
+            this.menuItem_13.Index = 4;
+            this.menuItem_13.Text = "History";
+            this.menuItem_13.Click += new System.EventHandler(this.menuItem_13_Click);
+            // 
+            // menuItem_19
+            // 
+            this.menuItem_19.Enabled = false;
+            this.menuItem_19.Index = 5;
+            this.menuItem_19.Text = "Verify Key";
+            this.menuItem_19.Click += new System.EventHandler(this.menuItem_19_Click);
+            // 
+            // menuItem_33
+            // 
+            this.menuItem_33.Enabled = false;
+            this.menuItem_33.Index = 6;
+            this.menuItem_33.Text = "Auto LT-Plus";
+            this.menuItem_33.Click += new System.EventHandler(this.menuItem_33_Click);
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(320, 96);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(216, 16);
+            this.label40.TabIndex = 29;
+            // 
+            // label44
+            // 
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(48, 96);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(208, 16);
+            this.label44.TabIndex = 32;
+            // 
+            // label43
+            // 
+            this.label43.Location = new System.Drawing.Point(16, 96);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(40, 16);
+            this.label43.TabIndex = 31;
+            this.label43.Text = "OSIG:";
+            // 
+            // label41
+            // 
+            this.label41.Location = new System.Drawing.Point(256, 96);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(72, 16);
+            this.label41.TabIndex = 30;
+            this.label41.Text = "Spoofed As:";
+            this.label41.Visible = false;
+            // 
+            // label37
+            // 
+            this.label37.Location = new System.Drawing.Point(376, 48);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(48, 16);
+            this.label37.TabIndex = 26;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox15.Location = new System.Drawing.Point(16, 16);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(512, 20);
+            this.textBox15.TabIndex = 25;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox14.Location = new System.Drawing.Point(88, 130);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(440, 20);
+            this.textBox14.TabIndex = 24;
+            this.textBox14.Visible = false;
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(304, 48);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(72, 16);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "DVD Key @";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox9.Location = new System.Drawing.Point(296, 64);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(232, 20);
+            this.textBox9.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(184, 48);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(120, 16);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Firmware Type";
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(64, 68);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 16);
+            this.label7.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(16, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 16);
+            this.label6.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(128, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Rev";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(64, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Model ";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(16, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Vendor";
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(184, 68);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(120, 24);
+            this.label16.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(128, 68);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 16);
+            this.label8.TabIndex = 6;
+            // 
+            // label101
+            // 
+            this.label101.Location = new System.Drawing.Point(432, 48);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(90, 16);
+            this.label101.TabIndex = 36;
+            // 
+            // textBox19
+            // 
+            this.textBox19.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox19.Location = new System.Drawing.Point(368, 432);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(112, 20);
+            this.textBox19.TabIndex = 29;
+            this.textBox19.Text = "EasyToFindSource";
+            this.textBox19.TextChanged += new System.EventHandler(this.textBox19_TextChanged);
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage10);
+            this.tabControl2.Location = new System.Drawing.Point(8, 208);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(552, 144);
+            this.tabControl2.TabIndex = 3;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.AllowDrop = true;
+            this.tabPage10.ContextMenu = this.contextMenu_1;
+            this.tabPage10.Controls.Add(this.label71);
+            this.tabPage10.Controls.Add(this.label50);
+            this.tabPage10.Controls.Add(this.textBox11);
+            this.tabPage10.Controls.Add(this.label55);
+            this.tabPage10.Controls.Add(this.label48);
+            this.tabPage10.Controls.Add(this.label47);
+            this.tabPage10.Controls.Add(this.textBox17);
+            this.tabPage10.Controls.Add(this.label17);
+            this.tabPage10.Controls.Add(this.label18);
+            this.tabPage10.Controls.Add(this.label9);
+            this.tabPage10.Controls.Add(this.label10);
+            this.tabPage10.Controls.Add(this.label11);
+            this.tabPage10.Controls.Add(this.label12);
+            this.tabPage10.Controls.Add(this.label13);
+            this.tabPage10.Controls.Add(this.label14);
+            this.tabPage10.Controls.Add(this.label20);
+            this.tabPage10.Controls.Add(this.label49);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(544, 118);
+            this.tabPage10.TabIndex = 4;
+            this.tabPage10.Text = "Target";
+            this.tabPage10.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragDrop);
+            this.tabPage10.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragEnter);
+            // 
+            // contextMenu_1
+            // 
+            this.contextMenu_1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_2,
+            this.menuItem_3,
+            this.menuItem_4,
+            this.menuItem_11,
+            this.menuItem_20,
+            this.menuItem_32,
+            this.menuItem_37});
+            // 
+            // menuItem_2
+            // 
+            this.menuItem_2.Index = 0;
+            this.menuItem_2.Text = "Load f/w";
+            this.menuItem_2.Click += new System.EventHandler(this.menuItem_2_Click);
+            // 
+            // menuItem_3
+            // 
+            this.menuItem_3.Index = 1;
+            this.menuItem_3.Text = "Load iXtreme";
+            this.menuItem_3.Click += new System.EventHandler(this.menuItem_3_Click);
+            // 
+            // menuItem_4
+            // 
+            this.menuItem_4.Enabled = false;
+            this.menuItem_4.Index = 2;
+            this.menuItem_4.Text = "Clear Target";
+            this.menuItem_4.Click += new System.EventHandler(this.menuItem_4_Click);
+            // 
+            // menuItem_11
+            // 
+            this.menuItem_11.Enabled = false;
+            this.menuItem_11.Index = 3;
+            this.menuItem_11.Text = "Save Dummy";
+            this.menuItem_11.Click += new System.EventHandler(this.menuItem_11_Click);
+            // 
+            // menuItem_20
+            // 
+            this.menuItem_20.Enabled = false;
+            this.menuItem_20.Index = 4;
+            this.menuItem_20.Text = "Verify Key";
+            this.menuItem_20.Click += new System.EventHandler(this.menuItem_20_Click);
+            // 
+            // menuItem_32
+            // 
+            this.menuItem_32.Enabled = false;
+            this.menuItem_32.Index = 5;
+            this.menuItem_32.Text = "Write Key";
+            this.menuItem_32.Visible = false;
+            this.menuItem_32.Click += new System.EventHandler(this.menuItem_32_Click);
+            // 
+            // menuItem_37
+            // 
+            this.menuItem_37.Enabled = false;
+            this.menuItem_37.Index = 6;
+            this.menuItem_37.Text = "Key C/R";
+            this.menuItem_37.Visible = false;
+            this.menuItem_37.Click += new System.EventHandler(this.menuItem_37_Click);
+            // 
+            // label71
+            // 
+            this.label71.Location = new System.Drawing.Point(432, 48);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(90, 16);
+            this.label71.TabIndex = 35;
+            // 
+            // label50
+            // 
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(320, 96);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(216, 16);
+            this.label50.TabIndex = 33;
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox11.Location = new System.Drawing.Point(296, 64);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
+            this.textBox11.Size = new System.Drawing.Size(232, 20);
+            this.textBox11.TabIndex = 21;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            // 
+            // label55
+            // 
+            this.label55.Location = new System.Drawing.Point(376, 48);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(48, 16);
+            this.label55.TabIndex = 34;
+            // 
+            // label48
+            // 
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(48, 96);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(208, 16);
+            this.label48.TabIndex = 33;
+            // 
+            // label47
+            // 
+            this.label47.Location = new System.Drawing.Point(16, 96);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(40, 16);
+            this.label47.TabIndex = 32;
+            this.label47.Text = "OSIG:";
+            // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox17.Location = new System.Drawing.Point(16, 16);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(512, 20);
+            this.textBox17.TabIndex = 26;
+            // 
+            // label17
+            // 
+            this.label17.Location = new System.Drawing.Point(184, 68);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(128, 24);
+            this.label17.TabIndex = 18;
+            // 
+            // label18
+            // 
+            this.label18.Location = new System.Drawing.Point(184, 48);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(120, 16);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Firmware Type";
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(128, 68);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 16);
+            this.label9.TabIndex = 14;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(64, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(72, 16);
+            this.label10.TabIndex = 13;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(16, 68);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 16);
+            this.label11.TabIndex = 12;
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(128, 48);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 16);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Rev";
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(64, 48);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 16);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Model ";
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(16, 48);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 16);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Vendor";
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(304, 48);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(72, 16);
+            this.label20.TabIndex = 22;
+            this.label20.Text = "DVD Key @";
+            // 
+            // label49
+            // 
+            this.label49.Location = new System.Drawing.Point(256, 96);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(72, 16);
+            this.label49.TabIndex = 33;
+            this.label49.Text = "Spoofed As:";
+            this.label49.Visible = false;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox5.Location = new System.Drawing.Point(504, 432);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(112, 20);
+            this.textBox5.TabIndex = 28;
+            this.textBox5.Text = "EasyToFindTarget";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // OpenSource
+            // 
+            this.OpenSource.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.OpenSource.Location = new System.Drawing.Point(568, 120);
+            this.OpenSource.Name = "OpenSource";
+            this.OpenSource.Size = new System.Drawing.Size(80, 40);
+            this.OpenSource.TabIndex = 7;
+            this.OpenSource.Text = "Open Source Firmware";
+            this.OpenSource.Click += new System.EventHandler(this.OpenSource_Click);
+            // 
+            // DumpDrive
+            // 
+            this.DumpDrive.Enabled = false;
+            this.DumpDrive.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.DumpDrive.Location = new System.Drawing.Point(568, 64);
+            this.DumpDrive.Name = "DumpDrive";
+            this.DumpDrive.Size = new System.Drawing.Size(80, 40);
+            this.DumpDrive.TabIndex = 8;
+            this.DumpDrive.Text = " Save Drive  Key ";
+            this.DumpDrive.Click += new System.EventHandler(this.DumpDrive_Click);
+            // 
+            // SaveTarget
+            // 
+            this.SaveTarget.Enabled = false;
+            this.SaveTarget.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.SaveTarget.Location = new System.Drawing.Point(568, 312);
+            this.SaveTarget.Name = "SaveTarget";
+            this.SaveTarget.Size = new System.Drawing.Size(80, 40);
+            this.SaveTarget.TabIndex = 15;
+            this.SaveTarget.Text = "Save to File";
+            this.SaveTarget.Click += new System.EventHandler(this.SaveTarget_Click);
+            // 
+            // OpeniXtreme
+            // 
+            this.OpeniXtreme.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.OpeniXtreme.Location = new System.Drawing.Point(568, 200);
+            this.OpeniXtreme.Name = "OpeniXtreme";
+            this.OpeniXtreme.Size = new System.Drawing.Size(80, 40);
+            this.OpeniXtreme.TabIndex = 19;
+            this.OpeniXtreme.Text = "Open Target Firmware";
+            this.OpeniXtreme.Click += new System.EventHandler(this.OpeniXtreme_Click);
+            // 
+            // button6
+            // 
+            this.button6.Enabled = false;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button6.Location = new System.Drawing.Point(136, 176);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(288, 24);
+            this.button6.TabIndex = 20;
+            this.button6.Text = "Spoof Source to Target";
+            this.toolTip_0.SetToolTip(this.button6, "Copy Key, Inquiry, Identify and serial from Source to Target");
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage3);
+            this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Controls.Add(this.tabPage11);
+            this.tabControl3.Controls.Add(this.tabPage12);
+            this.tabControl3.Location = new System.Drawing.Point(8, 16);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(552, 144);
+            this.tabControl3.TabIndex = 21;
+            this.tabControl3.Visible = false;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.AllowDrop = true;
+            this.tabPage3.ContextMenu = this.contextMenu_2;
+            this.tabPage3.Controls.Add(this.label45);
+            this.tabPage3.Controls.Add(this.label128);
+            this.tabPage3.Controls.Add(this.label39);
+            this.tabPage3.Controls.Add(this.label46);
+            this.tabPage3.Controls.Add(this.label42);
+            this.tabPage3.Controls.Add(this.label38);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.label21);
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Controls.Add(this.label23);
+            this.tabPage3.Controls.Add(this.label24);
+            this.tabPage3.Controls.Add(this.label25);
+            this.tabPage3.Controls.Add(this.label26);
+            this.tabPage3.Controls.Add(this.label27);
+            this.tabPage3.Controls.Add(this.label28);
+            this.tabPage3.Controls.Add(this.label29);
+            this.tabPage3.Controls.Add(this.textBox16);
+            this.tabPage3.Controls.Add(this.textBox8);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(544, 118);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Source";
+            this.tabPage3.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragDrop);
+            this.tabPage3.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragEnter);
+            // 
+            // label45
+            // 
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(48, 96);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(208, 16);
+            this.label45.TabIndex = 33;
+            // 
+            // label128
+            // 
+            this.label128.Location = new System.Drawing.Point(432, 48);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(90, 16);
+            this.label128.TabIndex = 37;
+            // 
+            // label39
+            // 
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(320, 96);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(216, 16);
+            this.label39.TabIndex = 28;
+            // 
+            // label46
+            // 
+            this.label46.Location = new System.Drawing.Point(16, 96);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(40, 16);
+            this.label46.TabIndex = 34;
+            this.label46.Text = "OSIG:";
+            // 
+            // label42
+            // 
+            this.label42.Location = new System.Drawing.Point(256, 96);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(72, 16);
+            this.label42.TabIndex = 29;
+            this.label42.Text = "Spoofed As:";
+            this.label42.Visible = false;
+            // 
+            // label38
+            // 
+            this.label38.Location = new System.Drawing.Point(376, 48);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(48, 16);
+            this.label38.TabIndex = 27;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Location = new System.Drawing.Point(296, 64);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(232, 20);
+            this.textBox3.TabIndex = 11;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(304, 48);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(72, 16);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "DVD Key @";
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(184, 68);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(128, 24);
+            this.label22.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.Location = new System.Drawing.Point(184, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(80, 24);
+            this.label23.TabIndex = 9;
+            this.label23.Text = "Firmware Type";
+            // 
+            // label24
+            // 
+            this.label24.Location = new System.Drawing.Point(128, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(64, 16);
+            this.label24.TabIndex = 6;
+            // 
+            // label25
+            // 
+            this.label25.Location = new System.Drawing.Point(64, 68);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(72, 16);
+            this.label25.TabIndex = 5;
+            // 
+            // label26
+            // 
+            this.label26.Location = new System.Drawing.Point(16, 68);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 16);
+            this.label26.TabIndex = 4;
+            // 
+            // label27
+            // 
+            this.label27.Location = new System.Drawing.Point(128, 48);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(64, 16);
+            this.label27.TabIndex = 3;
+            this.label27.Text = "Rev";
+            // 
+            // label28
+            // 
+            this.label28.Location = new System.Drawing.Point(64, 48);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(64, 16);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Model ";
+            // 
+            // label29
+            // 
+            this.label29.Location = new System.Drawing.Point(16, 48);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(72, 24);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Vendor";
+            // 
+            // textBox16
+            // 
+            this.textBox16.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox16.Location = new System.Drawing.Point(16, 16);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(512, 20);
+            this.textBox16.TabIndex = 26;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox8.Location = new System.Drawing.Point(88, 130);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(440, 20);
+            this.textBox8.TabIndex = 23;
+            this.textBox8.Visible = false;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.AllowDrop = true;
+            this.tabPage7.Controls.Add(this.textBox7);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(544, 118);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "Inquiry";
+            this.tabPage7.Visible = false;
+            this.tabPage7.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragDrop);
+            this.tabPage7.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragEnter);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox7.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(8, 8);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox7.Size = new System.Drawing.Size(528, 96);
+            this.textBox7.TabIndex = 1;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.AllowDrop = true;
+            this.tabPage11.Controls.Add(this.textBox10);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(544, 118);
+            this.tabPage11.TabIndex = 1;
+            this.tabPage11.Text = "Identify";
+            this.tabPage11.Visible = false;
+            this.tabPage11.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragDrop);
+            this.tabPage11.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragEnter);
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox10.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(8, 8);
+            this.textBox10.Multiline = true;
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox10.Size = new System.Drawing.Size(528, 96);
+            this.textBox10.TabIndex = 2;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.AllowDrop = true;
+            this.tabPage12.Controls.Add(this.textBox12);
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(544, 118);
+            this.tabPage12.TabIndex = 3;
+            this.tabPage12.Text = "Drive Serial";
+            this.tabPage12.Visible = false;
+            this.tabPage12.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragDrop);
+            this.tabPage12.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage12_DragEnter);
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox12.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(8, 8);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
+            this.textBox12.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox12.Size = new System.Drawing.Size(528, 96);
+            this.textBox12.TabIndex = 4;
+            this.toolTip_0.SetToolTip(this.textBox12, "For Dummy.bin double click to edit");
+            this.textBox12.DoubleClick += new System.EventHandler(this.textBox12_DoubleClick);
+            // 
+            // tabControl4
+            // 
+            this.tabControl4.Controls.Add(this.tabPage1);
+            this.tabControl4.Controls.Add(this.tabPage2);
+            this.tabControl4.Controls.Add(this.tabPage4);
+            this.tabControl4.Controls.Add(this.tabPage13);
+            this.tabControl4.Location = new System.Drawing.Point(8, 208);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(552, 144);
+            this.tabControl4.TabIndex = 22;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.AllowDrop = true;
+            this.tabPage1.ContextMenu = this.contextMenu_1;
+            this.tabPage1.Controls.Add(this.label129);
+            this.tabPage1.Controls.Add(this.label54);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.label56);
+            this.tabPage1.Controls.Add(this.label53);
+            this.tabPage1.Controls.Add(this.label52);
+            this.tabPage1.Controls.Add(this.label51);
+            this.tabPage1.Controls.Add(this.textBox18);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label30);
+            this.tabPage1.Controls.Add(this.label31);
+            this.tabPage1.Controls.Add(this.label32);
+            this.tabPage1.Controls.Add(this.label33);
+            this.tabPage1.Controls.Add(this.label34);
+            this.tabPage1.Controls.Add(this.label35);
+            this.tabPage1.Controls.Add(this.label36);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(544, 118);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "Target";
+            this.tabPage1.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragDrop);
+            this.tabPage1.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragEnter);
+            // 
+            // label129
+            // 
+            this.label129.Location = new System.Drawing.Point(432, 48);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(90, 16);
+            this.label129.TabIndex = 37;
+            // 
+            // label54
+            // 
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(320, 96);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(216, 16);
+            this.label54.TabIndex = 35;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(296, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(232, 20);
+            this.textBox1.TabIndex = 21;
+            // 
+            // label56
+            // 
+            this.label56.Location = new System.Drawing.Point(376, 48);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(48, 16);
+            this.label56.TabIndex = 36;
+            // 
+            // label53
+            // 
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(48, 96);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(208, 16);
+            this.label53.TabIndex = 34;
+            // 
+            // label52
+            // 
+            this.label52.Location = new System.Drawing.Point(256, 96);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(72, 16);
+            this.label52.TabIndex = 33;
+            this.label52.Text = "Spoofed As:";
+            this.label52.Visible = false;
+            // 
+            // label51
+            // 
+            this.label51.Location = new System.Drawing.Point(16, 96);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(40, 16);
+            this.label51.TabIndex = 32;
+            this.label51.Text = "OSIG:";
+            // 
+            // textBox18
+            // 
+            this.textBox18.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox18.Location = new System.Drawing.Point(16, 16);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(512, 20);
+            this.textBox18.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(184, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 24);
+            this.label1.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(184, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 16);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Firmware Type";
+            // 
+            // label30
+            // 
+            this.label30.Location = new System.Drawing.Point(128, 68);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(64, 16);
+            this.label30.TabIndex = 14;
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(64, 68);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 16);
+            this.label31.TabIndex = 13;
+            // 
+            // label32
+            // 
+            this.label32.Location = new System.Drawing.Point(16, 68);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(72, 16);
+            this.label32.TabIndex = 12;
+            // 
+            // label33
+            // 
+            this.label33.Location = new System.Drawing.Point(128, 48);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(64, 16);
+            this.label33.TabIndex = 11;
+            this.label33.Text = "Rev";
+            // 
+            // label34
+            // 
+            this.label34.Location = new System.Drawing.Point(64, 48);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(64, 16);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "Model ";
+            // 
+            // label35
+            // 
+            this.label35.Location = new System.Drawing.Point(16, 48);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(48, 16);
+            this.label35.TabIndex = 9;
+            this.label35.Text = "Vendor";
+            // 
+            // label36
+            // 
+            this.label36.Location = new System.Drawing.Point(304, 48);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(72, 16);
+            this.label36.TabIndex = 22;
+            this.label36.Text = "DVD Key @";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.AllowDrop = true;
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(544, 118);
+            this.tabPage2.TabIndex = 0;
+            this.tabPage2.Text = "Inquiry";
+            this.tabPage2.Visible = false;
+            this.tabPage2.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragDrop);
+            this.tabPage2.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragEnter);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(8, 8);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(528, 96);
+            this.textBox2.TabIndex = 1;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.AllowDrop = true;
+            this.tabPage4.Controls.Add(this.textBox4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(544, 118);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Identify";
+            this.tabPage4.Visible = false;
+            this.tabPage4.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragDrop);
+            this.tabPage4.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragEnter);
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox4.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(8, 8);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox4.Size = new System.Drawing.Size(528, 96);
+            this.textBox4.TabIndex = 2;
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.AllowDrop = true;
+            this.tabPage13.Controls.Add(this.textBox13);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(544, 118);
+            this.tabPage13.TabIndex = 3;
+            this.tabPage13.Text = "Drive Serial";
+            this.tabPage13.Visible = false;
+            this.tabPage13.DragDrop += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragDrop);
+            this.tabPage13.DragEnter += new System.Windows.Forms.DragEventHandler(this.tabPage13_DragEnter);
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox13.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(8, 8);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox13.Size = new System.Drawing.Size(528, 96);
+            this.textBox13.TabIndex = 4;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox3.Location = new System.Drawing.Point(16, 168);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(104, 32);
+            this.checkBox3.TabIndex = 24;
+            this.checkBox3.Text = "Advanced View";
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(440, 304);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(88, 24);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "DummyGen";
+            this.toolTip_0.SetToolTip(this.button2, "Build Dummy.bin from Inquiry.bin + Identify.bin + Key.bin");
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // tabControl5
+            // 
+            this.tabControl5.Controls.Add(this.Firmtools);
+            this.tabControl5.Controls.Add(this.DVDKey32);
+            this.tabControl5.Controls.Add(this.Benq);
+            this.tabControl5.Controls.Add(this.Hitachi);
+            this.tabControl5.Controls.Add(this.tabPage5);
+            this.tabControl5.Location = new System.Drawing.Point(8, 8);
+            this.tabControl5.Multiline = true;
+            this.tabControl5.Name = "tabControl5";
+            this.tabControl5.SelectedIndex = 0;
+            this.tabControl5.Size = new System.Drawing.Size(664, 400);
+            this.tabControl5.TabIndex = 26;
+            this.tabControl5.SelectedIndexChanged += new System.EventHandler(this.tabControl5_SelectedIndexChanged);
+            this.tabControl5.TabIndexChanged += new System.EventHandler(this.tabControl5_SelectedIndexChanged);
+            // 
+            // Firmtools
+            // 
+            this.Firmtools.Controls.Add(this.button41);
+            this.Firmtools.Controls.Add(this.linkLabel1);
+            this.Firmtools.Controls.Add(this.button29);
+            this.Firmtools.Controls.Add(this.OpenSource);
+            this.Firmtools.Controls.Add(this.OpeniXtreme);
+            this.Firmtools.Controls.Add(this.button6);
+            this.Firmtools.Controls.Add(this.checkBox3);
+            this.Firmtools.Controls.Add(this.SaveTarget);
+            this.Firmtools.Controls.Add(this.DumpDrive);
+            this.Firmtools.Controls.Add(this.pictureBox1);
+            this.Firmtools.Controls.Add(this.tabControl1);
+            this.Firmtools.Controls.Add(this.tabControl3);
+            this.Firmtools.Controls.Add(this.tabControl2);
+            this.Firmtools.Controls.Add(this.tabControl4);
+            this.Firmtools.Controls.Add(this.linkLabel4);
+            this.Firmtools.Location = new System.Drawing.Point(4, 22);
+            this.Firmtools.Name = "Firmtools";
+            this.Firmtools.Size = new System.Drawing.Size(656, 374);
+            this.Firmtools.TabIndex = 0;
+            this.Firmtools.Text = "  FirmwareTool 32  ";
+            // 
+            // button41
+            // 
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button41.Location = new System.Drawing.Point(568, 8);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(80, 40);
+            this.button41.TabIndex = 32;
+            this.button41.Text = "Open  KeyDb";
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(576, 168);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(64, 24);
+            this.linkLabel1.TabIndex = 29;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "User Guide";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip_0.SetToolTip(this.linkLabel1, "Click to download JungleFlasher.pdf");
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // button29
+            // 
+            this.button29.Enabled = false;
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button29.Location = new System.Drawing.Point(568, 256);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(80, 40);
+            this.button29.TabIndex = 27;
+            this.button29.Text = "Manual Spoofing";
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(448, 176);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(92, 26);
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            this.toolTip_0.SetToolTip(this.pictureBox1, "Help Support JungleFlasher Development!");
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.pictureBox1.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.Location = new System.Drawing.Point(576, 72);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(64, 24);
+            this.linkLabel4.TabIndex = 30;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Donate";
+            this.linkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel4.Visible = false;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            // 
+            // DVDKey32
+            // 
+            this.DVDKey32.Controls.Add(this.button39);
+            this.DVDKey32.Controls.Add(this.button38);
+            this.DVDKey32.Controls.Add(this.checkBox15);
+            this.DVDKey32.Controls.Add(this.button32);
+            this.DVDKey32.Controls.Add(this.button10);
+            this.DVDKey32.Controls.Add(this.button8);
+            this.DVDKey32.Controls.Add(this.button4);
+            this.DVDKey32.Controls.Add(this.button1);
+            this.DVDKey32.Controls.Add(this.checkBox9);
+            this.DVDKey32.Controls.Add(this.checkBox8);
+            this.DVDKey32.Controls.Add(this.button28);
+            this.DVDKey32.Controls.Add(this.checkBox4);
+            this.DVDKey32.Controls.Add(this.checkBox2);
+            this.DVDKey32.Controls.Add(this.button5);
+            this.DVDKey32.Controls.Add(this.groupBox16);
+            this.DVDKey32.Controls.Add(this.comboBox1);
+            this.DVDKey32.Controls.Add(this.label111);
+            this.DVDKey32.Controls.Add(this.groupBox17);
+            this.DVDKey32.Controls.Add(this.comboBox10);
+            this.DVDKey32.Controls.Add(this.label57);
+            this.DVDKey32.Controls.Add(this.groupBox2);
+            this.DVDKey32.Controls.Add(this.groupBox4);
+            this.DVDKey32.Controls.Add(this.button2);
+            this.DVDKey32.Location = new System.Drawing.Point(4, 22);
+            this.DVDKey32.Name = "DVDKey32";
+            this.DVDKey32.Size = new System.Drawing.Size(656, 374);
+            this.DVDKey32.TabIndex = 2;
+            this.DVDKey32.Text = "  DVDKey 32  ";
+            // 
+            // button39
+            // 
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button39.Location = new System.Drawing.Point(440, 272);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(88, 24);
+            this.button39.TabIndex = 104;
+            this.button39.Text = "SlimKey";
+            this.toolTip_0.SetToolTip(this.button39, "Slim LiteOn -  extract Key, build dummy and open.");
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // button38
+            // 
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button38.Location = new System.Drawing.Point(344, 272);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(88, 24);
+            this.button38.TabIndex = 103;
+            this.button38.Text = "PhatKey";
+            this.toolTip_0.SetToolTip(this.button38, "Phat LiteOn - use Pógó mo Thóin to extract Key, build dummy and open.");
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox15.Location = new System.Drawing.Point(136, 24);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox15.Size = new System.Drawing.Size(72, 24);
+            this.checkBox15.TabIndex = 102;
+            this.checkBox15.Text = "USB Only";
+            this.toolTip_0.SetToolTip(this.checkBox15, "List only Via ports, may help if Mobo has unfriendly chipset");
+            this.checkBox15.CheckedChanged += new System.EventHandler(this.checkBox15_CheckedChanged);
+            // 
+            // button32
+            // 
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button32.Location = new System.Drawing.Point(344, 336);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(136, 24);
+            this.button32.TabIndex = 101;
+            this.button32.Text = "Dummy from KeyDB";
+            this.toolTip_0.SetToolTip(this.button32, "Rebuild Dummy.bin from Lite-On with Key in KeyDB");
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button10
+            // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button10.Location = new System.Drawing.Point(128, 48);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(24, 21);
+            this.button10.TabIndex = 100;
+            this.button10.Text = "...";
+            this.toolTip_0.SetToolTip(this.button10, "Refresh Drive Properties");
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button8.Location = new System.Drawing.Point(456, 48);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(24, 21);
+            this.button8.TabIndex = 99;
+            this.button8.Text = "...";
+            this.toolTip_0.SetToolTip(this.button8, "Refresh Com Ports");
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button4.Location = new System.Drawing.Point(536, 304);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(88, 24);
+            this.button4.TabIndex = 98;
+            this.button4.Text = "83 .key file";
+            this.toolTip_0.SetToolTip(this.button4, "Import [barcode].bin.key , create dummy.bin, save and open.");
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(536, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 24);
+            this.button1.TabIndex = 97;
+            this.button1.Text = "LO83info";
+            this.toolTip_0.SetToolTip(this.button1, "83850c - use LO83info to extract Key, build dummy and open.");
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.Checked = true;
+            this.checkBox9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox9.Location = new System.Drawing.Point(504, 24);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox9.Size = new System.Drawing.Size(120, 24);
+            this.checkBox9.TabIndex = 96;
+            this.checkBox9.Text = "Additional functions";
+            this.toolTip_0.SetToolTip(this.checkBox9, "Tick to Enable Addition Kit Functions");
+            this.checkBox9.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            this.checkBox9.EnabledChanged += new System.EventHandler(this.checkBox9_EnabledChanged);
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox8.Location = new System.Drawing.Point(504, 48);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox8.Size = new System.Drawing.Size(120, 24);
+            this.checkBox8.TabIndex = 95;
+            this.checkBox8.Text = "Dummy.bin Only";
+            this.toolTip_0.SetToolTip(this.checkBox8, "Tick to save dummy.bin only.");
+            // 
+            // button28
+            // 
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button28.Location = new System.Drawing.Point(488, 336);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(136, 24);
+            this.button28.TabIndex = 94;
+            this.button28.Text = "Dummy from iXtreme";
+            this.toolTip_0.SetToolTip(this.button28, "Extract Key from ix1.5 flashed Lite-On");
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox4.Location = new System.Drawing.Point(216, 24);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox4.Size = new System.Drawing.Size(88, 24);
+            this.checkBox4.TabIndex = 93;
+            this.checkBox4.Text = "VIA ports Only";
+            this.toolTip_0.SetToolTip(this.checkBox4, "List only Via ports, may help if Mobo has unfriendly chipset");
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox2.Location = new System.Drawing.Point(176, 48);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox2.Size = new System.Drawing.Size(128, 24);
+            this.checkBox2.TabIndex = 92;
+            this.checkBox2.Text = "Include non-IDE Ports";
+            this.toolTip_0.SetToolTip(this.checkBox2, " IO ports in the SCSIAdapter Device Class");
+            this.checkBox2.Visible = false;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // button5
+            // 
+            this.button5.ContextMenu = this.contextMenu_3;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button5.Location = new System.Drawing.Point(344, 304);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(88, 24);
+            this.button5.TabIndex = 91;
+            this.button5.Text = "DVDKey32";
+            this.toolTip_0.SetToolTip(this.button5, "74850c - use DVDKey32 to extract Key, build dummy and open.");
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // contextMenu_3
+            // 
+            this.contextMenu_3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_14,
+            this.menuItem_15,
+            this.menuItem_16,
+            this.menuItem_17,
+            this.menuItem_18});
+            // 
+            // menuItem_14
+            // 
+            this.menuItem_14.Index = 0;
+            this.menuItem_14.Text = "No Delay";
+            this.menuItem_14.Click += new System.EventHandler(this.menuItem_14_Click);
+            // 
+            // menuItem_15
+            // 
+            this.menuItem_15.Index = 1;
+            this.menuItem_15.Text = "5 Secs";
+            this.menuItem_15.Click += new System.EventHandler(this.menuItem_15_Click);
+            // 
+            // menuItem_16
+            // 
+            this.menuItem_16.Index = 2;
+            this.menuItem_16.Text = "10 Secs";
+            this.menuItem_16.Click += new System.EventHandler(this.menuItem_16_Click);
+            // 
+            // menuItem_17
+            // 
+            this.menuItem_17.Index = 3;
+            this.menuItem_17.Text = "15 Secs";
+            this.menuItem_17.Click += new System.EventHandler(this.menuItem_17_Click);
+            // 
+            // menuItem_18
+            // 
+            this.menuItem_18.Index = 4;
+            this.menuItem_18.Text = "20 Secs";
+            this.menuItem_18.Click += new System.EventHandler(this.menuItem_18_Click);
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.ContextMenu = this.contextMenu_4;
+            this.groupBox16.Controls.Add(this.pictureBox5);
+            this.groupBox16.Controls.Add(this.pictureBox7);
+            this.groupBox16.Controls.Add(this.label131);
+            this.groupBox16.Controls.Add(this.label130);
+            this.groupBox16.Controls.Add(this.label92);
+            this.groupBox16.Controls.Add(this.label93);
+            this.groupBox16.Controls.Add(this.label94);
+            this.groupBox16.Controls.Add(this.label106);
+            this.groupBox16.Controls.Add(this.label107);
+            this.groupBox16.Controls.Add(this.label108);
+            this.groupBox16.Controls.Add(this.label109);
+            this.groupBox16.Controls.Add(this.label110);
+            this.groupBox16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox16.Location = new System.Drawing.Point(32, 240);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(280, 128);
+            this.groupBox16.TabIndex = 90;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Drive Properties";
+            this.toolTip_0.SetToolTip(this.groupBox16, "Properties of Drive on IO port selected");
+            // 
+            // contextMenu_4
+            // 
+            this.contextMenu_4.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_21,
+            this.menuItem_22,
+            this.menuItem_23,
+            this.menuItem_24});
+            // 
+            // menuItem_21
+            // 
+            this.menuItem_21.Enabled = false;
+            this.menuItem_21.Index = 0;
+            this.menuItem_21.Text = "Load Last File";
+            this.menuItem_21.Click += new System.EventHandler(this.menuItem_21_Click);
+            // 
+            // menuItem_22
+            // 
+            this.menuItem_22.Enabled = false;
+            this.menuItem_22.Index = 1;
+            this.menuItem_22.Text = "Open Job Folder";
+            this.menuItem_22.Click += new System.EventHandler(this.menuItem_22_Click);
+            // 
+            // menuItem_23
+            // 
+            this.menuItem_23.Enabled = false;
+            this.menuItem_23.Index = 2;
+            this.menuItem_23.Text = "Job History";
+            this.menuItem_23.Click += new System.EventHandler(this.menuItem_23_Click);
+            // 
+            // menuItem_24
+            // 
+            this.menuItem_24.Enabled = false;
+            this.menuItem_24.Index = 3;
+            this.menuItem_24.Text = "Open KeyDB";
+            this.menuItem_24.Click += new System.EventHandler(this.menuItem_24_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(160, 104);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox5.TabIndex = 37;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(160, 104);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox7.TabIndex = 36;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
+            // label131
+            // 
+            this.label131.Location = new System.Drawing.Point(88, 104);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(112, 16);
+            this.label131.TabIndex = 35;
+            // 
+            // label130
+            // 
+            this.label130.Location = new System.Drawing.Point(16, 104);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(56, 16);
+            this.label130.TabIndex = 34;
+            this.label130.Text = "DVD Key:";
+            // 
+            // label92
+            // 
+            this.label92.Location = new System.Drawing.Point(88, 82);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(176, 16);
+            this.label92.TabIndex = 13;
+            // 
+            // label93
+            // 
+            this.label93.Location = new System.Drawing.Point(16, 82);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(72, 16);
+            this.label93.TabIndex = 12;
+            this.label93.Text = "Reserved:";
+            // 
+            // label94
+            // 
+            this.label94.Location = new System.Drawing.Point(16, 16);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(72, 16);
+            this.label94.TabIndex = 11;
+            this.label94.Text = "Vendor:";
+            // 
+            // label106
+            // 
+            this.label106.Location = new System.Drawing.Point(88, 60);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(176, 16);
+            this.label106.TabIndex = 10;
+            // 
+            // label107
+            // 
+            this.label107.Location = new System.Drawing.Point(16, 38);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(56, 16);
+            this.label107.TabIndex = 9;
+            this.label107.Text = "Name:";
+            // 
+            // label108
+            // 
+            this.label108.Location = new System.Drawing.Point(16, 60);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(64, 16);
+            this.label108.TabIndex = 8;
+            this.label108.Text = "F/W Rev:";
+            // 
+            // label109
+            // 
+            this.label109.Location = new System.Drawing.Point(88, 38);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(176, 16);
+            this.label109.TabIndex = 7;
+            // 
+            // label110
+            // 
+            this.label110.Location = new System.Drawing.Point(88, 16);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(176, 16);
+            this.label110.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboBox1.ItemHeight = 13;
+            this.comboBox1.Location = new System.Drawing.Point(40, 48);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(80, 21);
+            this.comboBox1.TabIndex = 89;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label111
+            // 
+            this.label111.Location = new System.Drawing.Point(40, 24);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(56, 16);
+            this.label111.TabIndex = 88;
+            this.label111.Text = "I/O Port";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.pictureBox10);
+            this.groupBox17.Controls.Add(this.pictureBox8);
+            this.groupBox17.Controls.Add(this.label112);
+            this.groupBox17.Controls.Add(this.label113);
+            this.groupBox17.Controls.Add(this.label115);
+            this.groupBox17.Controls.Add(this.label116);
+            this.groupBox17.Controls.Add(this.label117);
+            this.groupBox17.Controls.Add(this.label123);
+            this.groupBox17.Controls.Add(this.label124);
+            this.groupBox17.Controls.Add(this.label125);
+            this.groupBox17.Controls.Add(this.label126);
+            this.groupBox17.Controls.Add(this.label127);
+            this.groupBox17.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox17.Location = new System.Drawing.Point(32, 80);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(280, 152);
+            this.groupBox17.TabIndex = 87;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Port Properties";
+            this.toolTip_0.SetToolTip(this.groupBox17, "Properites of IO port selected");
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(232, 16);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 29);
+            this.pictureBox10.TabIndex = 39;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(232, 16);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 29);
+            this.pictureBox8.TabIndex = 38;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            // 
+            // label112
+            // 
+            this.label112.Location = new System.Drawing.Point(16, 112);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(72, 16);
+            this.label112.TabIndex = 12;
+            this.label112.Text = "Device:";
+            // 
+            // label113
+            // 
+            this.label113.Location = new System.Drawing.Point(88, 112);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(176, 32);
+            this.label113.TabIndex = 11;
+            // 
+            // label115
+            // 
+            this.label115.Location = new System.Drawing.Point(88, 88);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(176, 16);
+            this.label115.TabIndex = 10;
+            // 
+            // label116
+            // 
+            this.label116.Location = new System.Drawing.Point(88, 64);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(176, 16);
+            this.label116.TabIndex = 9;
+            // 
+            // label117
+            // 
+            this.label117.Location = new System.Drawing.Point(88, 40);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(176, 16);
+            this.label117.TabIndex = 8;
+            // 
+            // label123
+            // 
+            this.label123.Location = new System.Drawing.Point(88, 16);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(176, 16);
+            this.label123.TabIndex = 7;
+            // 
+            // label124
+            // 
+            this.label124.Location = new System.Drawing.Point(16, 16);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(88, 16);
+            this.label124.TabIndex = 6;
+            this.label124.Text = "I/O Address:";
+            // 
+            // label125
+            // 
+            this.label125.Location = new System.Drawing.Point(16, 40);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(72, 16);
+            this.label125.TabIndex = 5;
+            this.label125.Text = "Type:";
+            // 
+            // label126
+            // 
+            this.label126.Location = new System.Drawing.Point(16, 64);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(72, 16);
+            this.label126.TabIndex = 4;
+            this.label126.Text = "Channel:";
+            // 
+            // label127
+            // 
+            this.label127.Location = new System.Drawing.Point(16, 88);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(72, 16);
+            this.label127.TabIndex = 3;
+            this.label127.Text = "Postion:";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboBox10.Location = new System.Drawing.Point(352, 48);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(96, 21);
+            this.comboBox10.TabIndex = 27;
+            this.comboBox10.SelectedIndexChanged += new System.EventHandler(this.comboBox10_SelectedIndexChanged);
+            // 
+            // label57
+            // 
+            this.label57.Location = new System.Drawing.Point(352, 24);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(96, 16);
+            this.label57.TabIndex = 19;
+            this.label57.Text = "Com Port";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.ContextMenu = this.contextMenu_5;
+            this.groupBox2.Controls.Add(this.label103);
+            this.groupBox2.Controls.Add(this.label63);
+            this.groupBox2.Controls.Add(this.label105);
+            this.groupBox2.Controls.Add(this.label104);
+            this.groupBox2.Controls.Add(this.label102);
+            this.groupBox2.Controls.Add(this.label64);
+            this.groupBox2.Controls.Add(this.label65);
+            this.groupBox2.Controls.Add(this.label66);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox2.Location = new System.Drawing.Point(344, 80);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(280, 112);
+            this.groupBox2.TabIndex = 21;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Com Port Properties";
+            this.toolTip_0.SetToolTip(this.groupBox2, "Properites of COM port selected");
+            // 
+            // contextMenu_5
+            // 
+            this.contextMenu_5.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_25,
+            this.menuItem_26,
+            this.menuItem_27,
+            this.menuItem_29,
+            this.menuItem_28,
+            this.menuItem_30,
+            this.menuItem_31});
+            // 
+            // menuItem_25
+            // 
+            this.menuItem_25.Index = 0;
+            this.menuItem_25.Text = "Open Tray";
+            this.menuItem_25.Click += new System.EventHandler(this.menuItem_25_Click);
+            // 
+            // menuItem_26
+            // 
+            this.menuItem_26.Index = 1;
+            this.menuItem_26.Text = "Close Tray";
+            this.menuItem_26.Click += new System.EventHandler(this.menuItem_26_Click);
+            // 
+            // menuItem_27
+            // 
+            this.menuItem_27.Index = 2;
+            this.menuItem_27.Text = "Half Tray";
+            this.menuItem_27.Click += new System.EventHandler(this.menuItem_27_Click);
+            // 
+            // menuItem_29
+            // 
+            this.menuItem_29.Index = 3;
+            this.menuItem_29.Text = "-";
+            // 
+            // menuItem_28
+            // 
+            this.menuItem_28.Index = 4;
+            this.menuItem_28.Text = "Power On";
+            this.menuItem_28.Click += new System.EventHandler(this.menuItem_28_Click);
+            // 
+            // menuItem_30
+            // 
+            this.menuItem_30.Index = 5;
+            this.menuItem_30.Text = "Power Off";
+            this.menuItem_30.Click += new System.EventHandler(this.menuItem_30_Click);
+            // 
+            // menuItem_31
+            // 
+            this.menuItem_31.Index = 6;
+            this.menuItem_31.Text = "Power Cycle";
+            this.menuItem_31.Click += new System.EventHandler(this.menuItem_31_Click);
+            // 
+            // label103
+            // 
+            this.label103.Location = new System.Drawing.Point(64, 88);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(208, 16);
+            this.label103.TabIndex = 16;
+            // 
+            // label63
+            // 
+            this.label63.Location = new System.Drawing.Point(16, 88);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(40, 16);
+            this.label63.TabIndex = 15;
+            this.label63.Text = "Status:";
+            // 
+            // label105
+            // 
+            this.label105.Location = new System.Drawing.Point(64, 64);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(208, 16);
+            this.label105.TabIndex = 14;
+            // 
+            // label104
+            // 
+            this.label104.Location = new System.Drawing.Point(64, 40);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(208, 16);
+            this.label104.TabIndex = 13;
+            // 
+            // label102
+            // 
+            this.label102.Location = new System.Drawing.Point(64, 16);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(200, 16);
+            this.label102.TabIndex = 11;
+            // 
+            // label64
+            // 
+            this.label64.Location = new System.Drawing.Point(16, 40);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(40, 16);
+            this.label64.TabIndex = 9;
+            this.label64.Text = "Type:";
+            // 
+            // label65
+            // 
+            this.label65.Location = new System.Drawing.Point(16, 64);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(40, 16);
+            this.label65.TabIndex = 8;
+            this.label65.Text = "Name:";
+            // 
+            // label66
+            // 
+            this.label66.Location = new System.Drawing.Point(16, 16);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(40, 16);
+            this.label66.TabIndex = 7;
+            this.label66.Text = "Port:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label88);
+            this.groupBox4.Controls.Add(this.label87);
+            this.groupBox4.Controls.Add(this.label69);
+            this.groupBox4.Controls.Add(this.label70);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox4.Location = new System.Drawing.Point(344, 200);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(280, 64);
+            this.groupBox4.TabIndex = 23;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Drive Key";
+            this.toolTip_0.SetToolTip(this.groupBox4, "Key from Lite-On Drive");
+            // 
+            // label88
+            // 
+            this.label88.Location = new System.Drawing.Point(72, 40);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(128, 16);
+            this.label88.TabIndex = 15;
+            // 
+            // label87
+            // 
+            this.label87.Location = new System.Drawing.Point(46, 16);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(230, 16);
+            this.label87.TabIndex = 14;
+            // 
+            // label69
+            // 
+            this.label69.Location = new System.Drawing.Point(8, 16);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(48, 16);
+            this.label69.TabIndex = 8;
+            this.label69.Text = "Key:";
+            // 
+            // label70
+            // 
+            this.label70.Location = new System.Drawing.Point(8, 40);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(48, 16);
+            this.label70.TabIndex = 11;
+            this.label70.Text = "Status:";
+            // 
+            // Benq
+            // 
+            this.Benq.Controls.Add(this.checkBox16);
+            this.Benq.Controls.Add(this.checkBox10);
+            this.Benq.Controls.Add(this.checkBox11);
+            this.Benq.Controls.Add(this.linkLabel2);
+            this.Benq.Controls.Add(this.groupBox9);
+            this.Benq.Controls.Add(this.groupBox7);
+            this.Benq.Controls.Add(this.groupBox1);
+            this.Benq.Controls.Add(this.comboBox7);
+            this.Benq.Controls.Add(this.label73);
+            this.Benq.Controls.Add(this.groupBox3);
+            this.Benq.Controls.Add(this.groupBox6);
+            this.Benq.Controls.Add(this.checkBox5);
+            this.Benq.Controls.Add(this.button9);
+            this.Benq.Location = new System.Drawing.Point(4, 22);
+            this.Benq.Name = "Benq";
+            this.Benq.Size = new System.Drawing.Size(656, 374);
+            this.Benq.TabIndex = 3;
+            this.Benq.Text = "  MTK Flash 32  ";
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox16.Location = new System.Drawing.Point(136, 24);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox16.Size = new System.Drawing.Size(72, 24);
+            this.checkBox16.TabIndex = 103;
+            this.checkBox16.Text = "USB Only";
+            this.toolTip_0.SetToolTip(this.checkBox16, "List only Via ports, may help if Mobo has unfriendly chipset");
+            this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox10.Location = new System.Drawing.Point(216, 24);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox10.Size = new System.Drawing.Size(88, 24);
+            this.checkBox10.TabIndex = 100;
+            this.checkBox10.Text = "VIA ports Only";
+            this.toolTip_0.SetToolTip(this.checkBox10, "List only Via ports, may help if Mobo has unfriendly chipset");
+            this.checkBox10.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox11.Location = new System.Drawing.Point(160, 48);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox11.Size = new System.Drawing.Size(144, 24);
+            this.checkBox11.TabIndex = 99;
+            this.checkBox11.Text = "Include non-IDE Ports";
+            this.toolTip_0.SetToolTip(this.checkBox11, " IO ports in the SCSIAdapter Device Class");
+            this.checkBox11.Visible = false;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(544, 8);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(80, 16);
+            this.linkLabel2.TabIndex = 98;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "activate.iso";
+            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip_0.SetToolTip(this.linkLabel2, "Burn to DL-DVD, then Insert to Unlock iXtreme Sammy.");
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.radioButton21);
+            this.groupBox9.Controls.Add(this.button42);
+            this.groupBox9.Controls.Add(this.radioButton20);
+            this.groupBox9.Controls.Add(this.radioButton19);
+            this.groupBox9.Controls.Add(this.button14);
+            this.groupBox9.Controls.Add(this.button13);
+            this.groupBox9.Controls.Add(this.button15);
+            this.groupBox9.Controls.Add(this.button17);
+            this.groupBox9.Controls.Add(this.button16);
+            this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox9.Location = new System.Drawing.Point(344, 256);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(280, 112);
+            this.groupBox9.TabIndex = 97;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Flashing Tasks";
+            // 
+            // radioButton21
+            // 
+            this.radioButton21.Location = new System.Drawing.Point(136, 88);
+            this.radioButton21.Name = "radioButton21";
+            this.radioButton21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton21.Size = new System.Drawing.Size(56, 16);
+            this.radioButton21.TabIndex = 63;
+            this.radioButton21.Text = "Slim2";
+            this.toolTip_0.SetToolTip(this.radioButton21, "Select Newer Slim MTK Vendor Commands");
+            this.radioButton21.Visible = false;
+            // 
+            // button42
+            // 
+            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button42.Location = new System.Drawing.Point(208, 80);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(56, 24);
+            this.button42.TabIndex = 62;
+            this.button42.Text = "Lock Spi";
+            this.toolTip_0.SetToolTip(this.button42, "Lock/UnLock external Spi on 0225 replacement PCB");
+            this.button42.Click += new System.EventHandler(this.button42_Click);
+            // 
+            // radioButton20
+            // 
+            this.radioButton20.Checked = true;
+            this.radioButton20.Location = new System.Drawing.Point(16, 88);
+            this.radioButton20.Name = "radioButton20";
+            this.radioButton20.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton20.Size = new System.Drawing.Size(48, 16);
+            this.radioButton20.TabIndex = 61;
+            this.radioButton20.TabStop = true;
+            this.radioButton20.Text = "Phat";
+            this.toolTip_0.SetToolTip(this.radioButton20, "Select Legacy MTK Vendor Commands");
+            // 
+            // radioButton19
+            // 
+            this.radioButton19.Location = new System.Drawing.Point(80, 88);
+            this.radioButton19.Name = "radioButton19";
+            this.radioButton19.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton19.Size = new System.Drawing.Size(48, 16);
+            this.radioButton19.TabIndex = 60;
+            this.radioButton19.Text = "Slim";
+            this.toolTip_0.SetToolTip(this.radioButton19, "Select Newer Slim MTK Vendor Commands");
+            this.radioButton19.CheckedChanged += new System.EventHandler(this.radioButton19_CheckedChanged);
+            // 
+            // button14
+            // 
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button14.Location = new System.Drawing.Point(104, 48);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(72, 24);
+            this.button14.TabIndex = 58;
+            this.button14.Text = "Erase";
+            this.toolTip_0.SetToolTip(this.button14, "Erase Flash Device");
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button13.Location = new System.Drawing.Point(192, 48);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(72, 24);
+            this.button13.TabIndex = 59;
+            this.button13.Text = "Write";
+            this.toolTip_0.SetToolTip(this.button13, "Erase and Write Target Buffer to Flash Device");
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button15
+            // 
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button15.Location = new System.Drawing.Point(16, 48);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(72, 24);
+            this.button15.TabIndex = 57;
+            this.button15.Text = "Read";
+            this.toolTip_0.SetToolTip(this.button15, "Read Flash to Source Buffer");
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button17
+            // 
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button17.Location = new System.Drawing.Point(16, 16);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(116, 24);
+            this.button17.TabIndex = 56;
+            this.button17.Text = " Intro / Device ID";
+            this.toolTip_0.SetToolTip(this.button17, "Introduce Vendor Mode and get flash Device Info");
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button16.Location = new System.Drawing.Point(148, 16);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(116, 24);
+            this.button16.TabIndex = 57;
+            this.button16.Text = "Outro / ATA Reset";
+            this.toolTip_0.SetToolTip(this.button16, "Leave Vendor Mode and reset then inquire drive");
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.button40);
+            this.groupBox7.Controls.Add(this.button18);
+            this.groupBox7.Controls.Add(this.button7);
+            this.groupBox7.Controls.Add(this.button21);
+            this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox7.Location = new System.Drawing.Point(344, 24);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(280, 72);
+            this.groupBox7.TabIndex = 96;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "360 Tools";
+            // 
+            // button40
+            // 
+            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button40.Location = new System.Drawing.Point(208, 20);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(56, 40);
+            this.button40.TabIndex = 96;
+            this.button40.Text = "Slim UnLock";
+            this.toolTip_0.SetToolTip(this.button40, "Send Unique Password to unlock Spi!");
+            this.button40.Click += new System.EventHandler(this.button40_Click);
+            // 
+            // button18
+            // 
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button18.Location = new System.Drawing.Point(16, 20);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(56, 40);
+            this.button18.TabIndex = 60;
+            this.button18.Text = "Benq   UnLock";
+            this.toolTip_0.SetToolTip(this.button18, "Send 49 Magic Keys to Unlock all VAD6038, Stock, pre ix1.5 to LT");
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Location = new System.Drawing.Point(144, 20);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(56, 40);
+            this.button7.TabIndex = 95;
+            this.button7.Text = "Lite-On Erase";
+            this.toolTip_0.SetToolTip(this.button7, "Erases Lite-on via Intro-of-Death... make sure you have your Keys!");
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button21
+            // 
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button21.Location = new System.Drawing.Point(80, 20);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(56, 40);
+            this.button21.TabIndex = 67;
+            this.button21.Text = "Sammy UnLock";
+            this.toolTip_0.SetToolTip(this.button21, "UnLocks Stock MS28s, for pre ix1.5 use activate.iso");
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.ContextMenu = this.contextMenu_4;
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureBox6);
+            this.groupBox1.Controls.Add(this.label133);
+            this.groupBox1.Controls.Add(this.label132);
+            this.groupBox1.Controls.Add(this.label72);
+            this.groupBox1.Controls.Add(this.label58);
+            this.groupBox1.Controls.Add(this.label59);
+            this.groupBox1.Controls.Add(this.label60);
+            this.groupBox1.Controls.Add(this.label61);
+            this.groupBox1.Controls.Add(this.label62);
+            this.groupBox1.Controls.Add(this.label67);
+            this.groupBox1.Controls.Add(this.label68);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(32, 240);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(280, 128);
+            this.groupBox1.TabIndex = 94;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Drive Properties";
+            this.toolTip_0.SetToolTip(this.groupBox1, "Properites of Drive on IO port selected");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(160, 104);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(160, 104);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(19, 19);
+            this.pictureBox6.TabIndex = 35;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
+            // label133
+            // 
+            this.label133.Location = new System.Drawing.Point(88, 104);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(112, 16);
+            this.label133.TabIndex = 34;
+            // 
+            // label132
+            // 
+            this.label132.Location = new System.Drawing.Point(16, 104);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(72, 16);
+            this.label132.TabIndex = 33;
+            this.label132.Text = "DVD Key:";
+            // 
+            // label72
+            // 
+            this.label72.Location = new System.Drawing.Point(88, 16);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(176, 16);
+            this.label72.TabIndex = 6;
+            // 
+            // label58
+            // 
+            this.label58.Location = new System.Drawing.Point(88, 82);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(176, 16);
+            this.label58.TabIndex = 13;
+            // 
+            // label59
+            // 
+            this.label59.Location = new System.Drawing.Point(16, 82);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(72, 16);
+            this.label59.TabIndex = 12;
+            this.label59.Text = "Reserved:";
+            // 
+            // label60
+            // 
+            this.label60.Location = new System.Drawing.Point(16, 16);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(72, 16);
+            this.label60.TabIndex = 11;
+            this.label60.Text = "Vendor:";
+            // 
+            // label61
+            // 
+            this.label61.Location = new System.Drawing.Point(88, 60);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(176, 16);
+            this.label61.TabIndex = 10;
+            // 
+            // label62
+            // 
+            this.label62.Location = new System.Drawing.Point(16, 38);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(56, 16);
+            this.label62.TabIndex = 9;
+            this.label62.Text = "Name:";
+            // 
+            // label67
+            // 
+            this.label67.Location = new System.Drawing.Point(16, 60);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(64, 16);
+            this.label67.TabIndex = 8;
+            this.label67.Text = "F/W Rev:";
+            // 
+            // label68
+            // 
+            this.label68.Location = new System.Drawing.Point(88, 38);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(176, 16);
+            this.label68.TabIndex = 7;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboBox7.ItemHeight = 13;
+            this.comboBox7.Location = new System.Drawing.Point(40, 48);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(80, 21);
+            this.comboBox7.TabIndex = 93;
+            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            // 
+            // label73
+            // 
+            this.label73.Location = new System.Drawing.Point(40, 24);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(56, 16);
+            this.label73.TabIndex = 92;
+            this.label73.Text = "I/O Port";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.pictureBox11);
+            this.groupBox3.Controls.Add(this.pictureBox9);
+            this.groupBox3.Controls.Add(this.label74);
+            this.groupBox3.Controls.Add(this.label75);
+            this.groupBox3.Controls.Add(this.label76);
+            this.groupBox3.Controls.Add(this.label81);
+            this.groupBox3.Controls.Add(this.label83);
+            this.groupBox3.Controls.Add(this.label84);
+            this.groupBox3.Controls.Add(this.label85);
+            this.groupBox3.Controls.Add(this.label86);
+            this.groupBox3.Controls.Add(this.label95);
+            this.groupBox3.Controls.Add(this.label96);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox3.Location = new System.Drawing.Point(32, 80);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(280, 152);
+            this.groupBox3.TabIndex = 91;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Port Properties";
+            this.toolTip_0.SetToolTip(this.groupBox3, "Properites of IO port selected");
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(232, 16);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(35, 29);
+            this.pictureBox11.TabIndex = 40;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(232, 16);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(35, 29);
+            this.pictureBox9.TabIndex = 39;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
+            // 
+            // label74
+            // 
+            this.label74.Location = new System.Drawing.Point(16, 112);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(72, 16);
+            this.label74.TabIndex = 12;
+            this.label74.Text = "Device:";
+            // 
+            // label75
+            // 
+            this.label75.Location = new System.Drawing.Point(88, 112);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(176, 32);
+            this.label75.TabIndex = 11;
+            // 
+            // label76
+            // 
+            this.label76.Location = new System.Drawing.Point(88, 88);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(176, 16);
+            this.label76.TabIndex = 10;
+            // 
+            // label81
+            // 
+            this.label81.Location = new System.Drawing.Point(88, 64);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(176, 16);
+            this.label81.TabIndex = 9;
+            // 
+            // label83
+            // 
+            this.label83.Location = new System.Drawing.Point(88, 40);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(176, 16);
+            this.label83.TabIndex = 8;
+            // 
+            // label84
+            // 
+            this.label84.Location = new System.Drawing.Point(88, 16);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(176, 16);
+            this.label84.TabIndex = 7;
+            // 
+            // label85
+            // 
+            this.label85.Location = new System.Drawing.Point(16, 16);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(88, 16);
+            this.label85.TabIndex = 6;
+            this.label85.Text = "I/O Address:";
+            // 
+            // label86
+            // 
+            this.label86.Location = new System.Drawing.Point(16, 40);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(72, 16);
+            this.label86.TabIndex = 5;
+            this.label86.Text = "Type:";
+            // 
+            // label95
+            // 
+            this.label95.Location = new System.Drawing.Point(16, 64);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(72, 16);
+            this.label95.TabIndex = 4;
+            this.label95.Text = "Channel:";
+            // 
+            // label96
+            // 
+            this.label96.Location = new System.Drawing.Point(16, 88);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(72, 16);
+            this.label96.TabIndex = 3;
+            this.label96.Text = "Postion:";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label118);
+            this.groupBox6.Controls.Add(this.label122);
+            this.groupBox6.Controls.Add(this.label121);
+            this.groupBox6.Controls.Add(this.label120);
+            this.groupBox6.Controls.Add(this.label119);
+            this.groupBox6.Controls.Add(this.label114);
+            this.groupBox6.Controls.Add(this.label77);
+            this.groupBox6.Controls.Add(this.label78);
+            this.groupBox6.Controls.Add(this.label79);
+            this.groupBox6.Controls.Add(this.label80);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox6.Location = new System.Drawing.Point(344, 104);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(280, 144);
+            this.groupBox6.TabIndex = 50;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Flash Chip Properties";
+            this.toolTip_0.SetToolTip(this.groupBox6, "Properites of Flash device in Drive on IO port selected");
+            // 
+            // label118
+            // 
+            this.label118.Location = new System.Drawing.Point(80, 24);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(192, 16);
+            this.label118.TabIndex = 13;
+            // 
+            // label122
+            // 
+            this.label122.Location = new System.Drawing.Point(80, 120);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(192, 16);
+            this.label122.TabIndex = 17;
+            // 
+            // label121
+            // 
+            this.label121.Location = new System.Drawing.Point(80, 96);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(192, 16);
+            this.label121.TabIndex = 16;
+            // 
+            // label120
+            // 
+            this.label120.Location = new System.Drawing.Point(80, 72);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(192, 16);
+            this.label120.TabIndex = 15;
+            // 
+            // label119
+            // 
+            this.label119.Location = new System.Drawing.Point(80, 48);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(192, 16);
+            this.label119.TabIndex = 14;
+            // 
+            // label114
+            // 
+            this.label114.Location = new System.Drawing.Point(16, 48);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(56, 16);
+            this.label114.TabIndex = 12;
+            this.label114.Text = "Device ID:";
+            // 
+            // label77
+            // 
+            this.label77.Location = new System.Drawing.Point(16, 72);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(56, 16);
+            this.label77.TabIndex = 9;
+            this.label77.Text = "Name:";
+            // 
+            // label78
+            // 
+            this.label78.Location = new System.Drawing.Point(16, 96);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(56, 16);
+            this.label78.TabIndex = 8;
+            this.label78.Text = "Size:";
+            // 
+            // label79
+            // 
+            this.label79.Location = new System.Drawing.Point(16, 24);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(64, 16);
+            this.label79.TabIndex = 7;
+            this.label79.Text = "Vendor ID:";
+            // 
+            // label80
+            // 
+            this.label80.Location = new System.Drawing.Point(16, 120);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(56, 16);
+            this.label80.TabIndex = 11;
+            this.label80.Text = "Type:";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox5.Location = new System.Drawing.Point(344, 8);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox5.Size = new System.Drawing.Size(104, 24);
+            this.checkBox5.TabIndex = 94;
+            this.checkBox5.Text = "Do Device ID";
+            this.checkBox5.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button9.Location = new System.Drawing.Point(128, 48);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(24, 21);
+            this.button9.TabIndex = 60;
+            this.button9.Text = "...";
+            this.toolTip_0.SetToolTip(this.button9, "Refresh Drive Properties");
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // Hitachi
+            // 
+            this.Hitachi.Controls.Add(this.radioButton18);
+            this.Hitachi.Controls.Add(this.radioButton17);
+            this.Hitachi.Controls.Add(this.groupBox8);
+            this.Hitachi.Controls.Add(this.groupBox15);
+            this.Hitachi.Controls.Add(this.groupBox14);
+            this.Hitachi.Controls.Add(this.groupBox12);
+            this.Hitachi.Controls.Add(this.groupBox13);
+            this.Hitachi.Controls.Add(this.groupBox11);
+            this.Hitachi.Controls.Add(this.groupBox5);
+            this.Hitachi.Location = new System.Drawing.Point(4, 22);
+            this.Hitachi.Name = "Hitachi";
+            this.Hitachi.Size = new System.Drawing.Size(656, 374);
+            this.Hitachi.TabIndex = 6;
+            this.Hitachi.Text = "  Hitachi GDR3120  ";
+            // 
+            // radioButton18
+            // 
+            this.radioButton18.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton18.Location = new System.Drawing.Point(216, 40);
+            this.radioButton18.Name = "radioButton18";
+            this.radioButton18.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton18.Size = new System.Drawing.Size(88, 24);
+            this.radioButton18.TabIndex = 72;
+            this.radioButton18.Text = "Use Port IO";
+            this.toolTip_0.SetToolTip(this.radioButton18, "Communicate with drive via Port IO");
+            this.radioButton18.CheckedChanged += new System.EventHandler(this.radioButton18_CheckedChanged);
+            // 
+            // radioButton17
+            // 
+            this.radioButton17.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton17.Location = new System.Drawing.Point(200, 12);
+            this.radioButton17.Name = "radioButton17";
+            this.radioButton17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton17.Size = new System.Drawing.Size(104, 24);
+            this.radioButton17.TabIndex = 71;
+            this.radioButton17.Text = "Use Win API";
+            this.toolTip_0.SetToolTip(this.radioButton17, "Communicate with drive via windows Drive letter");
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.radioButton5);
+            this.groupBox8.Controls.Add(this.radioButton4);
+            this.groupBox8.Controls.Add(this.radioButton3);
+            this.groupBox8.Controls.Add(this.radioButton2);
+            this.groupBox8.Controls.Add(this.radioButton1);
+            this.groupBox8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox8.Location = new System.Drawing.Point(208, 72);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(112, 160);
+            this.groupBox8.TabIndex = 61;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Drive Revision";
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton5.Location = new System.Drawing.Point(32, 128);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton5.Size = new System.Drawing.Size(64, 24);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.Text = "79 / 78";
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton4.Location = new System.Drawing.Point(32, 100);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton4.Size = new System.Drawing.Size(64, 24);
+            this.radioButton4.TabIndex = 3;
+            this.radioButton4.Text = "59 / 58";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton3.Location = new System.Drawing.Point(32, 72);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton3.Size = new System.Drawing.Size(64, 24);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.Text = "47 / 46";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton2.Location = new System.Drawing.Point(32, 44);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton2.Size = new System.Drawing.Size(64, 24);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "36";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton1.Location = new System.Drawing.Point(32, 16);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton1.Size = new System.Drawing.Size(64, 24);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.Text = "40 / 32";
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.button22);
+            this.groupBox15.Controls.Add(this.button3);
+            this.groupBox15.Controls.Add(this.comboBox16);
+            this.groupBox15.Controls.Add(this.button27);
+            this.groupBox15.Controls.Add(this.button23);
+            this.groupBox15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox15.Location = new System.Drawing.Point(336, 8);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(312, 96);
+            this.groupBox15.TabIndex = 70;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Drive";
+            // 
+            // button22
+            // 
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button22.Location = new System.Drawing.Point(160, 56);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(64, 24);
+            this.button22.TabIndex = 64;
+            this.button22.Text = "Query";
+            this.toolTip_0.SetToolTip(this.button22, "Inquire drive letter.");
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button3.Location = new System.Drawing.Point(16, 56);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(64, 24);
+            this.button3.TabIndex = 63;
+            this.button3.Text = "Refresh";
+            this.toolTip_0.SetToolTip(this.button3, "Refresh Windows Drive list");
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // comboBox16
+            // 
+            this.comboBox16.ContextMenu = this.contextMenu_0;
+            this.comboBox16.Location = new System.Drawing.Point(16, 24);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(280, 21);
+            this.comboBox16.TabIndex = 5;
+            // 
+            // contextMenu_0
+            // 
+            this.contextMenu_0.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_0,
+            this.menuItem_1,
+            this.menuItem_8,
+            this.menuItem_9,
+            this.menuItem_10,
+            this.menuItem_38});
+            // 
+            // menuItem_0
+            // 
+            this.menuItem_0.Index = 0;
+            this.menuItem_0.Text = "Open";
+            this.menuItem_0.Click += new System.EventHandler(this.menuItem_0_Click);
+            // 
+            // menuItem_1
+            // 
+            this.menuItem_1.Index = 1;
+            this.menuItem_1.Text = "Close";
+            this.menuItem_1.Click += new System.EventHandler(this.menuItem_1_Click);
+            // 
+            // menuItem_8
+            // 
+            this.menuItem_8.Index = 2;
+            this.menuItem_8.Text = "Remove";
+            this.menuItem_8.Click += new System.EventHandler(this.menuItem_8_Click);
+            // 
+            // menuItem_9
+            // 
+            this.menuItem_9.Index = 3;
+            this.menuItem_9.Text = "Disable";
+            this.menuItem_9.Click += new System.EventHandler(this.menuItem_9_Click);
+            // 
+            // menuItem_10
+            // 
+            this.menuItem_10.Index = 4;
+            this.menuItem_10.Text = "Enable All";
+            this.menuItem_10.Click += new System.EventHandler(this.menuItem_10_Click);
+            // 
+            // menuItem_38
+            // 
+            this.menuItem_38.Index = 5;
+            this.menuItem_38.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_39,
+            this.menuItem_40,
+            this.menuItem_41,
+            this.menuItem_42,
+            this.menuItem_49,
+            this.menuItem_48,
+            this.menuItem_44,
+            this.menuItem_46,
+            this.menuItem_50,
+            this.menuItem_45,
+            this.menuItem_51,
+            this.menuItem_47,
+            this.menuItem_52,
+            this.menuItem_43});
+            this.menuItem_38.Text = "BurnMax";
+            this.menuItem_38.Visible = false;
+            // 
+            // menuItem_39
+            // 
+            this.menuItem_39.Index = 0;
+            this.menuItem_39.Text = "iHAS A";
+            this.menuItem_39.Click += new System.EventHandler(this.menuItem_39_Click);
+            // 
+            // menuItem_40
+            // 
+            this.menuItem_40.Index = 1;
+            this.menuItem_40.Text = "iHAS B";
+            this.menuItem_40.Click += new System.EventHandler(this.menuItem_40_Click);
+            // 
+            // menuItem_41
+            // 
+            this.menuItem_41.Index = 2;
+            this.menuItem_41.Text = "iHAS C/D";
+            this.menuItem_41.Click += new System.EventHandler(this.menuItem_41_Click);
+            // 
+            // menuItem_42
+            // 
+            this.menuItem_42.Index = 3;
+            this.menuItem_42.Text = "iHAS W";
+            this.menuItem_42.Click += new System.EventHandler(this.menuItem_42_Click);
+            // 
+            // menuItem_49
+            // 
+            this.menuItem_49.Index = 4;
+            this.menuItem_49.Text = "eTAU108";
+            this.menuItem_49.Click += new System.EventHandler(this.menuItem_49_Click);
+            // 
+            // menuItem_48
+            // 
+            this.menuItem_48.Index = 5;
+            this.menuItem_48.Text = "-";
+            // 
+            // menuItem_44
+            // 
+            this.menuItem_44.Index = 6;
+            this.menuItem_44.Text = "DVR-220L";
+            this.menuItem_44.Click += new System.EventHandler(this.menuItem_44_Click);
+            // 
+            // menuItem_46
+            // 
+            this.menuItem_46.Index = 7;
+            this.menuItem_46.Text = "DVR-218L";
+            this.menuItem_46.Click += new System.EventHandler(this.menuItem_46_Click);
+            // 
+            // menuItem_50
+            // 
+            this.menuItem_50.Index = 8;
+            this.menuItem_50.Text = "-";
+            // 
+            // menuItem_45
+            // 
+            this.menuItem_45.Index = 9;
+            this.menuItem_45.Text = "TSST SE-208AB";
+            this.menuItem_45.Click += new System.EventHandler(this.menuItem_45_Click);
+            // 
+            // menuItem_51
+            // 
+            this.menuItem_51.Index = 10;
+            this.menuItem_51.Text = "-";
+            // 
+            // menuItem_47
+            // 
+            this.menuItem_47.Index = 11;
+            this.menuItem_47.Text = "DRW-24B1LT";
+            this.menuItem_47.Click += new System.EventHandler(this.menuItem_47_Click);
+            // 
+            // menuItem_52
+            // 
+            this.menuItem_52.Index = 12;
+            this.menuItem_52.Text = "-";
+            // 
+            // menuItem_43
+            // 
+            this.menuItem_43.Index = 13;
+            this.menuItem_43.Text = "Scan";
+            this.menuItem_43.Click += new System.EventHandler(this.menuItem_43_Click);
+            // 
+            // button27
+            // 
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button27.Location = new System.Drawing.Point(88, 56);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(64, 24);
+            this.button27.TabIndex = 94;
+            this.button27.Text = "Scan";
+            this.toolTip_0.SetToolTip(this.button27, "Scan for Hardware Changes");
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // button23
+            // 
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button23.Location = new System.Drawing.Point(232, 56);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(64, 24);
+            this.button23.TabIndex = 65;
+            this.button23.Text = "USmodeB";
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.button24);
+            this.groupBox14.Controls.Add(this.button12);
+            this.groupBox14.Controls.Add(this.checkBox1);
+            this.groupBox14.Controls.Add(this.linkLabel3);
+            this.groupBox14.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox14.Location = new System.Drawing.Point(8, 272);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(184, 96);
+            this.groupBox14.TabIndex = 69;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "79 Unlock";
+            // 
+            // button24
+            // 
+            this.button24.Enabled = false;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button24.Location = new System.Drawing.Point(16, 56);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(72, 24);
+            this.button24.TabIndex = 60;
+            this.button24.Text = "Play";
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button12
+            // 
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button12.Location = new System.Drawing.Point(96, 56);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(72, 24);
+            this.button12.TabIndex = 59;
+            this.button12.Text = "79 Unlock";
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBox1.Location = new System.Drawing.Point(96, 8);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox1.Size = new System.Drawing.Size(80, 24);
+            this.checkBox1.TabIndex = 61;
+            this.checkBox1.Text = "automatic";
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.Location = new System.Drawing.Point(8, 32);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(168, 16);
+            this.linkLabel3.TabIndex = 99;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Insert the 79 Unlock Audio CD.";
+            this.linkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.listBox5);
+            this.groupBox12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox12.Location = new System.Drawing.Point(504, 112);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(144, 256);
+            this.groupBox12.TabIndex = 68;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Sector List";
+            // 
+            // listBox5
+            // 
+            this.listBox5.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox5.ItemHeight = 15;
+            this.listBox5.Items.AddRange(new object[] {
+            "0x90003000",
+            "0x90005000",
+            "0x90006000",
+            "0x9000A000",
+            "0x9001C000",
+            "0x90027000",
+            "0x9002E000",
+            "0x90033000",
+            "0x90034000",
+            "0x90035000",
+            "0x9003E000"});
+            this.listBox5.Location = new System.Drawing.Point(16, 24);
+            this.listBox5.Name = "listBox5";
+            this.listBox5.Size = new System.Drawing.Size(112, 214);
+            this.listBox5.TabIndex = 3;
+            this.toolTip_0.SetToolTip(this.listBox5, "List of sectors to be flashed");
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.button25);
+            this.groupBox13.Controls.Add(this.label99);
+            this.groupBox13.Controls.Add(this.label97);
+            this.groupBox13.Controls.Add(this.label98);
+            this.groupBox13.Controls.Add(this.label100);
+            this.groupBox13.Controls.Add(this.button11);
+            this.groupBox13.Controls.Add(this.label82);
+            this.groupBox13.Controls.Add(this.label89);
+            this.groupBox13.Controls.Add(this.label91);
+            this.groupBox13.Controls.Add(this.comboBox13);
+            this.groupBox13.Controls.Add(this.button20);
+            this.groupBox13.Controls.Add(this.button19);
+            this.groupBox13.Controls.Add(this.label90);
+            this.groupBox13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox13.Location = new System.Drawing.Point(8, 8);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(184, 256);
+            this.groupBox13.TabIndex = 67;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Port Properties";
+            // 
+            // button25
+            // 
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button25.Location = new System.Drawing.Point(112, 24);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(24, 21);
+            this.button25.TabIndex = 94;
+            this.button25.Text = "...";
+            this.toolTip_0.SetToolTip(this.button25, "Refresh Drive Properties");
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
+            // label99
+            // 
+            this.label99.Location = new System.Drawing.Point(56, 88);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(120, 16);
+            this.label99.TabIndex = 70;
+            // 
+            // label97
+            // 
+            this.label97.Location = new System.Drawing.Point(72, 152);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(96, 32);
+            this.label97.TabIndex = 72;
+            // 
+            // label98
+            // 
+            this.label98.Location = new System.Drawing.Point(72, 120);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(96, 16);
+            this.label98.TabIndex = 71;
+            // 
+            // label100
+            // 
+            this.label100.Location = new System.Drawing.Point(56, 56);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(125, 16);
+            this.label100.TabIndex = 69;
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button11.Location = new System.Drawing.Point(16, 192);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(152, 24);
+            this.button11.TabIndex = 66;
+            this.button11.Text = "Send Mode-B";
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label82
+            // 
+            this.label82.Location = new System.Drawing.Point(8, 56);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(56, 16);
+            this.label82.TabIndex = 6;
+            this.label82.Text = "Vendor:";
+            // 
+            // label89
+            // 
+            this.label89.Location = new System.Drawing.Point(8, 88);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(56, 16);
+            this.label89.TabIndex = 5;
+            this.label89.Text = "Name:";
+            // 
+            // label91
+            // 
+            this.label91.Location = new System.Drawing.Point(8, 152);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(72, 16);
+            this.label91.TabIndex = 3;
+            this.label91.Text = "Reserved:";
+            // 
+            // comboBox13
+            // 
+            this.comboBox13.Location = new System.Drawing.Point(16, 24);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(88, 21);
+            this.comboBox13.TabIndex = 68;
+            this.comboBox13.SelectedIndexChanged += new System.EventHandler(this.comboBox13_SelectedIndexChanged);
+            // 
+            // button20
+            // 
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button20.Location = new System.Drawing.Point(96, 224);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(72, 24);
+            this.button20.TabIndex = 93;
+            this.button20.Text = "Close";
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button19
+            // 
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button19.Location = new System.Drawing.Point(16, 224);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(72, 24);
+            this.button19.TabIndex = 92;
+            this.button19.Text = "Open";
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // label90
+            // 
+            this.label90.Location = new System.Drawing.Point(8, 120);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(80, 16);
+            this.label90.TabIndex = 4;
+            this.label90.Text = "F/W Rev:";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.radioButton16);
+            this.groupBox11.Controls.Add(this.radioButton11);
+            this.groupBox11.Controls.Add(this.radioButton10);
+            this.groupBox11.Controls.Add(this.radioButton9);
+            this.groupBox11.Controls.Add(this.radioButton8);
+            this.groupBox11.Controls.Add(this.radioButton7);
+            this.groupBox11.Controls.Add(this.radioButton6);
+            this.groupBox11.Controls.Add(this.button26);
+            this.groupBox11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox11.Location = new System.Drawing.Point(336, 112);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(152, 256);
+            this.groupBox11.TabIndex = 62;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Flashing Options";
+            // 
+            // radioButton16
+            // 
+            this.radioButton16.Enabled = false;
+            this.radioButton16.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton16.Location = new System.Drawing.Point(16, 184);
+            this.radioButton16.Name = "radioButton16";
+            this.radioButton16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton16.Size = new System.Drawing.Size(120, 24);
+            this.radioButton16.TabIndex = 62;
+            this.radioButton16.Text = "Free Flash";
+            this.toolTip_0.SetToolTip(this.radioButton16, "Flash what you like, checks can be ignored.. **BE WARNED**");
+            this.radioButton16.CheckedChanged += new System.EventHandler(this.radioButton16_CheckedChanged);
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton11.Location = new System.Drawing.Point(16, 16);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton11.Size = new System.Drawing.Size(120, 24);
+            this.radioButton11.TabIndex = 61;
+            this.radioButton11.Text = "Dump Drive";
+            this.toolTip_0.SetToolTip(this.radioButton11, "Dump and save flash image.");
+            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton10.Location = new System.Drawing.Point(16, 156);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton10.Size = new System.Drawing.Size(120, 24);
+            this.radioButton10.TabIndex = 4;
+            this.radioButton10.Text = "Set Checksum";
+            this.toolTip_0.SetToolTip(this.radioButton10, "Flash checkum if incorrect or master -OR- Flash master is correct.");
+            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton9.Location = new System.Drawing.Point(16, 128);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton9.Size = new System.Drawing.Size(120, 24);
+            this.radioButton9.TabIndex = 3;
+            this.radioButton9.Text = "Restore Firmware";
+            this.toolTip_0.SetToolTip(this.radioButton9, "Dump flash, load stock, build sector list and flash them... fix checksum.");
+            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton8.Location = new System.Drawing.Point(16, 100);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton8.Size = new System.Drawing.Size(120, 24);
+            this.radioButton8.TabIndex = 2;
+            this.radioButton8.Text = "Flash LT-Plus";
+            this.toolTip_0.SetToolTip(this.radioButton8, "Dump flash, load latest iXtreme, build sector list and flash them.");
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton7.Location = new System.Drawing.Point(16, 72);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton7.Size = new System.Drawing.Size(120, 24);
+            this.radioButton7.TabIndex = 1;
+            this.radioButton7.Text = "Auto Spoof";
+            this.toolTip_0.SetToolTip(this.radioButton7, "Dump flash, Spoof from Source, flash Sector differences.");
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton6.Location = new System.Drawing.Point(16, 44);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton6.Size = new System.Drawing.Size(120, 24);
+            this.radioButton6.TabIndex = 0;
+            this.radioButton6.Text = "Manual Spoof";
+            this.toolTip_0.SetToolTip(this.radioButton6, "Dump flash, spoof manually, flash sector differences.");
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
+            // button26
+            // 
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button26.Location = new System.Drawing.Point(16, 208);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(120, 40);
+            this.button26.TabIndex = 60;
+            this.button26.Text = "Delta Read";
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.radioButton12);
+            this.groupBox5.Controls.Add(this.radioButton13);
+            this.groupBox5.Controls.Add(this.radioButton14);
+            this.groupBox5.Controls.Add(this.radioButton15);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox5.Location = new System.Drawing.Point(208, 240);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(112, 128);
+            this.groupBox5.TabIndex = 62;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Transfer Method";
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.Enabled = false;
+            this.radioButton12.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton12.Location = new System.Drawing.Point(8, 100);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton12.Size = new System.Drawing.Size(88, 24);
+            this.radioButton12.TabIndex = 3;
+            this.radioButton12.Text = "Ram Poke";
+            this.toolTip_0.SetToolTip(this.radioButton12, "Communicate with drive via Vendor Poke commands.");
+            // 
+            // radioButton13
+            // 
+            this.radioButton13.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton13.Location = new System.Drawing.Point(8, 44);
+            this.radioButton13.Name = "radioButton13";
+            this.radioButton13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton13.Size = new System.Drawing.Size(88, 24);
+            this.radioButton13.TabIndex = 2;
+            this.radioButton13.Text = "Mode Select";
+            this.toolTip_0.SetToolTip(this.radioButton13, "Communicate with drive via Mode Select commands, supports USB");
+            // 
+            // radioButton14
+            // 
+            this.radioButton14.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton14.Location = new System.Drawing.Point(8, 72);
+            this.radioButton14.Name = "radioButton14";
+            this.radioButton14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton14.Size = new System.Drawing.Size(88, 24);
+            this.radioButton14.TabIndex = 1;
+            this.radioButton14.Text = "Ram Upload";
+            this.toolTip_0.SetToolTip(this.radioButton14, "Communicate with drive via Vendor Ram Upload commands.");
+            // 
+            // radioButton15
+            // 
+            this.radioButton15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton15.Location = new System.Drawing.Point(8, 16);
+            this.radioButton15.Name = "radioButton15";
+            this.radioButton15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.radioButton15.Size = new System.Drawing.Size(88, 24);
+            this.radioButton15.TabIndex = 0;
+            this.radioButton15.Text = "Classic";
+            this.toolTip_0.SetToolTip(this.radioButton15, "Dump via Classic ram peek Vendor command");
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.pictureBox4);
+            this.tabPage5.Controls.Add(this.button31);
+            this.tabPage5.Controls.Add(this.button30);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(656, 374);
+            this.tabPage5.TabIndex = 7;
+            this.tabPage5.Text = "  IRC Channel  ";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(552, 344);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(92, 26);
+            this.pictureBox4.TabIndex = 77;
+            this.pictureBox4.TabStop = false;
+            this.toolTip_0.SetToolTip(this.pictureBox4, "Help Support JungleFlasher Development!");
+            this.pictureBox4.Visible = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox4.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(112, 344);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(80, 24);
+            this.button31.TabIndex = 76;
+            this.button31.Text = "Disconnect";
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(16, 344);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(80, 24);
+            this.button30.TabIndex = 75;
+            this.button30.Text = "Connect";
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.Checked = true;
+            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox7.Location = new System.Drawing.Point(536, 480);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox7.Size = new System.Drawing.Size(88, 24);
+            this.checkBox7.TabIndex = 72;
+            this.checkBox7.Text = "Intel";
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.Location = new System.Drawing.Point(328, 480);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBox6.Size = new System.Drawing.Size(88, 24);
+            this.checkBox6.TabIndex = 71;
+            this.checkBox6.Text = "Use Port I/O";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox6.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(8, 416);
+            this.textBox6.MaxLength = 262142;
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox6.Size = new System.Drawing.Size(664, 152);
+            this.textBox6.TabIndex = 27;
+            this.textBox6.DoubleClick += new System.EventHandler(this.textBox6_DoubleClick);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(680, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(160, 560);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 32;
+            this.pictureBox3.TabStop = false;
+            this.toolTip_0.SetToolTip(this.pictureBox3, "http://www.modtraders.co.uk/");
+            this.pictureBox3.Visible = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox3.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
+            // 
+            // button48
+            // 
+            this.button48.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.Location = new System.Drawing.Point(48, 80);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(32, 24);
+            this.button48.TabIndex = 5;
+            this.button48.Text = "Half";
+            this.toolTip_0.SetToolTip(this.button48, "Click to half tray");
+            this.button48.Click += new System.EventHandler(this.button48_Click);
+            // 
+            // button47
+            // 
+            this.button47.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button47.Location = new System.Drawing.Point(48, 48);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(32, 24);
+            this.button47.TabIndex = 4;
+            this.button47.Text = "Close";
+            this.toolTip_0.SetToolTip(this.button47, "Click to close tray");
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // button46
+            // 
+            this.button46.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.Location = new System.Drawing.Point(48, 16);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(32, 24);
+            this.button46.TabIndex = 3;
+            this.button46.Text = "Open";
+            this.toolTip_0.SetToolTip(this.button46, "Click to open tray");
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // button45
+            // 
+            this.button45.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Location = new System.Drawing.Point(8, 80);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(32, 24);
+            this.button45.TabIndex = 2;
+            this.button45.Text = "Cycle";
+            this.toolTip_0.SetToolTip(this.button45, "Click to power cycle drive");
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // button44
+            // 
+            this.button44.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Location = new System.Drawing.Point(8, 48);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(32, 24);
+            this.button44.TabIndex = 1;
+            this.button44.Text = "OFF";
+            this.toolTip_0.SetToolTip(this.button44, "Click to power off drive");
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button43
+            // 
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.Location = new System.Drawing.Point(8, 16);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(32, 24);
+            this.button43.TabIndex = 0;
+            this.button43.Text = "ON";
+            this.toolTip_0.SetToolTip(this.button43, "Click to power on drive");
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // textBox20
+            // 
+            this.textBox20.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox20.Location = new System.Drawing.Point(232, 432);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(112, 20);
+            this.textBox20.TabIndex = 73;
+            this.textBox20.Text = "EasyToFindUpdate";
+            this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
+            // 
+            // label135
+            // 
+            this.label135.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label135.Location = new System.Drawing.Point(504, 12);
+            this.label135.Name = "label135";
+            this.label135.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label135.Size = new System.Drawing.Size(160, 16);
+            this.label135.TabIndex = 75;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.ContextMenu = this.contextMenu_6;
+            this.groupBox18.Controls.Add(this.button48);
+            this.groupBox18.Controls.Add(this.button47);
+            this.groupBox18.Controls.Add(this.button46);
+            this.groupBox18.Controls.Add(this.button45);
+            this.groupBox18.Controls.Add(this.button44);
+            this.groupBox18.Controls.Add(this.button43);
+            this.groupBox18.Location = new System.Drawing.Point(560, 432);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(88, 112);
+            this.groupBox18.TabIndex = 76;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "CK3i";
+            this.groupBox18.Visible = false;
+            // 
+            // contextMenu_6
+            // 
+            this.contextMenu_6.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem_34,
+            this.menuItem_35,
+            this.menuItem_36});
+            // 
+            // menuItem_34
+            // 
+            this.menuItem_34.Index = 0;
+            this.menuItem_34.Text = "750nS";
+            // 
+            // menuItem_35
+            // 
+            this.menuItem_35.Index = 1;
+            this.menuItem_35.Text = "+ 50mS";
+            this.menuItem_35.Click += new System.EventHandler(this.menuItem_35_Click);
+            // 
+            // menuItem_36
+            // 
+            this.menuItem_36.Index = 2;
+            this.menuItem_36.Text = "- 50mS";
+            this.menuItem_36.Click += new System.EventHandler(this.menuItem_36_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(840, 569);
+            this.Controls.Add(this.groupBox18);
+            this.Controls.Add(this.label135);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.tabControl5);
+            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.pictureBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(856, 608);
+            this.MinimumSize = new System.Drawing.Size(856, 608);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "JungleFlasher 0.1.96 Beta";
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
+            this.Closed += new System.EventHandler(this.Form1_Closed);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.tabPage13.ResumeLayout(false);
+            this.tabPage13.PerformLayout();
+            this.tabControl5.ResumeLayout(false);
+            this.Firmtools.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.DVDKey32.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.Benq.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.Hitachi.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox18.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
     private unsafe Assembly method_0(object object_0, ResolveEventArgs resolveEventArgs_0)
@@ -4681,8 +5125,8 @@ namespace ns0
       }
       if (string.Compare(strA4, "1") != 0)
       {
-        ((Control) this.axWebBrowser_0).Width = deviceCaps1 * 160 / 96 + 4;
-        ((Control) this.axWebBrowser_0).Height = deviceCaps1 * 560 / 96 + 4;
+        //((Control) this.axWebBrowser_0).Width = deviceCaps1 * 160 / 96 + 4;
+        //((Control) this.axWebBrowser_0).Height = deviceCaps1 * 560 / 96 + 4;
         this.pictureBox3.Width = deviceCaps1 * 160 / 96;
         this.pictureBox3.Height = deviceCaps1 * 560 / 96;
         if (deviceCaps2 == 600)
@@ -5657,22 +6101,22 @@ namespace ns0
 
     private unsafe void method_11()
     {
-      int deviceCaps = _Module.GetDeviceCaps(_Module.CreateDCA((sbyte*) &_Module.struct22_2, (sbyte*) 0, (sbyte*) 0, (GStruct98*) 0), 88);
-      this.pictureBox3.Visible = false;
-      ((Control) this.axWebBrowser_0).Visible = true;
-      if (deviceCaps == 120)
-        this.axWebBrowser_0.Navigate("http://jungleflasher.net/flash/loader1.html");
-      else
-        this.axWebBrowser_0.Navigate("http://jungleflasher.net/flash/loader.html");
-      while (this.axWebBrowser_0.get_Busy())
-        Application.DoEvents();
+      //int deviceCaps = _Module.GetDeviceCaps(_Module.CreateDCA((sbyte*) &_Module.struct22_2, (sbyte*) 0, (sbyte*) 0, (GStruct98*) 0), 88);
+      //this.pictureBox3.Visible = false;
+      //((Control) this.axWebBrowser_0).Visible = true;
+      //if (deviceCaps == 120)
+      //  this.axWebBrowser_0.Navigate("http://jungleflasher.net/flash/loader1.html");
+      //else
+      //  this.axWebBrowser_0.Navigate("http://jungleflasher.net/flash/loader.html");
+      //while (this.axWebBrowser_0.get_Busy())
+      //  Application.DoEvents();
     }
 
     private void axWebBrowser_0_NavigateError(object object_0, DWebBrowserEvents2_NavigateErrorEvent dwebBrowserEvents2_NavigateErrorEvent_0)
     {
-      this.pictureBox3.Visible = true;
-      ((Control) this.axWebBrowser_0).Visible = false;
-      this.axWebBrowser_0.Stop();
+      //this.pictureBox3.Visible = true;
+      //((Control) this.axWebBrowser_0).Visible = false;
+      //this.axWebBrowser_0.Stop();
     }
 
     private void axWebBrowser_0_NavigateComplete2(object object_0, DWebBrowserEvents2_NavigateComplete2Event dwebBrowserEvents2_NavigateComplete2Event_0)
@@ -5681,11 +6125,11 @@ namespace ns0
 
     private void axWebBrowser_0_NewWindow3(object object_0, DWebBrowserEvents2_NewWindow3Event dwebBrowserEvents2_NewWindow3Event_0)
     {
-      string str = Convert.ToString((string) dwebBrowserEvents2_NewWindow3Event_0.bstrUrl);
-      if (string.Compare(str, "http://jungleflasher.net/flash/loader.html") == 0 || string.Compare(str, "http://jungleflasher.net/flash/loader1.html") == 0)
-        return;
-      dwebBrowserEvents2_NewWindow3Event_0.cancel = (__Null) 1;
-      Process.Start(str);
+      //string str = Convert.ToString((string) dwebBrowserEvents2_NewWindow3Event_0.bstrUrl);
+      //if (string.Compare(str, "http://jungleflasher.net/flash/loader.html") == 0 || string.Compare(str, "http://jungleflasher.net/flash/loader1.html") == 0)
+      //  return;
+      //dwebBrowserEvents2_NewWindow3Event_0.cancel = (__Null) 1;
+      //Process.Start(str);
     }
 
     private unsafe void pictureBox3_Click(object sender, EventArgs e)
@@ -5850,44 +6294,44 @@ namespace ns0
 
     private void button30_Click(object sender, EventArgs e)
     {
-      this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/support.html");
+      //this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/support.html");
     }
 
     private void button31_Click(object sender, EventArgs e)
     {
-      this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/leave.html");
+      //this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/leave.html");
     }
 
     private unsafe void method_20()
     {
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      if ((int) ^(byte&) ((IntPtr) &_Module.gstruct10_0 + 12) == 1)
-        this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/jf196u.html");
-      else
-        this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/jf196.html");
+      //if ((int) ^(byte&) ((IntPtr) &_Module.gstruct10_0 + 12) == 1)
+      //  this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/jf196u.html");
+      //else
+      //  this.axWebBrowser_1.Navigate("http://jungleflasher.net/chat/jf196.html");
     }
 
     private unsafe void axWebBrowser_1_NavigateError(object object_0, DWebBrowserEvents2_NavigateErrorEvent dwebBrowserEvents2_NavigateErrorEvent_0)
     {
-      string str = (string) null;
-      string s = Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]) + "\\Blank.html";
-      GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(s), (sbyte*) &_Module.struct18_2);
-      if ((IntPtr) pGstruct5_0 != IntPtr.Zero)
-      {
-        _Module.fputs((sbyte*) (void*) Marshal.StringToHGlobalAnsi(str + "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">" + "\r\n" + "<html xmlns=\"www.Jungleflasher.net\" xml:lang=\"en\">" + "\r\n" + (object) "   <body>" + "\r\n" + "      <div id=\"main\">" + (string) __arglist ("\r\n", "      </div>", "\r\n", "   </body>", "\r\n", "</html>", "\r\n")), pGstruct5_0);
-        _Module.fclose(pGstruct5_0);
-      }
-      this.axWebBrowser_1.Navigate(s);
+      //string str = (string) null;
+      //string s = Path.GetDirectoryName(Environment.GetCommandLineArgs()[0]) + "\\Blank.html";
+      //GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(s), (sbyte*) &_Module.struct18_2);
+      //if ((IntPtr) pGstruct5_0 != IntPtr.Zero)
+      //{
+      //  _Module.fputs((sbyte*) (void*) Marshal.StringToHGlobalAnsi(str + "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">" + "\r\n" + "<html xmlns=\"www.Jungleflasher.net\" xml:lang=\"en\">" + "\r\n" + (object) "   <body>" + "\r\n" + "      <div id=\"main\">" + (string) __arglist ("\r\n", "      </div>", "\r\n", "   </body>", "\r\n", "</html>", "\r\n")), pGstruct5_0);
+      //  _Module.fclose(pGstruct5_0);
+      //}
+      //this.axWebBrowser_1.Navigate(s);
     }
 
     private void axWebBrowser_1_NewWindow3(object object_0, DWebBrowserEvents2_NewWindow3Event dwebBrowserEvents2_NewWindow3Event_0)
     {
-      string str = Convert.ToString((string) dwebBrowserEvents2_NewWindow3Event_0.bstrUrl);
-      if (string.Compare(str, "http://jungleflasher.net/chat/jf196.html") == 0)
-        return;
-      dwebBrowserEvents2_NewWindow3Event_0.cancel = (__Null) 1;
-      Process.Start(str);
+      //string str = Convert.ToString((string) dwebBrowserEvents2_NewWindow3Event_0.bstrUrl);
+      //if (string.Compare(str, "http://jungleflasher.net/chat/jf196.html") == 0)
+      //  return;
+      //dwebBrowserEvents2_NewWindow3Event_0.cancel = (__Null) 1;
+      //Process.Start(str);
     }
 
     private int method_21()
@@ -12487,10 +12931,11 @@ label_14:
       _Module.sprintf((sbyte*) &struct68, (sbyte*) &_Module.struct19_0, __arglist ());
       for (int index = 0; index < 16; ++index)
       {
-        // ISSUE: explicit reference operation
-        // ISSUE: cast to a reference type
-        // ISSUE: explicit reference operation
-        _Module.sprintf((sbyte*) &struct68, (sbyte*) &_Module.struct10_20, __arglist (out struct68, (int) *(byte*) (^(int&) @_Module.struct123_0 + 280 + index)));
+                // ISSUE: explicit reference operation
+                // ISSUE: cast to a reference type
+                // ISSUE: explicit reference operation
+                // _Module.sprintf((sbyte*) &struct68, (sbyte*) &_Module.struct10_20, __arglist (out struct68, (int) *(byte*) (^(int&) @_Module.struct123_0 + 280 + index)));
+                _Module.sprintf((sbyte*)(&@struct68), (sbyte*)(&_Module.struct10_20), ref @struct, *(_Module.struct123_0 + 280 + index));
       }
       this.textBox9.Text = str2 + new string((sbyte*) &struct68);
       this.textBox3.Text = this.textBox9.Text;
@@ -18512,7 +18957,8 @@ label_48:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if ((int) ^(ushort&) @gstruct3 == 0)
+        //if ((int) ^(ushort&) @gstruct3 == 0)
+        if(gstruct3 == null)
         {
           this.method_424((byte) 9);
         }
@@ -18631,7 +19077,8 @@ label_48:
           // ISSUE: explicit reference operation
           // ISSUE: cast to a reference type
           // ISSUE: explicit reference operation
-          if ((int) ^(ushort&) @gstruct3 == 0)
+          //if ((int) ^(ushort&) @gstruct3 == 0)
+          if(gstruct3 == null)                
           {
             this.method_424((byte) 10);
           }
@@ -27042,7 +27489,8 @@ label_48:
         // ISSUE: explicit reference operation
         // ISSUE: cast to a reference type
         // ISSUE: explicit reference operation
-        if ((int) ^(ushort&) @gstruct3 == 0)
+        //if ((int) ^(ushort&) @gstruct3 == 0)
+        if(gstruct3 == null)
         {
           this.method_424((byte) 9);
         }
@@ -42234,7 +42682,7 @@ label_140:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      switch (^(byte&) @struct104)
+      switch (struct104)
       {
         case (byte) 140:
           this.button42.Text = new string((sbyte*) &_Module.struct35_130);
@@ -42271,7 +42719,7 @@ label_140:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      switch (^(byte&) @struct104)
+      switch (struct104)
       {
         case (byte) 140:
           this.button42.Text = new string((sbyte*) &_Module.struct35_130);
@@ -42308,7 +42756,7 @@ label_140:
       // ISSUE: explicit reference operation
       // ISSUE: cast to a reference type
       // ISSUE: explicit reference operation
-      switch (^(byte&) @struct104)
+      switch (struct104)
       {
         case (byte) 140:
           this.button42.Text = new string((sbyte*) &_Module.struct35_130);

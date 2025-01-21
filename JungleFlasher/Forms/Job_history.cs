@@ -33,33 +33,32 @@ namespace ns0
 
     private void InitializeComponent()
     {
-      ResourceManager resourceManager = new ResourceManager(typeof (Job_history));
-      this.listBox1 = new ListBox();
-      this.SuspendLayout();
-      Point point = new Point();
-      point = new Point(16, 16);
-      this.listBox1.Location = point;
-      this.listBox1.Name = "listBox1";
-      Size size1 = new Size();
-      size1 = new Size(264, 173);
-      this.listBox1.Size = size1;
-      this.listBox1.TabIndex = 0;
-      Size size2 = new Size();
-      size2 = new Size(5, 13);
-      this.AutoScaleBaseSize = size2;
-      Size size3 = new Size();
-      size3 = new Size(298, 216);
-      this.ClientSize = size3;
-      this.Controls.Add((Control) this.listBox1);
-      this.FormBorderStyle = FormBorderStyle.FixedSingle;
-      this.Icon = (Icon) resourceManager.GetObject("$this.Icon");
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "Job_history";
-      this.StartPosition = FormStartPosition.CenterParent;
-      this.Text = "Job History";
-      this.Load += new EventHandler(this.Job_history_Load);
-      this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Job_history));
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // listBox1
+            // 
+            this.listBox1.Location = new System.Drawing.Point(16, 16);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(264, 173);
+            this.listBox1.TabIndex = 0;
+            // 
+            // Job_history
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(298, 216);
+            this.Controls.Add(this.listBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Job_history";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Job History";
+            this.Load += new System.EventHandler(this.Job_history_Load);
+            this.ResumeLayout(false);
+
     }
 
     private unsafe void Job_history_Load(object sender, EventArgs e)
@@ -67,8 +66,8 @@ namespace ns0
       int num = 1;
       string str = Convert.ToString(this.int_0);
       RegistryKey subKey = Registry.CurrentUser.CreateSubKey("JF_KeyDB\\" + str);
-      if (subKey.GetValue(new string((sbyte*) &\u003CModule\u003E.struct22_0)) != null)
-        this.listBox1.Items.Add((object) ("Created" + "\t\t" + subKey.GetValue(new string((sbyte*) &\u003CModule\u003E.struct22_0)).ToString()));
+      if (subKey.GetValue(new string((sbyte*) &_Module.struct22_0)) != null)
+        this.listBox1.Items.Add((object) ("Created" + "\t\t" + subKey.GetValue(new string((sbyte*) &_Module.struct22_0)).ToString()));
       for (; subKey.GetValue("Date" + Convert.ToString(num)) != null; ++num)
         this.listBox1.Items.Add((object) (Convert.ToString(num) + "\t\t" + subKey.GetValue("Date" + Convert.ToString(num)).ToString()));
       if (string.Compare(subKey.GetValue("Date" + Convert.ToString(num - 1)) == null ? "" : subKey.GetValue("Date" + Convert.ToString(num - 1)).ToString(), subKey.GetValue("Updated") == null ? "x" : subKey.GetValue("Updated").ToString()) == 0)

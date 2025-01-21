@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,99 +117,116 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System" name="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBox2.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="groupBox3.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.SnapToGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox2.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="$this.TrayLargeIcon" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button1.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAABAAIAEBAQAAAAAAAoAQAAJgAAACAgEAAAAAAA6AIAAE4BAAAoAAAAEAAAACAAAAABAAQAAAAAAIAA
-        AAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/
-        AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAADwD/AA//Dw8P8PDwAP/w8AAPAA/w8AAPD/AAAA8P
-        //APAA8A/wAPDw8P8P8AD/DwAA8AAA8P8A8P/w/w////8A/wD//w//APAPDw/wD/D/AADwD/Dw8A/w//
-        /wDwAP/wD/AAD/8P8P8PDw//DwD/8A8PDw8PDw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAA
-        AAAAAAAAEAAAABAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD/
-        /wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAA//8AAAD/
-        //8A/wD/AP8AAP//AAAA////AP8A/wD//wD/AP8AAAD///8A/wAA//8A/wD/AAAA////AP8AAAAA/wAA
-        AP//AP8AAAAA/wAAAP8AAAD//wD/AAAAAP8A//8AAAAAAAD/AP//AAAAAP//AAAAAAAA/wD//wAAAAD/
-        AAAA/wAA//8AAA//AP8A/wAAAP8AAP//AAAA/wD/AP8A//8A//8AAAD//wD/AAD/AP//AP//AAAA//8A
-        /wAAAAD/AAAAAAD/AP//AAD/AAAA/wAAAAAA/wD//wAA/wD///8A//8A/////////wAA////AP//AP//
-        //////8AAP//AAD/////AP///wAA/wD//wAA/////wD///8AAP8AAP8A/wD//wAA//8A//8AAAD/AP8A
-        //8AAP//AP//AAAAAP8AAP//AP8A/wAA//8AAAD/AAD//wD/AP8AAP//AP//////AAD/AAAA////AAD/
-        /////wAA/wAAAP///wAA//8AAAAA////AP//AP//AP//AAAAAP///wD//wD//wD/AP8A////AP8AAP//
-        /wAA/wD/AP///wD/AAD///8AAP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8AAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABMklEQVRYR82Oi2rDQBAD8/8/nZ5pRXVT
+        yWtDSTIguNXD+LF4HhJvuP/9g3fvewPS+vSJdfbidJPWp0+sk4tWiGq0/MQ/HzQ1Wn7in3+QqM8dfalh
+        nfMiseG2oy81rLMPJNF8Qb/d9MXy9oIkmi/ot5u+WF4uTLeQP+XENr/jQ2K6hfwpJ7YZCzEnU8+/5b31
+        zkP5LSdTz7/lvfW+NiTTbkL7pQ/5AUqkLEnwFt71fL33QBIpSxK8hXc9X+97HyDyKULfujkgk08R+tat
+        wSbRfMFcEuHOBUo0XzBnh956/y0dyL8qwVt4F/p+ECtckuAtvAtF82fWh4S+d5PEeo+FKELfu0livXdD
+        hGK8qQZz2+Qh/XZTDea2qcHmC+ZSg3m4c4G+YC41mId7/9AbFM0X6fH8AtA5dgnKdtApAAAAAElFTkSu
+        QmCC
 </value>
   </data>
-  <data name="toolTip1.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="$this.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="$this.DrawGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox5.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="groupBox2.DrawGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox3.GridSize" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="button1.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox4.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pictureBox1.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="button2.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="groupBox3.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pictureBox3.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox4.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="groupBox1.GridSize" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="groupBox4.DrawGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox1.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="textBox2.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
+  <metadata name="toolTip_0.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk02FQAAAAAAADYAAAAoAAAAKgAAACoAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAA////////
+        ////////AAAAAAAA////////AAAAAAAA////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAA
+        AAD///////////////8AAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAAAAAAAAAD/////
+        //8AAAAAAAAAAAAAAAAAAP///////////////////////////////////////wAAAAAAAP//////////
+        /////////////wAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAP///////wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////AAAAAAAA
+        ////////////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////AAAAAAAAAAAAAAAA
+        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD/////
+        //8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAD///////8AAAAA
+        AAAAAAAAAAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAP//
+        /////wAAAAAAAAAAAAAAAAAAAAAAAP///////////////wAAAAAAAAAAAAAAAAAA////////AAAAAAAA
+        AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAA////////
+        ////////////////AAAAAAAA////////////////AAAAAAAAAAAAAAAA////////AAAAAAAAAAD/////
+        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAD///////8AAAAA
+        AAD///////////////////////8AAAAAAAD///////////////8AAAAAAAAAAAAAAAD///////8AAAAA
+        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAA
+        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAA////////AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA
+        ////////AAAAAAAAAAAAAAAAAAD///////////////////////////////////////8AAAAAAAD/////
+        //////////////////8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD///////////////////////8AAAAAAAAAAP///////////////////////////////////////wAA
+        AAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAA
+        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAAAAAAAAAD/////////////
+        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAD///////8AAP//////////////////
+        /////////////////////////////////////////////wAAAAAAAP///////////////wAAAAAAAP//
+        /////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP///////wAA////////
+        ////////////////////////////////////////////////////////AAAAAAAA////////////////
+        AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAA////////
+        AAD///////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////
+        //8AAAAAAAD///////8AAAAAAAAAAAAAAAD///////////////8AAAAAAAD///////8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
+        /////////////wAAAAAAAP///////wAAAAAAAAAAAAAAAP///////////////wAAAAAAAP///////wAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAA////////////////////////
+        ////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAAAAAAAAAA////////
+        ////////////////////////AAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAD/////////////
+        //////////////////8AAAAAAAD///////8AAAAAAAD///////////////////////8AAAAAAAAAAAAA
+        AAD///////////////////////////////8AAAAAAAAAAP///////wAAAAAAAAAAAAAAAP//////////
+        /////////////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP///////wAA
+        AAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAAAA////////AAAAAAAAAAAAAAAA
+        ////////////////////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAA
+        ////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAAAAD///////8AAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////
+        //////////8AAAAAAAD///////8AAAAAAAD///////////////////////8AAAAAAAD///////8AAP//
+        /////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////////////////
+        /////////////////////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP//
+        /////wAAAAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////////////
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////AAAAAAAA////////////////
+        AAAAAAAA////////AAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD/////
+        //////////8AAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////8AAAAAAAD/////
+        //////////8AAAAAAAD///////8AAP//////////////////////////////////////////////////
+        /////////////////////////////////////wAAAAAAAAAAAAAAAP//////////////////////////
+        /////////////////////////////////////wAA////////////////////////////////////////
+        ////////////////////////////////////////////////AAAAAAAAAAAAAAAA////////////////
+        ////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD/////
+        //8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAA
+        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ////////////////////////////////////////AAAAAAAA////////////////////////////////
+        ////////AAAAAAAA////////AAAAAAAA////////////////////////////////////////AAAAAAAA
+        AAAAAAAAAAD///////////////////////////////////////8AAAAAAAD/////////////////////
+        //////////////////8AAAAAAAD///////8AAAAAAAD/////////////////////////////////////
+        //8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAA
+        AAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAP///////wAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAA
+        ////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA
+        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD/////
+        //8AAAAAAAD///////////////////////////////////////8AAAAAAAD///////8AAAAAAAD/////
+        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAP///////wAAAAAAAP///////////////////////////////////////wAAAAAAAP///////wAA
+        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA////////AAAAAAAA
+        AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAAAAAAAAAA
+        ////////AAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAD/////
+        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAD///////8AAAAA
+        AAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAA
+        AAAAAP///////////////////////////////////////wAAAAAAAP///////wAAAAAAAAAAAAAAAP//
+        /////wAAAAAAAP///////////////wAAAAAAAP///////////////////////////////////////wAA
+        AAAAAAAAAAAAAAAA////////////////////////////////////////AAAAAAAA////////AAAAAAAA
+        AAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////////////////////////////
+        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////
+        //////////////////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAP///////////////////////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
   </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -735,192 +752,5 @@
         ////////////////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
 </value>
-  </data>
-  <data name="groupBox3.SnapToGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox2.GridSize" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
-    <value />
-  </data>
-  <data name="groupBox1.DrawGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="toolTip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 17</value>
-  </data>
-  <data name="groupBox4.SnapToGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="pictureBox2.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="$this.GridSize" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="textBox5.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pictureBox1.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBox3.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="pictureBox3.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="pictureBox2.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="groupBox3.DrawGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        Qk02FQAAAAAAADYAAAAoAAAAKgAAACoAAAABABgAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAA////////
-        ////////AAAAAAAA////////AAAAAAAA////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAA
-        AAD///////////////8AAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAAAAAAAAAD/////
-        //8AAAAAAAAAAAAAAAAAAP///////////////////////////////////////wAAAAAAAP//////////
-        /////////////wAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAP///////wAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////AAAAAAAA
-        ////////////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA////////AAAAAAAAAAAAAAAA
-        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD/////
-        //8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAD///////8AAAAA
-        AAAAAAAAAAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAP//
-        /////wAAAAAAAAAAAAAAAAAAAAAAAP///////////////wAAAAAAAAAAAAAAAAAA////////AAAAAAAA
-        AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAA////////
-        ////////////////AAAAAAAA////////////////AAAAAAAAAAAAAAAA////////AAAAAAAAAAD/////
-        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAD///////8AAAAA
-        AAD///////////////////////8AAAAAAAD///////////////8AAAAAAAAAAAAAAAD///////8AAAAA
-        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAA
-        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAA////////AAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////AAAAAAAAAAAAAAAA////////AAAAAAAA
-        ////////AAAAAAAAAAAAAAAAAAD///////////////////////////////////////8AAAAAAAD/////
-        //////////////////8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAD///////////////////////8AAAAAAAAAAP///////////////////////////////////////wAA
-        AAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAA
-        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAAAAAAAAAD/////////////
-        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAD///////8AAP//////////////////
-        /////////////////////////////////////////////wAAAAAAAP///////////////wAAAAAAAP//
-        /////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP///////wAA////////
-        ////////////////////////////////////////////////////////AAAAAAAA////////////////
-        AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAA////////
-        AAD///////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////
-        //8AAAAAAAD///////8AAAAAAAAAAAAAAAD///////////////8AAAAAAAD///////8AAAAAAAAAAAAA
-        AAAAAAAAAAAAAP///////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//
-        /////////////wAAAAAAAP///////wAAAAAAAAAAAAAAAP///////////////wAAAAAAAP///////wAA
-        AAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAAAAAAAAAAAAAA////////////////////////
-        ////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAAAAAAAAAA////////
-        ////////////////////////AAAAAAAAAAD///////////////8AAAAAAAAAAAAAAAD/////////////
-        //////////////////8AAAAAAAD///////8AAAAAAAD///////////////////////8AAAAAAAAAAAAA
-        AAD///////////////////////////////8AAAAAAAAAAP///////wAAAAAAAAAAAAAAAP//////////
-        /////////////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP///////wAA
-        AAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAAAA////////AAAAAAAAAAAAAAAA
-        ////////////////////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAA
-        ////////AAAAAAAA////////AAAAAAAA////////////////////////AAAAAAAAAAD///////8AAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////
-        //////////8AAAAAAAD///////8AAAAAAAD///////////////////////8AAAAAAAD///////8AAP//
-        /////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////////////////
-        /////////////////////wAAAAAAAP///////wAAAAAAAP///////////////////////wAAAAAAAP//
-        /////wAAAAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////////////
-        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////AAAAAAAA////////////////
-        AAAAAAAA////////AAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD/////
-        //////////8AAAAAAAAAAAAAAAAAAAAAAAD///////////////////////////////8AAAAAAAD/////
-        //////////8AAAAAAAD///////8AAP//////////////////////////////////////////////////
-        /////////////////////////////////////wAAAAAAAAAAAAAAAP//////////////////////////
-        /////////////////////////////////////wAA////////////////////////////////////////
-        ////////////////////////////////////////////////AAAAAAAAAAAAAAAA////////////////
-        ////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAD/////
-        //8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAA
-        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        ////////////////////////////////////////AAAAAAAA////////////////////////////////
-        ////////AAAAAAAA////////AAAAAAAA////////////////////////////////////////AAAAAAAA
-        AAAAAAAAAAD///////////////////////////////////////8AAAAAAAD/////////////////////
-        //////////////////8AAAAAAAD///////8AAAAAAAD/////////////////////////////////////
-        //8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAP///////wAA
-        AAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAP///////wAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAA
-        ////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA////////AAAAAAAA
-        AAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD/////
-        //8AAAAAAAD///////////////////////////////////////8AAAAAAAD///////8AAAAAAAD/////
-        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAP///////wAAAAAAAP///////////////////////////////////////wAAAAAAAP///////wAA
-        AAAAAP///////wAAAAAAAAAAAAAAAAAAAAAAAP///////wAAAAAAAAAAAAAAAAAA////////AAAAAAAA
-        AAAAAAAAAAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAAAAAAAAAAAAAA
-        ////////AAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAD/////
-        //8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAD///////////////8AAAAAAAD///////8AAAAA
-        AAAAAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAD///////8AAAAAAAAAAAAA
-        AAAAAP///////////////////////////////////////wAAAAAAAP///////wAAAAAAAAAAAAAAAP//
-        /////wAAAAAAAP///////////////wAAAAAAAP///////////////////////////////////////wAA
-        AAAAAAAAAAAAAAAA////////////////////////////////////////AAAAAAAA////////AAAAAAAA
-        AAAAAAAA////////AAAAAAAA////////////////AAAAAAAA////////////////////////////////
-        ////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////
-        //////////////////8AAAAAAAD///////8AAAAAAAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAP///////////////////////wAAAAAAAP///////wAAAAAAAP///////wAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-</value>
-  </data>
-  <data name="groupBox1.SnapToGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox4.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="button2.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBox3.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="textBox2.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBox4.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="textBox1.Modifiers" type="System.CodeDom.MemberAttributes, System">
-    <value>Private</value>
-  </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAARpJREFUWEfNl40O
-        gyAMhOH9H5otGI1gy3fF3yUL0U24u7bXmlNK5f9NpdQl5Zzr+tR1PWs5b/m8cB0DsCEFwD0R77mwArcD
-        6EOxMunXHogXQuF+G4LPACCGXrJGlTrkgHewpwwpJhBZQuAhJ0Zq2XpVsSnwGQCqIVFIhOxfVW/lfw3A
-        wKkaq6akot+NnNF8QK2OywCoMSRgAiBbgccBqGVIvWFQ743X7AjGjOg2ALOSEyAqa5wHVGCzlu0CUHOC
-        /EPoFfZIdiWAPchpI/JiTQypXbvzAB1ICqmhCbdjqnOBcf8aMOcDHsNpAOqGdAB5v/H8uBsKRmJarEoI
-        fUBNpijzQy+IjljkfKQcNqNoGZ74v10FJzY0x3xvvx9O1j9W7RppLAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="textBox1.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox4.GridSize" type="System.Drawing.Size, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="groupBox1.Locked" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="groupBox2.SnapToGrid" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
 </root>

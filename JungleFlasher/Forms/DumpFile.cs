@@ -57,213 +57,194 @@ namespace ns0
 
     private void InitializeComponent()
     {
-      ResourceManager resourceManager = new ResourceManager(typeof (DumpFile));
-      this.textBox5 = new TextBox();
-      this.button5 = new Button();
-      this.button4 = new Button();
-      this.textBox8 = new TextBox();
-      this.button7 = new Button();
-      this.textBox1 = new TextBox();
-      this.button1 = new Button();
-      this.button3 = new Button();
-      this.label15 = new Label();
-      this.label1 = new Label();
-      this.label2 = new Label();
-      this.button2 = new Button();
-      this.textBox2 = new TextBox();
-      this.label3 = new Label();
-      this.SuspendLayout();
-      Point point1 = new Point();
-      point1 = new Point(64, 72);
-      this.textBox5.Location = point1;
-      this.textBox5.Name = "textBox5";
-      this.textBox5.ReadOnly = true;
-      Size size1 = new Size();
-      size1 = new Size(424, 20);
-      this.textBox5.Size = size1;
-      this.textBox5.TabIndex = 23;
-      this.textBox5.Text = "";
-      this.textBox5.TextChanged += new EventHandler(this.textBox5_TextChanged);
-      this.button5.FlatStyle = FlatStyle.System;
-      Point point2 = new Point();
-      point2 = new Point(16, 72);
-      this.button5.Location = point2;
-      this.button5.Name = "button5";
-      Size size2 = new Size();
-      size2 = new Size(36, 20);
-      this.button5.Size = size2;
-      this.button5.TabIndex = 24;
-      this.button5.Text = "...";
-      this.button5.Click += new EventHandler(this.button5_Click);
-      this.button4.FlatStyle = FlatStyle.System;
-      Point point3 = new Point();
-      point3 = new Point(16, 24);
-      this.button4.Location = point3;
-      this.button4.Name = "button4";
-      Size size3 = new Size();
-      size3 = new Size(36, 20);
-      this.button4.Size = size3;
-      this.button4.TabIndex = 25;
-      this.button4.Text = "...";
-      this.button4.Click += new EventHandler(this.button4_Click);
-      Point point4 = new Point();
-      point4 = new Point(64, 24);
-      this.textBox8.Location = point4;
-      this.textBox8.Name = "textBox8";
-      this.textBox8.ReadOnly = true;
-      Size size4 = new Size();
-      size4 = new Size(424, 20);
-      this.textBox8.Size = size4;
-      this.textBox8.TabIndex = 26;
-      this.textBox8.Text = "";
-      this.textBox8.TextChanged += new EventHandler(this.textBox8_TextChanged);
-      this.button7.FlatStyle = FlatStyle.System;
-      Point point5 = new Point();
-      point5 = new Point(16, 120);
-      this.button7.Location = point5;
-      this.button7.Name = "button7";
-      Size size5 = new Size();
-      size5 = new Size(36, 20);
-      this.button7.Size = size5;
-      this.button7.TabIndex = 27;
-      this.button7.Text = "...";
-      this.button7.Click += new EventHandler(this.button7_Click);
-      Point point6 = new Point();
-      point6 = new Point(64, 120);
-      this.textBox1.Location = point6;
-      this.textBox1.Name = "textBox1";
-      this.textBox1.ReadOnly = true;
-      Size size6 = new Size();
-      size6 = new Size(424, 20);
-      this.textBox1.Size = size6;
-      this.textBox1.TabIndex = 28;
-      this.textBox1.Text = "";
-      this.textBox1.TextChanged += new EventHandler(this.textBox1_TextChanged);
-      this.button1.DialogResult = DialogResult.OK;
-      this.button1.Enabled = false;
-      this.button1.FlatStyle = FlatStyle.System;
-      Point point7 = new Point();
-      point7 = new Point(288, 200);
-      this.button1.Location = point7;
-      this.button1.Name = "button1";
-      Size size7 = new Size();
-      size7 = new Size(80, 24);
-      this.button1.Size = size7;
-      this.button1.TabIndex = 30;
-      this.button1.Text = "OK";
-      this.button1.Click += new EventHandler(this.button1_Click);
-      this.button3.DialogResult = DialogResult.Cancel;
-      this.button3.FlatStyle = FlatStyle.System;
-      Point point8 = new Point();
-      point8 = new Point(136, 200);
-      this.button3.Location = point8;
-      this.button3.Name = "button3";
-      Size size8 = new Size();
-      size8 = new Size(80, 24);
-      this.button3.Size = size8;
-      this.button3.TabIndex = 32;
-      this.button3.Text = "Cancel";
-      Point point9 = new Point();
-      point9 = new Point(64, 8);
-      this.label15.Location = point9;
-      this.label15.Name = "label15";
-      Size size9 = new Size();
-      size9 = new Size(88, 16);
-      this.label15.Size = size9;
-      this.label15.TabIndex = 33;
-      this.label15.Text = "Key.bin";
-      Point point10 = new Point();
-      point10 = new Point(64, 56);
-      this.label1.Location = point10;
-      this.label1.Name = "label1";
-      Size size10 = new Size();
-      size10 = new Size(88, 16);
-      this.label1.Size = size10;
-      this.label1.TabIndex = 34;
-      this.label1.Text = "Inquiry.bin";
-      Point point11 = new Point();
-      point11 = new Point(64, 104);
-      this.label2.Location = point11;
-      this.label2.Name = "label2";
-      Size size11 = new Size();
-      size11 = new Size(88, 16);
-      this.label2.Size = size11;
-      this.label2.TabIndex = 35;
-      this.label2.Text = "Identify.bin";
-      this.button2.FlatStyle = FlatStyle.System;
-      Point point12 = new Point();
-      point12 = new Point(16, 168);
-      this.button2.Location = point12;
-      this.button2.Name = "button2";
-      Size size12 = new Size();
-      size12 = new Size(36, 20);
-      this.button2.Size = size12;
-      this.button2.TabIndex = 36;
-      this.button2.Text = "...";
-      this.button2.Click += new EventHandler(this.button2_Click);
-      Point point13 = new Point();
-      point13 = new Point(64, 168);
-      this.textBox2.Location = point13;
-      this.textBox2.Name = "textBox2";
-      this.textBox2.ReadOnly = true;
-      Size size13 = new Size();
-      size13 = new Size(424, 20);
-      this.textBox2.Size = size13;
-      this.textBox2.TabIndex = 37;
-      this.textBox2.Text = "";
-      Point point14 = new Point();
-      point14 = new Point(64, 152);
-      this.label3.Location = point14;
-      this.label3.Name = "label3";
-      Size size14 = new Size();
-      size14 = new Size(88, 16);
-      this.label3.Size = size14;
-      this.label3.TabIndex = 38;
-      this.label3.Text = "Serial.bin";
-      Size size15 = new Size();
-      size15 = new Size(5, 13);
-      this.AutoScaleBaseSize = size15;
-      Size size16 = new Size();
-      size16 = new Size(506, 240);
-      this.ClientSize = size16;
-      this.ControlBox = false;
-      this.Controls.Add((Control) this.label3);
-      this.Controls.Add((Control) this.textBox2);
-      this.Controls.Add((Control) this.button2);
-      this.Controls.Add((Control) this.label2);
-      this.Controls.Add((Control) this.label1);
-      this.Controls.Add((Control) this.label15);
-      this.Controls.Add((Control) this.button3);
-      this.Controls.Add((Control) this.button1);
-      this.Controls.Add((Control) this.textBox1);
-      this.Controls.Add((Control) this.textBox8);
-      this.Controls.Add((Control) this.textBox5);
-      this.Controls.Add((Control) this.button7);
-      this.Controls.Add((Control) this.button4);
-      this.Controls.Add((Control) this.button5);
-      this.FormBorderStyle = FormBorderStyle.FixedSingle;
-      this.Icon = (Icon) resourceManager.GetObject("$this.Icon");
-      Point point15 = new Point();
-      point15 = new Point(150, 150);
-      this.Location = point15;
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "DumpFile";
-      this.ShowInTaskbar = false;
-      this.StartPosition = FormStartPosition.CenterParent;
-      this.Text = "Load DVDKey Extracts";
-      this.Load += new EventHandler(this.DumpFile_Load);
-      this.Closed += new EventHandler(this.DumpFile_Closed);
-      this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DumpFile));
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(64, 72);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(424, 20);
+            this.textBox5.TabIndex = 23;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button5.Location = new System.Drawing.Point(16, 72);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(36, 20);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "...";
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button4.Location = new System.Drawing.Point(16, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(36, 20);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "...";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(64, 24);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(424, 20);
+            this.textBox8.TabIndex = 26;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button7.Location = new System.Drawing.Point(16, 120);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(36, 20);
+            this.button7.TabIndex = 27;
+            this.button7.Text = "...";
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(64, 120);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(424, 20);
+            this.textBox1.TabIndex = 28;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Enabled = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(288, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 24);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "OK";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button3.Location = new System.Drawing.Point(136, 200);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 24);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "Cancel";
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(64, 8);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 16);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Key.bin";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(64, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 16);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Inquiry.bin";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(64, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 16);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Identify.bin";
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(16, 168);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 20);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "...";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(64, 168);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(424, 20);
+            this.textBox2.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(64, 152);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 16);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Serial.bin";
+            // 
+            // DumpFile
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(506, 240);
+            this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(150, 150);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DumpFile";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Load DVDKey Extracts";
+            this.Closed += new System.EventHandler(this.DumpFile_Closed);
+            this.Load += new System.EventHandler(this.DumpFile_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
     private unsafe void DumpFile_Load(object sender, EventArgs e)
     {
-      string text = "You are about to generate a Dummy.bin from previously     " + "\n" + "dumped files. This is intended for Legacy support only " + "\n" + "and creating a Dummy.bin in this way will mean " + "\n" + "certain drive specific info will be missing!" + "\n" + "Only use this method if the drive is no longer available." + "\n\n" + "If possible you should re-extract your drive info with the" + "\n" + "latest tools.." + new string((sbyte*) &\u003CModule\u003E.struct6_7) + "        1. JungleFlasher, this tool - DVDKey32 Tab" + "\n" + "        2. Dosflash 1.7+" + "\n" + "        3. DVDKey32 0.7+" + "\n" + "Do you wish to proceed anyway ?" + "\n";
+      string text = "You are about to generate a Dummy.bin from previously     " + "\n" + "dumped files. This is intended for Legacy support only " + "\n" + "and creating a Dummy.bin in this way will mean " + "\n" + "certain drive specific info will be missing!" + "\n" + "Only use this method if the drive is no longer available." + "\n\n" + "If possible you should re-extract your drive info with the" + "\n" + "latest tools.." + new string((sbyte*) &_Module.struct6_7) + "        1. JungleFlasher, this tool - DVDKey32 Tab" + "\n" + "        2. Dosflash 1.7+" + "\n" + "        3. DVDKey32 0.7+" + "\n" + "Do you wish to proceed anyway ?" + "\n";
       // ISSUE: cast to a function pointer type
-      \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+      _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
       int num = (int) MessageBox.Show(text, "Load from dump files", MessageBoxButtons.YesNo, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button2);
-      \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
+      _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
       if (num == 7)
         this.Close();
       this.bool_0 = false;
@@ -286,42 +267,42 @@ namespace ns0
         openFileDialog.InitialDirectory = this.string_1;
       if (openFileDialog.ShowDialog() != DialogResult.OK)
         return;
-      GStruct5* pGstruct5_0 = \u003CModule\u003E.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &\u003CModule\u003E.struct18_4);
+      GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &_Module.struct18_4);
       if ((IntPtr) pGstruct5_0 == IntPtr.Zero)
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+        _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
         int num = (int) MessageBox.Show(openFileDialog.FileName.ToString(), "Can't open file", MessageBoxButtons.OK);
-        \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-        this.textBox8.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+        _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+        this.textBox8.Text = new string((sbyte*) &_Module.struct19_0);
         this.bool_0 = false;
       }
       else
       {
-        \u003CModule\u003E.fseek(pGstruct5_0, 0, 2);
-        int num1 = \u003CModule\u003E.ftell(pGstruct5_0);
-        \u003CModule\u003E.rewind(pGstruct5_0);
+        _Module.fseek(pGstruct5_0, 0, 2);
+        int num1 = _Module.ftell(pGstruct5_0);
+        _Module.rewind(pGstruct5_0);
         if (num1 != 16)
         {
           // ISSUE: cast to a function pointer type
-          \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+          _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
           int num2 = (int) MessageBox.Show("Key file should be 16 bytes", "Loading File", MessageBoxButtons.OK);
-          \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-          \u003CModule\u003E.fclose(pGstruct5_0);
-          this.textBox8.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+          _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+          _Module.fclose(pGstruct5_0);
+          this.textBox8.Text = new string((sbyte*) &_Module.struct19_0);
           this.bool_0 = false;
         }
         else
         {
           Struct28 struct28;
-          if ((int) \u003CModule\u003E.fread((void*) &struct28, 16U, 1U, pGstruct5_0) != 1)
+          if ((int) _Module.fread((void*) &struct28, 16U, 1U, pGstruct5_0) != 1)
           {
             // ISSUE: cast to a function pointer type
-            \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+            _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
             int num2 = (int) MessageBox.Show("Key file should be 16 bytes", "Loading File", MessageBoxButtons.OK);
-            \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-            \u003CModule\u003E.fclose(pGstruct5_0);
-            this.textBox8.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+            _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+            _Module.fclose(pGstruct5_0);
+            this.textBox8.Text = new string((sbyte*) &_Module.struct19_0);
             this.bool_0 = false;
           }
           else
@@ -329,9 +310,9 @@ namespace ns0
             this.bool_0 = true;
             this.textBox8.Text = openFileDialog.FileName;
             if ((IntPtr) this.pByte_2 == IntPtr.Zero)
-              this.pByte_2 = (byte*) \u003CModule\u003E.malloc(16U);
-            \u003CModule\u003E.memcpy((void*) this.pByte_2, (void*) &struct28, 16U);
-            \u003CModule\u003E.fclose(pGstruct5_0);
+              this.pByte_2 = (byte*) _Module.malloc(16U);
+            _Module.memcpy((void*) this.pByte_2, (void*) &struct28, 16U);
+            _Module.fclose(pGstruct5_0);
           }
         }
       }
@@ -351,42 +332,42 @@ namespace ns0
         openFileDialog.InitialDirectory = this.string_1;
       if (openFileDialog.ShowDialog() != DialogResult.OK)
         return;
-      GStruct5* pGstruct5_0 = \u003CModule\u003E.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &\u003CModule\u003E.struct18_4);
+      GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &_Module.struct18_4);
       if ((IntPtr) pGstruct5_0 == IntPtr.Zero)
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+        _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
         int num = (int) MessageBox.Show(openFileDialog.FileName.ToString(), "Can't open file", MessageBoxButtons.OK);
-        \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-        this.textBox5.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+        _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+        this.textBox5.Text = new string((sbyte*) &_Module.struct19_0);
         this.bool_1 = false;
       }
       else
       {
-        \u003CModule\u003E.fseek(pGstruct5_0, 0, 2);
-        int num1 = \u003CModule\u003E.ftell(pGstruct5_0);
-        \u003CModule\u003E.rewind(pGstruct5_0);
+        _Module.fseek(pGstruct5_0, 0, 2);
+        int num1 = _Module.ftell(pGstruct5_0);
+        _Module.rewind(pGstruct5_0);
         if (num1 != 96)
         {
           // ISSUE: cast to a function pointer type
-          \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+          _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
           int num2 = (int) MessageBox.Show((IWin32Window) this, "Inquiry file should be 96 bytes", "Loading File", MessageBoxButtons.OK);
-          \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-          \u003CModule\u003E.fclose(pGstruct5_0);
-          this.textBox5.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+          _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+          _Module.fclose(pGstruct5_0);
+          this.textBox5.Text = new string((sbyte*) &_Module.struct19_0);
           this.bool_1 = false;
         }
         else
         {
           Struct29 struct29;
-          if ((int) \u003CModule\u003E.fread((void*) &struct29, 96U, 1U, pGstruct5_0) != 1)
+          if ((int) _Module.fread((void*) &struct29, 96U, 1U, pGstruct5_0) != 1)
           {
             // ISSUE: cast to a function pointer type
-            \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+            _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
             int num2 = (int) MessageBox.Show("Inquiry file should be 96 bytes", "Loading File", MessageBoxButtons.OK);
-            \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-            \u003CModule\u003E.fclose(pGstruct5_0);
-            this.textBox5.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+            _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+            _Module.fclose(pGstruct5_0);
+            this.textBox5.Text = new string((sbyte*) &_Module.struct19_0);
             this.bool_1 = false;
           }
           else
@@ -409,18 +390,18 @@ namespace ns0
               this.bool_1 = true;
               this.textBox5.Text = openFileDialog.FileName;
               if ((IntPtr) this.pByte_1 == IntPtr.Zero)
-                this.pByte_1 = (byte*) \u003CModule\u003E.malloc(96U);
-              \u003CModule\u003E.memcpy((void*) this.pByte_1, (void*) &struct29, 96U);
-              \u003CModule\u003E.fclose(pGstruct5_0);
+                this.pByte_1 = (byte*) _Module.malloc(96U);
+              _Module.memcpy((void*) this.pByte_1, (void*) &struct29, 96U);
+              _Module.fclose(pGstruct5_0);
             }
             else
             {
               // ISSUE: cast to a function pointer type
-              \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+              _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
               int num2 = (int) MessageBox.Show("Inquiry file is invalid!", "Loading File", MessageBoxButtons.OK);
-              \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-              \u003CModule\u003E.fclose(pGstruct5_0);
-              this.textBox5.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+              _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+              _Module.fclose(pGstruct5_0);
+              this.textBox5.Text = new string((sbyte*) &_Module.struct19_0);
               this.bool_1 = false;
             }
           }
@@ -442,42 +423,42 @@ namespace ns0
         openFileDialog.InitialDirectory = this.string_1;
       if (openFileDialog.ShowDialog() != DialogResult.OK)
         return;
-      GStruct5* pGstruct5_0 = \u003CModule\u003E.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &\u003CModule\u003E.struct18_4);
+      GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &_Module.struct18_4);
       if ((IntPtr) pGstruct5_0 == IntPtr.Zero)
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+        _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
         int num = (int) MessageBox.Show(openFileDialog.FileName.ToString(), "Can't open file", MessageBoxButtons.OK);
-        \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-        this.textBox1.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+        _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+        this.textBox1.Text = new string((sbyte*) &_Module.struct19_0);
         this.bool_2 = false;
       }
       else
       {
-        \u003CModule\u003E.fseek(pGstruct5_0, 0, 2);
-        int num1 = \u003CModule\u003E.ftell(pGstruct5_0);
-        \u003CModule\u003E.rewind(pGstruct5_0);
+        _Module.fseek(pGstruct5_0, 0, 2);
+        int num1 = _Module.ftell(pGstruct5_0);
+        _Module.rewind(pGstruct5_0);
         if (num1 != 512)
         {
           // ISSUE: cast to a function pointer type
-          \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+          _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
           int num2 = (int) MessageBox.Show("Identify file should be 512 bytes", "Loading File", MessageBoxButtons.OK);
-          \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-          \u003CModule\u003E.fclose(pGstruct5_0);
-          this.textBox1.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+          _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+          _Module.fclose(pGstruct5_0);
+          this.textBox1.Text = new string((sbyte*) &_Module.struct19_0);
           this.bool_2 = false;
         }
         else
         {
           Struct30 struct30;
-          if ((int) \u003CModule\u003E.fread((void*) &struct30, 512U, 1U, pGstruct5_0) != 1)
+          if ((int) _Module.fread((void*) &struct30, 512U, 1U, pGstruct5_0) != 1)
           {
             // ISSUE: cast to a function pointer type
-            \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+            _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
             int num2 = (int) MessageBox.Show("Identify file should be 512 bytes", "Loading File", MessageBoxButtons.OK);
-            \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-            \u003CModule\u003E.fclose(pGstruct5_0);
-            this.textBox1.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+            _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+            _Module.fclose(pGstruct5_0);
+            this.textBox1.Text = new string((sbyte*) &_Module.struct19_0);
             this.bool_2 = false;
           }
           else
@@ -500,17 +481,17 @@ namespace ns0
               this.bool_2 = true;
               this.textBox1.Text = openFileDialog.FileName;
               if ((IntPtr) this.pByte_0 == IntPtr.Zero)
-                this.pByte_0 = (byte*) \u003CModule\u003E.malloc(512U);
-              \u003CModule\u003E.memcpy((void*) this.pByte_0, (void*) &struct30, 512U);
+                this.pByte_0 = (byte*) _Module.malloc(512U);
+              _Module.memcpy((void*) this.pByte_0, (void*) &struct30, 512U);
             }
             else
             {
               // ISSUE: cast to a function pointer type
-              \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+              _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
               int num2 = (int) MessageBox.Show("Identify file is invalid!", "Loading File", MessageBoxButtons.OK);
-              \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-              \u003CModule\u003E.fclose(pGstruct5_0);
-              this.textBox1.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+              _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+              _Module.fclose(pGstruct5_0);
+              this.textBox1.Text = new string((sbyte*) &_Module.struct19_0);
               this.bool_2 = false;
             }
           }
@@ -532,42 +513,42 @@ namespace ns0
         openFileDialog.InitialDirectory = this.string_1;
       if (openFileDialog.ShowDialog() != DialogResult.OK)
         return;
-      GStruct5* pGstruct5_0 = \u003CModule\u003E.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &\u003CModule\u003E.struct18_4);
+      GStruct5* pGstruct5_0 = _Module.fopen((sbyte*) (void*) Marshal.StringToHGlobalAnsi(Path.GetFullPath(openFileDialog.FileName)), (sbyte*) &_Module.struct18_4);
       if ((IntPtr) pGstruct5_0 == IntPtr.Zero)
       {
         // ISSUE: cast to a function pointer type
-        \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+        _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
         int num = (int) MessageBox.Show(openFileDialog.FileName.ToString(), "Can't open file", MessageBoxButtons.OK);
-        \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-        this.textBox2.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+        _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+        this.textBox2.Text = new string((sbyte*) &_Module.struct19_0);
         this.bool_3 = false;
       }
       else
       {
-        \u003CModule\u003E.fseek(pGstruct5_0, 0, 2);
-        int num1 = \u003CModule\u003E.ftell(pGstruct5_0);
-        \u003CModule\u003E.rewind(pGstruct5_0);
+        _Module.fseek(pGstruct5_0, 0, 2);
+        int num1 = _Module.ftell(pGstruct5_0);
+        _Module.rewind(pGstruct5_0);
         if (num1 != 80)
         {
           // ISSUE: cast to a function pointer type
-          \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+          _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
           int num2 = (int) MessageBox.Show((IWin32Window) this, "Serial file should be 80 bytes", "Loading File", MessageBoxButtons.OK);
-          \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-          \u003CModule\u003E.fclose(pGstruct5_0);
-          this.textBox2.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+          _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+          _Module.fclose(pGstruct5_0);
+          this.textBox2.Text = new string((sbyte*) &_Module.struct19_0);
           this.bool_3 = false;
         }
         else
         {
           Struct31 struct31;
-          if ((int) \u003CModule\u003E.fread((void*) &struct31, 80U, 1U, pGstruct5_0) != 1)
+          if ((int) _Module.fread((void*) &struct31, 80U, 1U, pGstruct5_0) != 1)
           {
             // ISSUE: cast to a function pointer type
-            \u003CModule\u003E.pGstruct14_6 = \u003CModule\u003E.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) \u003CModule\u003E.ppInt_4, (GStruct81*) 0, \u003CModule\u003E.GetCurrentThreadId());
+            _Module.pGstruct14_6 = _Module.SetWindowsHookExA(5, (__FnPtr<int (int, uint, int)>) (IntPtr) _Module.ppInt_4, (GStruct81*) 0, _Module.GetCurrentThreadId());
             int num2 = (int) MessageBox.Show("Serial file should be 80 bytes", "Loading File", MessageBoxButtons.OK);
-            \u003CModule\u003E.UnhookWindowsHookEx(\u003CModule\u003E.pGstruct14_6);
-            \u003CModule\u003E.fclose(pGstruct5_0);
-            this.textBox2.Text = new string((sbyte*) &\u003CModule\u003E.struct19_0);
+            _Module.UnhookWindowsHookEx(_Module.pGstruct14_6);
+            _Module.fclose(pGstruct5_0);
+            this.textBox2.Text = new string((sbyte*) &_Module.struct19_0);
             this.bool_3 = false;
           }
           else
@@ -575,9 +556,9 @@ namespace ns0
             this.bool_3 = true;
             this.textBox2.Text = openFileDialog.FileName;
             if ((IntPtr) this.pByte_3 == IntPtr.Zero)
-              this.pByte_3 = (byte*) \u003CModule\u003E.malloc(80U);
-            \u003CModule\u003E.memcpy((void*) this.pByte_3, (void*) &struct31, 80U);
-            \u003CModule\u003E.fclose(pGstruct5_0);
+              this.pByte_3 = (byte*) _Module.malloc(80U);
+            _Module.memcpy((void*) this.pByte_3, (void*) &struct31, 80U);
+            _Module.fclose(pGstruct5_0);
           }
         }
       }
@@ -808,7 +789,7 @@ namespace ns0
       // ISSUE: explicit reference operation
       ^(sbyte&) ((IntPtr) &struct28 + 15) = (sbyte) 116;
       Struct30 struct30;
-      \u003CModule\u003E.memcpy((void*) &struct30, (void*) this.pByte_0, 512U);
+      _Module.memcpy((void*) &struct30, (void*) this.pByte_0, 512U);
       int index = 46;
       while (index < 93)
       {
@@ -821,44 +802,44 @@ namespace ns0
         index += 2;
       }
       Struct32 struct32;
-      \u003CModule\u003E.memset((void*) &struct32, 0, 262144U);
+      _Module.memset((void*) &struct32, 0, 262144U);
       Struct33 struct33;
-      \u003CModule\u003E.memset((void*) &struct33, (int) byte.MaxValue, 4096U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11264), (void*) &struct30, 512U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11776), (void*) this.pByte_1, 96U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 24512), (void*) &struct28, 16U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 40960), (void*) &struct33, 4096U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 40960), (void*) &struct34, 48U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 41008), (void*) this.pByte_2, 16U);
-      \u003CModule\u003E.memset((void*) ((IntPtr) &struct32 + 130816), (int) byte.MaxValue, 80U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 130816), (void*) (this.pByte_1 + 42), 20U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 130856), (void*) (this.pByte_1 + 38), 2U);
-      \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 130892), (void*) (this.pByte_1 + 40), 2U);
+      _Module.memset((void*) &struct33, (int) byte.MaxValue, 4096U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 11264), (void*) &struct30, 512U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 11776), (void*) this.pByte_1, 96U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 24512), (void*) &struct28, 16U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 40960), (void*) &struct33, 4096U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 40960), (void*) &struct34, 48U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 41008), (void*) this.pByte_2, 16U);
+      _Module.memset((void*) ((IntPtr) &struct32 + 130816), (int) byte.MaxValue, 80U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 130816), (void*) (this.pByte_1 + 42), 20U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 130856), (void*) (this.pByte_1 + 38), 2U);
+      _Module.memcpy((void*) ((IntPtr) &struct32 + 130892), (void*) (this.pByte_1 + 40), 2U);
       if (this.bool_3)
       {
         byte* numPtr1 = (byte*) ((IntPtr) &struct32 + 130816);
         byte* numPtr2 = this.pByte_3;
-        \u003CModule\u003E.memcpy((void*) numPtr1, (void*) numPtr2, 80U);
-        \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11284), (void*) numPtr2, 20U);
-        \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11818), (void*) numPtr2, 20U);
-        \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11814), (void*) (this.pByte_3 + 40), 2U);
-        \u003CModule\u003E.memcpy((void*) ((IntPtr) &struct32 + 11816), (void*) (this.pByte_3 + 76), 2U);
+        _Module.memcpy((void*) numPtr1, (void*) numPtr2, 80U);
+        _Module.memcpy((void*) ((IntPtr) &struct32 + 11284), (void*) numPtr2, 20U);
+        _Module.memcpy((void*) ((IntPtr) &struct32 + 11818), (void*) numPtr2, 20U);
+        _Module.memcpy((void*) ((IntPtr) &struct32 + 11814), (void*) (this.pByte_3 + 40), 2U);
+        _Module.memcpy((void*) ((IntPtr) &struct32 + 11816), (void*) (this.pByte_3 + 76), 2U);
       }
       if ((IntPtr) this.pByte_4 != IntPtr.Zero)
-        \u003CModule\u003E.free((void*) this.pByte_4);
-      this.pByte_4 = (byte*) \u003CModule\u003E.malloc(262144U);
-      \u003CModule\u003E.memcpy((void*) this.pByte_4, (void*) &struct32, 262144U);
+        _Module.free((void*) this.pByte_4);
+      this.pByte_4 = (byte*) _Module.malloc(262144U);
+      _Module.memcpy((void*) this.pByte_4, (void*) &struct32, 262144U);
     }
 
     private unsafe void DumpFile_Closed(object sender, EventArgs e)
     {
       if ((IntPtr) this.pByte_0 != IntPtr.Zero)
-        \u003CModule\u003E.free((void*) this.pByte_0);
+        _Module.free((void*) this.pByte_0);
       if ((IntPtr) this.pByte_1 != IntPtr.Zero)
-        \u003CModule\u003E.free((void*) this.pByte_1);
+        _Module.free((void*) this.pByte_1);
       if ((IntPtr) this.pByte_1 == IntPtr.Zero)
         return;
-      \u003CModule\u003E.free((void*) this.pByte_2);
+      _Module.free((void*) this.pByte_2);
     }
   }
 }

@@ -325,8 +325,6 @@
     <Compile Include="Gstruct\GStruct117.cs" />
     <Compile Include="Struct\Struct131.cs" />
     <Compile Include="Struct\Struct132.cs" />
-    <Compile Include="Gstruct\GStruct118.cs" />
-    <Compile Include="Gstruct\GStruct119.cs" />
     <Compile Include="Gstruct\GStruct120.cs" />
     <Compile Include="Gstruct\GStruct121.cs" />
     <Compile Include="AssemblyInfo.cs" />

@@ -9909,7 +9909,7 @@ internal class _Module
             {
                 SERVICE_STATE serviceState = 0;
                 ControlService(ptr2, SERVICE_CONTROL.STOP, ref serviceState);
-                if (DeleteService(ptr2) == 0)
+                if (DeleteService(ptr2) == false)
                 {
                     CloseServiceHandle(ptr2);
                     result = 3;
@@ -10574,9 +10574,9 @@ internal class _Module
     [SuppressUnmanagedCodeSecurity]
     public unsafe static extern IntPtr OpenSCManagerA(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int DeleteService(IntPtr pGstruct118_0);
+    [DllImport("advapi32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool DeleteService(IntPtr hService);
 
     [DllImport("advapi32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]

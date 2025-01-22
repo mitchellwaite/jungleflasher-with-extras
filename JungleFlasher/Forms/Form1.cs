@@ -14,6 +14,7 @@ using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 using System.Security.Permissions;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -5169,9 +5170,8 @@ namespace ns0
     private unsafe void method_2()
     {
       string strA = (string) null;
-      Struct68 struct68_1;
-      _Module.memset((void*) &struct68_1, 0, 260U);
-      _Module.smethod_146((sbyte*) &struct68_1);
+      string struct68_1 = Path.GetDirectoryName(Application.ExecutablePath);
+
       // ISSUE: cast to a function pointer type
       __FnPtr<void (GStruct91*)> local1 = (__FnPtr<void (GStruct91*)>) _Module.GetProcAddress(_Module.GetModuleHandleA((sbyte*) &_Module.struct15_1), (sbyte*) &_Module.struct66_0);
       GStruct91 gstruct91;

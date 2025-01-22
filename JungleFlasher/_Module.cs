@@ -9955,23 +9955,6 @@ internal class _Module
         *(uint*)(pByte_1 + 12) = (_lrotl(num4, 8) & 0xFF00FF) | (_lrotr(num4, 8) & 0xFF00FF00u);
     }
 
-    public unsafe static int smethod_146(sbyte* pSbyte_0)
-    {
-        memset(pSbyte_0, 0, 260u);
-        int result;
-        if (GetModuleFileNameA(null, pSbyte_0, 260u) == 0)
-        {
-            result = 1;
-        }
-        else
-        {
-            sbyte* ptr = strrchr(pSbyte_0, 92);
-            *ptr = 0;
-            result = 0;
-        }
-        return result;
-    }
-
     public unsafe static int smethod_147(string binaryPath, string serviceName)
     {
         IntPtr ptr = OpenSCManagerA(null, servicesActiveString, 983103u);
@@ -10674,17 +10657,6 @@ internal class _Module
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
     public unsafe static extern sbyte* strrchr(sbyte* pSbyte_0, int int_43);
-
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern uint GetModuleFileNameA(GStruct81* pGstruct81_0, sbyte* pSbyte_0, uint uint_2);
-
-    [DllImport("kernel32.dll", EntryPoint = "GetModuleFileNameA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
-    [return: MarshalAs(UnmanagedType.U4)]
-    public static extern uint GetModuleFileNameA(
-       IntPtr hModule,
-       string lpFilename,
-       uint nSize );
 
     [DllImport("advapi32.dll", EntryPoint = "StartServiceA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]

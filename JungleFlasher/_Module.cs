@@ -9763,10 +9763,10 @@ internal class _Module
     public unsafe static int smethod_142(uint* pUint_0, byte* pByte_0, int int_43)
     {
         int num = 0;
-        *pUint_0 = (_lrotl(*(uint*)pByte_0, 8) & 0xFF00FF) | (_lrotr(*(uint*)pByte_0, 8) & 0xFF00FF00u);
-        pUint_0[1] = (_lrotl(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u);
-        pUint_0[2] = (_lrotl(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u);
-        pUint_0[3] = (_lrotl(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u);
+        *pUint_0 = (RotateLeft(*(uint*)pByte_0, 8) & 0xFF00FF) | (RotateRight(*(uint*)pByte_0, 8) & 0xFF00FF00u);
+        pUint_0[1] = (RotateLeft(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u);
+        pUint_0[2] = (RotateLeft(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u);
+        pUint_0[3] = (RotateLeft(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u);
         int result;
         if (int_43 == 128)
         {
@@ -9788,8 +9788,8 @@ internal class _Module
         }
         else
         {
-            pUint_0[4] = (_lrotl(*(uint*)(pByte_0 + 16), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 16), 8) & 0xFF00FF00u);
-            pUint_0[5] = (_lrotl(*(uint*)(pByte_0 + 20), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 20), 8) & 0xFF00FF00u);
+            pUint_0[4] = (RotateLeft(*(uint*)(pByte_0 + 16), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 16), 8) & 0xFF00FF00u);
+            pUint_0[5] = (RotateLeft(*(uint*)(pByte_0 + 20), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 20), 8) & 0xFF00FF00u);
             if (int_43 == 192)
             {
                 while (true)
@@ -9812,8 +9812,8 @@ internal class _Module
             }
             else
             {
-                pUint_0[6] = (_lrotl(*(uint*)(pByte_0 + 24), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 24), 8) & 0xFF00FF00u);
-                pUint_0[7] = (_lrotl(*(uint*)(pByte_0 + 28), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 28), 8) & 0xFF00FF00u);
+                pUint_0[6] = (RotateLeft(*(uint*)(pByte_0 + 24), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 24), 8) & 0xFF00FF00u);
+                pUint_0[7] = (RotateLeft(*(uint*)(pByte_0 + 28), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 28), 8) & 0xFF00FF00u);
                 if (int_43 == 256)
                 {
                     while (true)
@@ -9881,10 +9881,10 @@ internal class _Module
 
     public unsafe static void smethod_144(uint* pUint_0, int int_43, byte* pByte_0, byte* pByte_1)
     {
-        uint num = ((_lrotl(*(uint*)pByte_0, 8) & 0xFF00FF) | (_lrotr(*(uint*)pByte_0, 8) & 0xFF00FF00u)) ^ *pUint_0;
-        uint num2 = ((_lrotl(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u)) ^ pUint_0[1];
-        uint num3 = ((_lrotl(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u)) ^ pUint_0[2];
-        uint num4 = ((_lrotl(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u)) ^ pUint_0[3];
+        uint num = ((RotateLeft(*(uint*)pByte_0, 8) & 0xFF00FF) | (RotateRight(*(uint*)pByte_0, 8) & 0xFF00FF00u)) ^ *pUint_0;
+        uint num2 = ((RotateLeft(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u)) ^ pUint_0[1];
+        uint num3 = ((RotateLeft(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u)) ^ pUint_0[2];
+        uint num4 = ((RotateLeft(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u)) ^ pUint_0[3];
         int num5 = int_43 >> 1;
         uint num6;
         uint num7;
@@ -9908,21 +9908,21 @@ internal class _Module
             num4 = (uint)(System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_1, (num9 >> 24) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_0, ((num6 >> 16) & 0xFF) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_3, ((num7 >> 8) & 0xFF) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_9, (num8 & 0xFF) * 4))) ^ pUint_0[3];
         }
         num = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num6 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num7 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num8 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num9 & 0xFF) * 4)) & 0xFF)) ^ *pUint_0;
-        *(uint*)pByte_1 = (_lrotl(num, 8) & 0xFF00FF) | (_lrotr(num, 8) & 0xFF00FF00u);
+        *(uint*)pByte_1 = (RotateLeft(num, 8) & 0xFF00FF) | (RotateRight(num, 8) & 0xFF00FF00u);
         num2 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num7 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num8 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num9 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num6 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[1];
-        *(uint*)(pByte_1 + 4) = (_lrotl(num2, 8) & 0xFF00FF) | (_lrotr(num2, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 4) = (RotateLeft(num2, 8) & 0xFF00FF) | (RotateRight(num2, 8) & 0xFF00FF00u);
         num3 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num8 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num9 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num6 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num7 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[2];
-        *(uint*)(pByte_1 + 8) = (_lrotl(num3, 8) & 0xFF00FF) | (_lrotr(num3, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 8) = (RotateLeft(num3, 8) & 0xFF00FF) | (RotateRight(num3, 8) & 0xFF00FF00u);
         num4 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num9 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num6 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, ((num7 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_2, (num8 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[3];
-        *(uint*)(pByte_1 + 12) = (_lrotl(num4, 8) & 0xFF00FF) | (_lrotr(num4, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 12) = (RotateLeft(num4, 8) & 0xFF00FF) | (RotateRight(num4, 8) & 0xFF00FF00u);
     }
 
     public unsafe static void smethod_145(uint* pUint_0, int int_43, byte* pByte_0, byte* pByte_1)
     {
-        uint num = ((_lrotl(*(uint*)pByte_0, 8) & 0xFF00FF) | (_lrotr(*(uint*)pByte_0, 8) & 0xFF00FF00u)) ^ *pUint_0;
-        uint num2 = ((_lrotl(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u)) ^ pUint_0[1];
-        uint num3 = ((_lrotl(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u)) ^ pUint_0[2];
-        uint num4 = ((_lrotl(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (_lrotr(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u)) ^ pUint_0[3];
+        uint num = ((RotateLeft(*(uint*)pByte_0, 8) & 0xFF00FF) | (RotateRight(*(uint*)pByte_0, 8) & 0xFF00FF00u)) ^ *pUint_0;
+        uint num2 = ((RotateLeft(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 4), 8) & 0xFF00FF00u)) ^ pUint_0[1];
+        uint num3 = ((RotateLeft(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 8), 8) & 0xFF00FF00u)) ^ pUint_0[2];
+        uint num4 = ((RotateLeft(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF) | (RotateRight(*(uint*)(pByte_0 + 12), 8) & 0xFF00FF00u)) ^ pUint_0[3];
         int num5 = int_43 >> 1;
         uint num6;
         uint num7;
@@ -9946,13 +9946,13 @@ internal class _Module
             num4 = (uint)(System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_6, (num9 >> 24) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_4, ((num8 >> 16) & 0xFF) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_7, ((num7 >> 8) & 0xFF) * 4)) ^ System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_5, (num6 & 0xFF) * 4))) ^ pUint_0[3];
         }
         num = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num6 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num9 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num8 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num7 & 0xFF) * 4)) & 0xFF)) ^ *pUint_0;
-        *(uint*)pByte_1 = (_lrotl(num, 8) & 0xFF00FF) | (_lrotr(num, 8) & 0xFF00FF00u);
+        *(uint*)pByte_1 = (RotateLeft(num, 8) & 0xFF00FF) | (RotateRight(num, 8) & 0xFF00FF00u);
         num2 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num7 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num6 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num9 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num8 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[1];
-        *(uint*)(pByte_1 + 4) = (_lrotl(num2, 8) & 0xFF00FF) | (_lrotr(num2, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 4) = (RotateLeft(num2, 8) & 0xFF00FF) | (RotateRight(num2, 8) & 0xFF00FF00u);
         num3 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num8 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num7 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num6 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num9 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[2];
-        *(uint*)(pByte_1 + 8) = (_lrotl(num3, 8) & 0xFF00FF) | (_lrotr(num3, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 8) = (RotateLeft(num3, 8) & 0xFF00FF) | (RotateRight(num3, 8) & 0xFF00FF00u);
         num4 = (uint)((System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num9 >> 24) * 4)) & -16777216) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num8 >> 16) & 0xFF) * 4)) & 0xFF0000) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, ((num7 >> 8) & 0xFF) * 4)) & 0xFF00) ^ (System.Runtime.CompilerServices.Unsafe.As<Struct131, int>(ref System.Runtime.CompilerServices.Unsafe.AddByteOffset(ref struct131_8, (num6 & 0xFF) * 4)) & 0xFF)) ^ pUint_0[3];
-        *(uint*)(pByte_1 + 12) = (_lrotl(num4, 8) & 0xFF00FF) | (_lrotr(num4, 8) & 0xFF00FF00u);
+        *(uint*)(pByte_1 + 12) = (RotateLeft(num4, 8) & 0xFF00FF) | (RotateRight(num4, 8) & 0xFF00FF00u);
     }
 
     public unsafe static int smethod_147(string binaryPath, string serviceName)
@@ -10646,17 +10646,15 @@ internal class _Module
     [SuppressUnmanagedCodeSecurity]
     public unsafe static extern int WideCharToMultiByte(uint uint_2, uint uint_3, ushort* pUshort_0, int int_43, sbyte* pSbyte_0, int int_44, sbyte* pSbyte_1, int* pInt_0);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public static extern uint _lrotr(uint uint_2, int int_43);
+    public static uint RotateLeft(uint value, int count)
+    {
+        return (value << count) | (value >> (32 - count));
+    }
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public static extern uint _lrotl(uint uint_2, int int_43);
-
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern sbyte* strrchr(sbyte* pSbyte_0, int int_43);
+    public static uint RotateRight(uint value, int count)
+    {
+        return (value >> count) | (value << (32 - count));
+    }
 
     [DllImport("advapi32.dll", EntryPoint = "StartServiceA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]

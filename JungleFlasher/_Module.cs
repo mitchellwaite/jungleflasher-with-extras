@@ -3,9 +3,12 @@
 // JungleFlasher, Version=1.0.5004.40451, Culture=neutral, PublicKeyToken=7240d12d147b2b97
 // <Module>
 using System;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Security.Policy;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using ns0;
@@ -1309,6 +1312,9 @@ internal class _Module
 
     public static Struct65 struct65_13/* Not supported: data(53 65 72 76 69 63 65 73 41 63 74 69 76 65 00) */;
 
+    // Replaces struct65_12 and struct65_13
+    public static string servicesActiveString = "ServicesActive";
+
     public static Struct74 struct74_6/* Not supported: data(5C 5C 2E 5C 70 6F 72 74 69 6F 00) */;
 
     public static GStruct101 gstruct101_0/*Field data (rva=0x3217d4) could not be foundin any section!*/;
@@ -1337,6 +1343,7 @@ internal class _Module
     #endregion
 
     #region enums
+    [Flags]
     public enum ServiceAccessRights : uint
     {
         STANDARD_RIGHTS_REQUIRED = 0xF0000,
@@ -1380,6 +1387,7 @@ internal class _Module
         SESSIONCHANGE = 0x0000000E
     }
 
+    [Flags]
     public enum SERVICE_STATE : uint
     {
         SERVICE_STOPPED = 0x00000001,
@@ -1404,6 +1412,111 @@ internal class _Module
         SESSIONCHANGE = 0x00000080,
     }
 
+    /// <summary>
+    /// Service start options
+    /// </summary>
+    public enum SERVICE_START : uint
+    {
+        /// <summary>
+        /// A device driver started by the system loader. This value is valid
+        /// only for driver services.
+        /// </summary>
+        SERVICE_BOOT_START = 0x00000000,
+
+        /// <summary>
+        /// A device driver started by the IoInitSystem function. This value
+        /// is valid only for driver services.
+        /// </summary>
+        SERVICE_SYSTEM_START = 0x00000001,
+
+        /// <summary>
+        /// A service started automatically by the service control manager
+        /// during system startup. For more information, see Automatically
+        /// Starting Services.
+        /// </summary>        
+        SERVICE_AUTO_START = 0x00000002,
+
+        /// <summary>
+        /// A service started by the service control manager when a process
+        /// calls the StartService function. For more information, see
+        /// Starting Services on Demand.
+        /// </summary>
+        SERVICE_DEMAND_START = 0x00000003,
+
+        /// <summary>
+        /// A service that cannot be started. Attempts to start the service
+        /// result in the error code ERROR_SERVICE_DISABLED.
+        /// </summary>
+        SERVICE_DISABLED = 0x00000004,
+    }
+
+
+    /// <summary>
+    /// Service types.
+    /// </summary>
+    [Flags]
+    public enum SERVICE_TYPE : uint
+    {
+        /// <summary>
+        /// Driver service.
+        /// </summary>
+        SERVICE_KERNEL_DRIVER = 0x00000001,
+
+        /// <summary>
+        /// File system driver service.
+        /// </summary>
+        SERVICE_FILE_SYSTEM_DRIVER = 0x00000002,
+
+        /// <summary>
+        /// Service that runs in its own process.
+        /// </summary>
+        SERVICE_WIN32_OWN_PROCESS = 0x00000010,
+
+        /// <summary>
+        /// Service that shares a process with one or more other services.
+        /// </summary>
+        SERVICE_WIN32_SHARE_PROCESS = 0x00000020,
+
+        /// <summary>
+        /// The service can interact with the desktop.
+        /// </summary>
+        SERVICE_INTERACTIVE_PROCESS = 0x00000100,
+    }
+
+    /// <summary>
+    /// Severity of the error, and action taken, if this service fails
+    /// to start.
+    /// </summary>
+    public enum SERVICE_ERROR
+    {
+        /// <summary>
+        /// The startup program ignores the error and continues the startup
+        /// operation.
+        /// </summary>
+        SERVICE_ERROR_IGNORE = 0x00000000,
+
+        /// <summary>
+        /// The startup program logs the error in the event log but continues
+        /// the startup operation.
+        /// </summary>
+        SERVICE_ERROR_NORMAL = 0x00000001,
+
+        /// <summary>
+        /// The startup program logs the error in the event log. If the
+        /// last-known-good configuration is being started, the startup
+        /// operation continues. Otherwise, the system is restarted with
+        /// the last-known-good configuration.
+        /// </summary>
+        SERVICE_ERROR_SEVERE = 0x00000002,
+
+        /// <summary>
+        /// The startup program logs the error in the event log, if possible.
+        /// If the last-known-good configuration is being started, the startup
+        /// operation fails. Otherwise, the system is restarted with the
+        /// last-known good configuration.
+        /// </summary>
+        SERVICE_ERROR_CRITICAL = 0x00000003,
+    }
     #endregion
 
     #region methods
@@ -9859,9 +9972,9 @@ internal class _Module
         return result;
     }
 
-    public unsafe static int smethod_147(sbyte* pSbyte_0, sbyte* pSbyte_1)
+    public unsafe static int smethod_147(string binaryPath, string serviceName)
     {
-        IntPtr ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_12), 983103u);
+        IntPtr ptr = OpenSCManagerA(null, servicesActiveString, 983103u);
         int result;
         if (ptr == null)
         {
@@ -9869,13 +9982,21 @@ internal class _Module
         }
         else
         {
-            IntPtr ptr2 = CreateServiceA(ptr, pSbyte_1, pSbyte_1, 983551u, 1u, 3u, 1u, pSbyte_0, null, null, null, null, null);
+            IntPtr ptr2 = CreateServiceA( ptr,
+                                          serviceName,
+                                          serviceName,
+                                          983551u,
+                                          SERVICE_TYPE.SERVICE_KERNEL_DRIVER,
+                                          SERVICE_START.SERVICE_DEMAND_START,
+                                          SERVICE_ERROR.SERVICE_ERROR_NORMAL,
+                                          binaryPath,
+                                          null, null, null, null, null);
             CloseServiceHandle(ptr);
             if (ptr2 == null)
             {
                 result = 2;
             }
-            else if (StartServiceA(ptr2, 0u, null) == 0)
+            else if (StartServiceA(ptr2, 0, null) == false)
             {
                 CloseServiceHandle(ptr2);
                 result = 3;
@@ -9891,7 +10012,7 @@ internal class _Module
 
     public unsafe static int smethod_148(string pSbyte_0)
     {
-        IntPtr ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_13), 983103u);
+        IntPtr ptr = OpenSCManagerA(null, servicesActiveString, 983103u);
         int result;
         if (ptr == null)
         {
@@ -10558,21 +10679,43 @@ internal class _Module
     [SuppressUnmanagedCodeSecurity]
     public unsafe static extern uint GetModuleFileNameA(GStruct81* pGstruct81_0, sbyte* pSbyte_0, uint uint_2);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int StartServiceA(IntPtr pGstruct118_0, uint uint_2, sbyte** ppSbyte_0);
+    [DllImport("kernel32.dll", EntryPoint = "GetModuleFileNameA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.U4)]
+    public static extern uint GetModuleFileNameA(
+       IntPtr hModule,
+       string lpFilename,
+       uint nSize );
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int CloseServiceHandle(IntPtr pGstruct118_0);
+    [DllImport("advapi32.dll", EntryPoint = "StartServiceA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool StartServiceA(
+        IntPtr hService,
+        int dwNumServiceArgs,
+        string[] lpServiceArgVectors);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern IntPtr CreateServiceA(IntPtr pGstruct118_0, sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2, uint uint_3, uint uint_4, uint uint_5, sbyte* pSbyte_2, sbyte* pSbyte_3, uint* pUint_0, sbyte* pSbyte_4, sbyte* pSbyte_5, sbyte* pSbyte_6);
+    [DllImport("advapi32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool CloseServiceHandle(IntPtr hSCObject);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern IntPtr OpenSCManagerA(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2);
+    [DllImport("advapi32.dll", EntryPoint = "CreateServiceA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
+    public static extern IntPtr CreateServiceA(
+        IntPtr hSCManager,
+        string lpServiceName,
+        string lpDisplayName,
+        uint dwDesiredAccess,
+        SERVICE_TYPE dwServiceType,
+        SERVICE_START dwStartType,
+        SERVICE_ERROR dwErrorControl,
+        string lpBinaryPathName,
+        [Optional] string lpLoadOrderGroup,
+        [Optional] string lpdwTagId,    // only string so we can pass null
+        [Optional] string lpDependencies,
+        [Optional] string lpServiceStartName,
+        [Optional] string lpPassword);
+
+    // TODO Figure out the bitmask for dwAccess and create an enum
+    [DllImport("advapi32.dll", EntryPoint = "OpenSCManagerA", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
+    public static extern IntPtr OpenSCManagerA(string machineName, string databaseName, uint dwAccess);
 
     [DllImport("advapi32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]

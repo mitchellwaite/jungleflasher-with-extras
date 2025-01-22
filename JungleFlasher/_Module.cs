@@ -12,6 +12,7 @@ using ns0;
 
 internal class _Module
 {
+    #region structures
     public static Struct0 struct0_0/* Not supported: data(41 54 41 20 63 6F 6D 6D 61 6E 64 20 65 72 72 6F 72 00) */;
 
     public static Struct1 struct1_0/* Not supported: data(69 6E 63 6F 6D 70 6C 65 74 65 20 70 61 63 6B 65 74 20 77 72 69 74 65 00) */;
@@ -1333,7 +1334,79 @@ internal class _Module
     public static GStruct0 gstruct0_6/* Not supported: data(E0 D1 E0 86 89 80 D0 11 9C E4 08 00 3E 30 1F 73) */;
 
     public static GStruct0 gstruct0_7/* Not supported: data(07 63 F5 53 BF B6 D0 11 94 F2 00 A0 C9 1E FB 8B) */;
+    #endregion
 
+    #region enums
+    public enum ServiceAccessRights : uint
+    {
+        STANDARD_RIGHTS_REQUIRED = 0xF0000,
+        SERVICE_QUERY_CONFIG = 0x00001,
+        SERVICE_CHANGE_CONFIG = 0x00002,
+        SERVICE_QUERY_STATUS = 0x00004,
+        SERVICE_ENUMERATE_DEPENDENTS = 0x00008,
+        SERVICE_START = 0x00010,
+        SERVICE_STOP = 0x00020,
+        SERVICE_PAUSE_CONTINUE = 0x00040,
+        SERVICE_INTERROGATE = 0x00080,
+        SERVICE_USER_DEFINED_CONTROL = 0x00100,
+        SERVICE_ALL_ACCESS = (STANDARD_RIGHTS_REQUIRED |
+                          SERVICE_QUERY_CONFIG |
+                          SERVICE_CHANGE_CONFIG |
+                          SERVICE_QUERY_STATUS |
+                          SERVICE_ENUMERATE_DEPENDENTS |
+                          SERVICE_START |
+                          SERVICE_STOP |
+                          SERVICE_PAUSE_CONTINUE |
+                          SERVICE_INTERROGATE |
+                          SERVICE_USER_DEFINED_CONTROL)
+    }
+
+    [Flags]
+    public enum SERVICE_CONTROL : uint
+    {
+        STOP = 0x00000001,
+        PAUSE = 0x00000002,
+        CONTINUE = 0x00000003,
+        INTERROGATE = 0x00000004,
+        SHUTDOWN = 0x00000005,
+        PARAMCHANGE = 0x00000006,
+        NETBINDADD = 0x00000007,
+        NETBINDREMOVE = 0x00000008,
+        NETBINDENABLE = 0x00000009,
+        NETBINDDISABLE = 0x0000000A,
+        DEVICEEVENT = 0x0000000B,
+        HARDWAREPROFILECHANGE = 0x0000000C,
+        POWEREVENT = 0x0000000D,
+        SESSIONCHANGE = 0x0000000E
+    }
+
+    public enum SERVICE_STATE : uint
+    {
+        SERVICE_STOPPED = 0x00000001,
+        SERVICE_START_PENDING = 0x00000002,
+        SERVICE_STOP_PENDING = 0x00000003,
+        SERVICE_RUNNING = 0x00000004,
+        SERVICE_CONTINUE_PENDING = 0x00000005,
+        SERVICE_PAUSE_PENDING = 0x00000006,
+        SERVICE_PAUSED = 0x00000007
+    }
+
+    [Flags]
+    public enum SERVICE_ACCEPT : uint
+    {
+        STOP = 0x00000001,
+        PAUSE_CONTINUE = 0x00000002,
+        SHUTDOWN = 0x00000004,
+        PARAMCHANGE = 0x00000008,
+        NETBINDCHANGE = 0x00000010,
+        HARDWAREPROFILECHANGE = 0x00000020,
+        POWEREVENT = 0x00000040,
+        SESSIONCHANGE = 0x00000080,
+    }
+
+    #endregion
+
+    #region methods
     public static byte smethod_0(ushort ushort_0)
     {
         byte b = 0;
@@ -9788,7 +9861,7 @@ internal class _Module
 
     public unsafe static int smethod_147(sbyte* pSbyte_0, sbyte* pSbyte_1)
     {
-        GStruct118* ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_12), 983103u);
+        IntPtr ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_12), 983103u);
         int result;
         if (ptr == null)
         {
@@ -9796,7 +9869,7 @@ internal class _Module
         }
         else
         {
-            GStruct118* ptr2 = CreateServiceA(ptr, pSbyte_1, pSbyte_1, 983551u, 1u, 3u, 1u, pSbyte_0, null, null, null, null, null);
+            IntPtr ptr2 = CreateServiceA(ptr, pSbyte_1, pSbyte_1, 983551u, 1u, 3u, 1u, pSbyte_0, null, null, null, null, null);
             CloseServiceHandle(ptr);
             if (ptr2 == null)
             {
@@ -9816,9 +9889,9 @@ internal class _Module
         return result;
     }
 
-    public unsafe static int smethod_148(sbyte* pSbyte_0)
+    public unsafe static int smethod_148(string pSbyte_0)
     {
-        GStruct118* ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_13), 983103u);
+        IntPtr ptr = OpenSCManagerA(null, (sbyte*)System.Runtime.CompilerServices.Unsafe.AsPointer(ref struct65_13), 983103u);
         int result;
         if (ptr == null)
         {
@@ -9826,7 +9899,7 @@ internal class _Module
         }
         else
         {
-            GStruct118* ptr2 = OpenServiceA(ptr, pSbyte_0, 983551u);
+            IntPtr ptr2 = OpenServiceA(ptr, pSbyte_0, ServiceAccessRights.SERVICE_ALL_ACCESS);
             CloseServiceHandle(ptr);
             if (ptr2 == null)
             {
@@ -9834,8 +9907,8 @@ internal class _Module
             }
             else
             {
-                GStruct119 gStruct = default(GStruct119);
-                ControlService(ptr2, 1u, &gStruct);
+                SERVICE_STATE serviceState = 0;
+                ControlService(ptr2, SERVICE_CONTROL.STOP, ref serviceState);
                 if (DeleteService(ptr2) == 0)
                 {
                     CloseServiceHandle(ptr2);
@@ -9950,6 +10023,7 @@ internal class _Module
         *(short*)((byte*)pGstruct121_0 + 18) = (short)(short_0 + 7);
         *(short*)((byte*)pGstruct121_0 + 16) = (short)(short_0 + 7);
     }
+    #endregion
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
@@ -10486,31 +10560,30 @@ internal class _Module
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int StartServiceA(GStruct118* pGstruct118_0, uint uint_2, sbyte** ppSbyte_0);
+    public unsafe static extern int StartServiceA(IntPtr pGstruct118_0, uint uint_2, sbyte** ppSbyte_0);
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int CloseServiceHandle(GStruct118* pGstruct118_0);
+    public unsafe static extern int CloseServiceHandle(IntPtr pGstruct118_0);
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern GStruct118* CreateServiceA(GStruct118* pGstruct118_0, sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2, uint uint_3, uint uint_4, uint uint_5, sbyte* pSbyte_2, sbyte* pSbyte_3, uint* pUint_0, sbyte* pSbyte_4, sbyte* pSbyte_5, sbyte* pSbyte_6);
+    public unsafe static extern IntPtr CreateServiceA(IntPtr pGstruct118_0, sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2, uint uint_3, uint uint_4, uint uint_5, sbyte* pSbyte_2, sbyte* pSbyte_3, uint* pUint_0, sbyte* pSbyte_4, sbyte* pSbyte_5, sbyte* pSbyte_6);
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern GStruct118* OpenSCManagerA(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2);
+    public unsafe static extern IntPtr OpenSCManagerA(sbyte* pSbyte_0, sbyte* pSbyte_1, uint uint_2);
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int DeleteService(GStruct118* pGstruct118_0);
+    public unsafe static extern int DeleteService(IntPtr pGstruct118_0);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern int ControlService(GStruct118* pGstruct118_0, uint uint_2, GStruct119* pGstruct119_0);
+    [DllImport("advapi32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool ControlService(IntPtr hService, SERVICE_CONTROL dwControl, ref SERVICE_STATE lpServiceStatus);
 
-    [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
-    [SuppressUnmanagedCodeSecurity]
-    public unsafe static extern GStruct118* OpenServiceA(GStruct118* pGstruct118_0, sbyte* pSbyte_0, uint uint_2);
+    [DllImport("advapi32.dll", EntryPoint = "OpenServiceA", SetLastError = true, CharSet = CharSet.Ansi)]
+    static extern IntPtr OpenServiceA(IntPtr hSCManager, string lpServiceName, ServiceAccessRights dwDesiredAccess);
 
     [MethodImpl(MethodImplOptions.Unmanaged | MethodImplOptions.PreserveSig, MethodCodeType = MethodCodeType.Native)]
     [SuppressUnmanagedCodeSecurity]

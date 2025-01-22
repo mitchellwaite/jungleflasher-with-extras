@@ -3,4 +3,5 @@
 
  ### Notes
  
-- https://www.pinvoke.net/default.aspx/user32.unhookwindowshookex
+- http://pinvoke.net/default.aspx/setupapi.SetupDiSetClassInstallParam
+- https://www.p-invoke.net/setupapi/setupdisetclassinstallparams
